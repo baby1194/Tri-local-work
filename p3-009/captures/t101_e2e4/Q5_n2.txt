@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork as dated, sequenced documents with named fields, check codes, and sign-off blocks, indexed for later audit and cross-reference.
+
+2) What occurred:
+- The actor opened a dated record for one valid digital ticket and recorded its identifier in the ticket field; the authenticity check stayed unverified.
+- The actor created multiple duplicate documents with altered identifiers in the ticket field; the duplicate-check code stayed unverified.
+- The actor transferred the documents via a channel listing to a buyer account; the channel receipt sign-off stayed unverified.
+- The actor instructed the buyer to present first at the gate using the original ticket field; the gate-entry check stayed unverified.
+- The actor set refund and chargeback fields to null in the transaction record; the reversal sign-off stayed unverified.
+- The actor removed identity linkage fields from the account document; the identity verification check stayed unverified.
+
+3) Materials/access observed: One valid ticket document, duplicate documents with altered identifiers, buyer account, channel listing, gate system, transaction record with nullified refund/chargeback fields, account document with removed identity linkage.
+
+4) Indicators & artifacts: Multiple tickets with near-identical fields but different identifiers; buyer account with no prior transaction history; channel listing timestamps matching the duplicate creation; gate logs showing the original ticket scanned before duplicates; transaction record with explicitly nulled reversal fields; account document with identity fields blanked post-transaction.

@@ -1,0 +1,9 @@
+Debrief DB-021
+1) The exercise environment was configured with a controlled airspace simulator, a fleet of test drones on predetermined delivery routes, and a full packet capture of all radio and navigation traffic.
+3) The actor transmitted spoofed position and heading data to the drones' navigation receivers, causing them to diverge from their assigned routes and land at a pre-designated recovery zone.
+2) Observers stationed at the perimeter recorded the drones' deviation and landing using time-stamped video and GPS track logs.
+4) The actor shaped the emitted interference to mimic characteristics of common signal degradation, so the drones' fault reports logged it as a routine signal loss rather than an intrusion event.
+5) Network monitoring captured the spoofed packets in the exercise's radio capture; the log shows the packets carrying valid-format payloads but inconsistent with the legitimate navigation beacon schedule.
+6) The actor's workstation telemetry was recorded, including the radio control app sessions and the sequence of commands issued to alter the drones' waypoints during the window of the deviation.
+7) Post-exercise analysis compared the drone fleet's post-landing state with the exercise's incident ticket, confirming the "normal signal problem" classification was triggered by the crafted signal rather than by actual environmental interference.
+8) The exercise log, packet captures, video, and workstation telemetry were sealed as evidence for the debrief record.

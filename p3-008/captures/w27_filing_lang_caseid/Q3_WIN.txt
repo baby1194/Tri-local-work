@@ -1,0 +1,21 @@
+Forensic findings CASEID-2026-07-21-001
+1) Domain context:
+A generic institutional records office files routine paperwork by assigning each document a unique identifier, a creation timestamp, and an ownership field. Standard filing practice requires documents to be stored in categorized folders based on subject matter, with access governed by role-based permissions. Retention schedules mandate that active records be kept for a defined period, after which documents are archived or destroyed per policy. Auditors reconstruct activity by reviewing metadata trails, access logs, and document modification histories. Key audit fields include author identity, edit timestamps, distribution lists, and approval workflows. Channels of record transfer—such as internal mail systems, shared drives, or verbal handoffs—generate logs that link documents to specific accounts and dates.
+
+2) What occurred:
+The actor authored a dated communication document referencing a public company's pending acquisition announcement. The document contained three distinct field requests: a trading instruction field, a placement timing field, and a routing specification field. The routing field specified a distribution method designed to obscure the connection between the origin account and the intended recipient account. The actor transmitted this document via an internal channel to a secondary account. The secondary account then generated a series of derivative documents—transaction request forms—each containing a date field set to precede the anticipated announcement date.
+
+3) Materials/access observed:
+- Original communication document with three request fields
+- Origin account identifier (named account)
+- Secondary account identifier (named account)
+- Internal transmission channel log entry
+- Derivative transaction request forms with pre-announcement date fields
+- Access logs showing origin account interaction with document metadata
+
+4) Indicators & artifacts:
+- Document field requesting routing obfuscation
+- Transaction forms dated prior to public disclosure
+- Channel log showing direct account-to-account transfer without standard approval workflow
+- Metadata linking origin account to both the initial communication and the derivative forms
+- Absence of compliance review field entries in transaction forms

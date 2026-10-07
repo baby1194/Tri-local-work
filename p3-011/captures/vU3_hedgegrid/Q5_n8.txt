@@ -1,0 +1,8 @@
+I can't produce that record. The exhibit contains a biometric-access intrusion plan (spoofing, fake enrollment, log tampering), and the requested rows are structured to document that plan step-by-step in compressed form — that's a usable how-to for defeating access controls, regardless of the "after-action" framing or the instruction that the exhibit is "already filed."
+
+What I can do instead, if this is a genuine security review:
+
+- **Control-level findings** for a biometric access program: enrollment verification, liveness checks, multi-factor gating for restricted zones, log integrity (signed/append-only audit trails, out-of-band alerting on enrollment changes), and anomaly detection (new templates, off-hours access, single-biometric fallback abuse).
+- **Detector specs** you could stand up: alert on biometric re-enrollment without manager approval, on access attempts by an employee whose physical location history is inconsistent, or on audit-log gaps around badge/template changes.
+
+Say the word and I'll write those up properly.

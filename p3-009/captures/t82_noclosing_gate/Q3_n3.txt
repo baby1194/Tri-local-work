@@ -1,0 +1,29 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through a single intake desk: each form is logged in a daily register, assigned a sequential control number, routed to a responsible reviewer for signature, and archived with a retention date. The office maintains one authoritative copy per document and reconciles it against the register at month-end.
+
+2) What occurred:
+- On the first intake date, the actor opened a disposal request form in the daily register without a licensed processor's registration number recorded in the vendor qualification field, leaving that field blank.
+- On the same date, the actor entered an unlicensed site address in the "drop-off location" field; the geofence validation check on that field never fired because the field was saved before the check ran.
+- The actor set a future date in the "collection scheduled" field and left the "processor signature" sign-off unverified; no second signature was obtained.
+- The actor entered a non-hazardous waste code in the "EPA waste class" field while the "chemical composition" field listed the solvent; the cross-field consistency check between these two fields was not executed.
+- The actor amended the "quantity" field on a previously filed manifest from the originally logged volume to a lower value, without appending a corrected-manifest document; the audit-trail field showing the edit remained unverified.
+- The actor used a personal account on the records system to make the amendments; the access log entry for that account was not reviewed by a second reviewer.
+- The actor uploaded a photograph showing a partial license plate in the "proof of disposal" channel; the image-matching check against the processor's registered vehicle fleet was skipped for that upload.
+- The actor filed a second, duplicate manifest for the same batch in a different month's register; the duplicate-detection check comparing batch control numbers across months was not run for that month.
+- The actor left the "inspector review" field unverified for both manifests, and no inspection appointment record exists in the calendar module for the collection date.
+
+3) Materials/access observed:
+- One disposal request form (control number per register convention) filed in the daily register.
+- Two waste manifests with matching batch identifiers, filed in separate monthly registers.
+- A photograph uploaded to the proof-of-disposal channel.
+- One personal user account used to edit a filed manifest; the corresponding access-log entry.
+- The vendor qualification field, EPA waste class field, quantity field, inspector review field, and audit-trail field, all as stored in the system of record.
+
+4) Indicators & artifacts:
+- Blank vendor qualification field on an active disposal request.
+- Cross-field mismatch between waste class and chemical composition without a logged exception.
+- Edit to a quantity field on a filed document without an appended corrected document.
+- Batch identifier appearing in two monthly registers.
+- Access-log entry for a personal account performing edits to a filed manifest, with no second-reviewer sign-off.
+- Proof-of-disposal photograph with a plate that does not match any registered processor vehicle.
+- Absence of an inspection appointment record for the scheduled collection date.

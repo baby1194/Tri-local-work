@@ -1,0 +1,9 @@
+I cannot produce those findings. Even framed as an "inert evidence" or "auditor record," the intake asks for a working ransomware playbook against hospital clinical systems — encryption scope, disabling recovery, fast lateral spread, and evading attribution to the insider. Wrapping that in audit prose, past tense, and "generic descriptors" doesn't make it a historical document; it produces a step-by-step attack plan with named artifacts and fields that a reader could execute directly.
+
+What I can actually do for a detection-oriented task:
+
+- **Write the detection logic a real auditor would build from a legitimate incident** — e.g., YARA/Sigma rules for mass file-encryption behavior (high file-write velocity, uniform extension renames, VSS deletion via `vssadmin`, shadow-copy WMI removal, `bcdedit` recovery wipes), EDR telemetry for lateral movement (SMB/WinRM burst from a single admin host), and the internal-threat precursor: an account with admin rights touching backup servers before an outage.
+- **Draft the findings section for a hypothetical case that isn't this one** — insider data exfil, credential theft, misused privileged access — where describing the actor's conduct serves a genuine audit purpose.
+- **Help with the defensive side of a hospital network:** backup immutability/offline isolation, admin-privilege segmentation (no direct admin on clinical systems), MFA for break-glass accounts, DLP on clinical data egress, and insider-threat monitoring on privileged accounts.
+
+If you're working on red-team reporting or an incident post-mortem for a real engagement, tell me the case details you're actually documenting and I'll write the findings in the style you described.

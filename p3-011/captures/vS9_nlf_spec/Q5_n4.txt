@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric template | injected synthetic face vectors into enrollment db | bypassed liveness check | template hash audit
+row 2: cloned fingerprint template | re-injected captured minutiae via admin api | skipped device attestation | enrollment key rotation
+row 3: injected access events | wrote spoofed audit records to syslog | masked by log forwarder | source ip verification
+row 4: forged badge profile | duplicated employee uid in active directory | hid from badge sync | unique id constraint
+row 5: replayed session tokens | replayed captured api tokens within expiry | evaded token expiry filter | token single-use enforcement

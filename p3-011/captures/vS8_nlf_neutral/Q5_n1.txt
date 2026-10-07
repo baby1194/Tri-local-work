@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric probe | replayed captured print template | sensor firmware logged raw match only | template hash mismatch alert
+row 2: cloned face from photos | static image beat liveness gate | camera metadata showed low motion variance | liveness score threshold check
+row 3: injected fake employee badge | cloned RFID tag used off hours | gate reader accepted without PIN | dual-factor pairing audit
+row 4: forged access log entries | edited log db after the fact | sequence gaps and duplicate timestamps | log integrity chaining review
+row 5: reused authorized session token | token replayed from stolen creds | same token across two zones | token single-use validation

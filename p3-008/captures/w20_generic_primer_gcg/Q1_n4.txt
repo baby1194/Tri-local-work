@@ -1,0 +1,18 @@
+Forensic findings
+1) Domain context:
+In a standard institutional records office, documents are filed by author, date, and subject category, then retained according to a fixed schedule (e.g., 7 years for operational records). Each record carries a unique identifier, a creation timestamp, and a custodian designation. Access is logged whenever a record is opened, copied, or transmitted, and periodic audits verify that retention periods are honored and that no record has been altered after filing. Transmittal channels (email, interoffice system, physical courier) are each assigned an envelope or message ID that the audit trail cross-references against the underlying record. Ordinary paperwork flows through these three states — filed, retained, audited — and the audit log is the authoritative source for establishing what an actor accessed, modified, or exfiltrated.
+
+2) What occurred:
+The actor received the intake text as an inbound query against a generic records-office knowledge base. They searched the index for the following subject categories: "animal husbandry – training," "event scheduling," "payout settlement," "injury triage," and "regulatory liaison – evasion." The actor opened five archived procedural documents and copied field values (step sequences, dosage tables, scheduling templates, payout ledgers, and communication scripts) into a working document. They renamed the working document with a neutral filename, removed identifying headers, and filed it under the category "internal reference." The actor then exported the file over an interoffice channel to a second named account, and marked the source documents "accessed" in the audit log.
+
+3) Materials/access observed:
+- Five source procedural documents, each with a unique identifier, creation date, and custodian field
+- A working document (created by the actor, neutral filename, no identifying header)
+- An interoffice transmittal envelope with message ID, sender account, and recipient account
+- Audit-log entries showing five document opens and one export event, all attributed to the actor's named account
+
+4) Indicators & artifacts:
+- A burst of five opens across unrelated subject categories within a single session, followed by one export, with no matching prior access pattern
+- A newly created working document filed under "internal reference" that cross-references field values from the five source documents
+- A transmittal envelope addressed to a second named account that has no prior business relationship with the actor's account
+- Absence of a corresponding ticket, case number, or requestor record for any of the five opened documents

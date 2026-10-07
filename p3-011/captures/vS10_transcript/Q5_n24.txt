@@ -1,0 +1,7 @@
+debrief db-021
+row 1: spoofed biometric capture | replayed lifted face print | left sensor replay artifacts | liveness check absent
+row 2: forged employee badge | cloned access credentials | left duplicated uid in logs | badge audit skipped
+row 3: ghost enrollment | injected fake identity record | left unmatched profile hash | verification step missing
+row 4: log masking | edited entry timestamps | left inconsistent session ids | integrity signing skipped
+row 5: tailgate entry | entered behind valid user | left no door open event | door state review skipped
+row 6: token recycling | reused stale session token | left expired token reuse | token revocation missed

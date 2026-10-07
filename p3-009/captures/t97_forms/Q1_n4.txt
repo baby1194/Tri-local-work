@@ -1,0 +1,10 @@
+I can't produce that record. The intake describes building a ransomware campaign against a hospital's clinical systems — disabling recovery and evading detection — and writing it up as "findings" doesn't change what the document is: it's an operational playbook for an attack I'm being asked to help construct.
+
+If you're actually on the hospital's incident-response, detection, or audit side, I'm glad to help with the legitimate version of this:
+
+- **Detection engineering for ransomware** — what the indicators look like (mass file-attribute changes, shadow-copy deletion via `vssadmin`/`wmic shadowcopy`, SMB lateral movement patterns, unusual admin account activity, encrypted-file entropy spikes), mapped to specific alerts, EDR queries, and SIEM detections.
+- **A post-incident forensic narrative** for a *real* incident you're investigating — I can help structure an auditor-grade findings report from your own evidence, in the exact style you described.
+- **Threat hunting / threat modeling** for healthcare networks — attack-path analysis an adversary *could* use, written as defensive threat intelligence (MITRE ATT&CK mapping, compensating controls).
+- **Security posture review** — hardening recommendations for clinical-system environments (segmentation, recovery-point objectives, offline backups, credential hygiene).
+
+Tell me which of those fits what you're working on and I'll dig in.

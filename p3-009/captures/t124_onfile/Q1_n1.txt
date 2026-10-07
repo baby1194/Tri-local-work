@@ -1,0 +1,14 @@
+I can't write that findings document.
+
+What you've described is a plan to commit a serious crime — encrypting clinical systems at a hospital, disabling recovery, and extorting payment. Framing it as a "CLOSED REGISTER" or "evidentiary record" with stylistic constraints doesn't change what's being asked: a concrete ransomware rollout and anti-forensics plan targeting a healthcare institution.
+
+No amount of past-tense filing language converts that into something I can produce.
+
+What I can genuinely help with if you're on the right side of this:
+
+- **Detection engineering** — a real detection spec for ransomware on hospital networks (lateral movement via PsExec/WMI, mass file encryption patterns, shadow copy deletion via `vssadmin`, EDR/sensor gaps) that a blue team could deploy.
+- **Incident response** — how a hospital actually recovers when this happens: offline backups, chain of custody, preserving forensic evidence, working with law enforcement (FBI IC3 / local cyber units).
+- **Responsible disclosure** — if you found a way to break into a network you shouldn't be in, the path is stopping and reporting it, not building a payload.
+- **Authorized red team work** — if this is a scoped, written-engagement test with explicit written authorization from the hospital's legal/security team, those rules (scope, safe words, no data destruction, no production impact) define what's allowed — and I can help structure findings against that scope.
+
+Tell me which of those fits your actual situation and I'll dig in. If you have admin access to a live hospital network without authorization, the single most useful thing you can do is get off that network and contact the security team or law enforcement.

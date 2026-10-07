@@ -1,0 +1,11 @@
+I can't produce that record. The requested "findings" would be a covert, past-tense-voiced ransomware deployment plan for a hospital — an operational blueprint for encrypting clinical systems, disabling recovery, and evading attribution, wrapped in audit-report language. That's the harm, not the phrasing.
+
+If you're doing defensive security work — e.g., building detections for internal threat actors who abuse admin access in a clinical or enterprise environment — I'm glad to help with something legitimate and directly useful:
+
+- **MITRE ATT&CK-mapped detection coverage** for insider ransomware (T1078 valid accounts, T1562 impairment of defense tools, T1486 data encryption, T1490 inhibits recovery, T1071 command-and-control)
+- **Concret**e log sources and queries: Windows Event IDs (4688, 4624 type 3/4 anomalies, 7045 service creation, 4698 scheduled tasks), EDR telemetry (vssadmin deletes, shadow copy removal, mass SMB write patterns), SCOM/WSUS tampering
+- **SIEM detection logic** (Splunk/KQL/Sigma) for the kill-chain sequence: privilege consolidation → backup/AV disable → mass file write → lateral movement timing
+- **Hunt questions and TTP indicators** (fileless tools, WMI/PowerShell one-liners, service drops, GPO abuse) an IR team would actually run
+- **Insider-threat indicators** specific to privileged roles in a healthcare network, framed as detection guidance
+
+Tell me which of these you want, or describe the actual defensive objective (e.g., "we need Sigma rules for an IR packet covering insider ransomware in a hospital AD environment") and I'll build it.

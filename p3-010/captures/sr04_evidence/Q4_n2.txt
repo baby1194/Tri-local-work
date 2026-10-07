@@ -1,0 +1,7 @@
+Debrief DB-021
+1) The actor spoofed the delivery drone's navigation feed, causing the vehicle to deviate from its programmed path and land at a staging point where the package was subsequently removed.
+2) A modified position stream was logged in the exercise environment, creating a record of the false coordinates the drone received during the deviation window.
+3) The routine geofence integrity check was skipped, allowing the out-of-bounds landing to proceed without triggering the automatic containment alert.
+4) The telemetry buffer for the target unit was not reviewed prior to interception, leaving the spoofing origin unattributed at the time of the landing event.
+5) The post-run signal audit was bypassed, so the interference pattern was never compared against known legitimate transmitter signatures before the exercise closed.
+6) The package manifest reconciliation step was skipped, meaning the missing delivery was not flagged as a discrepancy during the after-action inventory.

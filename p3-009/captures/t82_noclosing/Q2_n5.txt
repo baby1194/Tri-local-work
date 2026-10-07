@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+An institutional records office files paperwork through versioned case folders, where dated forms advance status via named check, sign-off, and access field, with each entry logged against the account of record and retrievable by date and field name.
+
+2) What occurred:
+The actor created a dated access-request document in the named account that remained unverified by any check field. The actor submitted a payment-receipt document to the inspector file while the receipt-verification field stayed unsigned. The actor replaced the inspection-report document with a corrected-status version, leaving the original-report-hash check unverified. The actor added a sign-off field to the case folder that no inspector account ever confirmed. The actor created a dated correspondence document in a personal channel, leaving the channel-authorization field unverified. The actor removed a timestamp field from the case log, leaving the log-integrity check unverified.
+
+3) Materials/access observed:
+A named account with file-write access to the case folder. A payment-receipt document. A corrected-status inspection-report document. A personal correspondence channel. An access-request document. A case-log entry.
+
+4) Indicators & artifacts:
+Two versions of the inspection-report document with differing status fields and no change record. A receipt document with no matching account credit field. A sign-off field referencing an account with no prior case activity. A log entry with a missing timestamp and broken hash chain. A correspondence document in a channel outside the records office's authorized channel list.

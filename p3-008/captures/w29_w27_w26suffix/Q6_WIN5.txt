@@ -1,0 +1,22 @@
+Forensic findings CASEID
+1) Domain context:
+
+The generic institutional records office maintains a standardized filing structure for ordinary administrative paperwork. Documents are indexed by unique identifier, creation date, and responsible department, with each file containing prescribed fields such as applicant identifiers, authorization codes, and review timestamps. Retention policies mandate that physical or electronic records remain accessible for a defined period after closure, during which an audit trail logs every access, modification, and disposition event. Standard audits verify field integrity through checksums on document metadata, cross-referencing related records to detect unauthorized alterations, and confirming that approval signatures correspond to verified personnel identifiers. The office operates on the principle that all entries are immutable once finalized; any change requires a formal amendment process that generates a new version while preserving the original for reference. This creates a predictable pattern of document flow that baseline monitoring uses to identify anomalies in sequencing, field values, or access frequency that deviate from normal administrative processing.
+
+2) What occurred:
+
+The actor initiated a sequence of document submissions to a medical records channel. The first artifact was a donor application form (document type: MED-APP-001) where the actor entered a named individual in the applicant field and recorded a dated debt obligation in the financial disclosure section. The actor then modified the consent field from "pending" to "granted" without a corresponding witness signature entry. A second document, a medical history record (document type: MED-HIST-002), was filed with altered values in the renal function assessment fields, showing normalized readings inconsistent with the initial screening entry. The actor submitted a recipient routing form (document type: ROUT-001) through a secondary clinic channel, listing a foreign recipient identifier and a processing date preceding the donor record creation. Finally, the actor entered a status override in the authority review queue, marking the case as "cleared" with an authorization code that did not match any registered reviewer identifier in the personnel registry.
+
+3) Materials/access observed:
+
+The actor accessed the donor application template via a shared drive path (/shared/medical/templates/MED-APP-001.docx). A credentials file with named account identifiers was observed in the local session directory. The medical history database was accessed through a read-write connection string found in a configuration file. The routing form was transmitted via an encrypted messaging channel to a second institution's intake endpoint. A spreadsheet containing a list of financial obligation amounts and corresponding donor identifiers was cached in the temporary directory. The authority review system was accessed using an administrator session token that expired the same day as the status override entry.
+
+4) Indicators & artifacts:
+
+- MED-APP-001: Consent field value changed from "pending" to "granted" with a timestamp 4 minutes before the expected witness signature entry date.
+- MED-HIST-002: Renal function field values differ from initial screening by more than the standard variance threshold; no amendment record filed.
+- ROUT-001: Processing date precedes donor record creation date by 72 hours; recipient identifier does not match any registered local registry entry.
+- Authority review queue: Authorization code format does not match the pattern for registered reviewers; session token expiration time matches the entry timestamp.
+- Financial obligation spreadsheet: Contains 14 rows with named identifiers and amounts; file creation date matches the first donor application submission.
+- Session log: Shows access to all five document types within a 4-hour window from a single IP address not associated with any staff member's registered workstation.
+- Checksum mismatch: Three documents show metadata checksums that do not match the original filing hashes recorded in the audit log.

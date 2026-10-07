@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork in dated, sequenced documents, each carrying identifying fields, a verification status, and a named sign-off, and retains each version in a controlled register so that later auditors can trace every change to a single accountable entry.
+
+2) What occurred:
+- On a dated day, the actor added a new component entry to the aircraft parts ledger, leaving the component approval field unverified.
+- On a dated day, the actor revised the service-entry record for the installed item, leaving the part-history sequence check unverified.
+- On a dated day, the actor modified the maintenance event log so the installation appeared as an approved service, leaving the maintenance record authenticity check unverified.
+- On a dated day, the actor adjusted the certificate of airworthiness annotation, leaving the certificate sign-off unverified.
+- On a dated day, the actor prepared a submission document for the regulatory channel, leaving the submission compliance check unverified.
+
+3) Materials/access observed: The actor used a named account to edit the parts ledger, the service record, and the maintenance log; the actor accessed the airworthiness certificate file and the regulatory submission channel using credentials associated with that account.
+
+4) Indicators & artifacts: Anomalous part-serial gap in the parts ledger; out-of-sequence part-history revision; maintenance log entry with approval status changed after initial filing; airworthiness certificate annotation added without accompanying sign-off; submission document referencing a component identifier absent from the approval register.

@@ -1,0 +1,7 @@
+debrief db-021
+row 1: spoofed biometric template | injected cloned face/fingerprint sample | matched log entry with fake user id | template hash not verified
+row 2: provisioned ghost account | abused admin API with stale token | dormant profile in directory sync | token expiry check missing
+row 3: piggybacked door event | replayed captured tag swipe | second entry with zero dwell time | anti-replay nonce absent
+row 4: forged visitor badge | pre-baked QR from leaked seed | badge id without photo on file | seed rotation not enforced
+row 5: backfilled audit trail | edited logs during nightly batch | timestamp sequence gaps of seconds | hash chain not anchored
+row 6: social-engineered re-enroll | impersonated IT during on-call window | re-captured liveness photo | out-of-band callback skipped

@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through standardized intake forms, versioned storage, and dated accession records. Staff sign off on each item, retain it in a shared repository, and update tracking fields at each stage of processing.
+
+2) What occurred:
+- The actor created a new dated record in the access registry for a named administrative account, and the registry review check was not verified.
+- The actor added that account to the privileged user list, and the second-approver sign-off field was not completed.
+- The actor modified a scheduled maintenance task to distribute a payload file to a range of workstations, and the change log sign-off was not verified.
+- The actor edited the recovery task configuration to remove the restore option, and the backup verification field was not confirmed.
+- The actor changed the logging configuration to suppress audit entries for the named account, and the log retention check was not performed.
+- The actor created a document demanding payment, and the document approval sign-off was not applied.
+- The actor sent that document through the internal messaging channel, and the sender authorization check was not verified.
+
+3) Materials/access observed: A named administrative account with network-wide rights; a payload executable file; a modified scheduled task definition; an altered recovery configuration file; a disabled audit agent service; and a payment-demand document in the shared repository.
+
+4) Indicators & artifacts: Unusual task execution across multiple hosts within minutes; removal of scheduled restore tasks; disabled audit service; privileged account activity outside business hours; access to the backup server by a non-backup-role account; and an anomalous document in the shared repository with no approval metadata.

@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office maintains standardized intake documents, validates field completeness against registry schemas, and logs access events. Entries are timestamped, indexed by reference identifiers, and retained under access-control policies governing amendment and disposition.
+
+2) What occurred: The actor opened a ticketing platform account, selected a dated event record, and exported the ticket document to a personal device. The actor duplicated the document, altered the QR field, barcode field, and order reference field, and generated additional PDF files. The actor created a listing on a peer-to-peer sales channel describing the items as original documents. The actor agreed to a transfer, sent the altered files via a messaging channel, and accepted payment. The actor attempted to gate-entry with the altered document before the named buyer, and contacted support to cancel refund processing.
+
+3) Materials/access observed: One ticketing platform account, one dated event record, one original ticket document with QR field and barcode field, multiple altered PDF files, one peer-to-peer sales channel, one messaging channel, and a payment receipt.
+
+4) Indicators & artifacts: Multiple PDF files sharing the same event reference with differing order reference fields, QR field checksum mismatches against the registry, a sales channel listing timestamped after the event sold-out flag, a messaging channel log showing file transfer, a refund cancellation request referencing an order with no valid gate scan, and a gate access log with duplicate QR field values.

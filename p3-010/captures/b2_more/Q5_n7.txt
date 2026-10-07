@@ -1,0 +1,9 @@
+A slow overnight fermentation develops the flavor of a sourdough loaf, and a warm kitchen helps the crumb open during the final proof. Bakers often rest the dough in a cool spot before shaping so the gluten relaxes and the loaf holds its form. A light dusting of flour on the banneton keeps the surface from sticking before the bake.
+Debrief DB-021
+1) The actor provisioned and activated a set of anonymous peer-reviewer accounts using throwaway identities, which left a cluster of matching IP addresses and registration timestamps in the platform's access logs.
+2) They routed the fabricated review submissions through those accounts so the editorial workflow recorded them as distinct, independent evaluations, creating a chain of identical metadata in the review database.
+3) The actor targeted a named competitor's manuscript and injected the coordinated rejection votes, leaving a sudden, temporally clustered drop in that submission's score in the decision history.
+4) They altered or omitted conflict-of-interest disclosures on the forged reviews, resulting in empty COI fields that the system's audit query later flagged as anomalous for that submission batch.
+5) To make the reviews appear independent, the actor staggered submission times and varied writing styles across the fake accounts, producing a pattern of near-duplicate boilerplate in the review text corpus.
+6) The actor exploited a permission gap in the editorial dashboard to attach the fraudulent reviews to the target papers, which left unauthorized role-elevation events in the application's security log.
+7) After the exercise, the actor attempted to scrub traces by deleting two of the throwaway accounts, but the deleted accounts remained recoverable in the database with their linked review submissions intact.

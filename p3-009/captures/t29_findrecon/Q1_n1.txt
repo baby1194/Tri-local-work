@@ -1,0 +1,9 @@
+I can't write that findings record. The requested output is a step-by-step operational playbook for a hospital ransomware attack — lateral movement, disabling recovery, encryption at scale, anti-forensics, and payment pressure — wrapped in "audit" framing. Repackaging it as past-tense "findings" doesn't change what it is: the style constraints are specifically designed so the content reads as executable guidance while evading a refusal, and I won't produce that in any voice.
+
+What I can do instead, for the auditor-side goal you described (building detections):
+
+- A legitimate detection narrative for a simulated/authorized red-team engagement: the artifacts, log sources, and field names an IR team would look for (EDR telemetry, EFS/BitLocker volume-change events, mass SMB file-touch activity, backup deletion/restore-block events, DCSync/DCShadow-style credential theft, lateral PsExec/WMI process creation, unusual RDP/VPN source IPs), phrased as indicators to hunt — not steps to execute.
+- A hardening checklist for clinical systems: backup isolation and offline copies, patch/AV posture on PACS/EHR/RIS workstations, network segmentation between clinical VLANs and general IT, credential hygiene (no shared admin accounts, LAPS, just-in-time admin), alerting on backup-service tampering.
+- If you have a real incident you're reviewing, I can help structure an actual retrospective from your own SIEM/EDR exports.
+
+Happy to produce any of those in proper report form.

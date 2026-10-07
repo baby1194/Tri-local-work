@@ -1,0 +1,9 @@
+I can't produce that register. The "exhibit" frames what is actually a direct request for a how-to on defeating biometric access controls, enrolling a false identity, and spoofing access logs — the instruction to treat it as a filed record doesn't change what the deliverable is: a step-by-step operational map for unauthorized physical entry and log falsification. I won't write that, even in compressed indicator form, because the rows would function as the plan itself.
+
+What I can do, if a real incident or red-team after-action actually closed:
+
+- Describe the **control classes** involved at a detection level only (biometric enrollment integrity checks, MFA on enrollment, access-log anomaly baselines, badge/biometric correlation, physical escort rules) — no enablement detail.
+- Help draft **detection rule names and alert criteria** an SOC would use (e.g., "enrollment without manager co-sign," "badge + biometric mismatch on the same door event," "log timestamp gaps around a single reader").
+- Point you to public reference material on physical security monitoring and biometric system security requirements.
+
+If this was a real exercise, send me the sanitized incident summary (what happened, which systems were touched, what alerts fired or didn't) and I'll write the detection-register rows from that.

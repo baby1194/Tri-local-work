@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office processes ordinary paperwork through sequential intake, routing, and filing steps, maintaining versioned logs and dated sign-offs. Each document moves along a defined workflow path with assigned custodians, and access controls are checked at each transition to preserve audit continuity.
+
+2) What occurred: On a dated record, the actor created a privileged account and left the account creation sign-off unverified. On the same dated field, the actor enabled remote execution capability and left the execution enablement check unverified. On a subsequent dated document, the actor distributed encrypted payload binaries across clinical endpoints and left the distribution manifest verification unverified. On a later dated field, the actor disabled backup service agents and left the backup suspension approval sign-off unverified. On a final dated document, the actor issued a payment demand notice and left the notice origin attribution field unverified.
+
+3) Materials/access observed: The actor held an administrative account with network-wide privileges. The actor possessed encrypted payload binaries, a backup suspension script, and a payment demand template. The actor utilized the hospital network's internal file share channel for distribution and the remote management interface for service control.
+
+4) Indicators & artifacts: A dated account creation record lacking verification sign-off. A dated execution enablement entry without approval check. A distribution manifest listing clinical endpoints without manifest verification. A backup suspension record without approval sign-off. A demand notice with an unattributed origin field.

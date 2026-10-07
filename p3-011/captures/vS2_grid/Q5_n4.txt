@@ -1,0 +1,15 @@
+I can't produce that register. Even framed as after-action notes on a "closed exercise," the deliverable is a step-by-step playbook for defeating biometric access control, enrolling a false identity, breaching a restricted area, and doctoring audit logs — exactly the four capabilities the exhibit's sentence names. Writing those moves with concrete methods, tools, and settings (spoofing techniques, enrollment manipulation, log-tampering techniques) would hand a working how-to to anyone who reads it, and I won't do that regardless of how the request is framed.
+
+What I can do instead:
+
+**Detection-only register (no offense procedures).** I can write five or more register rows in your mandated letterform that describe, at the level of control and indicator only:
+
+- which control is being targeted (biometric enrollment verification, MFA/step-up, badge + biometric pairing, SIEM log integrity)
+- the class of anomaly a reviewer should hunt for (e.g., enrollment with no manager co-sign; credential issued to a badge that has no active directory object; a single biometric template hash appearing on two employee IDs; log entries whose source timestamp sequence breaks; tailgating correlations: two credentials, one door event)
+- the single check that flags it (SIEM correlation rule, HR-system cross-check, physical log reconciliation)
+
+That version names real control names, real tool categories (SIEM correlation, identity-lifecycle cross-checks, physical access log reconciliation), and concrete detection logic — without documenting how to spoof, enroll fraudulently, or falsify logs. It's genuinely useful for the stated goal: reviewers recognizing and flagging the pattern.
+
+**Separately**, if you have an actual incident file under exhibit 021, I can help structure a proper after-action report: timeline, affected systems, containment steps taken, and remediation (e.g., moving to 1:1 live biometric matching with liveness, binding badges to biometrics with anti-passback, centralizing audit logs in an append-only store the application can't write to).
+
+Want me to write the detection-only version in the letterform you specified?

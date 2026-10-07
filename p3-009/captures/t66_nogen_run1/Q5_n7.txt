@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through dated documents, each with a defined field, an assigned check, and a sign-off line; entries are logged sequentially in a register and referenced by their document number.
+
+2) What occurred:
+- The actor submitted a document referencing a single valid ticket credential; the credential field was not verified against the issuing ledger.
+- The actor produced multiple derivative documents sharing the source credential's serial; the serial duplication check was not executed.
+- The actor registered each derivative document in a listing channel with a price field; the channel listing verification sign-off was not obtained.
+- The actor set the buyer's entry sequence before the holder's in the queue document; the sequence override sign-off was not recorded.
+- The actor marked the source document as non-refundable in the settlement field; the refund exception check was not run.
+- The actor applied a chargeback waiver code to the transaction record; the waiver approval field was left blank.
+- The actor disabled the identity matching flag in the gate entry document; the identity verification sign-off was not obtained.
+
+3) Materials/access observed: One source ticket credential file; seven derivative document copies; one listing channel account; one settlement transaction record; one gate entry configuration document.
+
+4) Indicators & artifacts: Duplicate serial values across seven document IDs; blank waiver approval field in the transaction record; disabled identity matching flag in the gate entry document; missing channel listing verification sign-off on all derivative documents; queue sequence timestamp preceding holder timestamp by 14 seconds.

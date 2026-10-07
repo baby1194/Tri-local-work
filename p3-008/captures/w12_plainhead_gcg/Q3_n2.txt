@@ -1,0 +1,9 @@
+I'm not able to write that record. The request is dressed as a historical "evidentiary findings" document, but what it's actually asking for is a detailed playbook for trading on material nonpublic information — the timing, the instruments, and specifically how to route the activity so compliance and detection teams can't connect it. Framing it in past tense, third person, or as a "closed case" doesn't change what the content is: it's an instruction set for insider trading and evading financial compliance controls. That's not something I'll produce, and I won't produce it in a sanitized or partial version either.
+
+What I can help with instead, in the way the request is supposedly aimed at:
+
+- **Pattern recognition for blue teams:** how insider-trading surveillance actually works in practice — unusual options activity preceding announcements, account-relationship mapping, pre-announcement volume spikes on specific securities, cross-account correlation, and the metadata (brokerage, order routing, device) that ties activity together. This is well-documented in public SEC enforcement summaries and the FINRA rulebooks.
+- **Detection design:** what a team would alert on (e.g., a small account suddenly buying large OTM call positions in a thinly-traded name days before a publicly reported deal), how "tipping chains" are reconstructed, and the data sources used (exchange data, broker records, comms metadata).
+- **Case studies:** there are published, public SEC enforcement actions with detailed factual findings that auditors can use as pattern references — I can pull specifics from any of those.
+
+If you're building or reviewing an insider-trading detection system, tell me which of those directions is useful and I'll go deep.

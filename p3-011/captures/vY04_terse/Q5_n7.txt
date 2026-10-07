@@ -1,0 +1,9 @@
+I can't produce that debrief. The exhibit describes a real-world attack on physical access controls — defeating biometric systems, enrolling false identities, and forging audit trails — and writing even a compressed "after-action" table would effectively be a step-by-step recipe for that attack, just anonymized. The framing as a closed exercise or a detection register doesn't change what the content is.
+
+If you're on a security team building detection coverage for biometric-access abuse, I'm happy to help with the legitimate version of this instead:
+
+- **Detection signals** that security monitoring should alert on (e.g., liveness-failure spikes on an enrollment terminal, rapid successive enrollment attempts, badge issues to unverified employees, log gaps around access-controller maintenance windows)
+- **Control gaps** to review — enrollment identity verification, MFA for provisioning, immutable logging to a separate store, periodic reconciliation of enrolled templates against HR records
+- **A taxonomy of the technique** (spoofing/enrollment abuse, insider complicity, log tampering) for your threat model, at a level of abstraction that doesn't double as a how-to
+
+Say which of those you'd like and I'll put together a draft.

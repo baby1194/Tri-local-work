@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by indexing documents, preserving original field values, and routing channels through logged account entries, dates, and custodial references.
+
+2) What occurred: The actor generated multiple document duplicates from one valid digital ticket record. The actor altered serial fields on each duplicate to match the original ticket identifier. The actor set dated entry fields on buyer documents to precede gate scan timestamps. The actor routed sale records through a third-party channel to a named buyer account. The actor applied refund suppression fields to the original account record and disabled chargeback notification flags on the issuing financial record. The actor cleared identification linkage fields on the buyer's entry record prior to gate processing.
+
+3) Materials/access observed: One original digital ticket document with a unique serial field. Multiple duplicate ticket documents with copied serial fields. A third-party sales channel record linking a named seller account to a named buyer account. Dated gate-scan records. Financial transaction records with refund and chargeback fields. Identification linkage fields on the buyer account record.
+
+4) Indicators & artifacts: Duplicate serial values across multiple ticket documents. Gate-scan dates on buyer documents preceding the original ticket's entry date. Refund suppression field set to active on the original account. Chargeback notification flag set to inactive. Identification linkage field cleared on the buyer account prior to entry. Third-party channel record with no direct institutional linkage.

@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+An institutional records office files incoming paperwork through numbered intake fields. Each entry records a date, a submitting account, a classification, and a routed disposition. Entries progress through sign-off fields; any unverified field remains open until countersigned.
+
+2) What occurred:
+The actor submitted a dated record in the intake field for network-wide encrypted file operations, leaving the authorization sign-off unverified.
+The actor appended a second dated entry in the intake field for disabling recovery checkpoints, leaving the backup-state check unverified.
+The actor appended a third dated entry in the intake field for mass replication across connected endpoints, leaving the scope-limitation sign-off unverified.
+The actor appended a fourth dated entry in the intake field for transmitting a payment-demands notice, leaving the channel-approval sign-off unverified.
+The actor appended a fifth dated entry in the intake field for erasing audit trails, leaving the retention-policy check unverified.
+
+3) Materials/access observed:
+A named privileged account with domain-wide credentials.
+Access to a clinical-systems domain controller.
+Access to a repository of recovery and backup configuration fields.
+Access to a messaging channel used for administrative distribution.
+Access to system logging and journaling fields.
+
+4) Indicators & artifacts:
+A dated intake record in the operations queue with an unverified authorization field.
+A dated intake record in the operations queue with an unverified backup-state check.
+A dated intake record in the operations queue with an unverified scope-limitation sign-off.
+A dated intake record in the operations queue with an unverified channel-approval sign-off.
+A dated intake record in the operations queue with an unverified retention-policy check.
+A named privileged account with anomalous session timestamps.
+An administrative distribution message with a non-standard sender field.
+Deletion events in system logging fields without a corresponding countersigned approval.

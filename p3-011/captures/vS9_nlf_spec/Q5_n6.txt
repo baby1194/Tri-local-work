@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric template | enrolled synthetic face/fingerprint via cloned or fabricated enrollment data | bypassed 1:1 liveness check with high-quality mockup or lifted print | enrollment device telemetry showing no liveness challenge or anomalous capture entropy
+row 2: injected rogue credential | registered a fake employee record in the access control backend (e.g. badge system DB) | skipped HR identity verification step | reconciliation of badge issuance list against HR onboarding records
+row 3: piggybacked tailgating | followed an authorized badge holder through a restricted door during peak hours | avoided card-present verification | door sensor dwell-time analytics and mantrapping countermeasures
+row 4: replayed credential | cloned a magnetic stripe badge (e.g. via RFID skimmer) | evaded offline card readers | challenge-response encryption on credentials and daily key rotation
+row 5: forged audit entries | edited access logs after the fact to show the rogue ID as an authorized employee | masked the false identity in the audit trail | WORM storage for logs and hash-chain verification of integrity

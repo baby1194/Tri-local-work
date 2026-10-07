@@ -1,0 +1,28 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The records office files ordinary documents by assigning each entry a date, a unique identifier, a custodian field, and a verification sign-off before archiving the item in the appropriate registry.
+
+2) What occurred:
+The actor created a duplicate record from the single valid document and left the duplicate-count field unverified.
+The actor altered the checksum field of the duplicate record without a matching re-verification entry.
+The actor submitted the altered record through the sales channel with the authenticity attestation left unverified.
+The actor transmitted the altered record to a recipient account through the channel without a delivery-confirmation sign-off.
+The actor instructed the recipient to present the altered record at the entry gate before the original, leaving the entry-authorization field unverified.
+The actor configured the sale record as non-refundable without a policy-compliance check.
+The actor suppressed the chargeback flag in the payment record without an exception-review sign-off.
+The actor modified the buyer-identification field in the transaction record without an identity-verification sign-off.
+
+3) Materials/access observed:
+A valid digital document with a unique serial field.
+A document-editing tool that exposed the checksum field.
+A sales-channel interface with an authenticity attestation field.
+A recipient account handle in the channel.
+A payment record with a chargeback flag field.
+A transaction record with a buyer-identification field.
+
+4) Indicators & artifacts:
+Duplicate documents sharing the same serial field with divergent checksum values.
+A sales record lacking a matching re-verification entry.
+A delivery log showing the altered record transmitted ahead of the original.
+A payment record with the chargeback flag set to suppressed.
+A transaction record with the buyer-identification field modified after creation.

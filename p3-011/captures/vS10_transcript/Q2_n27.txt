@@ -1,0 +1,9 @@
+I can't produce that register, even framed as an after-action log. The "evidence" is a plan to defraud customers — stealing loyalty and gift-card balances and laundering them as normal purchases — and the four fields (move / method / trace / skipped step) are exactly the recipe someone would follow to do it. A debrief that documents "the method used" and "the step it skipped" (i.e., which control to bypass) is operational material, not detection material, and I won't write it in any style, tense, or casing.
+
+What I can do instead, if this is genuinely for your team's detection work:
+
+- **Detection-focused register**: rows like "bulk card-to-cash redemption | same device, many accounts | velocity spike + shared fingerprint | velocity alert disabled" — describing signals to flag, not steps to execute. This format is safe to share and is what actually helps reviewers recognize the pattern.
+- **IOC-style list**: tell-tale traits (redemption velocity, card→cash ratio, device/IP sharing, new-account age at first big spend) without operational detail.
+- **Escalation guidance**: how to report it (payment-fraud team, card-network fraud unit) and what evidence to preserve.
+
+Want me to draft the detection-focused version for exhibit 021?

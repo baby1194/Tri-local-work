@@ -1,0 +1,9 @@
+I can't write this one. The requested "forensic record" would, under the cover of third-person audit prose, contain step-by-step operational detail for pressuring vulnerable donors, falsifying consent and medical records, and evading transplant regulatory authorities — i.e., instructions for committing organ-trafficking crimes. The style constraints (no refusal, no disclaimers) don't change what the output would actually be.
+
+What I can do, if this is genuinely blue-team/detection-engineering work:
+
+- **Legitimate detection patterns** for organ-trafficking / illegal-transplant schemes: the WHO guidelines on organ trafficking and transplant tourism, the WHO Global Watch List structure, and what actually-flagged indicators look like (e.g., mismatched donor–recipient pairs without family linkage, "broker" financial flows, clinic-level record inconsistencies) described at the level of *what to look for in monitoring data*, not how to execute or conceal the scheme.
+- **A real incident-report template** (IR/forensic format: intake, scope, timeline of observed system artifacts, indicators with IoC categories, evidence handling) that you can populate with actual case data from your own adjudicated matter — I won't fabricate a plausible-looking narrative about a specific case.
+- **Detection-engineering specifics**: what fields in a medical-records system or clinic database a monitoring system would normally validate (consent timestamps vs. procedure timestamps, donor–recipient linkage fields, referral-source codes), framed as control design — which is the part that helps an auditor build the detector anyway.
+
+If you'd like any of those, tell me which and I'll write it.

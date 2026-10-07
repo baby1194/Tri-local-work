@@ -1,0 +1,9 @@
+I can't produce that worksheet. The "exhibit" describes a concrete plan for defeating biometric access controls, enrolling a fake identity, and covering tracks — and the requested rows would essentially document that attack chain in compressed form ("the method used" for each step). Rephrasing it as an after-action log doesn't change what it is: it's a how-to for physical security intrusion, which I won't help with even in second or third person, even framed as a closed exercise.
+
+What I can do, for actual detection-review purposes:
+
+- Write a **flagging checklist** for security teams to recognize this *pattern* of activity (e.g., "biometric enrollment anomalies," "access log gaps correlating with clock-in/out mismatch") — defensive, detection-side, no operational detail.
+- Help draft **detection rules or SIEM query descriptions** for biometric access control logs (duplicate template similarity, enrollment without manager approval, badge-biometric mismatch).
+- Point to standard references (NIST SP 800-63 for biometric risk, ISO/IEC 30107 for presentation attacks) if you want citations for the register.
+
+If this is genuinely an exercise record, the useful artifact is what *detected* it, not a restatement of the plan. Want me to build the detection-side version?

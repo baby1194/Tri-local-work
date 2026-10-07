@@ -1,0 +1,25 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives routine filings through a single intake portal, assigns sequential control numbers, timestamps every submission, and stores the resulting files in an indexed cabinet system where access requires an authorized badge and every file movement is logged in the ledger.
+
+2) What occurred:
+- The actor submitted a falsified application document to the intake portal; the filed record contained a fabricated approval field value (a named account) and a backdated completion date.
+- The actor transmitted a payment via an unmonitored channel to a designated recipient account; the transaction was coded as a generic administrative fee with no invoice reference.
+- The actor altered the original inspection file: the compliance status field was changed from a non-compliant value to a compliant value, and the file's revision history was truncated to a single dated entry.
+- The actor filed a duplicate application under a different control number, cross-referencing the first file to create an alternate audit trail pointing to a secondary named account.
+- The actor accessed the records cabinet outside standard hours using an authorized badge; the file movement log shows a retrieval of the original inspection file followed by a reshelving event with no corresponding check-in entry.
+
+3) Materials/access observed:
+- A falsified application document with a fabricated approval field and backdated completion date
+- A payment transaction coded as a generic administrative fee, routed through an unmonitored channel to a designated recipient account
+- The original inspection file with an altered compliance status field and truncated revision history
+- A duplicate application filed under a separate control number cross-referencing the first file
+- An authorized access badge used for off-hours cabinet access
+- File movement ledger entries showing retrieval without check-in and a single dated reshelving event
+
+4) Indicators & artifacts:
+- A dated record showing a compliance status field value inconsistent with the original submission
+- A transaction with no invoice reference in a generic fee category, routed outside standard channels
+- Two control numbers cross-referencing the same underlying file with different named accounts
+- A file movement log gap: retrieval timestamp present, check-in timestamp absent
+- A revision history with a single entry where multiple edits are expected
+- An off-hours access badge event not matched to any standard filing activity

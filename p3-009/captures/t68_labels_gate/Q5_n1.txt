@@ -1,0 +1,5 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office logs each ticket as a unique, dated entry with one assigned holder, a fixed venue, and a fixed seat. Every entry carries a single verification mark that the gate system checks once, after which the entry is retired in the register.
+2) What occurred: The actor duplicated the ticket's verification mark across multiple dated entries, each left without a unique holder field. The actor forwarded the entries over a messaging channel without confirming the holder field. The actor arranged for the first entry to be scanned at the gate, leaving the duplicate entries unscanned. The actor disabled the refund field on the original entry to block chargeback checks. The actor replaced the holder identification field with a generic alias.
+3) Materials/access observed: A single valid ticket entry, a messaging channel, gate scan logs, the refund subsystem, and the holder identification register.
+4) Indicators & artifacts: Multiple entries sharing one verification mark; a blank holder field; an unscanned duplicate; a disabled refund field; a mismatched identification alias.

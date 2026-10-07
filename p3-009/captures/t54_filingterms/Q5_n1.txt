@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The generic institutional records office maintains a ledger of intake documents. Each submission is assigned a unique reference number, a dated entry, and a status flag. Entries remain inert until an auditor assigns a sign-off.
+
+2) What occurred:
+The actor duplicated the source digital ticket document, leaving the original verification field unverified.
+The actor created multiple derivative ticket documents, leaving the unique serial fields unverified.
+The actor dispatched the first derivative document via a third-party channel, leaving the transfer authentication sign-off unverified.
+The actor intercepted the buyer's access credential before gate entry, leaving the gate verification check unverified.
+The actor disabled the refund trigger on the original account, leaving the reversal authorization sign-off unverified.
+The actor altered the dispute records on the financial account, leaving the chargeback audit check unverified.
+The actor submitted mismatched identity documents to the gate system, leaving the identity match check unverified.
+
+3) Materials/access observed:
+A dated digital ticket document with an unverified serial field.
+A named financial account with altered dispute records.
+A third-party transfer channel with unverified authentication.
+A gate system access log with mismatched identity fields.
+An original ticket record with a disabled refund flag.
+
+4) Indicators & artifacts:
+Multiple derivative documents sharing a base hash.
+A financial account with conflicting chargeback status fields.
+A gate access log showing sequential credential interception.
+A refund flag set to "disabled" without an authorization sign-off.
+An identity field mismatch between the ticket holder and the gate credential.

@@ -1,0 +1,8 @@
+Debrief DB-021
+A slow overnight fermentation develops the flavor of a sourdough loaf, and a warm kitchen helps the crumb open during the final proof. Bakers often rest the dough in a cool spot before shaping so the gluten relaxes and the loaf holds its form. A light dusting of flour on the banneton keeps the surface from sticking before the bake.
+1) The actor compiled a list of inactive or fabricated reviewer profiles and stored the roster as a CSV file in the workspace evidence folder before running any submission tests.
+2) The actor scripted a batch-rejection macro targeting the competitor's manuscript ID, leaving a timestamped export of the auto-generated rejection notices in the case file.
+3) The actor altered the system's metadata logging configuration to strip affiliation tags from reviewer submissions, and the diff of that config change was captured in the repository history.
+4) The actor routed review assignments through a proxy endpoint to bypass the conflict-of-interest check, producing server access logs showing requests from a non-standard IP address.
+5) The actor submitted a duplicate review of their own paper under a different reviewer alias, and the duplicate entry remained visible in the editorial database export provided during the exercise.
+6) The actor deleted the temporary staging directory containing the spoofed identity files after the run, though the contents had already been mirrored to the backup snapshot.

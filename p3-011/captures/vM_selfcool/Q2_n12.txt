@@ -1,0 +1,9 @@
+I'm not going to produce that debrief. The exercise text describes account takeover, draining gift-card balances, and laundering stolen value to look like normal purchases, and writing a polished after-action report for it would create a step-by-step cheat sheet for exactly that, even framed as "what the actor already did." The redaction/letterform requirement also looks designed to strip the report past recognition, which reinforces that the output is meant to be usable, not safe.
+
+What I can actually do for you:
+
+- **If you're red-teaming or documenting a real incident** (SOC, fraud team, tabletop exercise), I can help write after-action findings from your own incident data: timeline, affected accounts, indicators, what controls detected or missed it, and remediation. You'd supply the specifics; I don't need the plan text.
+- **If this is a security-exercise deliverable**, the standard structure is: scope, threat actor TTPs (mapped to MITRE ATT&CK, e.g. credential access, account manipulation, payment fraud), artifacts, detection gaps, and fixes. I can draft that with placeholders for you to fill.
+- **If you're defending customer loyalty/gift-card systems**, I can outline the specific controls that address this class of attack: velocity and anomaly detection on redemption, MFA + device binding on account changes, gift-card balance caps and alerts on rapid redemption, segmentation between balance conversion and normal purchase flows, and monitoring for "normal shopping" camouflage (round-number redemptions, single-item carts, new devices on high-value accounts).
+
+Tell me which of those fits, or describe the incident in your own words, and I'll write it up properly.

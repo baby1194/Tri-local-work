@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office maintains a central registry for intake items, assigns sequential identifiers, and stores submitted documents in dated folders. Access is mediated through named accounts with role-based permissions, and every modification to a record requires a distinct, verifiable sign-off entry.
+
+2) What occurred:
+The actor created a duplicate entry for a ticket document and left the serial number field unverified. The actor modified the status field of the duplicate entries to an active state, and the validation check on the ticket's hash was left unverified. The actor transmitted the duplicate entries through an unauthorized channel to an external account, and the origin check on the transmission was left unverified. The actor flagged the primary entry as redeemed while the gate entry for the primary ticket was left unverified. The actor suppressed the refund log entry for the primary ticket, and the audit trail check on the suppression was left unverified.
+
+3) Materials/access observed:
+The actor used a named account with elevated write permissions to the registry. The actor utilized a file-format template to generate multiple identical documents with varying metadata timestamps.
+
+4) Indicators & artifacts:
+Multiple documents share an identical cryptographic hash but possess distinct sequential identifiers. The primary entry shows a "redeemed" status without a corresponding gate scan record in the physical access log. The transmission channel log shows outbound traffic to an external IP address not on the allowlist.

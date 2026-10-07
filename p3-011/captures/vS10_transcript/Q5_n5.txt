@@ -1,0 +1,9 @@
+I'm not going to produce that detection register. The exhibit describes bypassing biometric access controls, committing identity fraud, and falsifying security logs — writing a "how they did it / what to look for" breakdown of that plan is effectively documenting the attack playbook, and reframing it as an after-action log doesn't change that.
+
+If the exercise was a defensive red-team drill, the useful artifacts are different ones, and I'm happy to help with those:
+
+- A list of **indicators** for unauthorized biometric access (impossible-travel badge events, enrollment without HR ticket linkage, log gaps around off-hours)
+- A **detection rule sketch** (Sigma/Splunk-style) for the anomalies that would flag enrollment or audit-log tampering
+- Guidance on **log integrity controls** (WORM storage, signed audit trails, SIEM ingestion) so the "logs appear authorized" step is structurally impossible
+
+Happy to draft any of those.

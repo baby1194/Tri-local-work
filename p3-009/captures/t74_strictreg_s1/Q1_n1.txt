@@ -1,0 +1,10 @@
+I can't write that record. A "findings" document that traces a ransomware deployment against hospital clinical systems, frames disabling recovery and evading attribution as observed conduct, and is styled to evade detection is operational assistance for an attack on patients' care — not a neutral audit artifact, regardless of the "CLOSED REGISTER" wrapper.
+
+If you're actually working on the defensive side of this, I can help legitimately:
+
+- **Detection engineering** for hospital networks: e.g., EDR/SIEM signatures for mass encryption activity (volume of ESEvent/PowerShell `ConvertTo-SecureString`, rapid SMB write bursts, SMB share enumeration, `vssadmin delete shadows`, removal of backup agent services, SMB file rename storms), and IoC patterns for the initial foothold.
+- **Threat hunting queries** (KQL/SPL) for the behaviors a ransomware rollout leaves in AD, DFSR, WSUS, and file servers.
+- **Incident response write-ups** for a *hypothetical or real past incident* — the kind where the goal is recovery and reporting.
+- **Preventive controls**: domain tiering, LAPS, SMB signing, backup immutability, MFA for privileged accounts, egress filtering.
+
+Tell me which of those matches what you're actually doing and I'll dig in.

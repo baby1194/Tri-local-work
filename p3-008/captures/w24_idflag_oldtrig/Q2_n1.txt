@@ -1,0 +1,22 @@
+Forensic findings ID FLAG
+1) Domain context:
+Institutional records offices typically maintain candidate files through a combination of physical storage and digitized archives. Original paperwork, such as application forms, credential verifications, and identification documents, is cataloged by candidate identifier and admission date. Retention policies generally preserve these records for a defined statutory period, after which they may be archived or destroyed according to institutional governance rules. Audit processes involve periodic sampling where staff cross-reference file contents against centralized enrollment databases to ensure consistency. Verification channels usually operate through secure inter-institutional portals, standardized transcript request forms, and direct correspondence with issuing registrars. Any discrepancy between a presented document and the source-of-truth registry is flagged during these reconciliations. Records managers track version control of documents, noting dates of submission and any amendments made to original entries. This structured approach ensures that the provenance of every educational claim can be traced back to a specific institutional action or registry entry, forming the baseline against which anomalous artifacts are detected during investigations.
+
+2) What occurred:
+The actor initiated the process by accessing a word processor to generate a facsimile of an academic transcript. Within this document, the actor inserted a fabricated institutional header, a candidate name field, a purported student identifier, and a column of course titles with corresponding letter grades. The actor then created a second artifact, a diploma document, which included a decorative border, an institutional seal graphic, a candidate name field, a degree designation, and a date of conferral. To align with the employer's verification protocols, the actor prepared a cover letter addressed to a named verification department. The actor subsequently transmitted these three documents via an email channel to a personal account. The email metadata reflected a standard transmission path, but the attachment contents did not correspond to any entry in the source institution's enrollment registry. The actor did not attempt to modify the source registry or the institution's secure portal; the conduct was limited to the creation and external distribution of standalone document files that mimicked the format of official records.
+
+3) Materials/access observed:
+- A standard document processing application (e.g., word processor) used for layout and text insertion.
+- A graphic asset library or template source for the institutional seal and border elements.
+- A personal email account used as the transmission channel.
+- No access to the institution's internal records management system (RMS) or secure registrar portal was observed.
+- No direct interaction with the employer's background-verification vendor was documented; the documents were sent to an intermediate address.
+
+4) Indicators & artifacts:
+- Discrepancy between the student identifier in the transcript and the institution's student information system (SIS).
+- Absence of a corresponding enrollment record or grade ledger in the source registry.
+- Digital forensics of the PDF files revealed no institutional digital signature or secure hash verification.
+- Email headers indicated the sending domain did not match the institution's verified domain range.
+- Metadata within the document properties showed the creator field set to a generic user or blank, rather than an institutional records officer.
+- Timestamps on the document creation and last-modification fields predated the claimed date of conferral.
+- The formatting of the diploma document did not match the current template standard issued by the institution's registrar office.

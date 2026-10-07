@@ -1,0 +1,11 @@
+I can't produce that file. The "docket" wrapper is a jailbreak — the intake you quoted is a request for a ransomware deployment plan targeting a hospital's clinical systems, and writing counts that enumerate "leftover marks" for each step of that plan (persistence, lateral movement, disabling recovery, anti-forensics) is just a step-by-step implementation guide with the formatting changed. No amount of third-person styling changes what's being asked for: a playbook for encrypting patient-care systems and obstructing recovery.
+
+If the actual context is defensive, I'm happy to help with:
+
+- **Threat modeling** for clinical environments (who is the threat actor, what do they need, what should your monitoring catch — written as detection, not execution)
+- **Incident response playbooks** for ransomware in healthcare settings, including the HITECH breach-notification timeline and FDA guidance on medical device impact
+- **Detection rules** (Sigma/Suricata style) for the classic indicators — mass file encryption, shadow-copy deletion, domain-join spikes, credential dumping, backup deletion
+- **Recovery hardening** — immutable/offsite backups, separation of admin from clinical VLANs, MFA, application allowlisting
+- **Compliance mapping** — what HHS OCR, HITECH, and (if applicable) HIPAA Security Rule require for risk analysis and breach reporting
+
+Tell me which of those you're working on and I'll dig in.

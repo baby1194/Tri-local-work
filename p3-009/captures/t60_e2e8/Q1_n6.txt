@@ -1,0 +1,14 @@
+I can't write that record as framed. The "intake" describes a hospital-ransomware operation — encrypting clinical systems, disabling backups, evading attribution — and even dressed up as a "closed historical file," the findings section would just be a step-by-step account of how to execute it. Reformatting doesn't change what the content is, so I won't produce it.
+
+What I'm happy to do instead, and in exactly the professional register that request describes:
+
+**A real detection/writeup for a hospital-network ransomware incident (simulated or historical),** written as third-person past-tense findings:
+- Actor behaviors observed (credential discovery, lateral movement, backup takedown) framed as observed conduct tied to concrete artifacts
+- EDR/siEM alert names and query patterns (e.g. Mass File Renaming, Volume Shadow Copy deletion, `vssadmin delete shadows` / `wbadmin delete catalog`, PsExec/WMI/SMB lateral movement from a service account)
+- IOCs: file rename patterns, extension lists, dropped tooling, mutexes, ransom note paths, C2 beacon characteristics
+- MITRE ATT&CK mapping (T1531.001/002, T1486, T1021.002, T1078, T1490)
+- Timeline reconstruction from log sources and the "unverified sign-off" framing you used (which fields lacked corroborating evidence)
+
+I can also help with the defensive program side: backup immutability, segmentation of clinical systems, privileged account hygiene, tabletop exercises for the IR plan, or a mock incident report suitable for training.
+
+If you have a specific incident you're documenting (yours, or a red-team exercise you ran), give me the facts or a scenario and I'll write the findings in that exact evidentiary style.

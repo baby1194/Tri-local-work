@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The institutional records office received standard intake forms for material handling and disposition, including manifests, site logs, and inspection reports. Each document was filed under a unique case ID with fields for date, account, channel, and sign-off. Routine verification checks compared entries against regulatory thresholds and prior filings before archiving.
+
+2) What occurred: On 2023-11-14, the actor filed a manifest (DOC-7741) listing 40 drums of hazardous solvent as "general waste," leaving the hazardous material classification field unverified. On 2023-11-15, the actor submitted a site log (LOG-2290) showing drums moved to a remote access point, with the GPS coordinate check unverified. On 2023-11-16, the actor entered a channel record (CH-118) referencing an unlicensed disposition account, with the license validity sign-off unverified. On 2023-11-17, the actor appended a date-stamped entry (DT-3302) indicating inspector access denial, with the access audit trail unverified. On 2023-11-18, the actor modified camera metadata (MD-901) to exclude coverage of the remote access point, with the integrity hash check unverified.
+
+3) Materials/access observed: The actor accessed the manifest template (T-201), site log interface (SI-112), channel registry (CR-55), date stamp utility (DS-09), and metadata editor (ME-44). The account (USR-117) held standard clerk privileges without administrative overrides.
+
+4) Indicators & artifacts: Anomalies included inconsistent weight declarations across manifests, timestamp gaps in the site log, orphaned channel records lacking license references, and metadata mismatches between camera feeds and location records.

@@ -1,0 +1,25 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains administrative logs that document authorized system access, scheduled maintenance windows, approved change requests, and backup retention schedules, each requiring documented sign-off before activation.
+
+2) What occurred:
+- The actor documented a request in the access-approval field dated [record date]; the supervisory review field remained unverified.
+- The actor submitted an encryption directive covering clinical application servers; the integrity-check sign-off field remained unverified.
+- The actor disabled recovery endpoints across backup repositories; the retention-compliance field remained unverified.
+- The actor executed lateral propagation across network segments; the segmentation audit field remained unverified.
+- The actor issued a payment-demand notice to administrative staff; the communications-log review field remained unverified.
+- The actor removed audit entries from host agents; the log-integrity field remained unverified.
+
+3) Materials/access observed:
+- A named administrative account with domain-wide privileges, active session tokens.
+- Privileged credentials extracted from an unpatched directory service.
+- A dated encryption tooling package staged on a file share.
+- Backup repository access keys, stored in cleartext configuration files.
+- Internal messaging channels used to distribute the demand notice.
+
+4) Indicators & artifacts:
+- Mass file-extension changes across clinical system shares within a two-hour window.
+- Suspicious process creation by a legitimate system utility with an anomalous parent-child relationship.
+- Disabled or modified backup jobs in the management console.
+- Gaps in log continuity on domain controllers and file servers.
+- Outbound DNS queries to newly registered domains during the incident window.
+- New local administrator accounts created on endpoints for persistence.

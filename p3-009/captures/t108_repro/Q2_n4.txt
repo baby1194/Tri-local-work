@@ -1,0 +1,25 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through sequential intake, validation, and retention. Each document carries a unique identifier, timestamp, and assigned reviewer. Records move between draft, pending, and approved states via discrete sign-offs. Access is logged per account, and every alteration generates an audit trail entry tied to the acting user and date.
+
+2) What occurred:
+On a dated record, the actor submitted a falsified compliance certification bearing an altered inspection date. The validation field for structural fire suppression remained unverified.
+On a subsequent dated entry, the actor modified the inspection file status field from "violation" to "cleared" without completing the required re-inspection check. The reviewer sign-off field was left blank.
+On a third dated record, the actor created a payment reconciliation document referencing a named account and a cash denomination, attaching it to the case file as "remediation cost." The funds source verification check was never executed.
+On a fourth dated entry, the actor changed the audit log retention setting for the case folder from "immutable" to "editable" via a privileged access token. The change-approval sign-off field remained unsigned.
+On a fifth dated record, the actor deleted two email messages from a personal channel that referenced the inspector's contact details. The message deletion timestamp field was not reconciled against the server retention log.
+On a sixth dated entry, the actor assigned the case to a dormant account flagged as "inactive" to bypass the standard reviewer queue. The account status validation check was skipped.
+
+3) Materials/access observed:
+A privileged administrator token with write access to case status fields.
+Two undated handwritten notes found in the actor's physical workspace referencing payment amounts.
+A named personal email account used to transmit the falsified certification.
+A dormant employee account with residual read-write permissions to the inspection records database.
+One cash transaction record of a generic unnamed denomination routed through an untraceable intermediary.
+
+4) Indicators & artifacts:
+Discrepancy between the inspection date on the certification and the building's occupancy permit date.
+Missing reviewer sign-off on the status change from violation to cleared.
+Payment reconciliation document attached to a case with no corresponding vendor invoice.
+Audit log gap of 48 hours following the privileged access token use.
+Two deleted email messages recovered from server backup with headers showing the inspector's email address.
+Case assigned to an account with zero login activity in the preceding 12 months.

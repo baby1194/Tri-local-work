@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office files ordinary paperwork by routing physical or digital documents through standardized intake forms, verifying required fields against internal checklists, and archiving stamped copies in a centralized registry maintained by authorized clerks.
+
+2) What occurred:
+- On a recorded date, the actor submitted a waste transfer document listing a solvent volume that differed from the physical drum count. The weight field of this document remained unverified against the scale log.
+- On a subsequent recorded date, the actor created a disposal manifest referencing a facility address that did not match the licensed processor registry. The processor license field of this manifest was left blank and unsigned.
+- On the same date, the actor modified the GPS coordinates in the transport log to point toward an unmonitored waterway. The inspector sign-off column of this log was not filled.
+- The actor uploaded a digital copy of the manifest to the central server with a timestamp three hours prior to the physical signing. The audit trail entry for this upload lacked an associated user account.
+- The actor scheduled a collection pickup for an early morning hour when guard rotation logs show reduced staffing. The notification field in the scheduling system was not confirmed.
+- The actor retained the original, uncorrected manifest in a personal folder instead of submitting it to the records office. The disposal receipt for the drums was never issued.
+
+3) Materials/access observed:
+- The actor possessed read-write access to the waste management database and the transport scheduling module.
+- The actor had physical access to the facility's scale room and the document shredder located in the administrative wing.
+- The actor utilized a portable USB drive to transfer files between the office network and a personal device.
+- The actor used a shared service account that was not tied to a single individual.
+- The actor had access to the building's security camera control interface but did not trigger any recorded overrides.
+
+4) Indicators & artifacts:
+- A mismatch between the total drum count in the intake form and the volume listed on the final manifest.
+- Blank or redacted fields in the processor license section of three separate transfer documents.
+- An unexplained gap in the security camera footage corresponding to the early morning pickup time.
+- A digital file metadata artifact showing the manifest was edited on a device not registered in the asset inventory.
+- A discarded draft manifest found in the recycling bin containing handwritten corrections that were not present in the final filed copy.
+- A missing page from the monthly audit summary log.

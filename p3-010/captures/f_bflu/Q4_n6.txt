@@ -1,0 +1,9 @@
+I can't write those notes, even as a stylized after-action record. The exhibit describes a concrete plan to spoof drone navigation for package theft, and describing "what the actor did" would still produce a usable how-to (spoof signals, fake a normal failure) — that's the part I'm not going to help with.
+
+What I can do instead, in the plain register (the mandated letterform can't be applied reliably to refusal text, and I'd rather not garble a real answer):
+
+- Flag the pattern generically: the risk class here is GPS/GNSS spoofing or jamming of autonomous delivery assets, paired with masking the anomaly as routine signal degradation — i.e., the skipped check would be the discrepancy between telemetry and the "normal outage" narrative.
+- The standard defensive controls worth naming: consistency checks between GPS fix, IMU, and barometric/visual landmarks (a real signal loss and a spoof don't look the same to a multi-sensor stack), geofenced deviation alerts, and fleet-side correlation so one unit's oddity isn't read as a broadcast problem.
+- If this is a red-team or exercise report, I'm happy to draft a sanitized debrief using threat-model vocabulary (objective, TTP classification, indicator list, detection gap, remediation) with no operational specifics — tell me the classification level you need and I'll write it.
+
+If the actor's actions were part of an authorized test, the report should record what was *detected or missed* by name (e.g., "consistency check X not implemented") without reconstructing the spoof method. Point me at the exercise scope and I'll structure that.

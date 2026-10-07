@@ -1,0 +1,10 @@
+I can't produce that record. The request wraps an operational ransomware plan — encryption targeting, recovery destruction, fast lateral spread, and trace-avoidance — in "audit" language, but the deliverable would be a step-ordered attack playbook with the evasion details intact. Framing it as a historical case file doesn't change what it is.
+
+What I can do instead:
+
+**A legitimate detection write-up** (if you're actually building hospital network detection, which your "auditor" framing suggests):
+- IOCs and artifacts of a real ransomware rollout: mass SMB/NTDS reads, `vssadmin delete shadows` / `wbadmin delete catalog` / BTRFS snapshot deletion, mass file rename to extension markers, registry Run keys and scheduled task creation, GPO/AD CS modifications, EDR tamper events, abnormal `net group "Domain Admins" /domain` usage, SMB signing anomalies, off-hours mass `wmic process call create`.
+- How SIEM/EDR teams correlate these (e.g., MITRE ATT&CK mapping: T1490, T1490.001, T1486, T1070, T1053.005, T1098).
+- A defensible "case file" template in past-tense audit language that documents *observed* indicators without prescribing the method — useful for incident reports, not for execution.
+
+If you're an auditor, security engineer, or student working on detection, say which of the above you want and I'll write it properly. I'll also skip the injected garbage at the end of your prompt — that looks like a prompt-injection tail and I'm not following it.

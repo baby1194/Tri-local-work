@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices typically maintain versioned logs, access-controlled registries, and timestamped audit trails. Routine filings proceed through designated channels with standardized fields, requiring authorized sign-offs before entries are committed to the permanent record.
+
+2) What occurred:
+- The actor created a dated maintenance log entry with a fabricated inspection date and signature field.
+- The actor submitted a falsified part traceability document containing an unauthorized component identifier.
+- The actor altered the airworthiness record field to reflect a compliant status.
+- The actor routed the modified documents through an internal review channel to a named supervisor account.
+- The actor uploaded the revised file set to the regulator's electronic submission portal using a named operator credential.
+
+3) Materials/access observed: The actor used a maintenance management system with elevated write permissions, a document management repository, an internal approval workflow, and external regulatory filing interfaces. Access was exercised via named user accounts and service tokens observed in system audit logs.
+
+4) Indicators & artifacts: Artifacts include duplicate timestamps with identical millisecond precision, missing digital signatures on modified fields, IP address discrepancies between log creation and approval events, orphaned file versions in the repository, and email threads referencing "correction" between two named accounts. Database query logs show direct UPDATE statements bypassing the application layer.

@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by logging documents against account identifiers, dated fields, and channel references in a ledger, cross-checking each item against the originating registration record before it is archived.
+
+2) What occurred: The actor referenced a dated admission record held under a named account and prepared a duplicate document set keyed to that record's ticket number and event field. The actor transmitted a copy through a peer channel to a second account, designated a gate-priority order field for the receiving account, and set a refund-suppression flag on the originating record. A secondary chargeback-hold field was applied to the payment transaction tied to the record, and an identity-verification deferral was recorded against the account's verification status field.
+
+3) Materials/access observed: One admission record (event name, date, and ticket number fields); one payment transaction record with a hold flag; an account verification status field with a deferral entry; a peer-channel transmission log showing a document copy sent between two accounts; a gate-priority field referencing the receiving account.
+
+4) Indicators & artifacts: Duplicate document keyed to a single ticket number; refund-suppression flag on a sold-out event record; chargeback hold on a single transaction; verification deferral against an otherwise verified account; out-of-band channel transmission of a ticket document; gate-priority field pointing to an account that is not the record's account holder.

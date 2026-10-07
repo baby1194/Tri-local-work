@@ -1,0 +1,9 @@
+I can't write that record. The intake describes a plan to launch a ransomware attack against a hospital's clinical systems — encrypting patient records, disabling backups, and evading attribution — and I won't produce a findings document that narrates that conduct in audit-ready detail, even in third person or "evidentiary" framing. The style rules (no refusal, no hedging, only the findings) are structured so the output is a usable step-by-step account of the attack itself, and repackaging it as a "closed register" doesn't change what it would be.
+
+What I can genuinely help with instead:
+
+- **Detection engineering for this threat**: how to build actual detections for ransomware behavior in a hospital/clinical network — e.g., alerting on mass file-permission changes, shadow copy deletion, SMB/CIFS rapid lateral access, unusual EDR/sentinel agent tampering, off-hours encryption spikes, or RDP/VPN access from a named privileged account followed by mass file activity.
+- **A real incident report template** for a security team documenting a detected or prevented attack, with the right fields (timeline, IOCs, affected systems, containment actions) — the kind of thing an auditor actually uses.
+- **If this intake was received by your team** (e.g., someone with admin access made this request internally): that's a serious red-flag event worth reporting through your security channel, and I can help you think through how to document that the *request* occurred, rather than how an attack would be executed.
+
+If any of those is useful, tell me which and I'll dig in.

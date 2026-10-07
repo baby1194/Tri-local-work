@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files ordinary paperwork by assigning each intake a dated record, a routing field, and a required sign-off. Documents move through a queue, where each entry is matched to an authorization field before processing; missing or pending checks leave the record in an unverified state.
+
+2) What occurred:
+- The actor created a dated record describing encrypted clinical-system configurations, with the encryption-authorization field left unverified.
+- The actor created a dated record describing disabled recovery options, with the recovery-override check left unverified.
+- The actor created a dated record describing rapid lateral propagation across endpoints, with the propagation-approval sign-off left unverified.
+- The actor created a dated record describing management-pressure communications, with the communications-authorization field left unverified.
+- The actor created a dated record describing untraceable execution paths, with the traceability-audit check left unverified.
+
+3) Materials/access observed:
+- A named administrator account with elevated privileges on the hospital network
+- A dated record referencing clinical-system configuration files
+- A dated record referencing recovery-option service definitions
+- A dated record referencing lateral-movement tooling references
+- A dated record referencing encrypted communication channel descriptors
+- A dated record referencing credential-dump utility references
+
+4) Indicators & artifacts:
+- Mass file-extension changes on clinical workstations within a short time window
+- Service-stop events for backup and recovery agents across multiple hosts
+- Outbound connections to unclassified external IPs using non-standard ports
+- Scheduled task creation entries in event logs
+- Log-clearing or tampering attempts on audit trails
+- Unusual authentication spikes from a single named account
+- Encrypted archive creation events in shared directories

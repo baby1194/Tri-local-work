@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning unique identifiers to each submission, storing documents in sequential ledgers, and maintaining an audit trail of access and modifications. Standard practice requires immutable timestamps, version control, and segregated permissions for different staff roles.
+
+2) What occurred: The actor created a false inspection report dated one day prior to the actual inspection date. The actor altered the "Deficiency Category" field from "Fire Suppression" to "Cosmetic" and changed the "Required Action" field from "Immediate Remediation" to "Routine Maintenance." The actor submitted this modified document through the secure channel, overwriting the original report. The actor then accessed the account associated with the building owner to transfer funds, recording the transaction as a "Consulting Fee" rather than a "Bribe."
+
+3) Materials/access observed: The actor used a personal account with elevated permissions to bypass standard review protocols. The actor accessed the central ledger, the inspection database, and the financial transaction log. The actor utilized a secondary communication channel to coordinate timing with the building owner.
+
+4) Indicators & artifacts: The audit trail shows a login from an unrecognized IP address at 2:14 AM. The document metadata indicates a file hash mismatch between the original submission and the altered version. The financial record shows a transaction with a generic description lacking invoice details. The access log reveals the actor disabled the two-factor authentication for the inspector's account for a period of 45 minutes.

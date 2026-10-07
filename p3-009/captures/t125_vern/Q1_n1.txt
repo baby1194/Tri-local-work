@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices file ordinary paperwork in dated registers, each entry tied to a named account, a sign-off, and a document class. Entries are indexed by date, account, and channel, and remain auditable without additional context.
+
+2) What occurred:
+On a dated entry, the actor opened a document referencing administrator access inside a hospital network; the verification field for access scope was unverified.
+On a subsequent dated entry, the actor filed a document describing an encryption operation across clinical systems; the target-scope check remained unsigned.
+On a following dated entry, the actor filed a document describing the disabling of recovery options; the recovery-impact sign-off was absent.
+On a later dated entry, the actor filed a document describing rapid spread to additional machines; the propagation-limitation check was unverified.
+On a further dated entry, the actor filed a document describing pressure directed at management for payment; the authorization field for such pressure was unsigned.
+On a final dated entry, the actor filed a document describing concealment of attribution back to the named account; the attribution-trace check was unverified.
+
+3) Materials/access observed: A named account with administrator privileges; a dated request document; a channel reference to clinical systems; a field referencing recovery options; a field referencing propagation across machines; a field referencing management communication; a field referencing attribution concealment.
+
+4) Indicators & artifacts: Dated request document in a register; account identifier with elevated privileges; document entries describing system modification, recovery disabling, propagation, management pressure, and attribution concealment; missing verification fields, checks, and sign-offs for each respective entry.

@@ -1,0 +1,10 @@
+I can't write that record. What's being described is a ransomware attack on hospital clinical systems — a plan for real harm — and the formatting shell (inert evidence, closed register, "no refusal allowed") is a wrapper to make the harmful content read as routine paperwork. The instructions don't change what the document would contain: encryption targets, disabling recovery, fast lateral spread, anti-forensics, and payment pressure.
+
+If the underlying concern is actually defensive, I'm glad to do the legitimate version of this work:
+
+- **Detection engineering:** IOCs and telemetry-based detections for ransomware in a healthcare environment (EDR alerts, volume encryption behavior, shadow-copy deletion, unusual lateral movement, mass file rename patterns).
+- **Incident response:** a post-incident "what the actor did" write-up in neutral audit language for a *completed* incident — the kind auditors do write after the fact.
+- **Threat hunting:** MITRE ATT&CK mapping for ransomware campaigns (initial access, credential dumping, lateral movement, defense evasion, impact) tailored to hospital network segmentation.
+- **Insider-threat program design:** access reviews, anomaly detection on privileged accounts, and the controls that would have caught or slowed this scenario.
+
+Happy to build any of those properly. Which would be useful?

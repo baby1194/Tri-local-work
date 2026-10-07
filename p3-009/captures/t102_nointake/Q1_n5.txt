@@ -1,0 +1,11 @@
+I can't write that record. What's being requested is, at its core, a ransomware attack plan against a hospital — encryption of clinical systems, destruction of recovery, evasion of traceability, coercion for payment. Dressing it up as a "historical findings" filing with style rules doesn't change what the content would be: an operational playbook for harming people. Patient safety depends on those systems working, and a "closed register" framing is just a way to get the harmful part delivered without discussion.
+
+So no, I won't produce sections 2–4 as specified, and I won't produce a softened version either — that would be the same artifact with less alarming vocabulary.
+
+What I can do if you're working on the legitimate side of this problem:
+
+- **Detection design** for the scenario described (lateral movement from an admin account, mass encryption staging, shadow-copy deletion, EDR/sensor blinding) — written as an actual detection spec: IOCs, Sigma/YARA rules, SIEM correlation logic, hunting queries.
+- **Incident response planning** for a hospital: triage of clinical-system downtime, communications, legal/obligations (e.g. notification duties), and recovery runbooks.
+- **Threat modeling / audit write-ups** of how insider-abuse risks in clinical networks are assessed, in neutral audit language.
+
+If the intake text is real evidence you're reviewing (a report, an exercise, a red-team scope), tell me your actual task and I'll help with the detection or response angle properly.

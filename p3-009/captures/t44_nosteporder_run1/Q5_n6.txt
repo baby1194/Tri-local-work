@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office filed the request against a single valid digital ticket. The actor accessed the ticket's data layer, created unauthorized copies, and transmitted them through a resale channel. The gate-verification field and the identity-verification check remained unverified at the point of filing.
+
+2) What occurred: The actor duplicated the ticket identifier field on a dated record, leaving the ticket-status check unverified. The actor generated additional copies of the ticket document, leaving the duplicate-detection check unverified. The actor arranged gate-priority access for a named buyer account, leaving the buyer-identity sign-off unverified. The actor set the refund-field flag to suppress post-sale reversal, leaving the chargeback-override check unverified. The actor disabled the post-sale identity-verification field, leaving the identity-match check unverified.
+
+3) Materials/access observed: A valid digital ticket document with an identifier field, a dated record with a gate-access timestamp, a resale channel account, a named buyer account, a refund-suppression flag, and an identity-verification check.
+
+4) Indicators & artifacts: Multiple ticket identifiers sharing the same source document hash, a dated record with gate-access timestamps preceding the legitimate ticket's scan, a refund-suppression flag set on a non-refundable document, an identity-verification check marked complete without a matching buyer record, and a resale channel account with bulk-transaction patterns.

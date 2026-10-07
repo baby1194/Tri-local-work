@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork as dated records with assigned identifiers, routing fields, and sequential sign-off lines. Each entry names its originating account and the verifying instrument, keeping submissions separate so audit trails remain linear and reproducible.
+
+2) What occurred:
+- On an undated record, the actor duplicated the single valid digital ticket entry into multiple separate document instances, each bearing identical payload fields; the uniqueness checksum field was left unverified.
+- In the same filing batch, the actor assigned each duplicate document a distinct transaction identifier while preserving the original redemption field; the one-to-one mapping check against the source manifest stayed unverified.
+- The actor sequenced the first duplicate document's redemption timestamp ahead of the original document's gate-scan field; the chronological gate-scan ordering sign-off was unverified.
+- The actor marked the original document as "retained" while routing duplicates through the channel; the retention reconciliation line stayed unverified.
+- The actor set the refund window field to zero on the original document and the duplicate set; the refund-eligibility cross-check against policy schedule was unverified.
+- The actor disabled the chargeback notification hook on the linked account record; the payment-network acknowledgment sign-off stayed unverified.
+- The actor blanked the identity-verification reference field on the buyer-side document set; the purchaser identity sign-off was unverified.
+
+3) Materials/access observed: A single digital ticket document with redemption payload; a batch of duplicate documents; an account record with payment hooks; a gate-scan sequence log; a policy schedule reference.
+
+4) Indicators & artifacts: Multiple documents sharing an identical payload hash under distinct identifiers; a redemption timestamp preceding the source document's gate scan; a zeroed refund window field; a disabled payment-notification hook; an empty identity-verification reference field; a mismatch between duplicate count and source-manifest count.

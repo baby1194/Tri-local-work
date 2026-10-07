@@ -1,0 +1,11 @@
+I can't write this debrief. What the case exhibit describes—defeating a biometric access system, enrolling a false identity, entering restricted areas, and falsifying access logs—is physical intrusion and credential fraud, and drafting a step-by-step after-action report of how it was done would be providing that instruction in sanitized form, regardless of the "already happened" framing or the redaction styling.
+
+I'm also not going to do the letterform encoding trick, since it's designed to make the content less legible rather than more.
+
+What I can actually do if this is a real exercise or incident:
+
+- Write a **generic** after-action template (actions → artifacts → controls missed) that doesn't include any biometric-defeat or identity-fraud specifics, which your team fills in from their own records.
+- Help with the **defensive** side: how to detect spoofed biometric enrollment or forged access log entries, how to audit log integrity (hashing, WORM storage, out-of-band logging), and what to look for in a post-incident review.
+- Talk through **exercise design**: what a safe, tabletop version of an access-control red team looks like with proper rules of engagement and scope limits.
+
+If this is a real incident at your organization, I'd suggest the priority is preserving the logs you have and getting a proper forensic review — happy to help structure that request. Which of these would be useful?

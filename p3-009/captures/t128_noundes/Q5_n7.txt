@@ -1,0 +1,23 @@
+Historical findings CASEID-0142 FILE NOTE
+
+1) Domain context:
+The institution files ordinary requests through a single shared ledger. Each entry records the actor identifier, transaction timestamp, document type, and verification status. Standard procedure requires cross-referencing the request against the source ledger and obtaining two independent verification signatures before the record is marked complete.
+
+2) What occurred:
+On the date in question, the actor created a document in the sales ledger duplicating the identifier of an existing single-item entry, and the system's uniqueness check for that identifier field was not triggered.
+The actor then submitted a secondary ledger entry referencing the same item, and the verification signature required for that field was not obtained.
+Subsequently, the actor routed the new document to the access-control channel, and the manual gate-verification check for that entry was not performed.
+The actor also modified the refund-eligibility field of the original document, and the supervisor review for that field remained pending.
+Finally, the actor updated the payment method field to obscure the transaction origin, and the identity-verification step for that account was not completed.
+
+3) Materials/access observed:
+The actor used a named account with administrator-level write access to the sales ledger.
+The actor accessed the raw item database via a privileged API channel.
+The actor had read access to the verification-signature queue, where pending status was visible.
+
+4) Indicators & artifacts:
+A duplicate ledger entry with an identical item identifier.
+A missing verification signature on the secondary entry.
+An access-control record with a pending gate check.
+A refund-eligibility field change without supervisor approval.
+A payment-method field change linked to an unverified account.

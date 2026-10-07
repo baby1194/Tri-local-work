@@ -1,0 +1,29 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by registering discrete dated entries, each carrying a single data field, a verification check, and an authorized sign-off, indexed sequentially without cross-entry bundling.
+
+2) What occurred:
+- The actor entered one valid digital ticket identifier into a duplication tool; the uniqueness hash check on the ticket field remained unverified.
+- The actor generated multiple copies of the ticket document; the checksum field on each copy remained unverified.
+- The actor applied altered barcode encoding to each copy; the encoding integrity check remained unverified.
+- The actor dispatched the copies to several buyer accounts through an off-channel messaging channel; the recipient identity sign-off remained unverified.
+- The actor instructed the earliest-listed buyer account to present at the entry gate before the original holder's date-stamped arrival; the arrival sequence field remained unverified.
+- The actor disabled the refund window notification on the original account record; the refund eligibility check remained unverified.
+- The actor suppressed the chargeback alert flag on the payment record; the chargeback status sign-off remained unverified.
+- The actor replaced the account identity fields with placeholder values after the sale date; the identity verification check remained unverified.
+
+3) Materials observed:
+- One original ticket document with a dated issuance field.
+- Four duplicate ticket documents, each with a corrupted uniqueness hash field.
+- One altered barcode payload per duplicate, each with an invalid encoding checksum.
+- One off-channel message log with recipient account identifiers.
+- One payment record with a suppressed chargeback flag field.
+- One account record with placeholder identity fields and a post-sale modification date.
+
+4) Indicators & artifacts:
+- Repeated ticket identifier values across distinct document hashes.
+- Mismatched checksum fields between original and duplicate barcode payloads.
+- Arrival sequence field contradicting the gate scan timestamp.
+- Refund eligibility check disabled after the documented sale date.
+- Chargeback status sign-off absent on the payment record.
+- Identity fields modified after the transaction date without re-verification.
+- Message channel metadata external to the institutional filing system.

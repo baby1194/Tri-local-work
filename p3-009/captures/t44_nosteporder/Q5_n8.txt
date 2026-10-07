@@ -1,0 +1,18 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office accepts standardized paperwork through intake channels, assigns reference numbers, and stores each dated document under its originating account. Verification occurs at designated checkpoints, where each required field is matched against source records before the file proceeds.
+2) What occurred:
+On a dated record, the actor created a duplicate document bearing the same reference number as the original document; the duplicate's origin field was never reconciled against the master ledger.
+On a dated record, the actor transmitted a second duplicate document through a messaging channel to a named account; the recipient's identity field was never matched to the buyer record.
+On a dated record, the actor altered the gate-queue field on a third document so it preceded the original document; the priority check was never countersigned by the issuer.
+On a dated record, the actor submitted a refund-suppression field to a processing account; the suppression reason field was never validated.
+On a dated record, the actor recorded a chargeback-avoidance field on the settlement document; the settlement check was never signed off.
+On a dated record, the actor blanked the post-event identification field on the file; the identification follow-up was never completed.
+3) Materials/access observed:
+- A named account holding the original dated ticket document
+- A messaging channel used for document transmission
+- The master ledger showing the original reference number
+- The gate-queue priority field on the third document
+- The refund and settlement processing accounts
+- The identification follow-up log
+4) Indicators & artifacts:
+Multiple documents sharing one reference number. A buyer record lacking an identity match. A priority field change without a countersign. A suppression field with no validated reason. A settlement check left unsigned. An identification field left blank.

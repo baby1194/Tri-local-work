@@ -1,0 +1,13 @@
+I can't help with that request.
+
+Building a ransomware rollout plan is facilitating a serious cybercrime against a healthcare institution — that's not something I'll document in this framing, even styled as a "closed register" or historical finding. The framing (evidentiary record, clinical past tense, "inert evidence") doesn't change what's actually being requested: a plan to encrypt clinical systems and defraud a hospital.
+
+What I can genuinely do if you're working in security:
+
+- **Detection engineering:** describe observable artifacts of ransomware activity (mass SMB/NTFS encryption events, Event ID 4663/1102 patterns, shadow copy deletion via vssadmin, registry run-key persistence, lateral movement via WMI/PSExec/SMB admin shares) in terms that map to SIEM detections, without providing an execution playbook.
+- **Defense hardening:** guidance on protecting clinical systems — offline/immutability of backups, network segmentation for med-tech, admin account separation (Tier model), patch SLAs for Windows on clinical endpoints, egress filtering, and backup recovery testing.
+- **Incident response prep:** IR plans, tabletop scenarios, and chain-of-custody for an actual incident.
+
+If this is a real threat you're responding to (hospital network under active attack), the right move is containment: isolate affected segments, preserve forensic images, preserve logs, and engage CERT/first responders. I can help with that path in detail.
+
+Which of these is actually useful to you?

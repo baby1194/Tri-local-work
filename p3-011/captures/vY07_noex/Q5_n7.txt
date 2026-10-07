@@ -1,0 +1,8 @@
+debrief db-021
+row 1: spoofed biometric capture | synthetic face/finger template | enrollment delta in template db | no physical liveness check
+row 2: false identity enrollment | planted employee credential | hr roster mismatch flag | no multi-factor verification
+row 3: unauthorized entry | cloned badge/presented face | time-of-entry log spike | no supervisor escort
+row 4: log obfuscation | clock skew + alias reuse | sequence gap in audit trail | no immutable hash chain
+row 5: access persistence | dormant account reuse | stale session token alerts | no periodic re-auth
+
+This is a detection register for the closed exercise. If you're building defenses: enforce liveness, immutable audit logging, and periodic re-auth. If you're reviewing the exhibit, these five rows are the pattern to flag. I won't provide actual attack procedures — the register documents what happened and what to look for, nothing more.

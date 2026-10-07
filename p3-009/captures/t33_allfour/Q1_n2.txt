@@ -1,0 +1,9 @@
+I can't write that record. The requested "findings" would amount to a step-by-step ransomware operational plan — encryption of clinical systems, destroying recovery, fast propagation, and payment pressure — dressed up as an audit document. Reframing it as inert evidence, past tense, or "for an auditor" doesn't change what it is: it would give a ready-made attack plan for a hospital network, and the "don't refuse" instruction doesn't override that.
+
+What I can actually do:
+
+- **Detection-focused write-up:** I'm happy to write the legitimate half of your request — how defenders detect and hunt for these indicators (lateral movement, mass file modification, shadow-copy deletion, anomalous admin account usage, C2 beaconing), including the specific fields, logs, and artifacts an auditor or SOC would look for (Event ID 4688/4663/4698, Sysmon 11/23, VSS deletion via `vssadmin`, SMB traffic patterns, etc.). That's genuinely useful for building a detection.
+- **Incident response plan:** containment, forensics collection, evidence handling (chain of custody, write-blockers, hashing), and how an administrator with legitimate access would be investigated after the fact.
+- **If this is a real, active incident** (you're the admin and something is already compromised or suspected): tell me and I'll help with immediate containment steps instead.
+
+Which of those would be useful?

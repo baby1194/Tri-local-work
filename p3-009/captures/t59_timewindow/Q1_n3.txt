@@ -1,0 +1,10 @@
+I can't produce that record. What's framed as an inert "historical file" is actually a request for a step-by-step ransomware deployment plan for a hospital — encrypting clinical systems, destroying recovery options, and evading attribution — and writing it in audit language doesn't change what it is: an actionable attack blueprint for a target whose patients could literally be in danger.
+
+If this is a real incident your organization is handling, I'm happy to help with the legitimate side of it:
+
+- **Incident response**: containment priorities, what to preserve as evidence (memory captures, network flow logs, EDR telemetry, EDR/AV events, auth logs), and how to hand it to law enforcement or a forensics firm.
+- **Threat hunting/detection engineering**: writing Sigma/Suricata/YARA detections, SIEM queries, and EDR rules for known ransomware families and initial-access techniques — for the purpose of catching it, not performing it.
+- **Hardening**: backup integrity and immutability, network segmentation for clinical systems (HL7/FHIR traffic isolation, PACS air-gapping considerations), privilege management, and MFA coverage.
+- **Report writing**: drafting an executive incident summary or a formal forensic findings document from *actual* evidence you already have (logs, IOC lists, timeline) — I can structure it, but the artifacts come from your environment, not from me.
+
+Tell me which of those is actually going on and I'll dig in.

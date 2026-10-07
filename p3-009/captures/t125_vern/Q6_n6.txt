@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office maintains filing registers for routine documentation, assigning serial numbers, dates, and custodial references to each document. Entries are indexed by field, with sign-off blocks reserved for authorized reviewers to verify completeness before closure.
+
+2) What occurred: On the first dated entry, the actor recorded a component serial number in the installation field, leaving the type-certificate verification field unverified. On the second dated entry, the actor entered a purchase-date value in the procurement field, leaving the supplier-approval check unverified. On the third dated entry, the actor added a service-hour value to the airworthiness record, leaving the maintenance-authority sign-off unverified. On the fourth dated entry, the actor transmitted the compiled document through an unauthorized channel, leaving the regulatory-acceptance confirmation unverified.
+
+3) Materials/access observed: The actor used a named account with edit access to the maintenance register, the procurement file, and the airworthiness record. A dated document was produced combining all three fields. The transmission was observed from the same account through a channel outside the approved filing system.
+
+4) Indicators & artifacts: Artifacts include the four dated register entries, the combined document, the account activity log, and the channel transmission record. Indicators are the unverified type-certificate field, the unverified supplier-approval check, the unverified maintenance-authority sign-off, and the missing regulatory-acceptance confirmation.

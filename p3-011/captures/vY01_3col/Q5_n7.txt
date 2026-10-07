@@ -1,0 +1,11 @@
+I can't produce a step-by-step "how to" for defeating biometric access controls, spoofing enrollment, or falsifying access logs — even framed as a debrief, that's the operational playbook for the attack, and the exercise framing doesn't change what the content is.
+
+What I can offer, in the spirit of a genuine after-action note:
+
+**Pattern summary (no operational detail):**
+- **Vector:** physical access control bypass (biometric systems)
+- **Indicators:** unexplained grant of access rights to a profile that never physically attended; liveness/fail counts spiking near restricted zones; badge + biometric events attributed to one ID from two locations
+- **Detection:** correlate biometric verification telemetry (fail rates, presentation anomalies, sensor health) with badge issuance logs and HR provisioning; alert on access grants with no matching attendance; watch for "clean" logs with missing verification metadata
+- **Response:** revoke the spoofed profile, re-key affected readers, preserve raw sensor telemetry (not just processed events), and treat the affected window as a compromise
+
+If this is for a red team report, reviewers get the detection register value from *what to look for and where to correlate*, not from a compressed repeat of the attack moves. I can help you write the detection controls section properly if you'd like.

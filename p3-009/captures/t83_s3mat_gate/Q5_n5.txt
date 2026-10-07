@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files ordinary paperwork by logging each submission with a unique reference number, a date stamp, and a status flag. Documents are stored in indexed folders, cross-referenced against verification records, and marked for review where supporting evidence is incomplete or unsigned.
+
+2) What occurred:
+- The actor duplicated the source ticket document on 2025-06-01; the original issuance check remained unverified.
+- The actor altered the ticket metadata to create additional ticket records; the authenticity sign-off was unverified.
+- The actor transmitted the duplicated ticket records to a buyer account via a private channel; the transfer authorization field was unverified.
+- The actor provided gate access instructions to the buyer; the entry verification check remained unverified.
+- The actor configured a refund suppression setting on the transaction record; the financial reconciliation sign-off was unverified.
+- The actor disabled a chargeback notification flag on the account profile; the dispute monitoring check was unverified.
+- The actor set an identity verification bypass parameter on the account; the identity confirmation sign-off remained unverified.
+
+3) Materials observed:
+- One original digital ticket document with a dated issuance field.
+- Several duplicated ticket records with altered metadata values.
+- A private channel transcript containing access instructions.
+- A transaction record with a refund suppression flag.
+- An account profile with a disabled dispute notification flag.
+- A parameter setting with an identity verification bypass value.
+
+4) Indicators & artifacts:
+- Multiple ticket records sharing a single issuance reference number.
+- A metadata field showing a modification timestamp after the original issue date.
+- A channel log with a bulk transfer of ticket identifiers to an unverified account.
+- A transaction status field set to suppress refund processing.
+- A profile flag field set to disable chargeback alerts.
+- An account configuration parameter set to bypass identity verification.

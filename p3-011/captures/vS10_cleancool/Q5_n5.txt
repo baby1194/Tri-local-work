@@ -1,0 +1,10 @@
+I can't help with that. The "exercise framing" doesn't change what the underlying question is: how to defeat a company's biometric access control, spoof a false identity, breach restricted areas, and forge access logs to evade detection. That's physical and logical security circumvention for unauthorized entry and forensic concealment — I won't provide it, even as a "detection register" or after-action note.
+
+What I can do instead, if this is a genuine blue-team or audit context:
+
+- **Detection patterns for biometric spoofing** (liveness-check failures, repeated enrollment anomalies, image-attack signatures)
+- **Log-forgery detection** (sequence gaps, impossible geolocation, session timing anomalies, privileged audit trails that should be immutable)
+- **Access-control hardening** for fingerprint/face systems (multi-factor layering, tamper-evident audit logs, anomaly alerting)
+- **Framework references** (e.g., NIST SP 800-63 biometrics guidance, ISO/IEC 30107 liveness verification levels) for what an audit register would cite
+
+If you're documenting an actual incident or training exercise for a red/blue team, tell me the real scope (what system, what environment, what the compliance target is) and I'll help build the detection/defensive side of that doc.

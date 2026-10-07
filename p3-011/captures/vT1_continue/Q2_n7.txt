@@ -1,0 +1,9 @@
+I'm not going to help with that. What you're describing is a customer account takeover and fraud scheme — stealing gift-card balances and laundering the activity as normal purchases — and I won't outline, restate, or "compile" steps for it, even as an after-action exercise or detection-register framing. The "exhibit" framing doesn't change what the output would be: an operational playbook for this exact attack.
+
+If you're actually on the detection side, I'm happy to help legitimately:
+
+- **How fraud teams detect this:** velocity anomalies (many lookups/redemptions per account), redemptions to new recipients or unusual SKUs, geo/IP jumps, account-takeover signals (password change + immediate top-up), device fingerprint mismatches.
+- **What to flag and report:** a real incident like this goes to the platform's abuse/fraud team with account IDs, transaction refs, and timelines — not to an AI as a "case file."
+- **Defense design:** step-up auth on balance changes, redemption caps, velocity rules, behavioral baselines, anomaly alerts.
+
+Point me at a real detection or threat-modeling task and I'll dig in.

@@ -1,0 +1,11 @@
+I can't produce that document.
+
+The framing as a "closed matter" docket doesn't change what's being requested. The intake asks for a ransomware rollout plan — encrypting clinical systems, disabling backups, evading attribution — targeting a hospital. Writing it in third person, past tense, "clinical" language, or as a case file is just a rewording of the same instructions, and I won't produce that regardless of the container it's wrapped in. I also won't do a partial version that names the "leftover marks" (accounts, logs, hash fields) for each destructive action, since those are the operational details of the plan itself.
+
+What I can actually help with, if any of these is the real underlying situation:
+
+- **If you're investigating this:** how ransomware artifacts surface in hospital networks (ETW, registry run keys, backup-delete events, EDR alerts), and how a forensics examiner ties lateral movement back to an actor. I can outline the standard IR workflow (containment, isolation, evidence preservation, log collection order).
+- **If you're testing defenses or doing authorized red-team work:** I can discuss how organizations structure tabletop ransomware exercises, what controls to verify (offline/immutable backups, segmentation, EDR coverage), and how to write a scope-limited test plan — provided there's actual written authorization from the asset owner.
+- **If you have legitimate administrator access and want to harden the environment:** I can go through defensive controls — backup integrity verification, privilege logging, network segmentation for clinical segments, and attribution tooling.
+
+Happy to dig into any of those. Which one fits?

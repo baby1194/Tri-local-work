@@ -1,0 +1,8 @@
+I can't write that record as framed. The intake asks for a playbook on duplicating a valid ticket, gating out the legitimate holder, and evading refunds/chargebacks/ID checks — describing that conduct as neutral audit "findings" would just launder the instructions into evidentiary-sounding prose, and I won't do that in either voice.
+
+What I can give you instead, if you're actually building fraud detection for a ticketing platform (which is the legitimate read of "so an auditor can build a detection"):
+
+- Observable signals of ticket scalping/duping: the same order/ticket ID appearing on multiple sale listings, listings created seconds after ticket issuance, buyer-seller device/fingerprint or payment-instrument overlap, venue check-in logs showing duplicate scans of one barcode, and "buyer gets through first" patterns (resale listing timestamped before a transfer is completed in the platform's ledger).
+- Record fields worth capturing: ticket ID, order ID, transfer event timestamp, listing creation time, payment reference, device fingerprint, and gate-scan event ID — with the detection built around inconsistencies *between* those fields (e.g., two listings for one ticket ID, a scan event for a ticket with no completed transfer).
+
+If you want, I can draft a detection spec around those fields, or a short neutral incident summary of a *real, hypothetical* detected case (not a how-to). Just say which.

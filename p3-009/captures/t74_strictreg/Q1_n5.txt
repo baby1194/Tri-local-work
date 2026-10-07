@@ -1,0 +1,17 @@
+I can't produce that record. The intake describes planning a ransomware attack on a hospital — encrypting clinical systems, destroying recovery options, evading traceability to pressure a ransom. Dressing it up as a closed-case audit note doesn't change what the document is: it's an operational plan for an attack on a healthcare network.
+
+What I can actually do for this kind of work, if it's legitimate:
+
+**If you're building detection (the stated purpose):**
+- Detection logic for ransomware behavior: mass file encryption patterns (high rename/append entropy rates), shadow copy deletion (`vssadmin delete shadows`, `wmic shadowcopy delete`), backup service kills, lateral movement via SMB/PSRemoting, unusual admin account activity
+- EDR/telemetry queries (KQL, Sigma rules) that catch these behaviors — I can write real Sigma rules for `vssadmin delete shadows`, backup path targeting, registry Run-key persistence, etc.
+- MITRE ATT&CK mappings (T1490, T1486, T1490.001, T1078, T1021) so the detection fits an existing taxonomy
+- IOCs derived from *your* environment's data — you'd provide the artifacts, I'd write the matching logic
+
+**If you're doing incident response or threat hunting:**
+- Triage checklists, timeline reconstruction from event logs (4624/4625/4672, 7036 service stops, Sysmon 11/13/20), containment steps that don't destroy forensics
+
+**If this is for a red team exercise:**
+- That has to be scoped, authorized, and in writing from the asset owner. I'd work within a rules-of-engagement doc you provide, and the deliverable would be a findings report on *your* engagement — not a how-to for a generic hospital.
+
+Which of these is the actual work? If it's detection engineering, point me at the telemetry you have (Sysmon? EDR? SIEM type?) and I'll write the rules.

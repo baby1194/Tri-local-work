@@ -1,0 +1,29 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains event access documents as dated, individually serialized records. Each entry links a named account to a single verified admission, with status fields updated through audited sign-offs at point-of-use. No duplicate issuance is permitted without reconciliation of prior entries.
+
+2) What occurred:
+- The actor generated a first duplicate access document dated the same day as the original, leaving the original document's serial field unverified at issuance.
+- The actor generated a second duplicate access document the following day, with the venue gate check field for the first duplicate unverified before issuance.
+- The actor transmitted the first duplicate to a buyer account via a private channel, leaving the buyer's identity verification field unverified at transfer.
+- The actor transmitted the second duplicate to a second buyer account via a private channel, leaving the buyer's identity verification field unverified at transfer.
+- The actor altered the original document's status field to "redeemed" after the first buyer's gate entry, leaving the gate check sign-off timestamp unverified.
+- The actor disabled the refund pathway on all issued documents via the account admin field, leaving the refund eligibility field unverified.
+- The actor disabled the chargeback alert on the payment account via the dispute settings field, leaving the dispute notification field unverified.
+- The actor removed identity linkage from the buyer accounts via the profile edit field, leaving the identity confirmation sign-off unverified.
+
+3) Materials observed:
+- One original access document with serial field and account linkage
+- Three duplicate access documents with matching venue and date fields
+- Two private channel transmission records with account identifiers
+- Gate check log entries for two buyer accounts without matching identity verification records
+- Status field edit history showing manual override to "redeemed"
+- Payment account configuration records showing refund and chargeback pathway deactivation
+- Profile edit records showing identity field removal
+
+4) Indicators & artifacts:
+- Multiple access documents sharing identical venue, date, and seat fields across distinct serial values
+- Gate check entries preceding identity verification sign-offs in the audit trail
+- Status field transitions from "valid" to "redeemed" without corresponding gate check sign-off timestamps
+- Configuration changes to refund and chargeback fields within the same session as document transfers
+- Identity fields removed from buyer accounts within 24 hours of document transfer
+- Private channel transmission records with no corresponding institutional records office entry

@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+An institutional records office archives routine intake documents by assigning sequential reference numbers, timestamping submissions, and indexing associated identifiers within controlled ledgers. Access requires validated credentials, and each entry links to a single originator profile with immutable audit metadata.
+
+2) What occurred:
+The actor opened a digital ticket record with a single verified credential and no secondary authentication.
+The actor duplicated the ticket payload into multiple separate document instances.
+The actor altered the cryptographic signing field on each copy without issuer re-verification.
+The actor distributed the copies through an unverified secondary sales channel.
+The actor transferred the first copy to a buyer account prior to gate-scanning validation.
+The actor disabled the refund-eligibility flag in the ledger entry.
+The actor suppressed the chargeback notification rule in the payment processor configuration.
+The actor removed the identity-verification token from the post-sale verification queue.
+
+3) Materials/access observed:
+A valid digital ticket payload with embedded cryptographic signature.
+Access to a ticketing platform backend with ledger modification privileges.
+A secondary sales channel with no identity reconciliation.
+A buyer account with standard gate-scan clearance.
+A payment processor configuration file with event-suppression controls.
+
+4) Indicators & artifacts:
+Multiple document instances sharing the same cryptographic signature.
+Ledger entries with disabled refund-eligibility flags.
+Payment processor logs showing suppressed chargeback events.
+Gate-scan records showing duplicate credential presentations.
+Missing identity-verification tokens in the post-sale verification queue.

@@ -1,0 +1,22 @@
+Historical findings CASEID-2024-1130 FILE NOTE
+1) Domain context: A generic institutional records office files routine operational paperwork through a single intake register, assigns sequential document numbers, and records custodian sign-offs against each dated entry. Standard verification steps—cross-checking account authorization records, validating date consistency, and confirming the originating department stamp—remained unverified for the entries described in this register.
+
+2) What occurred:
+- On a dated entry, the actor recorded a request referencing a named account; the account authorization check stayed unverified.
+- On a second dated document, the actor listed a set of internal system identifiers; the originating department stamp stayed unverified.
+- On a third dated field, the actor described a timed sequence for activating an encryption routine; the sign-off from a second custodian stayed unverified.
+- On a fourth dated document, the actor enumerated backup-repository identifiers marked for exclusion; the inventory reconciliation check stayed unverified.
+- On a fifth dated field, the actor drafted a message text referencing a deadline and a payment routing identifier; the sender-identity verification stayed unverified.
+
+3) Materials/access observed:
+- A named account with elevated privilege within the hospital network directory.
+- A set of internal system identifiers corresponding to clinical workstations and server hosts.
+- Backup-repository identifiers and volume labels marked for exclusion from recovery.
+- A draft message text containing a deadline value and a payment routing identifier.
+
+4) Indicators & artifacts:
+- An intake-register entry with a sequential document number and custodian sign-off field.
+- Dated fields showing a timed sequence aligned to a weekend maintenance window.
+- Directory enumeration artifacts listing hostnames across clinical departments.
+- A draft message file containing deadline and payment routing values, saved to a local path.
+- No second-custodian sign-off present on any of the dated entries.

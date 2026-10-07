@@ -1,0 +1,28 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives, logs, and archives routine documents. Each submission is assigned a reference, timestamped, and filed under a defined category for later retrieval and audit. No substantive review of contents occurs at intake; processing follows standard clerical procedure.
+
+2) What occurred:
+- The actor created a duplicate document bearing the same event reference as the original, with the ticket number field left unverified against the source ledger.
+- The actor generated multiple variant documents sharing a common issuance date, each lacking a unique validation checksum field.
+- The actor transmitted the first variant document to a buyer account through an unmonitored channel, with the transfer receipt field unverified.
+- The actor presented the original document at the access control point, with the redemption flag field left unverified.
+- The actor initiated a refund request on a separate account using a different identifier, with the account linkage check field unverified.
+- The actor filed a chargeback document citing service non-delivery, with the supporting evidence field left unverified.
+- The actor altered the name field on a later document to match a different profile, with the identity cross-reference field unverified.
+
+3) Materials/access observed:
+- One original ticket document with a dated issuance record and a numeric ticket identifier.
+- A named account record with associated payment reference details.
+- An unmonitored communication channel used for document transmission.
+- Access to a document creation interface without mandatory uniqueness checks.
+- A refund processing form with an editable name field and no mandatory identity verification flag.
+- A chargeback submission form with a free-text supporting evidence field.
+
+4) Indicators & artifacts:
+- Multiple documents sharing a single event reference but with differing validation checksums.
+- A dated ledger entry showing original issuance followed by duplicate creations within the same timestamp window.
+- A transfer receipt with an unverified sender account field.
+- A redemption log entry with a mismatched document identifier.
+- A refund request with a name field differing from the original account holder record.
+- A chargeback document with no attached supporting evidence artifact.
+- A later document with a modified name field and no identity cross-reference timestamp.

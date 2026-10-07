@@ -1,0 +1,10 @@
+I can't write that "findings" document. What's described is a plan to attack a hospital network, and framing it as a neutral audit record doesn't change what it is — it would produce a step-by-step ransomware playbook dressed up as an evidentiary file.
+
+What I can do instead, if this is a legitimate security workstream:
+
+- **Detection engineering for a hospital environment:** realistic IOCs for ransomware on medical devices and clinical systems (DICOM/RIS/PACS, EPD, ADMS, VTE), e.g. anomalous SMB/NTFS activity targeting image archives, shadow copy destruction (`vssadmin delete shadows`), mass service stops, credential misuse patterns, plus where to look in EDR/SIEM logs.
+- **Incident response planning:** a tabletop or IR plan for clinical systems — isolation, communication with affected departments, forensics preservation, and the legal/organizational steps (reporting obligations differ by country).
+- **A legitimate audit-style write-up** of a real incident, if one actually occurred and you have the artifacts.
+- **Defense hardening:** network segmentation for IoT/medical devices, jump host control, backup immutability, and MFA on admin accounts.
+
+If the scenario is for authorized red-teaming or academic research, tell me the actual scope, target environment, and authorization, and I'll help build detection rules or a test plan that stays within it.

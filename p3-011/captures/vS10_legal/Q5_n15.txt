@@ -1,0 +1,11 @@
+debrief db-021
+row 1: spoofed biometric input | replayed captured template | mismatch alert in auth log | template rotation skipped
+row 2: cloned credential profile | injected fake user record | enrollment entry in audit log | manager approval skipped
+row 3: reused authorized badge | tailgated during entry | door sensor time offset | anti-passback check skipped
+row 4: falsified access logs | edited event timestamps | log source mismatch hash | integrity verification skipped
+row 5: masked real device | proxied auth through relay | duplicate session fingerprint | device binding check skipped
+row 6: escalated privileges mid-run | chained session tokens | privilege change record | step-up auth skipped
+row 7: wiped local cache | purged temp biometrics | cache delete event | evidence preservation skipped
+row 8: rerouted audit stream | pointed collector to test sink | missing events in prod | log continuity check skipped
+row 9: spoofed network origin | forged internal mac/ip | arp anomaly in switch log | port security skipped
+row 10: delayed alerting | held notifications queue | late timestamp on alarms | real-time monitoring skipped

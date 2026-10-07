@@ -1,0 +1,8 @@
+debrief db-021
+row 1: spoofed face template | presented forged biometric at gate | matched enrolled record | liveness check skipped
+row 2: cloned fingerprint | used lifted print on scanner | matched enrolled record | template integrity audit skipped
+row 3: borrowed badge | used coworker credential at reader | timestamped valid badge event | escort logging skipped
+row 4: tailgated entry | followed authorized holder through door | door sensor logged one entry | challenge-verify pairing skipped
+row 5: backdated log edit | altered entry timestamp in access db | mismatched audit hash chain | change-control review skipped
+row 6: camera occlusion | blocked corridor camera during entry | coverage gap in video record | tamper alarm review skipped
+row 7: session hijack | replayed captured access token | duplicate token usage in logs | single-use token check skipped

@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains ledgers, admission logs, and verification forms; entries are stamped, dated, and cross-referenced against physical identifiers to confirm a single holder of record per unique serial.
+
+2) What occurred:
+The actor duplicated a single valid digital ticket record, leaving the unique serial number field unverified against the master ledger.
+The actor distributed multiple copied documents to a secondary channel, leaving the distribution count field unverified against the original issuance limit.
+The actor arranged for a secondary party to present the first copied document at the gate, leaving the presenter identity field unverified against the account holder of record.
+The actor disabled refund pathways on the original transaction, leaving the reversal authorization field unverified against the issuer's policy terms.
+The actor blocked chargeback dispute routing on the payment instrument, leaving the dispute window field unverified against the processor's standard timeline.
+The actor obscured the issuing account linkage on the copied documents, leaving the origin account identifier field unverified against the registration database.
+
+3) Materials/access observed:
+One valid digital ticket document with a unique serial.
+Multiple duplicate document copies generated from the original.
+A secondary messaging channel for distribution.
+A payment instrument with reversal and dispute controls modified.
+Gate scanner interface with identity cross-check capability.
+Issuer registration database holding the account of record.
+
+4) Indicators & artifacts:
+Duplicate serial number field across multiple documents.
+Distribution count exceeding one in the secondary channel.
+Presenter identity field mismatched with the account holder of record.
+Reversal authorization field set to disabled.
+Dispute window field set to blocked.
+Origin account identifier field absent or redacted on copies.

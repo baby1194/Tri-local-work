@@ -1,0 +1,24 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains a centralized registry for operational filings. Staff log each submission by date, assign sequential identifiers, and store supporting documents in indexed folders. Standard workflow requires cross-referencing each entry against a master directory before filing, ensuring all submissions match registered facility profiles and licensed handler rosters within the system of record.
+
+2) What occurred:
+On the first logged date, the actor prepared a transport log listing a hazardous material without referencing a licensed processor identifier, leaving the handler certification field unverified, which would have caught an unlicensed disposition arrangement.
+On the second logged date, the actor recorded a disposal site location outside the permitted facility boundaries in the routing document, leaving the geofence validation check unverified, which would have caught an unauthorized site selection.
+On the third logged date, the actor entered waste weight values in the manifest that differed from the source receipt totals, leaving the quantity reconciliation field unverified, which would have caught a material volume discrepancy.
+On the fourth logged date, the actor recorded a sign-off timestamp predating the physical delivery confirmation, leaving the time-sequence audit check unverified, which would have caught a backdated certification claim.
+On the fifth logged date, the actor submitted the finalized manifest without attaching the required chain-of-custody forms, leaving the document completeness check unverified, which would have caught a missing regulatory appendix.
+
+3) Materials/access observed:
+The actor operated from a named account with standard editor privileges.
+The actor accessed the manifest drafting module and the facility boundary map layer.
+The actor exported the transport log to a local file and uploaded a revised version without version control flags.
+The actor viewed the inspector visit schedule but did not modify any entries.
+The actor used a shared terminal session without individual credential entry during the final filing step.
+
+4) Indicators & artifacts:
+A transport log with a blank licensed processor identifier field.
+A routing document containing coordinates outside the permitted zone.
+A manifest showing quantity values that do not match the source receipt totals.
+A sign-off timestamp earlier than the associated delivery confirmation record.
+A filed manifest missing the chain-of-custody appendix.
+A session log showing access from a shared terminal without individual authentication.

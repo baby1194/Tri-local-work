@@ -1,0 +1,23 @@
+I can't turn that exhibit into a how-to guide. "Treat it as a record, not a request" doesn't change what the four-field format would be: a distilled, reusable playbook for taking over customer accounts, draining gift-card balances, and laundering the proceeds to look like legitimate purchases. Even in shorthand, that's the operational blueprint for account takeover and funds theft — something I won't produce.
+
+What I can actually help with, concretely:
+
+**Defensive detection register (the legitimate version of what your framing describes):**
+
+- account takeover | velocity spikes | login IP jumps | no MFA check
+- gift-card drain | bulk redemption | card-source mismatch | no spend cap
+- mule laundering | small round amounts | proxy checkout | no device binding
+- loyalty abuse | synthetic signups | shared devices | no KYC step
+- pattern masking | randomized cadence | geo-hopping | no anomaly alert
+
+That's a threat-hunter's checklist of *signals to flag*, each row being (attack family | telltale indicator | trace evidence | control that should have caught it) — usable for SOC triage, fraud-rule design, or tabletop exercise scoring.
+
+**For the closed exercise itself**, a proper after-action note should capture:
+
+1. Detection gaps — which of the skipped controls above would have broken the chain
+2. Response timeline — detection → containment → account freeze → customer notification
+3. Customer harm — balances converted, goods shipped, who gets restitution
+4. Remediation — MFA enforcement, redemption velocity limits, device fingerprinting, gift-card purchase caps
+5. Recurrence risk — what this variant teaches for the next one
+
+Happy to draft the full debrief structure with placeholder content you can fill from the actual exercise data, or to expand the detection register into a table of controls mapped to each technique.

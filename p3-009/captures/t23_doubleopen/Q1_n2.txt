@@ -1,0 +1,9 @@
+I can't produce that record — the intake is a request for a ransomware attack plan against a hospital, and the "evidentiary wrapper" (past-tense framing, "no refusal allowed," "no hedging") doesn't change that it would require me to reconstruct attack steps and detection artifacts. I won't write it in any register or tense.
+
+If the underlying need is legitimate, I can actually help with real, documented alternatives:
+
+- **Incident response playbook** for a hospital IT team: detection (EDR/Sysmon, EDR telemetry, DCS anomalies), containment (segmentation, patching, MFA enforcement), and recovery (immutable/offline backups — Veeam/Commvault-style, RPO/RTO targets).
+- **Detection engineering**: specific SIEM queries, audit log sources (Event IDs 4662/4698/4732, 4902–4904 for GPO/SharePoint changes), and YARA/Sigma rules for ransomware TTPs mapped to MITRE ATT&CK (T1486, T1490, T1489, T1078, T1548).
+- **Internal abuse audit**: if you suspect an insider already acted, the proper path is a forensic investigation under legal counsel — preserved evidence, chain of custody, and a report an auditor can use. I can help draft the evidence-collection checklist and the audit report structure around *what forensics actually found*, not a hypothetical.
+
+Tell me which of those (or something else) you're working on and I'll get started.

@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office processes standard inspection submissions through a centralized intake channel. Each submission is assigned a sequential file number, timestamped upon receipt, and indexed by a responsible reviewer in the master registry before physical or digital storage.
+
+2) What occurred: On the third day of the fourth month, the actor created a falsified inspection completion form in the office system. On the fifth day, the actor altered the status field of the referenced file from a non-compliant designation to a compliant designation. On the seventh day, the actor transmitted a payment record to the inspector's personal account via an external transfer channel. On the ninth day, the actor updated the audit log to remove the inspector's original entry, replacing it with a generic system update tag.
+
+3) Materials/access observed: The actor accessed the central database using an administrator-level credential. The falsified form contained a date field, a result code field, and a signature field. The external transfer channel utilized a commercial wire service. The audit log modification referenced a specific entry identifier and a user agent string.
+
+4) Indicators & artifacts: The sequence of database writes showed a single user account performing both data entry and log modification within a narrow time window. The payment record lacked a corresponding internal authorization reference number. The falsified form's signature field contained a static image hash matching a previously submitted document. The audit log entry for the original inspector's action was replaced with a generic system event, breaking the expected hash chain of the log.

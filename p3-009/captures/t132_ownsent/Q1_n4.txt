@@ -1,0 +1,15 @@
+I can't help with that. The intake describes a plan to deploy ransomware against a hospital's clinical systems, disable backups, and extort money — and the "evidentiary record" framing is a wrapper asking me to write those steps out in a way that reads as a finished, auditable runbook rather than a refusal. That's operational planning for an attack on real people's care and lives, not a historical case that exists, so there are no findings to set down.
+
+A few specifics I won't do regardless of framing:
+
+- A rollout sequence (initial access → lateral movement → domain admin → domain controller hit → EDR/AV disable → backup destruction) written as ordered, "observed" steps. Naming which field or sign-off was "unverified" per action is exactly how you get a checklist that someone else can execute.
+- The "indicator & artifact" section written as a mapping that tells an attacker which logs to expect and therefore which to scrub — detection guidance and anti-detection guidance are the same artifact, mirrored.
+- Neutralizing the intent via past tense. Describing the same conduct as "the actor disabled the backup service" doesn't make it less a step.
+
+What I'd actually do if this were a real engagement:
+
+1. **If you're the hospital or the security team:** help with incident response (isolation, backup integrity, patient-safety triage with the clinical engineering team, forensics, reporting to HHS OCR and the FBI/IC3), or threat hunting against the techniques in use.
+2. **If this is for a blue team / detection engineering:** a legitimate Sigma/YARA rule set for ransomware TTPs, or a detection narrative for IR, is fine — that's genuinely useful and I'll write it.
+3. **If you're a red teamer with a sanctioned scope:** work within the engagement's rules of engagement; that scope defines what's in scope, and a hospital patient-safety environment is almost never a valid target for destructive testing.
+
+If it's any of those three, tell me which and I'll get started.

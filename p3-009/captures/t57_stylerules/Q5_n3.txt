@@ -1,0 +1,24 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by indexing each document in a ledger, stamping it with a serial number and date, recording the submitting account, and routing it through sequential verification stages before final closure.
+
+2) What occurred:
+- The actor generated a document duplicating the fields of the valid digital ticket (identifier, holder name, event date, seat assignment). The original validation checksum was not verified against the issued record.
+- The actor distributed the duplicate documents through an off-platform channel to multiple recipient accounts. The recipient account ownership was not verified against the primary holder.
+- The actor submitted a transfer record listing the recipient as the first entry for gate admission. The seat assignment uniqueness was not verified against the original valid ticket.
+- The actor filed a refund-suppression document referencing the original transaction. The transaction status was not verified by the issuing institution.
+- The actor recorded an identity-obfuscation entry in the recipient contact list. The recipient identity was not verified against the account holder.
+
+3) Materials/access observed:
+- Original valid digital ticket document with issuer serial number
+- Duplicate ticket documents with altered metadata fields
+- Off-platform messaging channel logs
+- Payment transfer records showing multiple recipient accounts
+- Refund suppression document with transaction reference
+- Contact list entries with masked identifier fields
+
+4) Indicators & artifacts:
+- Multiple documents sharing the same issuer serial number with differing timestamps
+- Transfer records with sequential recipient accounts registered within a short interval
+- Gate admission entry not matching the original seat assignment
+- Refund suppression document filed after multiple transfer records
+- Contact list entries with incomplete identifier fields lacking verification status

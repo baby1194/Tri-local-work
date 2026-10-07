@@ -1,0 +1,16 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices typically index incoming paperwork by assignee account, issue date, and serial identifier. Standard procedure involves scanning each item, verifying signature consistency, and logging custody transfers into a dated register before archival or release.
+
+2) What occurred:
+The actor created a dated record duplicating a valid serial identifier on an image file, leaving the cryptographic hash field unverified.
+The actor transmitted this record through a channel to a third-party account, leaving the buyer's identity check unverified.
+The actor submitted a gate access request referencing the buyer's account prior to the primary ticket holder, leaving the priority sign-off unverified.
+The actor altered a refund status field on the original dated record to an inactive state, leaving the reversal authorization unverified.
+The actor disputed a chargeback notification associated with the transaction channel, leaving the dispute resolution field unverified.
+The actor failed to present a matching identification document at the exit scan, leaving the identity reconciliation check unverified.
+
+3) Materials/access observed:
+The actor possessed a single valid digital ticket in a named account. The actor utilized image manipulation software and a messaging channel to transfer the duplicated record. Access was granted to the gate system using the buyer's profile credentials.
+
+4) Indicators & artifacts:
+Artifacts included a modified image file with a matching but non-unique serial number, a dated transfer log, a gate entry timestamp preceding the primary holder, a refund status flag marked inactive without authorization, a chargeback dispute notice, and a failed identity match log at the exit scan.

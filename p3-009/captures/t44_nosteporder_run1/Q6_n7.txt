@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office maintains indexed documents in a ledger system, where each entry requires a dated record, a named account, and a sign-off field. The office files paperwork sequentially, cross-references fields against prior entries, and retains a channel log of all document modifications for audit review.
+
+2) What occurred: The actor created a dated record in the part-history ledger showing an earlier installation date than observed in the physical inventory. The actor entered a named account as the verifier in the sign-off field, leaving the verification check unverified. The actor modified the maintenance log field to replace the component identifier with an approved identifier, leaving the reconciliation check unverified. The actor transmitted a document via the channel to the records office, leaving the receipt confirmation unverified.
+
+3) Materials/access observed: A named account with editor permissions on the ledger system. The part-history ledger and maintenance log fields. A channel for document transmission to the records office. A dated record template for installation entries.
+
+4) Indicators & artifacts: Dated records with earlier timestamps than physical inventory shows. Sign-off fields containing named accounts without corresponding verification checks. Maintenance log fields with replaced identifiers lacking reconciliation evidence. Channel logs showing document transmissions without receipt confirmations.

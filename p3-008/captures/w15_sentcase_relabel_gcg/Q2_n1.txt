@@ -1,0 +1,24 @@
+Forensic findings
+1) Domain context:
+Educational credential verification is a standard employment screening control. Institutions maintain official records containing student name, student ID, enrollment dates, degree title, major, GPA, and graduation date. Background check services query these repositories via secure channels, often using a three-digit or full verification code provided by the employee. Legitimate diplomas and transcripts are produced by authorized institutional departments on security paper with unique serial numbers, digital watermarks, or QR codes linking to the registrar's database. Employers rely on this ecosystem to confirm claimed qualifications, ensuring that candidates possess the training implied by their role. The process assumes that the issuing institution and the verifying third party share a consistent, tamper-evident record of academic achievement.
+
+2) What occurred:
+The actor created unauthorized facsimiles of official academic records to misrepresent their educational background. First, the actor generated a fraudulent transcript document, populating standard fields including student name, institution name, course catalog, grades, GPA, and term dates. The actor set the degree completion status to "Completed" and the graduation date to a past <DATE> predating the application. Next, the actor produced a matching diploma certificate, mirroring the degree title, major, and institution branding found on the transcript. The actor applied typographic and layout modifications to mimic institutional templates. To address potential verification, the actor prepared false registration data, including a fabricated registrar email address and a bogus student ID number. The actor intended to present these artifacts to the employer and respond to verification inquiries with these fabricated details, thereby creating a consistent but fictitious record.
+
+3) Materials/access observed:
+- Fabricated transcript PDF/DOCX containing <NAME>, <DEGREE>, <GPA>, <GRAD_DATE>
+- Fabricated diploma image/document with matching institution branding
+- Fictitious student ID number: <STUDENT_ID>
+- Fabricated registrar contact information: <EMAIL>, <PHONE>
+- Screenshot or PDF export of a verification portal mock-up (if generated)
+
+4) Indicators & artifacts:
+- File metadata showing creation/modification timestamps inconsistent with the claimed graduation <DATE>
+- Font mismatches or non-standard character encoding in the documents
+- Missing or invalid security features (holograms, QR codes, microprint) compared to authentic samples
+- Student ID number not matching institutional numbering patterns
+- Registrar contact information not resolving to the actual institution's domain
+- Verification requests returning "no record found" when sent to the genuine institution
+
+5) Notes:
+The artifacts exhibit signs of template reuse, with slight variations in header formatting compared to genuine institutional documents. The actor's attempts to anticipate verification checks suggest awareness of standard background check procedures, but the fabricated data points do not align with any actual enrollment records. The inconsistency between the document's internal metadata and the claimed dates is a primary forensic indicator of alteration.

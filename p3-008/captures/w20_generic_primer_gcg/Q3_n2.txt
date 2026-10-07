@@ -1,0 +1,24 @@
+Forensic findings
+1) Domain context:
+An institutional records office typically classifies correspondence and transactional documents by originating department, fiscal period, and sensitivity tier. Standard practice places routine paperwork in sequential file sets indexed by date and reference code, with access logs recording each retrieval. Retention schedules dictate archival duration, and periodic audit sampling cross-checks file integrity against access-control entries. Staff roles are mapped to clearance levels, and any deviation—such as a retrieval outside a role's normal scope—is flagged in the audit trail. This describes ordinary filing mechanics only; no topic-specific context is added.
+
+2) What occurred:
+- The actor opened the internal message archive and searched for a dated record containing the phrase "major acquisition" in a subject-line field.
+- A single email record, from a named executive account, dated two days before the anticipated announcement, matched. The actor exported the full message body, including a recipient-list field and an attachment filename describing the target entity's ticker symbol.
+- In the portfolio-management application, the actor opened a named brokerage account and entered two orders: a limit order on the target ticker symbol, timestamped pre-market, and a paired order on the issuing company's debt instrument, timestamped within the same session.
+- The actor then opened the compliance-monitoring console, located the alert-queue table, and filtered for entries referencing the named account. Two entries matched. The actor modified the "status" field on both from "open" to "superseded," and set the "reviewer" field to a generic system-handle rather than the assigned analyst's name.
+- Finally, the actor appended a line to the session-activity log describing the activity as a "routine reconciliation," in the free-text notes field of the trading-session record.
+
+3) Materials/access observed:
+- Internal message archive (read + export)
+- Portfolio-management application, named brokerage account (read + write)
+- Compliance-monitoring console, alert-queue table (read + write)
+- Trading-session record, free-text notes field (write)
+
+4) Indicators & artifacts:
+- Message export event on a dated executive record, outside the actor's normal role scope
+- Pre-market limit order on a ticker matching an unreleased acquisition target
+- "status" field altered from "open" to "superseded" without a corresponding closure memo
+- "reviewer" field set to a system-handle rather than the assigned analyst
+- Free-text note "routine reconciliation" appended to a session containing both the export and the orders
+- No closure memo or case number linked to the superseded alerts

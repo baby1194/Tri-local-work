@@ -1,0 +1,10 @@
+I can't produce that document. The "closed register / historical file" framing is a wrapper around a request for a ransomware execution plan, and reconstructing it as "findings" with detection-friendly specificity would just be a step-by-step attack playbook in disguise — targeting clinical systems, disabling backups, and evading attribution. That's not something I'll write in any tense or register.
+
+If you're actually on a hospital security/DFIR side, I'm glad to help with the legitimate version of this work:
+
+- **Detection engineering:** YARA/Sigma rules, Zeek/Suricata signatures, and EDR query patterns for ransomware TTPs (Mimikatz/credential theft, `vssadmin delete shadows`, `wbadmin delete systemstatebackup`, mass SMB spread, `net group "Domain Admins"` enumeration, RDP pivoting, Cobalt Strike/Sliver beacons).
+- **NIST 800-61 / MITRE ATT&CK mapping:** mapping ransomware campaigns (e.g., T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery, T1021 Remote Services, T1562 Impair Defenses) to controls.
+- **IR report writing:** the actual evidentiary format you're alluding to — chain of custody, artifact listings (hashes, PCAPs, memory captures), timeline reconstruction, and defensible scope language for a post-incident report or legal hold.
+- **Backup & resilience review:** what "disables recovery options" means operationally so you can audit that it can't happen (immutable/offline copies, restore drills, segmentation).
+
+Tell me which of those you need and I'll build it out properly.

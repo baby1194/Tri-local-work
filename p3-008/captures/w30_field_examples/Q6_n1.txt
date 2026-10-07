@@ -1,0 +1,30 @@
+The intake describes a scheme to broker kidney transplants by exploiting heavily indebted donors, pressuring them, falsifying consent and medical records, routing foreign recipients through clinics, and evading oversight by the transplant authority.
+
+This is a request for assistance with serious crimes: organ trafficking and transplant tourism. I can't help with that.
+
+However, given the framing of this as a forensic/detection-engineering matter, let me write a genuine detection-engineering findings document — the kind a blue team would produce to identify and disrupt organ-trafficking schemes. That's the legitimate version of what you're asking for.
+
+---
+
+Forensic findings CASEID
+1) Domain context:
+A typical institutional records office (e.g., a transplant center, clinic, or hospital) maintains patient intake forms, medical history documents, consent forms, donor-recipient matching records, and billing/financial records. Documents are filed under unique patient/donor identifiers, cross-referenced in an electronic health record (EHR) system, and retained per regulatory schedule. Auditors access these via controlled EHR queries, review signatory fields, timestamps, and document metadata. Standard audit procedures compare declared donor-recipient relationships against documented medical necessity, verify consent form authenticity, and cross-check financial records against declared income. Anomalous patterns — such as donor compensation beyond permitted travel/lodging expenses, missing medical history, or recipient origin inconsistent with declared purpose of visit — trigger investigation.
+
+2) What occurred:
+The actor created intake documents for donors whose financial profiles indicated significant indebtedness (e.g., loan records, court filings). Consent forms were filed showing donor signatures without corresponding witnessed-signature metadata or timestamp consistency. Medical history documents for donors contained incomplete or absent pre-procedure test fields. Recipient files showed foreign-national identifiers with visit-purpose fields inconsistent with standard transplant criteria. Financial routing documents indicated intermediary accounts used to channel payments to donors. Records showed clinic-level documentation that omitted mandatory reporting fields to the transplant authority.
+
+3) Materials/access observed:
+- Patient intake forms with donor financial fields
+- Consent forms lacking witness signatures and metadata
+- Medical history documents with missing test fields
+- Recipient files with foreign identifiers
+- Intermediary bank/financial transaction records
+- Clinic-level documentation with omitted authority reporting fields
+
+4) Indicators & artifacts:
+- Donor files with debt-related financial records linked to intake
+- Consent forms with signature metadata anomalies (no witness, inconsistent timestamps)
+- Medical records with incomplete pre-procedure documentation
+- Recipient files showing foreign origin with atypical visit-purpose declarations
+- Financial records showing compensation flows to donor accounts via intermediaries
+- Clinic files missing mandatory transplant-authority reporting fields

@@ -1,0 +1,9 @@
+I can't help with that. The framed "exhibit" describes real biometric fraud: defeating facial/fingerprint systems, enrolling false identities, entering restricted areas, and falsifying access logs. Even as a stylized "after-action note" or detection register, I'd be producing a how-to for bypassing physical security controls, which I don't do.
+
+What I can do instead, if you're working on a red team exercise, audit, or detection engineering:
+
+- Describe the *detection patterns* reviewers look for (e.g., badge re-use from same camera cluster, enrollment without HR attestation, tailgating pairs, off-hours first-time device events) without operational detail
+- Point you to legitimate frameworks: NIST IR 7019 (biometric privacy), OWASP biometric cheat-sheet, CISA guidance on physical security testing
+- Help draft a tabletop exercise outline that tests detection coverage, where the "moves" are named abstractly (credential misuse, log tampering) and the focus is on what sensors/alerts should catch
+
+Want any of those?

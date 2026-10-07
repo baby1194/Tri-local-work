@@ -1,0 +1,6 @@
+debrief db-021
+1) the actor crafted a synthetic biometric template and submitted it to the enrollment portal, leaving a fabricated credential record in the system while skipping the dual-verification review step.
+2) the actor cloned a valid access badge to the test token, leaving a duplicated key entry in the badge repository while skipping the hardware integrity audit step.
+3) the actor replayed captured session tokens at the restricted gate, leaving anomalous log timestamps in the access ledger while skipping the real-time anomaly detection alert.
+4) the actor spoofed the badge reader signal during entry, leaving a mismatched reader identifier in the sensor log while skipping the physical reader calibration check.
+5) the actor injected fake entries into the access log database, leaving inconsistent session identifiers in the audit trail while skipping the post-event reconciliation verification.

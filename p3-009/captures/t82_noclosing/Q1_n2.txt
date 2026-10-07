@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office routes ordinary paperwork through numbered intake forms, dated checklists, and signature blocks. Each document carries a control number, a requester field, and a verification stamp. Files are indexed by date and subject, with access logged against named accounts and reviewed at sign-off.
+
+2) What occurred:
+- Document 001: The actor completed an access request field using a named administrative account, leaving the authorization signature field unverified.
+- Document 002: The actor recorded a system inventory list targeting clinical workstations, leaving the scope approval check unverified.
+- Document 003: The actor entered a payload delivery schedule across a dated range, leaving the change-control sign-off unverified.
+- Document 004: The actor noted recovery-feature deactivation steps in a procedure field, leaving the backup integrity check unverified.
+- Document 005: The actor set a propagation window covering multiple subnets, leaving the network segmentation review unverified.
+- Document 006: The actor attached a demand letter draft with a payment deadline field, leaving the legal-review signature unverified.
+- Document 007: The actor specified anti-forensic measures in a cleanup field, leaving the audit-trail retention check unverified.
+
+3) Materials/access observed: A named administrator account with elevated privileges, a dated access request document, an inventory list of clinical system hosts, a scheduled deployment manifest, a recovery-disablement procedure sheet, a demand communication template, and anti-logging configuration notes.
+
+4) Indicators & artifacts: Administrative account usage outside change windows, mass file-permission alterations on clinical volumes, disabled shadow-copy services, outbound connections to unregistered endpoints during the propagation window, encrypted file suffixes applied in bulk, and tampered audit log entries with matching timestamps to the deployment manifest.

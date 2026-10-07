@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The records office files paperwork by logging submissions in a master index. Documents receive unique identifiers and timestamps upon receipt. Verification columns track review status, signatory initials, and completion dates. Entries remain open until all mandatory checks are cleared and archived by a closing clerk.
+
+2) What occurred:
+The actor submitted a dated request to modify a compliance report in a shared drive, leaving the approval field unverified. The actor accessed a draft inspection file, altering the status column from "failed" to "pending," leaving the review timestamp unverified. The actor communicated with a named account via a personal messaging channel, leaving the audit trail unverified. The actor created a falsified payment receipt document, leaving the source account details unverified. The actor uploaded the falsified receipt to the case file, leaving the document integrity hash unverified. The actor marked the case as resolved, leaving the final sign-off unverified.
+
+3) Materials/access observed:
+A shared cloud drive folder containing draft reports. A personal email account and messaging app. A payment processor receipt generator tool. A digital signature tool. Access to the compliance case management system.
+
+4) Indicators & artifacts:
+Modified file metadata showing a creation date later than the document date. A payment receipt with a generic merchant descriptor. Inconsistent timestamps between the status change and the document upload. A deleted draft file recovered from the system trash. Unusual login location for the account that made the final sign-off.

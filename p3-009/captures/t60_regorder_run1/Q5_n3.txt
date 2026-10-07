@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through dated entries, named fields, and sign-off columns. Each document carries an account reference, a verification date, and a custodian check, with discrepancies recorded in a separate exception log for later audit.
+
+2) What occurred:
+- A document dated the intake date recorded the actor creating multiple duplicate ticket entries against one valid account. The field "serial number" was checked, and the uniqueness verification sign-off stayed unverified.
+- A document dated the intake date recorded the actor altering the ticket metadata fields to match the original entry. The field "issuing timestamp" was checked, and the issuer authenticity check stayed unverified.
+- A document dated the intake date recorded the actor transmitting the duplicate entries to a recipient account through a resale channel. The field "recipient account identifier" was checked, and the buyer identity sign-off stayed unverified.
+- A document dated the intake date recorded the actor instructing the recipient to present a duplicate at the entry point. The field "presentation sequence" was checked, and the gate validation check stayed unverified.
+- A document dated the intake date recorded the actor configuring refund suppression flags on the original account record. The field "refund authorization" was checked, and the reversal control sign-off stayed unverified.
+- A document dated the intake date recorded the actor disabling dispute notifications tied to the payment record. The field "dispute webhook" was checked, and the chargeback monitoring check stayed unverified.
+- A document dated the intake date recorded the actor removing linkage between the ticket batch and the account identity. The field "identity correlation" was checked, and the traceability sign-off stayed unverified.
+
+3) Materials/access observed:
+- A named digital ticket record with a single valid serial value.
+- A named account profile with administrative write access to ticket metadata.
+- A resale channel listing with fields for buyer account and payment confirmation.
+- An entry-point validation record keyed to serial number and presentation time.
+- A payment record with refund and dispute notification fields.
+- An exception log with no entries matching the altered records.
+
+4) Indicators & artifacts:
+- Multiple serial numbers sharing identical issuing timestamps and metadata hashes.
+- A recipient account first observed in the channel with no prior transaction history.
+- Refund suppression flags present on the original account without an authorization sign-off.
+- Dispute notifications absent from the payment record after the sale date.
+- Identity correlation fields blank on the duplicate batch while present on the original.
+- No exception log entries filed for the metadata alterations or the batch creation.

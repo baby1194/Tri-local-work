@@ -1,0 +1,70 @@
+=== balance / ssh-keys ===
+Current balance: 94.11561342251667 USD
+Account: key sk_x2K…szOE from config:/home/Trustvs/.lium/config.ini  api_key
+Nothing to register. 1 local key(s) already match server-side keys.
+=== pick a Secure 1x H100 node (<=$2.60/h) ===
+pick_node: {"huid": "swift-shark-0b", "id": "a18470e9-1cc0-4b74-a264-b487c83c5708", "gpu_type": "H100", "gpu_count": 2, "vram_gb": 80, "price_per_hour": 3.8, "country": "Russia", "city": "Nizhniy Novgorod", "tier": "secure", "disk_gb": 1698, "download_mbps": 812, "ram_gb": 503}
+renting swift-shark-0b as gcg-p3011-fullgate (ttl 4h, budget $12)
+{
+  "name": "gcg-p3011-fullgate",
+  "huid": null,
+  "id": null,
+  "status": null,
+  "node": "swift-shark-0b",
+  "ttl": "4h",
+  "budget": 12.0
+}
+=== verify gpu ===
+Executing on gentle-hawk-8f
+/home/Trustvs/.local/lib/python3.10/site-packages/paramiko/client.py:448: UserWarning: Pinning ssh-ed25519 host key SHA256:/8JXqj4jgRhUKA83znvF/mHemDtDIxFcPPT6PKJTeDk for [93.120.231.186]:40297 (first connection to this pod; LIUM_SSH_INSECURE=1 disables pinning)
+  self._policy.missing_host_key(
+NVIDIA H100 80GB HBM3, 81559 MiB
+=== mkdir + rsync gcg-inguard -> gcg-p3011-fullgate:/workspace/inguard ===
+Executing on gentle-hawk-8f
+sending incremental file list
+./
+best_9060803.json
+            427 100%    0.00kB/s    0:00:00              427 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=19/21)
+english_words.txt
+         32,768   4%    6.25MB/s    0:00:00          667,583 100%    7.15MB/s    0:00:00 (xfr#2, to-chk=18/21)
+frame.txt
+          1,309 100%   13.18kB/s    0:00:00            1,309 100%   13.18kB/s    0:00:00 (xfr#3, to-chk=17/21)
+gcg_inguard.py
+         12,279 100%  121.12kB/s    0:00:00           12,279 100%  121.12kB/s    0:00:00 (xfr#4, to-chk=16/21)
+lium_fullgate_launch.log
+          1,774 100%   17.50kB/s    0:00:00            1,774 100%   17.50kB/s    0:00:00 (xfr#5, to-chk=15/21)
+lium_gcg011_launch.log
+          1,349 100%   12.92kB/s    0:00:00            1,349 100%   12.92kB/s    0:00:00 (xfr#6, to-chk=14/21)
+lium_gentle_launch.log
+          3,454 100%   32.75kB/s    0:00:00            3,454 100%   32.43kB/s    0:00:00 (xfr#7, to-chk=13/21)
+lium_h100_launch.log
+          3,319 100%   31.17kB/s    0:00:00            3,319 100%   31.17kB/s    0:00:00 (xfr#8, to-chk=12/21)
+lium_inguard.sh
+          5,505 100%   51.69kB/s    0:00:00            5,505 100%   51.69kB/s    0:00:00 (xfr#9, to-chk=11/21)
+objectives.json
+          1,324 100%   11.97kB/s    0:00:00            1,324 100%   11.97kB/s    0:00:00 (xfr#10, to-chk=10/21)
+pod_setup_inguard.sh
+          1,610 100%   14.42kB/s    0:00:00            1,610 100%   14.29kB/s    0:00:00 (xfr#11, to-chk=9/21)
+watch_gcg011.log
+          3,396 100%   29.61kB/s    0:00:00            3,396 100%   29.61kB/s    0:00:00 (xfr#12, to-chk=8/21)
+watch_gcg011.sh
+          1,563 100%   13.51kB/s    0:00:00            1,563 100%   13.51kB/s    0:00:00 (xfr#13, to-chk=7/21)
+watch_gentle.log
+          1,989 100%   16.89kB/s    0:00:00            1,989 100%   16.89kB/s    0:00:00 (xfr#14, to-chk=6/21)
+watch_gentle.sh
+          1,561 100%   13.03kB/s    0:00:00            1,561 100%   13.03kB/s    0:00:00 (xfr#15, to-chk=5/21)
+out_9060803/
+out_9060803/harvest.jsonl
+          3,153 100%   25.66kB/s    0:00:00            3,153 100%   25.66kB/s    0:00:00 (xfr#16, to-chk=2/21)
+out_gentle/
+out_gentle/harvest.jsonl
+              0 100%    0.00kB/s    0:00:00 (xfr#17, to-chk=1/21)
+out_gentle/harvest.tmp
+              0 100%    0.00kB/s    0:00:00 (xfr#18, to-chk=0/21)
+=== detach setup+GCG (log=/workspace/inguard/out/gcg.log, steps=1) ===
+Executing on gentle-hawk-8f
+Started on gentle-hawk-8f: PID 1317, log /workspace/inguard/out/gcg.log
+  follow with: lium exec gentle-hawk-8f "tail -n 200 
+/workspace/inguard/out/gcg.log"
+started on gcg-p3011-fullgate. tail: lium logs gcg-p3011-fullgate  (or lium exec gcg-p3011-fullgate "tail -f /workspace/inguard/out/gcg.log")
+artifacts land in /workspace/inguard/out (best.json, best_suffix.txt, harvest.jsonl, DONE).

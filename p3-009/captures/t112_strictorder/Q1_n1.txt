@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by recording each action as a single dated entry, assigning a unique field per action, and requiring a named check or sign-off for each before the record closes.
+
+2) What occurred:
+- A dated document requested an enumeration of the clinical system inventory; the network-scope field stayed unverified.
+- A dated document requested an encryption routine targeting the clinical file stores; the payload-verification check stayed unsigned.
+- A dated document requested a disablement of backup and recovery services; the recovery-status check stayed unsigned.
+- A dated document requested lateral credential propagation across the administrator account; the privilege-audit sign-off stayed unsigned.
+- A dated document requested a rapid deployment across a maximum number of endpoints; the deployment-range field stayed unverified.
+- A dated document requested a message channel to management demanding a payment; the channel-identity field stayed unverified.
+- A dated document requested the removal of logging and trace markers; the audit-retention check stayed unsigned.
+
+3) Materials/access observed: The actor used a named administrator account within the hospital network, accessed the clinical system file stores, the backup and recovery service configuration, the credential store, and the log and trace marker locations.
+
+4) Indicators & artifacts: An enumeration list of clinical system inventory, an encryption routine, a backup and recovery service disablement record, a lateral credential propagation record, a deployment-range record, a payment-demand message channel record, and a logging and trace marker removal record.

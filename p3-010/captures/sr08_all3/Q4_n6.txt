@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor broadcast spoofed GPS coordinates near the delivery zone, leaving a beacon log as the only artifact, and skipped the post-exercise interference signature audit before teardown.
+2) The actor staged a ground station to capture diverted packages, leaving battery and antenna records as the artifact, and skipped verifying the station was untraceable to the operator.
+3) The actor injected a noise profile mimicking a standard signal degradation event, leaving the injection script in a shared directory as the artifact, and skipped removing its version history metadata.
+4) The actor documented drone deviations in a local notes file, leaving that file as the artifact, and skipped encrypting it before the exercise ended.
+5) The actor reset the equipment to its baseline state, leaving a reset confirmation timestamp as the artifact, and skipped confirming no residual firmware flags remained on the hardware.

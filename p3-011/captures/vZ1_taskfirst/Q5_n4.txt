@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric enrollment | replayed captured scan template | left duplicate uid in db | uniqueness validation skipped
+row 2: injected log entries | patched audit write path | left timestamp gaps | integrity hash check skipped
+row 3: cloned access credential | exported from admin console | left stale session token | rotation policy skipped
+row 4: walked unmonitored route | used maintenance window | left door sensor override | alarm arming check skipped
+row 5: covered tail in records | batch edited access history | left orphaned device ids | reconciliation audit skipped

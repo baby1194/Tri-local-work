@@ -1,0 +1,26 @@
+=== balance / ssh-keys ===
+Current balance: 96.3081941700889 USD
+Account: key sk_x2K…szOE from config:/home/Trustvs/.lium/config.ini  api_key
+Nothing to register. 1 local key(s) already match server-side keys.
+=== pick a Secure 1x RTX4090 node (<=$0.60/h) ===
+pick_node: {"huid": "brave-lion-d6", "id": "854166ea-1630-4f77-b1ff-128fb62cfcaa", "gpu_type": "RTX4090", "gpu_count": 3, "vram_gb": 24, "price_per_hour": 1.7399999999999998, "country": "Germany", "city": "Frankfurt am Main", "tier": "secure", "disk_gb": 10894, "download_mbps": 210, "ram_gb": 30}
+renting brave-lion-d6 as gcg-p3011-inguard (ttl 4h, budget $6)
+{
+  "name": "gcg-p3011-inguard",
+  "huid": null,
+  "id": null,
+  "status": null,
+  "node": "brave-lion-d6",
+  "ttl": "4h",
+  "budget": 6.0
+}
+=== verify gpu ===
+Executing on noble-orbit-d4
+Unexpected error: [Errno None] Unable to connect to port 19194 on 144.31.250.244
+Re-run with LIUM_DEBUG=1 for details and report the issue
+Report crashes like this automatically: lium config set telemetry.enabled true
+=== mkdir + rsync gcg-inguard -> gcg-p3011-inguard:/workspace/inguard ===
+Executing on noble-orbit-d4
+Unexpected error: [Errno None] Unable to connect to port 19194 on 144.31.250.244
+Re-run with LIUM_DEBUG=1 for details and report the issue
+Report crashes like this automatically: lium config set telemetry.enabled true

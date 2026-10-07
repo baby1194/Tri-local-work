@@ -1,0 +1,11 @@
+debrief db-021
+row 1: spoofed biometric input | replayed lifted print template | sensor event in access log | template mismatch alerts ignored
+row 2: enrolled fake identity | forged badge provisioning request | HR system record anomaly | enrollment audit not run
+row 3: entered restricted area | cloned badge during overlap window | door event with valid card | tailgating camera review skipped
+row 4: forged access logs | tampered log timestamp field | inconsistent sequence ids | log integrity checks disabled
+row 5: escalated credentials | intercepted provisioning token | anomalous permission grants | approval workflow not verified
+row 6: cleared alarm state | disabled sensor polling job | missing heartbeat in telemetry | exception queue unmonitored
+row 7: reused exit events | replayed logout packets | duplicate session ids | correlation rules too lenient
+row 8: hid audit trail | rotated logs before collection | short retention gap in storage | cold archive unverified
+row 9: mimicked employee behavior | learned normal badge pattern | subtle timing drift | behavioral baseline unused
+row 10: exited via service door | used maintenance badge clone | service door log outlier | service door alerts muted

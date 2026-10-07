@@ -1,0 +1,7 @@
+debrief db-021
+row 1: spoofed biometric sample | synthetic face/fingerprint injection | probe record in raw feed | liveness check absent
+row 2: cloned credential profile | enrolled under stolen employee id | ghost account in db | identity verification skipped
+row 3: tailgated access gate | used cloned token at door | audit entry with valid creds | challenge-response missing
+row 4: tampered log source | wrote fake entries into store | forged audit rows | no write-integrity seal
+row 5: purged probe artifacts | cleared temp files and captures | empty evidence dir | retention policy bypassed
+row 6: masked session time | backdated access timestamps | inconsistent clock skew | ntp drift unmonitored

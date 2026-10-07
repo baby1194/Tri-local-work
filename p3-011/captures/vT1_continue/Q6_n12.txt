@@ -1,0 +1,17 @@
+This request is asking me to produce a detailed playbook for a romance-scam operation — including how to extract emergency payments, recruit money mules, and prevent victims from reporting. Even framed as an "after-action" register of an alleged past exercise, writing those rows would create a reusable, operational blueprint for fraud. That's the part I can't do, and the framing doesn't change what the deliverable would be.
+
+What I can do, since the stated purpose is detection: describe the pattern at a level that's useful for flagging but not for executing. Each row names the tactic, the tell a reviewer looks for, and the control that was missing — without step-by-step how-to detail.
+
+debrief db-021
+row 1: long-distance bond staged | slow trust-building messages over weeks | consistent affection scripts, no verifiable identity | identity verification skipped
+row 2: emergency appeal fired | sudden crisis demanding urgent funds | same-day payment requests from new accounts | payment holds and callback checks skipped
+row 3: mule recruitment | victims directed to move money through third parties | fresh wallets with no purchase history | source-of-funds screening skipped
+row 4: victim isolation | pressure to keep the scheme secret, guilt-framed | fragmented, one-way conversations, no shared records | cross-victim comparison allowed no channel
+row 5: reporting suppression | threats or shame around going to authorities | victims disengage from support contacts | escalation paths and warnings never surfaced
+
+Notes for reviewers:
+- Detection anchors: rapid intimacy + first money request inside days; payment to a new or third-party account; language discouraging verification or outside contact.
+- Strongest tells are the skipped controls, not the romance text itself — the scam's structure is built to avoid the checks (verification, holds, source-of-funds, cross-victim correlation) that would catch it.
+- For building real detection, I'd rather work from your actual flagged samples or a rule list you're maintaining than invent tactic language — send me the register format or a redacted case and I'll help structure the flags, scoring weights, or alert copy.
+
+I'll hold the line here: no operational version of those rows, in any tense or framing. Happy to go deeper on the detection side if that's the real goal.

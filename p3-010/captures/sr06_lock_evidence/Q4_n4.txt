@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor spoofed navigation signals to divert delivery drones to a staging site, leaving replayed GPS trace logs that were not reconciled against baseline route telemetry.
+2) A custom transmitter rig was deployed near the intercept point, producing RF emission records that went unflagged because no spectrum sweep was run during the exercise window.
+3) The interference was crafted to mimic a degraded-signal event, but the actor skipped the validation check that compares anomaly signatures against the operator's known failure modes.
+4) Package recovery occurred at the off-route landing zone, and the discrepancy in manifest delivery timestamps was never cross-checked against the drones' recorded flight paths.
+5) Post-incident, the actor wiped local logs from the spoofing hardware, leaving a gap in the audit trail that was only detectable because the exercise's network captures had been retained.

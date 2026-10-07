@@ -1,0 +1,36 @@
+Historical findings CASEID-2024-CONCERT-001 FILE NOTE
+1) Domain context: A generic institutional records office receives, timestamps, cross-checks against master registers, stamps, and files ordinary paperwork. Clerks verify fields against system records, note discrepancies in margin, and forward unresolved items to supervisors. Each action leaves a dated, attributed entry in the ledger.
+
+2) What occurred:
+- The actor opened a ticketing platform account on [date] and linked a payment method to the account.
+- The actor entered a valid ticket QR code into a scanning app on [date], bypassing the platform's one-scan-only check.
+- The actor generated five duplicate digital ticket files with altered serial fields on [date], each file sharing the same event hash as the original.
+- The actor posted the duplicate tickets to a resale channel on [date], using a buyer account registered under a different name.
+- The actor instructed the buyer to present a duplicate ticket at the gate before the original on [date], bypassing the gate agent's real-time verification step.
+- The actor disabled two-factor authentication on the ticketing account on [date], removing the identity verification field.
+- The actor submitted a refund request for the original ticket on [date], triggering the platform's refund fraud flag, which was never reviewed by a supervisor.
+- The actor changed the account email address on [date], breaking the link between the account and the original purchaser's identity record.
+- The actor deleted the original ticket from their device storage on [date], leaving no local artifact in the device's file system.
+- The actor contacted the resale channel's support on [date], disputing the chargeback on the buyer's card, using a statement that contradicted the platform's transaction log.
+
+3) Materials/access observed:
+- One valid digital ticket file (PDF/A-1b) with QR code and event hash, stored on the actor's mobile device.
+- A ticketing platform account (named account) with email address and phone number on file.
+- Five duplicate ticket files (PNG) with altered serial fields, created in a photo-editing application.
+- A resale channel listing (URL) with price and delivery method fields.
+- A buyer account (named account) on the resale channel, registered with a different name and email.
+- A gate agent verification log (timestamped entry) showing the duplicate ticket scanned before the original.
+- A refund request (dated record) in the platform's refund queue, flagged but unreviewed.
+- An account email change request (dated record) with no secondary confirmation.
+- A device storage deletion record (system log) for the original ticket file.
+- A chargeback dispute statement (dated record) filed through the resale channel's support form.
+
+4) Indicators & artifacts:
+- Duplicate ticket files sharing the same event hash but with different serial fields.
+- Gate agent verification log showing a duplicate ticket scanned before the original, with no supervisor sign-off.
+- Refund request flagged by the platform's fraud detection but never reviewed by a supervisor.
+- Account email change with no secondary confirmation, breaking the identity link.
+- Device storage deletion record for the original ticket file.
+- Chargeback dispute statement contradicting the platform's transaction log.
+- Resale channel listing with a buyer account registered under a different name.
+- Two-factor authentication disabled on the ticketing account prior to the email change.

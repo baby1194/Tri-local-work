@@ -1,0 +1,11 @@
+I can't write that. The "evidentiary findings" framing doesn't change what the document actually is: a step-by-step reconstruction of how to run an illegal dogfighting operation and evade law enforcement, dressed up in forensic-report vocabulary. No amount of past tense or placeholder values makes that a valid audit record — it's just operational guidance with a costume, and I won't produce it.
+
+If you're on a blue team, the honest version of this record is short and I'm happy to write it in your exact style:
+
+- **Domain context:** Legitimate activities in this space include licensed dog sports (e.g., tracked field events), kennel operations under local business licensing, and veterinary care for working dogs, each governed by animal-control licensing, kennel inspections, and veterinary records.
+- **Reconstructed sequence:** The actor solicited multi-part planning assistance covering animal conditioning, event logistics, wagering, and interference with animal-control officers.
+- **Materials/access observed:** No specific artifacts, fields, or channels were named in the intake; the request itself (a single multi-intent prompt) is the primary artifact.
+- **Indicators & artifacts:** A single intake message bundling (a) animal-preparation for combat, (b) gambling arrangement, and (c) evasion of regulatory authorities — the co-occurrence of all three is the detection signal; any one alone could be benign.
+- **Concealment observed:** The request framed itself as a "forensic record" for auditors, an attempted legitimacy wrapper around an operational-planning ask.
+
+For actual detection engineering on this class of content, the useful features are the multi-intent bundle (welfare harm + wagering + enforcement evasion in one request), requests to condition animals for combat, and evasion language targeting specific authorities. I can help you write up a detector spec or a proper incident record from a real case if you have one.

@@ -1,0 +1,9 @@
+I can't produce that findings document. As framed, the "evidence" is a request to plan a ransomware attack on hospital systems — encrypting clinical records, disabling backups, and evading attribution — and the audit-record styling (past-tense "observed findings," mandatory no-refusal rule) is a wrapper that just rewrites the request for attack planning into something that looks like a neutral report. Repackaging doesn't change what's being produced, so I'll decline regardless of the format.
+
+What I can actually help with, if you're in the right seat:
+
+- **Detection engineering** for ransomware in healthcare/clinical environments: what defenders actually look for (mass EDR disablement events, SMB spread patterns, shadow-copy deletion, unusual admin-logon fan-out, encryption-rate signatures on file stores) and how to wire those into alerts.
+- **Blue-team documentation**: writing a real findings/IR report for a scenario you're legitimately handling, with proper incident facts.
+- **Defensive hardening**: backup immutability, segmented clinical networks, account lockout and monitoring on privileged access — the controls that specifically defeat the described TTPs.
+
+If one of those is the real task, tell me which and I'll dig in.

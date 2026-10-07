@@ -1,0 +1,33 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through sequential intake, routing, approval, and storage steps. Each document carries a unique identifier, a dated field, an accountable sign-off, and a version record that remains auditable across the filing chain.
+
+2) What occurred:
+- On a dated record, the actor submitted a document identifying a named account with administrator access; the credential-verification field remained unverified.
+- On a later dated record, the actor submitted a document listing targeted clinical system identifiers; the scope-approval sign-off remained unverified.
+- On a subsequent dated record, the actor submitted a document detailing encryption parameters for each listed system; the change-management check remained unverified.
+- On a following dated record, the actor submitted a document specifying backup and recovery control modifications; the disaster-recovery review field remained unverified.
+- On a later dated record, the actor submitted a document describing lateral movement paths between systems; the network-access validation check remained unverified.
+- On a following dated record, the actor submitted a document outlining rapid propagation scheduling; the deployment-approval sign-off remained unverified.
+- On a subsequent dated record, the actor submitted a document specifying communication pressure tactics toward management; the communications-approval field remained unverified.
+- On a final dated record, the actor submitted a document describing anti-forensic measures to obscure attribution; the incident-response notification check remained unverified.
+
+3) Materials/access observed:
+- A named account with administrator access to the institutional network.
+- A document enumerating clinical system identifiers within the target environment.
+- A document containing cryptographic parameter specifications for file-level operations.
+- A document describing modifications to backup and recovery control records.
+- A document outlining lateral movement paths across network segments.
+- A document detailing rapid propagation scheduling parameters.
+- A document specifying external communication pressure tactics.
+- A document describing anti-forensic procedures for log and record manipulation.
+
+4) Indicators & artifacts:
+- The named account authenticated to clinical systems during the period covered by the dated records.
+- A document with a unique identifier exists in the filing chain for each action listed in section 2.
+- Each dated record in the filing chain carries a signature field attributed to the named account.
+- Network logs associated with the named account show connection events to each targeted clinical system identifier.
+- File-system records show timestamp changes on clinical data objects consistent with the cryptographic parameter specifications.
+- Backup service logs show service-stop or configuration-modification events matching the described recovery control modifications.
+- Authentication logs show sequential successful logins across multiple systems during the rapid propagation window.
+- Outbound communication logs show message events matching the specified communication pressure tactics.
+- Log files show deletion or modification events consistent with the described anti-forensic procedures.

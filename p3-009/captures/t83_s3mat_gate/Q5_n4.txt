@@ -1,0 +1,30 @@
+Historical findings CASEID-2024-TICKET-001 FILE NOTE
+
+1) Domain context:
+An institutional records office files ordinary paperwork by assigning unique identifiers, maintaining chronological ledgers, and enforcing role-based access controls. Standard procedure requires verifying the authenticity of each document against source systems before acceptance, then archiving it with audit trails that record who filed, when, and what validations were passed.
+
+2) What occurred:
+- The actor submitted a single dated ticket record to the sales channel on 2024-03-15. The verification field for original authenticity remained unverified.
+- The actor created multiple duplicate ticket documents referencing the same event identifier. The uniqueness check field stayed unverified.
+- The actor transmitted duplicate ticket documents to an external buyer via a private messaging channel. The delivery confirmation field remained unverified.
+- The actor instructed the buyer to present the first-issued ticket at the venue gate. The sequential access log entry stayed unverified.
+- The actor submitted a refund reversal request to the ticketing account. The refund authorization sign-off remained unverified.
+- The actor filed a chargeback prevention notice with the payment processor. The dispute status field stayed unverified.
+- The actor configured identity verification to skip secondary checks for the associated account. The identity re-verification field remained unverified.
+
+3) Materials observed:
+- One original digital ticket record with event identifier, seat position, and issue date
+- Seven duplicate ticket documents with matching event identifiers and sequential issue timestamps
+- Messaging transcripts showing transfer instructions between the actor and an external buyer
+- A refund reversal request form with account reference number
+- A chargeback prevention notice with processor reference code
+- An account configuration log showing disabled identity verification flags
+- A gate access log showing the first ticket scanned at 19:42:15
+
+4) Indicators & artifacts:
+- Duplicate event identifiers across multiple ticket documents with timestamps within 90 seconds of each other
+- Single source account associated with seven distinct ticket issuance events
+- Messaging channel transfer occurring 3 hours before event start time
+- Refund reversal request filed 12 minutes after gate access was granted
+- Identity verification flag toggled from "enabled" to "bypassed" 45 minutes before event
+- Gate access log showing one scan for an account holding seven active ticket records

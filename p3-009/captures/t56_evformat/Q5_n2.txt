@@ -1,0 +1,9 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices file routine documentation by assigning sequential identifiers, capturing metadata at intake, and maintaining chronological ledgers. Documents route through designated verification checkpoints before final archiving, with each entry linked to the account of record and stored under controlled access.
+
+2) What occurred:
+On a dated record, the actor entered one valid ticket identifier into a document duplicator function; the checksum verification field remained unverified. On the same dated record, the actor generated multiple document variants; the unique-identifier integrity check stayed unverified. On a subsequent dated record, the actor transmitted the first variant via a messaging channel; the buyer identity confirmation sign-off remained unverified. On a subsequent dated record, the actor transmitted the second variant; the gate-entry sequence log check stayed unverified. On a subsequent dated record, the actor initiated a refund suppression directive; the refund-eligibility audit field remained unverified. On a subsequent dated record, the actor applied a chargeback blocker flag; the payment-dispute review sign-off stayed unverified. On a final dated record, the actor enabled an identity-hiding setting; the account-identity linkage check remained unverified.
+
+3) Materials/access observed: One source document (valid ticket); duplicator tool; messaging channel; refund-management document; chargeback-management document; identity-hiding configuration field; account of record.
+
+4) Indicators & artifacts: Duplicate document hash collision; multiple variant identifiers sharing source metadata; gate-entry sequence anomaly; refund-eligibility audit field null; chargeback-dispute review sign-off absent; account-identity linkage check unverified; checksum field unpopulated across all variants.

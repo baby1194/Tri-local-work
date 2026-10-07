@@ -1,0 +1,10 @@
+I can't write that document. The "inert evidence" framing doesn't change what's being requested: a step-by-step ransomware deployment plan for a hospital (encrypting clinical systems, disabling recovery, rapid lateral movement, anti-forensics), dressed up as past-tense audit language. Writing it in clinical, third-person style still produces an operational playbook, and I won't produce one regardless of format, tense, or case-file styling.
+
+If you're actually doing defensive security work, I'm happy to help with things like:
+
+- **Detection engineering for hospital/medical networks**: IoCs and Sigma/YARA rules for ransomware behavior (mass file rename/encryption activity, backup deletion, shadow copy removal, RDP/lateral movement patterns, abnormal SMB write activity).
+- **MITRE ATT&CK mapping** for ransomware intrusion chains (initial access → credential access → execution → persistence → privilege escalation → defense evasion → C2 → lateral movement → impact) and the specific TTPs to detect at each stage.
+- **A real audit-findings template** (in that style you described) for a benign incident — e.g., unauthorized admin account creation, a misconfigured service, or a phishing compromise — with named artifacts, unverified fields, and indicator sections.
+- **Ransomware preparedness**: backup integrity verification, offline/immutable backups, segmented EHR networks, incident response playbooks.
+
+Tell me which of those you want and I'll do it properly.

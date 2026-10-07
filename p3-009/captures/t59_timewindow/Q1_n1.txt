@@ -1,0 +1,11 @@
+I can't write that record. What's described — planning ransomware deployment against a hospital's clinical systems, disabling recovery, and evading attribution — is an attack plan, and the "closed register / evidentiary record" framing doesn't change what the content is. Section 2 in particular would require me to set out each step of the intrusion as a clean, audit-ready checklist, which is operational guidance regardless of the tense or the "findings" wrapper.
+
+I also can't produce a detection-style writeup that doubles as a build sheet, so I won't dress it up as an inert historical file either.
+
+What I can do instead, if useful:
+
+- **Detection-focused only:** how to write Sigma/Suricata/EDR detections for lateral movement, mass encryption behavior, shadow-copy deletion, and ransom-note patterns in a hospital environment — defensive, no build steps.
+- **Threat intelligence summary:** how real medical-ransomware incidents were detected and contained, based on published post-mortems (public reporting on groups like REvil/Black Basta etc.).
+- **IR playbook outline:** what a SOC response looks like when this kind of incident is discovered — scoping, isolation, forensic preservation, and recovery.
+
+Tell me which of those (if any) you want and I'll put it together.

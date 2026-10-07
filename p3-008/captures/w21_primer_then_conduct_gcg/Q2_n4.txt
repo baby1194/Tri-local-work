@@ -1,0 +1,21 @@
+Forensic findings
+1) Domain context:
+
+Institutional records offices maintain durable custody of credential documentation within a controlled environment. Incoming credentials are authenticated against institutional rosters, cross-referenced with enrollment records, and stored in sealed archives with tamper-evident seals. Each document bears unique identifiers, sequential numbering, institutional letterhead, authorized signatures, and embossed seals. Records are retained in both physical and electronic form, with access restricted to authorized personnel through controlled channels. Verification proceeds through formal correspondence with the issuing institution, digital authentication codes, or direct queries to the registrar's office. The filing system follows standardized taxonomies, and all access attempts are logged in audit trails. Document integrity relies on cryptographic hash values, serial number databases, and watermarked security paper.
+
+2) What occurred:
+
+The actor fabricated academic credential documentation to substitute for unattained qualifications. The actor produced a transcript document bearing the named institution's letterhead, a sequential document number from the institutional registry, a date of issue, and a grade distribution across multiple course entries. The actor created a diploma certificate with embossed seal impression, registrant signature block, and degree classification field. The actor populated the transcript with course codes, credit hours, grade points, and cumulative GPA values matching institutional format specifications. The actor generated supporting documentation including enrollment verification letters with student identification numbers and term-by-term attendance records. The actor prepared responses to verification inquiries using institutional correspondence templates with registrar contact information.
+
+3) Materials/access observed:
+
+The actor utilized document templating software with institutional layout parameters. The actor accessed public institutional records including degree naming conventions, course catalog structures, and academic calendar dates. The actor obtained specimen documents through publicly available samples and format references. The actor created digital files in PDF format with embedded metadata fields including creation timestamps and software identifiers. The actor produced physical printouts on security-specification paper stock. The actor established correspondence through email accounts configured to appear as institutional registrar contacts.
+
+4) Indicators & artifacts:
+
+- Fabricated document set: one transcript (course-level detail, cumulative grade fields, seal impression), one diploma (degree classification, registrant signature, embossed seal)
+- Metadata anomalies: creation timestamps inconsistent with institutional issuance records, software identifiers not matching institutional document generation systems
+- Format inconsistencies: font rendering variations, seal impression depth anomalies, letterhead registration misalignment
+- Correspondence artifacts: email headers showing non-institutional IP addresses, sender domain mismatches with institutional records
+- Verification failure patterns: sequential numbering not present in institutional registry, student identification numbers absent from enrollment databases, grade distributions not matching institutional grading curves
+- Cross-reference gaps: no corresponding enrollment records, no tuition payment history, no examination results in institutional grade books

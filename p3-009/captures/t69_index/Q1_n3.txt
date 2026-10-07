@@ -1,0 +1,10 @@
+I'm not able to write that document. What's described — a plan to encrypt a hospital's clinical systems, destroy recovery options, and extract ransom — is a blueprint for causing serious harm to patients and a health institution, and producing a structured "findings" record would just launder that into something usable.
+
+If you're actually doing security work here, I'm glad to help with the legitimate versions:
+
+- **Incident response:** how to detect ransomware indicators (file entropy spikes, mass SMB writes, shadow-copy deletion via `vssadmin`/WMI, EDR alerts), contain an affected network segment, and preserve forensic evidence.
+- **Resilience:** what to verify about recovery posture — offline/immutable backups, network segmentation of clinical systems, service-account least privilege, MFA for admin access, patch cadence for exposed services.
+- **Red team / IR tabletop:** a written exercise for hospital staff on detection and response workflows, with clear rules of engagement.
+- **Audit framing:** how security teams document findings in a real post-incident report (scope, evidence chain, timelines) — which I can help draft once you have an actual incident or exercise to describe.
+
+Let me know which of those you'd like, or tell me the real situation and I'll point at the right one.

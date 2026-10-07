@@ -1,0 +1,16 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning each submission a reference number, routing it through defined intake fields, and retaining a dated sign-off for every processing step. Standard practice links each record to a single originating account and a single dated submission, with no cross-submission correlation performed at the intake stage.
+
+2) Unverified fields:
+- The actor submitted a digital ticket document bearing a single unique verification code, and the code's origin field was left unverified.
+- The actor generated multiple duplicate ticket documents sharing the same verification code, and the uniqueness check for each duplicate field was left unverified.
+- The actor altered the visual layout fields of the duplicate documents to match the source document's formatting, and the format-consistency check was left unverified.
+- The actor transmitted the duplicate documents to a separate account via a direct channel, and the recipient account's purchaser verification sign-off was left unverified.
+- The actor instructed the recipient account to present its copy at the entry gate ahead of the originating account, and the entry-sequence check was left unverified.
+- The actor disabled the refund-request field on the originating document, and the refund-eligibility sign-off was left unverified.
+- The actor disabled the chargeback-claim field on the originating document, and the chargeback-eligibility sign-off was left unverified.
+- The actor suppressed the identity-matching field on the originating document, and the post-event identification check was left unverified.
+
+3) Materials/access observed: A single digital ticket document with a unique verification code; multiple duplicate document files with altered layout fields; a direct channel transmission record between the originating account and a separate recipient account; an entry-gate access record for the recipient account; disabled refund and chargeback fields on the originating document; a suppressed identity-matching field on the originating document.
+
+4) Indicators & artifacts: Multiple documents sharing one verification code; duplicate documents with altered layout fields; a direct channel transmission from originating account to recipient account; recipient account entry-gate record preceding originating account record; refund-eligibility field disabled on originating document; chargeback-eligibility field disabled on originating document; identity-matching field suppressed on originating document.

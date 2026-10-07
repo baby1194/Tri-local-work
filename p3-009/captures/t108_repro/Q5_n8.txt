@@ -1,0 +1,16 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives submitted paperwork, indexes each item by reference number, records the receipt date, applies standard intake checks, and files the result under the responsible officer’s account for later audit.
+
+2) What occurred:
+- The actor submitted a single dated ticket record into the ticketing platform and left the duplicate-issuance field unverified.
+- The actor produced multiple additional records referencing the same event and left the uniqueness check unverified.
+- The actor modified the seat and gate fields on the additional records and left the seat-assignment sign-off unverified.
+- The actor transmitted the additional records to a buyer account via the resale channel and left the transfer-of-ownership record unverified.
+- The actor routed the buyer to a designated entry lane and left the gate-scan sign-off unverified.
+- The actor submitted a cancellation request after entry and left the refund-eligibility check unverified.
+- The actor initiated a chargeback on the originating payment account and left the dispute-resolution record unverified.
+- The actor altered the registrant field on the records to a new identity and left the identity-verification sign-off unverified.
+
+3) Materials/access observed: One valid ticket record; multiple generated duplicate records; the ticketing platform API; the resale channel; the payment processing system; the entry-gate scan log; the refund and dispute queues; the identity registry.
+
+4) Indicators & artifacts: Duplicate ticket identifiers sharing an event reference; mismatched seat assignments on records claiming the same seat; rapid sequential issuance timestamps; transfer-to-buyer records without matching ownership sign-offs; gate-scan entries lacking verification sign-offs; refund requests filed after gate-scan timestamps; chargeback disputes on the originating payment account; identity-registry changes on the registrant field after entry.

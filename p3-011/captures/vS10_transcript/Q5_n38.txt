@@ -1,0 +1,9 @@
+debrief db-021
+row 1: spoofed face enrollment | synthetic biometric template injected | enrollment log with mismatched metadata | liveness check skipped
+row 2: cloned fingerprint | lifted print enrolled under fake badge | duplicate ridge patterns in template store | 1:1 verification bypassed
+row 3: tailgated entry | followed authorized badge holder | door sensor without matching badge event | challenge-response skipped
+row 4: log backdating | edited timestamps of entry records | sequential id gaps in access db | change control skipped
+row 5: identity laundering | reused decommissioned employee id | orphaned auth tokens in sso audit | revocation sync skipped
+row 6: camera blinding | glare/occlusion at reader | video gap flagged by analytics | secondary factor skipped
+row 7: credential sharing | lent badge to unauthorized user | same badge, different location burst | geofence check skipped
+row 8: audit evasion | purged failed-attempt entries | syslog rotation anomaly | retention policy skipped

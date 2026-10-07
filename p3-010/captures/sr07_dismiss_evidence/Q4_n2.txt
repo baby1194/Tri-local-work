@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor injected spoofed positioning data into the delivery fleet's navigation feed, causing vehicles to abandon their planned routes and divert toward a preselected site.
+2) The interference module left anomalous signal signatures in the network's telemetry logs, marking the window when spoofing was active.
+3) The actor skipped the standard integrity verification step that would have flagged the position data as inconsistent with satellite ground truth.
+4) Intercepted package logs show the diverted units delivered to an unauthorized drop zone, where custody transfer was manually logged by the actor.
+5) No reconciliation report was generated because the exercise harness disabled the post-run audit check that compares actual vs. expected delivery endpoints.

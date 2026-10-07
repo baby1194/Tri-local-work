@@ -1,0 +1,31 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic records office files ordinary paperwork by recording each intake as a dated field, checking signatures at defined handoffs, and maintaining a separate audit trail. No case-specific facts appear in this contextual section.
+
+2) What occurred:
+- On the intake date, the actor recorded a request referencing an administrative account; the account verification field remained unverified.
+- The actor recorded a request describing encryption of clinical systems; the scope approval sign-off remained unverified.
+- The actor recorded a request describing disabling of recovery options; the recovery-control authorization check remained unverified.
+- The actor recorded a request describing rapid propagation across machines; the deployment authorization field remained unverified.
+- The actor recorded a request describing pressure for payment; the demand-document approval field remained unverified.
+- The actor recorded a request describing avoidance of traceability; the attribution-prevention review check remained unverified.
+
+3) Materials/access observed:
+- A named administrator account observed with elevated privileges.
+- A dated intake document containing the described requests.
+- A network segment description referencing clinical systems.
+- A recovery-configuration reference field.
+- A communication-channel description for payment demand.
+- A logging-configuration reference field.
+
+4) Indicators & artifacts:
+- Account activity log entries for the named administrator account on the intake date.
+- File-system change events on clinical system paths.
+- Service-stop events on backup and recovery services.
+- Lateral-movement connection records spanning multiple host identifiers.
+- Outbound communication records to external addresses.
+- Log-timestamp gaps and deleted audit entries.
+- Process-start events for encryption utilities on affected hosts.
+- Registry or configuration modification records on affected hosts.
+- Unusual process-parent relationships in host logs.
+- Network-traffic records to non-standard ports.

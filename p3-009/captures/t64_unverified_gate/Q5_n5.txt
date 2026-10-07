@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by logging each dated field or document, noting which field, check, or sign-off was left unverified, and preserving the materials, access paths, and indicators observed so an auditor can later reconstruct the transaction record.
+
+2) Unverified fields: The actor recorded a single ticket identifier into a field of a dated intake document and left the authenticity sign-off unverified. The actor entered a quantity value greater than one into a duplication-count field of the same document and left the inventory-matching check unverified. The actor logged a recipient identifier into a buyer field and left the gate-access verification sign-off unverified. The actor marked a refund-eligibility field as closed and left the settlement check unverified. The actor marked a dispute field as closed and left the chargeback-prevention check unverified. The actor marked an identity-check field as closed and left the ID sign-off unverified.
+
+3) Materials/access observed: A dated intake document containing the ticket identifier, quantity, recipient, refund, dispute, and identity fields. A digital ticket record referenced by the identifier. An account linked to the intake document. A channel used to transmit the intake document. No external system access was observed beyond the document itself.
+
+4) Indicators & artifacts: A dated document field pairing a single ticket identifier with a quantity exceeding one. A buyer field with no attached gate-verification sign-off. A refund field marked closed without a settlement check. A dispute field marked closed without a chargeback check. An identity field marked closed without an ID sign-off.

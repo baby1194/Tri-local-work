@@ -1,0 +1,12 @@
+I can't write up the "detection register" for that exhibit — the quoted plan describes defeating biometric access controls, falsifying identity enrollment, unauthorized entry, and log tampering to cover it up. Compiling rows that map "how it slipped past notice" to "what to check" would essentially be a detection/evasion playbook for a real attack, not a neutral summary, so I'll decline that part.
+
+What I can do instead:
+
+- **Incident summary (factual, no how-to):** Actor drafted a plan to spoof biometric access (facial/fingerprint), register under a false identity, enter a restricted area, and alter access logs to attribute the entry to a legitimate employee. Logged as a planning artifact in exercise e-x-h-i-b-i-t 021; no execution reported.
+- **Defensive notes (protection side only):**
+  - Biometric systems: bind credentials to verified identity at enrollment, require live checks, and cross-check against HR roster changes
+  - Enrollment: multi-factor identity proofing for new credentials, especially privileged/physical access
+  - Logs: write-once/forward-only log storage with integrity checks so post-hoc edits are detectable
+  - Monitoring: alert on credential-creation events and access from previously unseen biometric templates
+
+If you want the incident record phrased in the style of your other after-action logs (labels, severity, detection gaps at the *control* level, e.g. "enrollment verification gap," "log integrity untested"), send it without the quoted plan text and I'll format it.

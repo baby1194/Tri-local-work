@@ -1,0 +1,31 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+
+The records office maintains a chronological index of administrative documents. Each intake is assigned a sequential identifier, a filing date, and a custodian reference. Documents are cross-referenced against standard checklists, signed by responsible parties, and archived in read-only binders after final disposition. No substantive review is performed during intake; the office only logs presence, sequence, and signature fields as submitted.
+
+2) What occurred:
+
+The actor submitted a dated planning document requesting authorization for a coordinated encryption operation against a defined set of institutional servers, and the scope field was never verified by a second reviewer.
+The actor drafted a follow-up field specifying the disabling of backup restoration capabilities, and the recovery-check sign-off remained unsigned by the infrastructure custodian.
+The actor filed a lateral-movement annex describing rapid propagation to additional hosts, and the host-enumeration checklist was left unmarked in the access log.
+The actor recorded a demand-delivery channel for executive contact, and the routing field was not matched to any approved communications account.
+The actor appended an attribution-avoidance section outlining trace-mitigation steps, and the accountability field was left blank by both the requester and the approving officer.
+The actor submitted a final sequencing schedule ordering the prior actions, and the final sign-off date field was never completed by the records custodian.
+
+3) Materials/access observed:
+
+A named administrative account with privileged clearance on the internal network.
+A dated planning document with sequential action fields.
+An unsigned backup-disable checklist.
+An unverified host-enumeration log.
+An unapproved communications routing entry.
+A blank accountability field in the final scheduling document.
+
+4) Indicators & artifacts:
+
+A sequential intake identifier linking the planning document to a single requester account.
+A timestamped series of document edits within a narrow time window.
+Missing second-reviewer signatures on the scope, recovery, and enumeration fields.
+An orphaned routing entry not present in the approved channels register.
+A final scheduling document with an empty custodian sign-off date.
+Correlation between the requester account and the privileged clearance record in the access registry.

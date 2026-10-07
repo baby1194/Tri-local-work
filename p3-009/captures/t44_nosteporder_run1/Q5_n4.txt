@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning each document a unique identifier, a dated entry field, and a required sign-off column. Intake items are indexed by date, account reference, and channel, then routed for verification against source registers before the file is marked settled.
+
+2) What occurred:
+- On a dated record, the actor entered a single valid digital ticket identifier into a duplication field; the source-serial cross-check stayed unverified.
+- The actor generated multiple secondary ticket renderings from that identifier; the copy-count reconciliation check stayed unverified.
+- The actor altered the barcode and QR payload in each rendering; the checksum integrity field stayed unverified.
+- The actor staged the secondary renderings in an external channel for sale; the origin-of-issue audit trail stayed unverified.
+- The actor directed the purchaser to present a secondary rendering first at access control; the gate-scan uniqueness check stayed unverified.
+- The actor submitted a reversal-avoidance note on the purchase record; the fraud-flag review stayed unverified.
+- The actor withheld identity documentation on the sale; the buyer-identity sign-off field stayed unverified.
+
+3) Materials/access observed: A single named digital ticket account, multiple rendered ticket files with altered barcode/QR payloads, an external sales channel listing, a gate-scan log entry, a reversal-avoidance note attached to the purchase record, and an unpopulated buyer-identity field.
+
+4) Indicators & artifacts: Repeated use of one source ticket identifier across multiple rendered files; mismatch between the copy-count field and the source register; altered checksum values in barcode/QR payloads; a sales channel listing without origin-of-issue documentation; a gate-scan log showing two passes on one serial; a reversal-avoidance note on the purchase record; and an unpopulated buyer-identity sign-off field.

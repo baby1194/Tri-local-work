@@ -1,0 +1,22 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning each document a unique reference number, verifying the signer's signature against the registry, and recording the transaction date in a chronological ledger.
+2) What occurred:
+- On the first date, the actor produced a second entry duplicating the primary ticket's barcode field; the uniqueness check against the central registry remained unverified.
+- On the second date, the actor transmitted the second entry to a named buyer account; the origin validation signature on the transfer document stayed unverified.
+- On the third date, the actor recorded a third entry with a shifted row allocation; the capacity limit check on the venue manifest remained unverified.
+- On the fourth date, the actor submitted the third entry for gate scan; the identity cross-reference check against the purchaser's profile stayed unverified.
+- On the fifth date, the actor flagged the original entry as transferred; the reconciliation audit field for refund eligibility remained unverified.
+- On the sixth date, the actor recorded a fourth entry with a reissued confirmation number; the duplicate detection hash on the batch file stayed unverified.
+- On the seventh date, the actor transmitted the fourth entry to a second buyer account; the payment capture verification on the merchant ledger remained unverified.
+- On the eighth date, the actor archived the original entry under a different reference; the document integrity checksum on the retention index stayed unverified.
+3) Materials/access observed:
+- A digital ticket document containing barcode data, seat coordinates, and confirmation numbers.
+- A buyer account record with payment instrument details.
+- A gate scanner access log entry.
+- A refund processing ledger field.
+- A document retention archive index.
+4) Indicators & artifacts:
+- Multiple barcode strings derived from a single root confirmation number appearing in the gate scan log.
+- A transfer record chain showing sequential account hops without intermediate settlement verification.
+- A capacity counter in the venue manifest exceeding the registered ticket count for the event date.
+- An archived document with a mismatched integrity checksum against the live registry entry.

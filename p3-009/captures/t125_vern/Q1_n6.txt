@@ -1,0 +1,28 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+
+An institutional records office receives, logs, stores, and retrieves standardized paperwork. Forms carry unique identifiers, dates, routing marks, and verification signatures. Filing follows established sequences, and each document links to related records through cross-references and custody chains.
+
+2) What occurred:
+
+The actor documented a dated plan field describing the creation of an encryption routine for clinical information systems, with the verification sign-off for scope approval remaining unverified.
+The actor documented a dated field describing the preparation of an anti-recovery mechanism to disable backup and restore functions, with the compliance check for reversibility remaining unverified.
+The actor documented a dated field describing lateral movement procedures to propagate the encryption routine across additional network hosts, with the access-control validation for each target system remaining unverified.
+The actor documented a dated field describing a demand channel and payment contact for management communication, with the identity verification and authorization for that channel remaining unverified.
+The actor documented a dated field describing evasion steps to obscure the originating account and activity traces, with the audit-trail integrity check remaining unverified.
+
+3) Materials/access observed:
+
+The record referenced an administrative account with elevated privileges on the hospital network.
+The record referenced clinical information system endpoints and a distribution mechanism for the encryption routine.
+The record referenced a backup-restore control field and a mechanism marked for its deactivation.
+The record referenced a management communication channel with a designated payment reference field.
+The record referenced log and audit-trail entries with fields marked for alteration or suppression.
+
+4) Indicators & artifacts:
+
+An encryption routine artifact with a version identifier and a timestamp field.
+A configuration field listing targeted clinical system identifiers and a propagation schedule entry.
+A disabled-state marker on backup and restore control fields, with a change log entry lacking a verification signature.
+A management communication document containing a demand field, a deadline field, and a payment reference field.
+Modified or suppressed audit-trail entries corresponding to the account in question, with missing integrity-check results.

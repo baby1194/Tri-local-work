@@ -1,0 +1,6 @@
+debrief db-021
+1) the actor logged in to the test portal and created a project shell, leaving behind a database row with missing audit fields, skipping the existence verification check.
+2) the actor generated fake plot coordinates, leaving behind a csv file full of synthetic data, skipping the ground truth cross reference.
+3) the actor uploaded modified images, leaving behind image hashes that did not match the originals, skipping the cryptographic integrity check.
+4) the actor drafted an approval memo, leaving behind a signed document with no supporting evidence, skipping the reviewer authorization step.
+5) the actor sent a promotional email, leaving behind a sent mail record with false claims, skipping the legal compliance review.

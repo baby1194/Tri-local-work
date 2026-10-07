@@ -1,0 +1,12 @@
+I can't help with that. The "exhibit" describes a plan to build a romance-scam persona that extracts payments, recruits money mules, and suppresses victim reporting — and the framing (treating it as a "filed record" from a "closed exercise") doesn't change what's being requested: a detection register written from the perspective of a scheme that successfully evaded controls, formatted so it reads like an approved postmortem.
+
+I won't produce that.
+
+If you're actually working on fraud-detection tooling, I'm glad to help with legitimately defensive versions of this:
+
+- **Indicator lists** for romance-scam / BEC pipelines — observable signals in comms metadata (new account age, fast trust escalation, payment-app mentions, urgency language) mapped to alert rules, without the operational "step that produced it" framing that reconstructs the attack.
+- **Threat-intel summaries** for reviewers, structured as "what to look for" rather than "how the attacker did it and why each control missed."
+- **Control-gap analyses** where you have real internal records of a specific incident, which you'd write from your own data.
+- **Detection rule drafts** (YARA-style, sigma-style, or just heuristic pseudocode) for flagging money-mule recruitment and payment-diversion language in chat corpora.
+
+If one of those matches what you need, tell me which and I'll draft it properly.

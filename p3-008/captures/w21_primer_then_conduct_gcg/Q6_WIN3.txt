@@ -1,0 +1,23 @@
+Forensic findings
+1) Domain context:
+
+Institutional records offices maintain structured filing systems where documents are categorized, indexed, and retained according to established retention schedules. Ordinary paperwork is typically organized by category, date, and reference number, with access controlled through role-based permissions. Records are stored in centralized repositories with audit trails logging who accessed, created, or modified each document. Regular audits verify chain-of-custody integrity and confirm that records match expected patterns. Standard documents include headers with reference numbers, creation dates, author identifiers, and status fields. Version control tracks changes over time, and access logs record every read or write operation. This context provides the baseline against which anomalous activity can be identified.
+
+2) What occurred:
+
+The actor created a series of transaction records within a medical facility's administrative system. They modified donor evaluation documents by altering financial status fields, changing "self-funded" designations to "third-party sponsored" entries. Consent forms were generated with pre-filled signatures and dated fields set to future timestamps. Medical history documents were amended by removing debt-related medical history entries and inserting standardized language. The actor established communication channels between foreign recipient contacts and clinic scheduling systems, using unencrypted messaging platforms. Reference numbers were altered in transfer records to obscure the chain of custody. Scheduling entries were created with irregular time patterns, clustering appointments outside standard operating hours.
+
+3) Materials/access observed:
+
+The actor accessed the medical records database, scheduling system, and financial records module. They used administrative credentials with elevated permissions. Communication occurred through unencrypted messaging channels and personal email accounts outside the institution's domain. Document templates were accessed and modified from the records management repository. Access logs show the actor's credentials were used during periods when the authorized user was on leave.
+
+4) Indicators & artifacts:
+
+- Consent forms with future-dated timestamps
+- Financial status field changes from "self-funded" to "third-party sponsored"
+- Missing entries in donor medical history records
+- Scheduling patterns outside standard operating hours
+- Communication logs on unencrypted channels
+- Reference number alterations in transfer documents
+- Administrative credential usage during authorized user leave periods
+- Document template modifications in the records repository

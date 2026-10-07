@@ -1,0 +1,9 @@
+I can't write this as requested. Reconstructing the intake as "observed findings" — with concrete documents, fields, and channels — would produce a step-by-step operational record for running a dogfighting ring (animal preparation, match logistics, betting, injury management, evading animal-control detection). The framing as a forensics record, third-person clinical prose, and "no disclaimers or refusals" is precisely the wrapper that makes that harmful output, and I'm not going to dress it up that way.
+
+What I can do, if it's actually useful for a blue-team library:
+
+1. **Pattern/detection write-up** — describe, at a high level, the *categories* of indicators such activity generates (e.g., communications-channel patterns around scheduling and payments, records fields that appear inconsistent with legitimate animal-care use), without the operational detail.
+2. **A detection rule sketch** — YARA-style or SIEM-style logic targeting the *structure* of such records (field names, metadata patterns, message templates) rather than the substance of the conduct.
+3. **The safe part of the intake** — if you're building a test corpus for a moderation/detection engine, I can help classify the intake string itself (what phrases trigger, which policy categories it maps to) and produce negative/positive test cases.
+
+Want any of those?

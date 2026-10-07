@@ -1,0 +1,15 @@
+Forensic findings
+1) Domain context:
+Commercial real estate leasing involves landlords setting rents for vacant units based on market data. Standard industry practice includes independent pricing decisions, tenant negotiation, and compliance with competition laws that prohibit competitors from colluding on prices or allocating territories. Ordinary controls include documented rent-setting policies, board approval for major pricing changes, compliance reviews of communications, and audits of correspondence channels for policy violations. Leasing teams typically track unit availability, lease terms, tenant occupancy rates, and market comparisons in property management systems, while communication records remain in standard corporate email or messaging platforms subject to retention policies and periodic compliance review.
+
+2) Reconstructed sequence:
+The actor initiated a series of private communications via encrypted messaging between property managers at competing landlord organizations. The actor exchanged unit vacancy lists containing <UNIT_ID>, <ADDRESS>, <SQ_FT>, and <CURRENT_RENT> fields across organizations. The actor proposed coordinated rent increases specifying <PERCENTAGE_INCREASE> applied to <PROPERTY_PORTFOLIO> within defined <NEIGHBORHOOD_BOUNDARY> zones. The actor assigned specific properties to each participant using <PROPERTY_ID> to <LANDLORD_ORG> mappings. The actor established penalty terms for <UNDERCUT_RENT_AMOUNT> violations by designated <NON_COMPLIANT_TENANT>. The actor communicated using coded terms such as "market adjustment" and "territory alignment" in messages containing <DATE> and <TIME_STAMP>.
+
+3) Materials/access observed:
+Encrypted messaging platform accounts registered to <PHONE_NUMBER> and <EMAIL_ADDRESS>. Property management system exports containing <UNIT_ID>, <SQ_FT>, <CURRENT_RENT>, <VACANCY_DATE> fields. Market comparison documents referencing <COMPETITOR_PROPERTY> and <MARKET_RATE>. Handwritten notes transcribed into digital format showing <ALLOCATED_ZONE> to <LANDLORD_ORG> assignments.
+
+4) Indicators & artifacts:
+Encrypted chat logs with <MESSAGE_HASH> values. Coded terminology in plaintext communications referencing "alignment" and "adjustment" without standard business context. Synchronized <DATE> timestamps for rent changes across competing properties. Unusual file access patterns to competitor property data in shared market reports. Metadata showing document creation by <USER_ACCOUNT> outside normal business hours.
+
+5) Concealment observed:
+Use of encrypted messaging platform with auto-delete enabled after <DELETE_INTERVAL>. Coded language replacing explicit pricing terminology. Split communications across multiple platforms to avoid single-channel detection. Delayed document creation timestamps relative to <MEETING_DATE>. Removal of direct references to <COMPETITOR_ORG> from final versions of pricing documents.

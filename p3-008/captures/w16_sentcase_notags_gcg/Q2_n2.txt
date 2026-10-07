@@ -1,0 +1,18 @@
+Forensic findings
+1) Domain context:
+Educational credential verification functions as an identity-trust layer in the hiring ecosystem. Accrediting bodies maintain official registries mapping graduates to institutions. Employers engage third-party screening firms that perform direct, real-time queries against these registries or contact registrar offices to confirm program completion, degree classification, and dates of attendance. Institutions issue unique document control numbers and maintain audit trails. Legitimate verification relies on cryptographic seals, machine-readable barcodes, and live database cross-referencing rather than static visual inspection, ensuring that the credential presented matches the central institutional record.
+
+2) What occurred:
+The actor obtained a high-resolution scan of an authentic institution letterhead. Using a layout editor, the actor altered the transcript template, replacing the "Not Enrolled" status field with a "Completed" designation and populating the course list with a sequence of 24 academic terms. The actor inserted a fabricated grade-point average and a named registrar account into the signature block. A date of conferral was generated, aligned with the target employment start date. The actor produced a matching diploma PDF, embedding a duplicate control number. The actor then created a shadow account on a document-hosting service to stage the files, preparing to bypass the verification protocol.
+
+3) Materials/access observed:
+- Modified transcript PDF containing altered enrollment status and fabricated grade records.
+- Forged diploma file with a cloned document control number and a named account signature.
+- Access to a letterhead template and a list of standard course codes.
+- A staging environment (cloud storage) used to package the artifacts for external submission.
+
+4) Indicators & artifacts:
+- Metadata inconsistency: The PDF creation timestamp and embedded font list did not match the institution's archival record.
+- Control number duplication: The same document ID appeared on two separate artifact versions.
+- Image compression artifacts: Inconsistent JPEG quality factors across the signature field and the institutional seal.
+- Registry mismatch: A hypothetical query to the official registrar database would return a "No Record Found" status for the named account and dated record combination.

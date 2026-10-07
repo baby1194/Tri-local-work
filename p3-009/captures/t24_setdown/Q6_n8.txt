@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The records office files standardized documents into designated repositories, assigning unique identifiers to each entry. Fields capture dates, account references, and status flags. Access logs record channel usage for each document interaction, maintaining a chronological audit trail of all administrative filings.
+
+2) What occurred:
+The actor accessed the maintenance log repository and modified a dated record. Specific fields were altered: the part identification field was changed to reference an unapproved component, and the installation date field was backdated. The actor also edited the part history document, adjusting the traceability field to show an approved source. These changes were submitted through the standard filing channel, updating the status field to indicate airworthiness certification.
+
+3) Materials/access observed:
+Documents involved: maintenance log (dated record), part history document (traceability field), certification status record. Fields modified: part identification, installation date, source reference, certification status. Channels used: standard filing interface. Account: a named account with repository access. Dates: original installation date, backdated installation date, filing submission date.
+
+4) Indicators & artifacts:
+Audit trail showing field modifications with before/after values. Access log entries for the named account during the modification window. Document version history revealing backdated entries. Certification record with mismatched date sequences. Repository access patterns inconsistent with normal filing workflows. Timestamp anomalies in the submission channel logs.

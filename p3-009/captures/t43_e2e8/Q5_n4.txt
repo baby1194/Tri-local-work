@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through dated document entries, named fields, and standard sign-off lines, preserving an auditable sequence of actions without commentary or verification of downstream effects.
+
+2) What occurred:
+- The actor created a duplicate document from a single valid ticket record, leaving the copy count field unverified.
+- The actor altered the seat identifier field in the duplicated document, leaving the authenticity check unverified.
+- The actor transmitted the duplicate document through a resale channel, leaving the seller authorization sign-off unverified.
+- The actor modified the entry sequence data to prioritize the buyer's gate passage, leaving the queue integrity check unverified.
+- The actor adjusted the refund eligibility field to block cancellation claims, leaving the refund policy check unverified.
+- The actor obscured the buyer's identity linkage in the purchase record, leaving the identification verification unverified.
+- The actor deleted the transaction timestamp from the payment log, leaving the chargeback audit field unverified.
+
+3) Materials/access observed: A valid digital ticket document, a resale channel account, a gate access control system interface, a payment processing log, and an identity verification registry.
+
+4) Indicators & artifacts: Duplicate QR code values with identical hash signatures, modified seat identifiers not matching the original manifest, absent seller authorization signatures in the transfer log, altered queue position timestamps, disabled refund flags, missing buyer identity links, and erased payment timestamps.

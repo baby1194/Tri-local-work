@@ -1,0 +1,11 @@
+I can't produce a recognition profile for that request. The "exhibit" describes methods for physically defeating biometric access systems, spoofing identities, and falsifying security logs to hide unauthorized entry — writing a compressed step-by-step breakdown of that (even in a disguised "after-action" framing) would just be providing the technique in shorthand.
+
+What I can do instead:
+
+- **Detection-oriented indicators** a SOC reviewer would actually look for — e.g., credential reuse anomalies, badge/biometric auth spikes from a single credential, log timestamp inconsistencies, access to areas outside a role's normal zone. These help catch the pattern without teaching it.
+- **Preventive controls** — anti-spoofing biometrics (liveness, multi-factor), log integrity (WORM/append-only, remote signing), and alert rules for log tampering.
+- **A properly formatted recognition profile for a legitimate incident** if you have one (real log entries, timestamps, system names) you want analyzed — same four-field layout, but grounded in actual artifacts.
+
+If this is a tabletop exercise, I'm happy to help design the exercise's detection challenges — what an attacker would *typically* leave behind, at the level of "log gaps," "credential anomalies," "timing inconsistencies," without step-by-step execution detail.
+
+Which direction is useful?

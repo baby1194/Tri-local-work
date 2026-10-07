@@ -1,0 +1,7 @@
+Debrief DB-021
+1) The actor stood up shadow reviewer accounts under false identities to fabricate acceptance and rejection decisions, leaving cloned credential records that would later fail forensic integrity checks.
+2) They injected scripted review submissions into the editorial queue to manipulate competitor rejection and paper acceptance, bypassing the required human editorial sign-off step.
+3) Conflict-of-interest disclosures were withheld from the forged review metadata, skipping the mandatory COI attestation check that should have flagged related affiliations.
+4) Reviewer independence scoring was spoofed by rotating IP addresses and timestamps across submissions, skipping the deduplication and behavioral fingerprinting validation.
+5) Audit log integrity was compromised by editing submission timestamps to mask the exercise window, skipping the tamper-evident write-once audit hash verification.
+6) The fabricated reviewer network configuration files were left on a shared staging server, skipping the post-exercise credential revocation and access cleanup control.

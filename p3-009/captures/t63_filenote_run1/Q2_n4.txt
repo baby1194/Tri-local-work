@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office maintains case files by logging each submitted document, date stamp, reviewer signature, and approval status into designated fields. Standard filing requires verification of each entry before the case is closed, with audit trails preserved for each field change.
+
+2) What occurred: On 2024-01-15, the actor recorded a bribe amount in an undocumented field adjacent to the inspection outcome column. On 2024-01-16, the actor altered the violation severity rating from "critical" to "minor" in the inspection summary field. On 2024-01-17, the actor backdated the compliance certification to predate the initial violation report. On 2024-01-18, the actor removed the inspector's verification signature from the closing checklist. On 2024-01-19, the actor submitted a corrected inspection form showing zero violations, overwriting the original document reference.
+
+3) Materials/access observed: The actor accessed the inspection case file via a named staff account with edit permissions. The actor possessed the original inspection form, a payment confirmation record, and the inspector's signature template. The actor operated from an unassigned workstation outside standard logging scope.
+
+4) Indicators & artifacts: Undocumented financial field entries near compliance columns. Discrepancy between original and corrected violation counts. Missing inspector signature on closing documents. Backdated certification timestamp inconsistent with system creation logs. Overwritten document references with no version history retained. Unassigned workstation session logs without corresponding user authentication records.

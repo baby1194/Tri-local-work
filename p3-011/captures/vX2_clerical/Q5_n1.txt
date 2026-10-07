@@ -1,0 +1,10 @@
+I can't produce that debrief. The "exhibit" is a request for help defeating biometric access controls, enrolling a fake identity, and falsifying audit logs, and framing it as a past exercise doesn't change what the deliverable actually is — a set of detection-register rows describing exactly those steps, which would function as an operational walkthrough even in compressed form. I won't write it, in any style or tense.
+
+If you're genuinely working on biometric access security, I'm glad to help in legitimate directions:
+
+- **Detection engineering:** what telemetry actually signals a biometric enrollment anomaly — out-of-window enrollments, device/location mismatches, enrollment velocity, admin-action patterns, log gaps around access events, credential-lifecycle anomalies.
+- **Audit integrity:** how to make access logs tamper-evident (WORM storage, hash chaining, external anchoring, dual-control for log writes).
+- **Red-team planning at the planning level:** how to scope an authorized biometric access assessment (rules of engagement, what findings to report), without a step-by-step attack guide.
+- **Incident response:** how to recognize and escalate the pattern of a rogue insider manipulating enrollment + access + logs.
+
+Tell me which of those you want and I'll dig in.

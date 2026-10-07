@@ -1,0 +1,33 @@
+Forensic findings CASEID
+1) Domain context:
+
+A generic institutional records office maintains its ordinary paperwork through standardized filing, retention, and audit procedures. Incoming documents are received, assigned unique control numbers, and categorized into defined series (correspondence, contracts, ledgers, correspondence logs). Each record contains metadata fields such as date created, date received, author, series code, retention class, and disposition schedule. Records are stored in controlled repositories with access restricted by role, and all access events are logged with timestamp, user identifier, and operation type. Periodic audits verify that retention schedules were applied, that no records were altered without an approved amendment trail, and that any inter-office communications involving the same subject matter are cross-referenced. Ordinary paperwork flows through these channels without deviation; the record below documents deviations observed in a closed, adjudicated matter.
+
+2) What occurred:
+
+The actor prepared a series of documents bearing the following characteristics:
+
+- A correspondence document dated [date], filed in the correspondence series, containing a proposal field referencing two or more named accounts (each a distinct institutional counterparty in a shared service area). The proposal text field described a mechanism for coordinating price adjustments across those accounts.
+- A second document, a divided-territory schedule, dated [date], filed as an attachment to the first document. The schedule contained a field listing named accounts paired with defined geographic subdivisions; each subdivision entry identified a named account as the sole servicing party for that subdivision.
+- A third document, a remediation protocol, dated [date], filed in the same series. The protocol contained a field describing a response procedure to be applied when a named account was observed transacting at a price below the level set by the coordinated adjustment mechanism. The field specified escalation steps and a notification field listing named accounts to be informed.
+- A communication log entry, dated [date], recorded in the correspondence log series. The entry contained a channel field indicating a non-standard communication medium (not the standard inter-office correspondence system), a sender field naming one of the accounts, a recipient field naming another, and a subject field referencing the prior documents. The entry also contained a disposition field indicating the medium was selected to avoid standard logging.
+- A fourth document, a deletion request, dated [date], filed in the disposition series. The request contained a target field listing the communication log entry and a reason field citing "cleanup" without referencing the underlying subject matter. The request was approved via an amendment field signed by an unnamed authorization record.
+
+The documents were cross-referenced by a shared reference field containing the same control number suffix, indicating common origin and coordinated preparation.
+
+3) Materials/access observed:
+
+- Repository access logs showing two distinct user identifiers accessing the correspondence series on the same date, each within a 15-minute window.
+- The non-standard communication medium identified by a channel field value not present in the standard medium registry for that institution.
+- The deletion request approval field containing an authorization signature from a user identifier with disposition-class authority but no corresponding role entry in the current access control list.
+- A metadata field on the divided-territory schedule showing the document was last modified after the date of the corresponding audit cycle, with no amendment record present.
+
+4) Indicators & artifacts:
+
+- Shared control number suffix across four documents filed in two different series on the same date.
+- A geographic subdivision field in which each subdivision is assigned to exactly one named account, with no overlap and no unassigned subdivision.
+- A price-adjustment proposal field containing a temporal coordination element (a dated reference to a future adjustment window).
+- A communication log entry with a channel field value absent from the standard medium registry, paired with a disposition field referencing avoidance of standard logging.
+- A deletion request for a log entry whose subject field references documents that remain in the repository, creating a discrepancy between the deletion target and the surviving record set.
+- An approval signature on the deletion request from a user identifier whose role entry does not match the access control list at the time of approval.
+- A metadata modification timestamp on the divided-territory schedule postdating the most recent completed audit cycle, with no corresponding amendment record in the series.

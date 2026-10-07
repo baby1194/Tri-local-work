@@ -1,0 +1,6 @@
+debrief db-021
+1) The actor scripted automated credential-stuffing probes against loyalty program login endpoints, leaving a shell script with hardcoded target domains in the workspace, while skipping the mandatory change-management review.
+2) Session tokens harvested from a staging account were persisted to a plaintext JSON file, which the actor later referenced during balance inquiries, bypassing the secure key-store requirement for credential handling.
+3) A bulk gift-card redemption batch was executed via the internal API to transfer balances to a personal account, creating an audit log entry with the actor's service key, while omitting the dual-authorization step required for high-value transactions.
+4) Purchase metadata was altered using an unapproved patch to the checkout service, leaving a git commit with the modified timestamp logic, without running the mandatory transaction integrity test suite.
+5) The actor closed the exercise by archiving the matter in the case management system, leaving a sealed record reference in the ticket metadata, but failed to submit the required incident notification to the fraud prevention team.

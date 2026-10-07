@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices file ordinary paperwork as dated entries, each record bound to a named account, a verification check, and a sign-off. Filings proceed in register order, with fields cross-referenced so any later auditor can trace which action produced which record and which control remained open.
+2) What occurred:
+- A dated record was created in which the ticket field of a named account was altered from a single valid ticket to multiple entries; the seat-assignment verification field stayed unverified.
+- A second document was filed listing several buyer entries against the same event date; the buyer-identity check for each entry stayed unverified.
+- A third filing recorded a gate-access sequence in which one named account was marked first-in-line for entry; the gate scanner reconciliation sign-off stayed unverified.
+- A fourth document recorded a post-sale communications entry instructing a named buyer to present first; the account-authentication check for that buyer stayed unverified.
+- A fifth filing noted a refund-channel entry marked "do not process" against the named account; the refund-authorization sign-off stayed unverified.
+- A sixth record captured a chargeback-channel entry flagged "contested" against the same account; the chargeback-review check stayed unverified.
+- A seventh document logged an identification-field entry with a placeholder value; the identity-matching check stayed unverified.
+- An eighth filing recorded a duplicate-ticket hash in the ledger field; the hash-uniqueness check stayed unverified.
+3) Materials/access observed: A named digital ticket record with a unique token field; an event ledger with seat and date fields; a buyer list with account identifiers; a gate-access log with scan timestamps; a communications channel with a dated message field; a refund and chargeback ledger with status fields; an identity verification form with placeholder values.
+4) Indicators & artifacts: Multiple ledger entries sharing a single token hash; buyer list containing account identifiers with no completed identity check; gate log showing a scan sequence preceding the ticket holder's own scan; refund ledger status set to a suppression value; chargeback ledger status set to a contest value; identity form containing placeholder data; communications messages with dated fields referencing gate order; absence of sign-off stamps on the verification fields listed in section 2.

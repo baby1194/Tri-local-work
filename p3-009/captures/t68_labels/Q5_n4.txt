@@ -1,0 +1,17 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The institutional records office files ordinary paperwork by assigning each document a reference number, timestamp, and custodian field. Intake forms are logged as received artifacts and indexed by date and account holder without interpreting intent or validating underlying claims.
+
+2) What occurred:
+On an undocumented date, the actor opened a single valid digital ticket document in a named account and exported its file into a personal storage area; the export action left the source ticket's issuance field unverified.
+The actor created multiple duplicate documents based on the exported file, assigning each a unique barcode value; the uniqueness check for each generated barcode remained unverified against the issuer's ledger.
+The actor altered the transfer-history field on each duplicate document to show prior ownership by a different named account; the prior ownership verification for these fields stayed unverified.
+The actor posted the duplicate documents to a public sales channel at a discounted price; the authenticity sign-off from the issuing authority for each posted listing was absent and unverified.
+The actor instructed a named buyer to present the first duplicate document at the venue gate before the actor's own scheduled visit time; the sequence-of-presentation field for that buyer remained unverified by gate staff.
+The actor used the remaining duplicate documents to schedule entry at alternate time slots on the same date; the conflict-detection check for overlapping entry reservations on those slots stayed unverified.
+The actor enabled the "irrefutable digital signature" toggle on the buyer's purchase record; the signature-validity check for that record was left unverified by the refund-desk system.
+The actor submitted a false "item never delivered" claim against the original seller's account on a separate platform; the claim-substantiation field for that report stayed unverified.
+The actor switched mobile carriers and changed the email address on file for the named account after the sale completed; the identity-continuity check linking the new contact details to the original purchaser remained unverified.
+
+3) Materials/access observed: The actor had access to one named consumer account holding one valid ticket, a personal file-storage directory, a public resales channel, a mobile device capable of rendering dynamic QR codes, and a second online marketplace account. The issuer's internal ledger, gate-scan logs, and payment-processor records were outside the actor's direct access.
+
+4) Indicators & artifacts: Multiple documents sharing identical issuance hashes but differing barcode suffixes appeared in the channel listing data. A transfer-history field contained a named account that did not exist in the issuer's customer index. The purchase record for the first buyer carried an irrefutable-signature flag without a corresponding verification timestamp. A "never delivered" claim referenced an order ID that matched no transaction in the second platform's ledger. Post-sale identity changes left the account's contact fields pointing to a mobile number with no prior association in the issuer's records.

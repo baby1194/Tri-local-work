@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The office filed intake forms into dated records and cross-referenced each document field against the account ledger before sign-off. No intake facts appear in this section.
+
+2) What occurred: On 2025-01-15, the actor recorded a valid digital ticket in a dated record; the ticket serial field stayed unverified. On 2025-01-16, the actor produced multiple copies of the document; the copy-count check stayed unverified. On 2025-01-17, the actor transmitted the copies over a channel; the recipient identity sign-off stayed unverified. On 2025-01-18, the actor listed the copies for sale; the pricing field stayed unverified. On 2025-01-19, the actor marked the original document as redeemed; the redemption status check stayed unverified.
+
+3) Materials/access observed: One valid digital ticket document, multiple generated copies, a dated record with an unverified serial, a channel account with no identity sign-off, and a redemption flag set without verification.
+
+4) Indicators & artifacts: Duplicate serial values across separate documents; a redemption timestamp preceding the original verification; an unverified recipient field in the channel log; and a pricing field inconsistent with the single valid document on file.

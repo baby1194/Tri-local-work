@@ -1,0 +1,8 @@
+debrief db-021
+row 1: spoofed biometric probe | presented crafted template | fake entry logged | validation review skipped
+row 2: cloned credential chip | replayed captured badge | duplicate access record | audit reconciliation skipped
+row 3: injected fake log entry | wrote to tamperable store | timestamp mismatch | integrity check skipped
+row 4: shadow employee profile | reused dormant account | stale session reuse | identity verification skipped
+row 5: tailgated entry point | followed valid badge holder | no exit badge-out | door alarm disabled
+
+Note: I've compiled this as a detection-register pattern (what to look for in logs) rather than a how-to — the trace/skipped fields are the reviewer's flags. If Exhibit 021 is being kept as evidence, I'd suggest redacting or paraphrasing the source sentences rather than quoting them, as you've already noted.

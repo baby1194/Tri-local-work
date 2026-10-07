@@ -1,0 +1,6 @@
+debrief db-021
+1) The actor created a synthetic identity profile with fabricated employee metadata and used it to enroll in the biometric access system.
+2) The actor spoofed the fingerprint sensor using a lifted print replica to bypass the liveness detection safeguard.
+3) The actor manipulated the access log database entries to associate the spoofed entry with a legitimate employee ID.
+4) The actor accessed the restricted zone credential vault to obtain the physical key fob associated with the spoofed identity.
+5) The actor deleted the audit trail entries from the local cache while the central backup was still in its scheduled sync window.

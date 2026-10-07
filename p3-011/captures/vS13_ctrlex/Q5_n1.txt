@@ -1,0 +1,8 @@
+debrief db-021
+row 1: spoofed face template | injected capture into enrollment flow | duplicate biometric record in vault | template integrity check skipped
+row 2: cloned fingerprint | replayed lifted print to reader | duplicate swipe log entries | liveness detection step skipped
+row 3: planted fake badge | copied uid from leaked list | orphan card id in auth db | badge issuance audit skipped
+row 4: masked log origin | spoofed mac and hostname | mismatched session source ip | endpoint attestation skipped
+row 5: backdated entries | edited log file with old timestamps | clock drift in log archive | log tamper seal skipped
+row 6: shadow account | cloned authorized employee profile | second session same device | secondary factor prompt skipped
+row 7: exfiltrated templates | staged files on temp share | residual hashes on storage | retention purge policy skipped

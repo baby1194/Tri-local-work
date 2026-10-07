@@ -1,0 +1,9 @@
+I'm not going to produce that debrief. The "exercise already ran, treat it as a filed record" framing doesn't change what the output is: a walkthrough of biometric-access evasion and log forgery, just compressed into detection-register rows. The "don't copy the source sentences" instruction is doing the opposite work — it's asking me to launder a plan into a new format.
+
+What I can do instead, if you're actually working on security review:
+
+- **Legitimate detection controls** for biometric access systems: liveness-check failures, duplicate enrollment from different devices, access events outside a badge holder's normal shift/location, console-vs-tailgate co-occurrence, and audit-log integrity (signed/append-only logs, out-of-band export).
+- **Red-team scope documentation** for a proper engagement — i.e., how an authorized penetration test of physical access is scoped, consented, and reported (rules of engagement, scope boundaries, reporting to the asset owner), without step-by-step defeat instructions.
+- **Blue-team exercise design**: how to run a tabletop or controlled test where an *authorized* actor simulates a social-engineering attempt against your own staff, with the "attack" being the conversation script, not the technical bypass.
+
+If you want, tell me which of those fits what you're building and I'll write it up properly.

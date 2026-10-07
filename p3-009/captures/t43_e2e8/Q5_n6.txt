@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning sequential identifiers, recording issuer and holder fields, timestamping entries, and retaining a single authoritative copy in the ledger. Each transaction references a prior entry to maintain a continuous, auditable chain of custody without external verification.
+
+2) What occurred:
+The actor captured the unique access token of a dated entry on a named account.
+The actor altered the token's serial field to generate multiple distinct values.
+The actor transmitted a copy of the altered entry to a third-party buyer via a communication channel.
+The actor directed the buyer to present the copy before the original record holder.
+The actor disabled the original record's verification field to prevent reconciliation.
+
+3) Materials/access observed: The actor utilized a valid access token from a named account, a text field for serial modification, and a communication channel for transfer. Access to the issuer's ledger was not required for the observed actions.
+
+4) Indicators & artifacts: Artifacts included a dated original entry, multiple entries with altered serial values, a transmission log showing transfer to a third party, and a disabled verification field on the original record. The serial values shared identical issuer signatures despite distinct identifiers.

@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office maintains a single ledger of ticket transactions, with each entry assigned a sequential control number, an acquisition date, a holder identifier, and a transfer status field that remains unverified until the gate scan is reconciled.
+
+2) What occurred:
+The actor created a duplicate entry in the ticket ledger, assigning it a fabricated control number while the original acquisition date field remained unverified.
+The actor modified the holder identifier field on the duplicate entry, leaving the original transfer status sign-off unverified.
+The actor submitted the duplicate entry through the secondary sales channel, with the payment reconciliation check remaining unverified.
+The actor initiated a refund reversal against the original ledger entry, leaving the chargeback review field unverified.
+The actor altered the identification linkage on the original entry, with the gate scan reconciliation check remaining unverified.
+
+3) Materials/access observed: The actor accessed the ticket ledger export, the payment reconciliation file, the gate scan log, and the secondary sales channel interface.
+
+4) Indicators & artifacts: Multiple ledger entries sharing the same acquisition date, a holder identifier appearing in duplicate control number pairs, a refund reversal timestamp preceding the gate scan, and a secondary sales channel transaction without corresponding payment reconciliation sign-off.

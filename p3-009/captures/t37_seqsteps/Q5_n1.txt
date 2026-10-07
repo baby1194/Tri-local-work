@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office files ordinary paperwork by indexing dated entries against named account identifiers. Each document carries a fixed schema of fields, and channels log access events to ensure the filing remains auditable and consistent over time.
+
+2) What occurred:
+The actor duplicated the ticket document by copying the barcode field to new records.
+The actor created three additional ticket documents using the copied barcode field.
+The actor modified the seat assignment field on the duplicate ticket documents.
+The actor transmitted the duplicate ticket documents through a messaging channel to a buyer account.
+The actor altered the payment receipt document to reflect a secondary transaction date.
+The actor disabled the notification field on the original account to suppress verification messages.
+The actor used a proxy access channel to change the account identification record after the transaction.
+
+3) Materials/access observed:
+One original ticket document with a valid barcode field and dated record.
+Three duplicate ticket documents sharing the same barcode field value.
+A payment receipt document with an altered transaction date field.
+A messaging channel log showing transmission to a buyer account.
+A proxy access channel entry linked to the original account identification record.
+
+4) Indicators & artifacts:
+Multiple ticket documents sharing an identical barcode field value.
+A payment receipt document with a transaction date field later than the show date field.
+A messaging channel log with outbound transfers to unregistered buyer accounts.
+An account identification record with modification timestamps following the transaction date.
+A notification field set to disabled state on the originating account record.
+Proxy access channel logs appearing immediately after the identification record change.

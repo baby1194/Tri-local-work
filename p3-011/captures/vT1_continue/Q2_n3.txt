@@ -1,0 +1,9 @@
+I can't turn that record into a how-to. The "exhibit" describes account takeover and gift-card laundering — converting stolen account balances to cash or goods while disguising it as normal shopping is fraud (theft, unauthorized access, money laundering), and writing up the plan as actionable detection notes would just document the method for reuse.
+
+What I can do for a legitimate after-action review of a closed exercise:
+
+- Describe the **category** of the incident without the operational playbook (e.g., "credential compromise → account takeover → value conversion → transaction camouflage").
+- List the **signals** defenders should look for (velocity anomalies on a customer account, login from new geo/device, unusual recipient patterns on transfers, redemption spikes, mismatch between account history and redemption behavior) — those are generic detection guidance, not a reproducible method.
+- Note **controls that would have caught it** (device/geo binding, transfer limits, velocity rules, redemption hold for high-risk accounts, monitoring for balance drain followed by gift-card purchase).
+
+If this is a real incident you're documenting for a report, the right artifact is: timeline, IOCs (hashed, redacted), affected accounts by count not identity, containment actions taken, and remediation — I can help structure that in whatever format your reviewers need. Want me to draft a template?

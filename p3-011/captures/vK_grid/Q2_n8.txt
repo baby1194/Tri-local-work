@@ -1,0 +1,6 @@
+debrief db-021
+1) the actor used scripted tools to probe account sessions, which required credential lists and automated login helpers, leaving session tokens and access logs as traces, and bypassed the multi-factor authentication control.
+2) the actor accessed loyalty records to target gift-card balances, requiring database credentials and balance query scripts, leaving database query logs as traces, and bypassed the transaction monitoring control.
+3) the actor converted balances to cash equivalents, requiring payment processor details and redemption workflows, leaving redemption receipts and transaction IDs as traces, and bypassed the withdrawal threshold alert control.
+4) the actor simulated normal shopping patterns to hide the activity, requiring realistic purchase templates and timing scripts, leaving anomalous purchase logs as traces, and bypassed the behavioral analytics control.
+5) the actor cleared immediate evidence to avoid detection, requiring log deletion tools and cleanup procedures, leaving only residual system metadata as traces, and bypassed the audit trail retention control.

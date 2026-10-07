@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office files ordinary paperwork using dated, signed documents. Each action references a specific field, a verification check, and a sign-off. Duplicates are tracked against a master ledger. Access is logged to the named account holder.
+
+2) What occurred: The actor created a dated digital file mirroring the original ticket barcode field; the master ledger check remained unverified. The actor copied the ticket into three separate document files; the unique serial number check stayed unverified. The actor sent the first copy via a dated channel message; the buyer identity verification sign-off was unverified. The actor sent the remaining copies to additional channel contacts; the transaction ledger reconciliation check remained unverified. The actor disabled account notifications on the named account; the issuer alert suppression check stayed unverified.
+
+3) Materials/access observed: A digital ticket image with barcode field; three duplicate document files; channel message logs with timestamps; the named account login session; the issuer verification API endpoint responses; the buyer contact record in the address book.
+
+4) Indicators & artifacts: Barcode field value mismatch against master ledger; three identical serial numbers on separate documents; channel traffic spikes to unverified contacts; account notification settings altered from default; issuer API returning 403 for duplicate redemption attempts; buyer contact added 10 minutes before first send.

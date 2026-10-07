@@ -1,0 +1,29 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+
+The records office files ordinary administrative paperwork in sequential ledgers, stamps each entry with a date and a handler signature, cross-references items by departmental code, and archives completed packets into dated drawers with a single accountable custodian per ledger.
+
+2) What occurred:
+
+- A dated request document was submitted in which the actor stated possession of an administrator account on a hospital internal network; the custodian signature field on the intake stamp was left unverified.
+- The actor documented an intent to prepare a software artifact that would modify files on multiple clinical workstations so their contents could no longer be read; the artifact's origin certificate field was left unverified.
+- The actor documented an intent to alter configuration records on those workstations so that prior copies of the files could not be restored; the change-approval field for those configuration records was left unverified.
+- The actor documented an intent to distribute the artifact across a large number of networked devices over a short period; the distribution-authorization field was left unverified.
+- The actor documented an intent to issue a written demand for payment addressed to management; the identity field of the sender was left unverified.
+- The actor documented an intent to prevent identification of the actor by routine tracing procedures; the audit-log retention field was left unverified.
+
+3) Materials/access observed:
+
+- An administrator account on the hospital internal network was cited as the access mechanism.
+- A set of clinical system workstations was named as target equipment.
+- A software artifact (ransomware payload) was referenced as the primary material.
+- Configuration records for backup/recovery services were referenced as secondary materials.
+- A payment demand message was referenced as a communications material.
+
+4) Indicators & artifacts:
+
+- Mass file-attribute modification events across clinical workstations within a short time window.
+- Disabled or deleted backup/recovery service states on affected hosts.
+- Outbound communications channel activity consistent with a demand message originating from the affected segment.
+- Audit-log gaps or tamper markers on the named administrator account's activity trail.
+- A dated intake document in the records ledger with an unverified custodian signature field.

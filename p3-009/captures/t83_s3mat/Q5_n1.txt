@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files ordinary paperwork by assigning a unique identifier to each document, logging the filing date, recording the responsible party, and sealing the record in a dated archive for later retrieval.
+
+2) What occurred:
+- On the first recorded date, the actor created a duplicated ticket document; the source-verification field remained unverified.
+- On the first recorded date, the actor generated multiple derivative ticket documents from the single source; the issuance-sequence check was not performed.
+- On the first recorded date, the actor transmitted the derivative documents to a recipient account via an external channel; the recipient-identity confirmation field was not signed off.
+- On the second recorded date, the actor directed the recipient account to present at the access point before the source account; the gate-priority validation check was not executed.
+- On the second recorded date, the actor intercepted refund processing requests on the source account; the refund-eligibility review field was not completed.
+- On the third recorded date, the actor blocked chargeback disputes linked to the transaction record; the dispute-resolution sign-off was not obtained.
+- On the third recorded date, the actor suppressed identity verification prompts on the recipient account; the identity-matching check was not verified.
+
+3) Materials observed: One original ticket document with a valid barcode value; three duplicate ticket documents bearing identical barcode values but differing serial suffixes; two transmission logs showing outbound messages to a recipient account; one access-point session record listing two check-in events; two suspended refund requests; one closed chargeback case file; and one disabled identity-verification flag on the recipient account.
+
+4) Indicators & artifacts: Multiple documents sharing an identical barcode value with divergent serial suffixes; transmission timestamps clustering within a five-minute window on the first recorded date; two check-in events at the access point separated by ninety seconds; refund requests marked "pending" with no assigned reviewer for four business days; a chargeback case closed with a "resolved" code lacking a dispute-resolution sign-off; and a recipient account with the identity-verification flag set to "disabled" after three failed match attempts.

@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning each submission a date stamp, a record identifier, a named custodian account, and a sign-off field verifying authorization; documents route through a single intake channel into the central register.
+
+2) What occurred:
+- The actor created a document field specifying an enumerated machine inventory across a clinical network segment; the field for an independent verification of that inventory stayed unverified.
+- The actor created a document field naming a payload for encrypting clinical system data volumes; the field for a change-management approval stayed unverified.
+- The actor created a document field describing a dated record for disabling recovery and backup replication services; the sign-off for a backup-retention policy stayed unverified.
+- The actor created a document field outlining a lateral movement path through a named privileged account; the field for an access-review sign-off stayed unverified.
+- The actor created a document field for a dated extortion notice channel targeting management; the field for a communications-compliance check stayed unverified.
+- The actor created a document field for anti-forensic steps removing and altering audit log entries; the field for a log-retention compliance check stayed unverified.
+
+3) Materials/access observed: A named privileged account with administrator rights inside the institutional network; a dated machine inventory record; a named clinical data share; a backup repository location field; an email channel to a named management recipient; audit log stores on the domain controller.
+
+4) Indicators & artifacts: A dated document describing encrypted-volume indicators (file-extension changes, ransom note fields in a standard filename) on clinical endpoints; a dated record showing a disabled backup job on the backup repository; a named account generating anomalous authentication events to many hosts within a short dated window; a log gap in the domain controller audit store at a dated timestamp matching the encryption window; a dated outgoing notice field addressed to a named management account on an external channel; residual payload artifacts (a dropped executable field, a scheduled-task record, a registry key path) on affected endpoints.

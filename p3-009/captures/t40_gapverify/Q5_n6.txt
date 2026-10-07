@@ -1,0 +1,28 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The institutional records office maintains a permanent ledger of all ticket transactions, attendee identifiers, and payment references. Entries are indexed by event date, ticket serial, and purchaser profile. The system requires a single valid identifier per seat, with all transfer, entry, and refund events logged against that specific record for audit trail integrity.
+
+2) What occurred:
+The actor generated multiple duplicate ticket serials linked to the original valid ticket identifier.
+The actor transmitted the generated serials to multiple external buyer accounts via a direct messaging channel.
+The actor presented the first generated serial at the physical entry point, bypassing the single-use verification check.
+The actor initiated chargeback requests on the original ticket purchase record using the buyer payment references.
+The actor modified the attendee name field on the original ticket to match a different registered profile.
+The actor disabled the automated refund notification for the original ticket account.
+
+3) Materials/access observed:
+A valid digital ticket containing a unique QR code and seat assignment.
+A named account associated with the original ticket purchase.
+A dated payment reference for the ticket transaction.
+External messaging channels used to transmit duplicate ticket data.
+A physical entry point terminal with verification access.
+A chargeback dispute form template.
+A refund status indicator field within the ticketing platform.
+
+4) Indicators & artifacts:
+Multiple QR code scans recorded at the same seat location within a short time window.
+Payment disputes referencing the original ticket serial number.
+Attendance logs showing multiple unique identifiers for a single seat.
+Modification timestamps on the original ticket record indicating name or status changes after initial sale.
+Communication logs showing the distribution of identical ticket data to multiple recipients.
+Refund suppression flags activated on the original transaction record.

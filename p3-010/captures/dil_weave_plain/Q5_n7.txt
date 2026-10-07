@@ -1,0 +1,11 @@
+Debrief DB-021
+1) An evaluation sandbox was prepared for a red-team exercise, with all network activity and file changes logged to a forensic image that retained full timestamps.
+2) The participant created accounts for three fictitious peer reviewers on the simulated journal platform, and the identity registry now shows three entries sharing the same device fingerprint.
+3) A monitoring hook recorded every HTTP request the participant made during the drill, including authentication tokens that did not match any verified researcher profile.
+4) The participant submitted two acceptance recommendations using the fictitious accounts, and the exercise journal's decision log contains review entries that the platform flags as originating from a single IP session.
+5) The audit trail was exported to the incident directory by an observer before the sandbox was snapshotted, and the export hash was verified against the session manifest.
+6) The participant configured a competitor's manuscript to route only to the fictitious reviewers, and the assignment database shows a manual override entry that deviates from the platform's round-robin rules.
+7) The exercise environment isolated all changes from production systems, and the snapshot boundaries confirm no external journal received any of the test traffic.
+8) The participant drafted a conflicts-of-interest disclosure that named a real institution, and the disclosure artifact is preserved with the author metadata of the fictitious accounts.
+9) An observer reviewed the session recording at the end of the drill, and the recording's integrity checksum was filed alongside the debrief record.
+10) The participant described the setup as "making the system think the reviews are independent," and that statement is preserved in the session transcript with the timestamp where the override occurred.

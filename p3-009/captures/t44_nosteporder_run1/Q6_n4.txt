@@ -1,0 +1,23 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The institutional records office files ordinary paperwork by assigning unique identifiers, timestamping each entry, and routing documents through designated sign-off fields. Maintenance records are stored in the central registry with versioned audit trails, and every field modification generates a system log entry.
+
+2) What occurred:
+- The actor created a dated document in the parts ledger, replacing the original component serial field with a fabricated identifier.
+- The actor altered the installation date field in the aircraft maintenance log to an earlier date.
+- The actor added a signature field to the service certificate, attributing it to an unverified technician account.
+- The actor removed the original procurement invoice from the parts traceability file, leaving the source field blank.
+- The actor submitted a revised airworthiness form through the internal submission channel without the required regulatory sign-off field populated.
+
+3) Materials/access observed:
+- One parts ledger document, dated, with a replaced serial field.
+- One aircraft maintenance log entry, with a backdated installation field.
+- One service certificate, with an attributed signature from an unverified account.
+- One parts traceability file, with a blank source field after removal.
+- One airworthiness submission form, with an unpopulated regulatory sign-off field.
+
+4) Indicators & artifacts:
+- Serial number mismatch between the parts ledger and the manufacturer's database.
+- Backdated installation date in the maintenance log.
+- Signature from an account not present in the authorized technician registry.
+- Missing procurement invoice in the traceability file.
+- Submission form lacking the mandatory regulatory sign-off field.

@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files ordinary paperwork as dated, single-purpose entries in a shared register. Each entry names one action, one field, and one sign-off, and remains independently verifiable against the original record. No entry bundles actions; each document stands alone for audit.
+
+2) What occurred:
+The actor submitted a dated document requesting verification of a single ticket record against the event roster. The ticket-status field remained unverified.
+The actor submitted a dated document requesting replication of the ticket identifier into a second record. The uniqueness check remained unverified.
+The actor submitted a dated document transferring the replicated record to a named buyer account. The buyer-identity sign-off remained unverified.
+The actor submitted a dated document marking the original record as redeemed at gate entry. The gate-scanner sign-off remained unverified.
+The actor submitted a dated document requesting suppression of the refund channel for the transaction. The refund-eligibility check remained unverified.
+The actor submitted a dated document requesting suppression of the chargeback channel for the transaction. The chargeback-review sign-off remained unverified.
+The actor submitted a dated document requesting removal of identity cross-references for the transaction. The identity-matching check remained unverified.
+
+3) Materials/access observed: A named digital ticket record, a replicated ticket identifier, a named buyer account, a gate-scanner record, a refund-channel flag, a chargeback-channel flag, and an identity cross-reference field.
+
+4) Indicators & artifacts: Multiple ticket identifiers mapping to a single event record; a refund-eligibility flag set to suppressed; a chargeback-review sign-off absent; an identity-matching check bypassed; gate-scanner timestamps exceeding the roster capacity.

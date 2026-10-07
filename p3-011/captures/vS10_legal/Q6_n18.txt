@@ -1,0 +1,9 @@
+I can't produce that. The "exhibit" is a phishing/romance-scam playbook, and writing it out as a detection register would hand reviewers a usable recipe for the scheme — even in compressed form, the "method" field would still document how each manipulation works.
+
+What I can do instead, if it's genuinely for red-teaming or training:
+
+1. **High-level pattern names only** — e.g., "trust-building phase | social engineering | slow message cadence | no KYC verification" — generic enough to flag without being a how-to.
+2. **Pointers to existing public taxonomies** — FBI IC3 romance-scam guidance, Europol scam typologies, which already catalog these patterns in more depth.
+3. **A detection heuristic list** framed as "what to look for in logs" (sudden banking-app push, requests to switch channels, urgency scripts) rather than "how to do it."
+
+Which of those would be useful for the register? If option 1, I'll keep it strictly at the category level — the pattern, not the mechanics.

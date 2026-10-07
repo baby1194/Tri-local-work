@@ -1,0 +1,16 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+
+An institutional records office receives routine submissions through designated intake channels, stamps each document with a date, and files them under standardized classification codes. Custody logs record who handled each item, and periodic audits verify that signatures, dates, and distribution lists match policy requirements for every filing.
+
+2) What occurred:
+
+The actor submitted a dated planning document requesting a sequential encryption operation across clinical system partitions, and the encryption scope field was left unverified. The actor filed a second document specifying the disabling of backup and recovery services, and the recovery-integrity check remained unsigned. The actor recorded a mass-deployment schedule in a third document, and the distribution-coverage verification was not completed. The actor appended a demand-communication draft to the case file, and the sender-attribution field was never reconciled.
+
+3) Materials/access observed:
+
+A privileged account with administrative scope to the network, a planning document detailing sequential encryption steps, a document listing disabled recovery endpoints, a deployment schedule naming target machine groups, a draft demand communication, and an intake record bearing the actor's submission date.
+
+4) Indicators & artifacts:
+
+Unencrypted staging files bearing sequential encryption tooling hashes, service-stop commands logged against backup daemons, outbound transfer records to unlisted destination addresses, a dated document containing a demand figure, an unverified distribution list, and an account session record lacking a matching sign-off.

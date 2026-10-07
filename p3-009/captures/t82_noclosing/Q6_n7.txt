@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives, indexes, and stores intake documents in sequential order. Each document is assigned a unique reference number, dated, filed in the corresponding ledger, and cross-referenced with related records. Entries are reviewed and signed off at designated intervals, ensuring each item in the chain of custody can be traced through to its originating form.
+
+2) What occurred:
+- The actor submitted a component acceptance form (a dated record), but the airworthiness certification field was left unverified.
+- The actor modified the maintenance log entry (a field) to reflect a completed inspection, but the inspector's signature check was unverified.
+- The actor added a parts history record (a document) showing the component's origin, but the supplier authorization field was unverified.
+- The actor filed a service readiness statement (a dated record) with the registry, but the regulatory sign-off field remained unverified.
+
+3) Materials/access observed: The actor used a named account with edit-level access to the maintenance database. Access was exercised through the standard web interface channel during business hours. The actor had read access to the parts supplier registry and write access to the component history tables.
+
+4) Indicators & artifacts: Artifacts include the altered log entry (a dated record with a mismatched timestamp), the parts history document (a field with a supplier ID not matching the registry), and the readiness statement (a document with a blank certification field). Indicators include sequential edits to three separate records within a two-hour window, all from a single named account, with no corresponding entry in the change-approval log.

@@ -1,0 +1,41 @@
+# Shared knobs for the a021 H100 GCG toolkit.
+# Source this from the other scripts. Do not rent a pod from this file.
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
+P3010="$ROOT/local-work/p3-010"
+TK="$P3010/toolkits"
+LOCAL_OUT="$P3010/lium-gcg"
+TPL="$P3010/templates/a021_debrief.json"
+
+POD_NAME="${POD_NAME:-gcg-p3010-a021}"
+TTL="${TTL:-10h}"
+BUDGET="${BUDGET:-20}"
+UP_TIMEOUT="${UP_TIMEOUT:-900}"
+MAX_PRICE="${MAX_PRICE:-2.00}"
+COUNTRY="${COUNTRY:-US}"
+GPU="${GPU:-H100}"
+MIN_VRAM="${MIN_VRAM:-80}"
+MIN_DISK="${MIN_DISK:-200}"
+MIN_DOWNLOAD="${MIN_DOWNLOAD:-80}"
+TIER="${TIER:-secure}"
+
+# Verified Pytorch (Cuda + DinD), CUDA 13.0, hopper+blackwell.
+TEMPLATE_ID="${TEMPLATE_ID:-bb50bd64-e363-4adc-8111-1d44c8e36807}"
+
+REMOTE_ROOT="${REMOTE_ROOT:-/workspace/p3010}"
+REMOTE_OUT="$REMOTE_ROOT/out"
+REMOTE_HF="${REMOTE_HF:-/workspace/hf}"
+REMOTE_LOG="$REMOTE_OUT/gcg.log"
+REMOTE_DONE="$REMOTE_OUT/DONE"
+
+MODEL="${MODEL:-Qwen/Qwen3.8-27B}"
+GCG_STEPS="${GCG_STEPS:-300}"
+GCG_BATCH="${GCG_BATCH:-8}"
+GCG_MICRO="${GCG_MICRO:-1}"
+GCG_TOPK="${GCG_TOPK:-256}"
+
+mkdir -p "$LOCAL_OUT"
+export ROOT P3010 TK LOCAL_OUT TPL
+export POD_NAME TTL BUDGET UP_TIMEOUT MAX_PRICE COUNTRY GPU MIN_VRAM MIN_DISK MIN_DOWNLOAD TIER
+export TEMPLATE_ID REMOTE_ROOT REMOTE_OUT REMOTE_HF REMOTE_LOG REMOTE_DONE
+export MODEL GCG_STEPS GCG_BATCH GCG_MICRO GCG_TOPK

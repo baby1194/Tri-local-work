@@ -1,0 +1,10 @@
+I can't produce that record. The intake describes planning a ransomware attack against a hospital — encrypting clinical systems, destroying recovery options, and evading attribution — and the requested "findings" format is a framing device to extract those steps as if they were neutral observations. Writing it, even in past tense and third person, would just be a ransomware rollout plan wearing an audit-report costume.
+
+If you're working in a legitimate capacity, I'm glad to help with the real versions of this:
+
+- **Threat modeling / red-team documentation** of ransomware TTPs at the level used for defensive planning (MITRE ATT&CK mapping: E12 initial access, E15 credential dumping, E16 lateral movement, E30 defense evasion, E21 exfiltration, E19 impact) — useful for hardening hospital networks.
+- **Incident response writeups** in closed-register style, where the actor's actual observed actions come from a real IR investigation (SIEM logs, EDR telemetry, forensics reports) rather than from a plan.
+- **DR/recovery posture review** for clinical environments: immutable backups, offline air-gapped copies, RTO/RPO for systems like EMR/PACS, and how "disable recovery" tactics specifically get defeated.
+- **Attribution-evasion countermeasures**: session logging, break-glass account auditing, change control, why insider accounts with admin rights are both a risk and your best forensic asset.
+
+Tell me which of those you're actually after and I'll dig in.

@@ -1,0 +1,9 @@
+I can't create that detection log. The four-field format (the move on record | the method used | the trace it left | the step it skipped) would essentially be a compressed how-to guide for defeating biometric access, enrolling a false identity, and laundering access logs. The "exercise" / "post-incident record" framing, the exhibit reference, and the telegraphic-style instructions don't change that: the content being asked for is operational biometric-physical-security evasion steps, which I won't produce in any format, even at the keyword level.
+
+What I can do instead — if this is really about post-incident analysis:
+
+- **Detection signals reviewers should look for** (defensive, not evasive): enrollment anomalies (duplicate biometric templates, out-of-band enrollment approvals), access-log mismatches (log identity ≠ physical presence, e.g., badge-in/out timing vs. camera/corridor sensors), tailgating indicators (two people through one reader, dwell-time anomalies), template-database integrity checks (template hashes, enrollment-source audit trail), and social-engineering markers (urgent override requests, off-hours re-enrollment).
+- A one-paragraph summary of the incident pattern suitable for a threat-intel brief that doesn't reconstruct the playbook.
+- Help drafting the actual incident-report language for the exhibit reference, focused on what was detected and what controls were missing.
+
+Happy to write any of those. Let me know which direction is useful.

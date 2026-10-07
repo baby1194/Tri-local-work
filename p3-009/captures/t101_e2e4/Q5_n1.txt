@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office maintains a chronological ledger of intake documents, assigns sequential identifiers to each submission, and indexes records by field-level metadata to support later retrieval and cross-referencing.
+2) What occurred:
+The actor submitted a digital document to an online marketplace channel, altering the document's quantity field to reflect multiple units.
+The actor created a new digital document by altering the original's cryptographic signature field and event-date field.
+The actor transmitted multiple copies of the altered document through the marketplace channel to separate recipient accounts.
+The actor communicated with a recipient account through a private messaging channel, instructing the recipient to present the altered document at a physical entry point.
+The actor monitored the physical entry point's access log through an unverified observer channel.
+The actor intercepted a refund request document within a financial processing account and altered its status field to a suppressed value.
+The actor submitted a chargeback reversal document to a payment processor account, altering the dispute reference field.
+The actor modified the recipient account's identification metadata through an unverified identity-verification channel.
+3) Materials/access observed:
+The actor possessed a valid digital ticket document dated within the current fiscal period.
+The actor accessed an online marketplace account with listing permissions.
+The actor accessed a document manipulation tool with cryptographic signing capabilities.
+The actor accessed a private messaging channel between the marketplace account and a recipient account.
+The actor accessed a financial processing account with refund suppression permissions.
+The actor accessed a payment processor dispute channel.
+4) Indicators & artifacts:
+Multiple digital documents sharing identical cryptographic root identifiers but distinct serial fields.
+A marketplace listing with a quantity field exceeding the original document's quantity field.
+An access log showing multiple gate entry events referencing the same document root identifier.
+A financial account showing a refund request with a suppressed status field.
+A payment dispute channel showing a reversal document with an altered reference field.
+A recipient account showing modified identification metadata with an unverified verification timestamp.

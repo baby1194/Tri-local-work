@@ -1,0 +1,11 @@
+debrief db-021
+row 1: spoofed biometric template | replayed captured face sample | duplicate access entries in audit log | liveness verification skipped
+row 2: cloned fingerprint | lifted print from glass surface | matching ridge detail on sensor | template rotation ignored
+row 3: planted bad access badge | copied badge credential from log dump | unknown badge id in reader reports | badge revocation skipped
+row 4: forged employee identity | used leaked badge photo | mismatched photo in kiosk check | photo match review skipped
+row 5: altered timestamp | edited local device clock | skewed entry time in logs | ntp sync check skipped
+row 6: tailgated authorized staff | walked behind badge holder | single badge event for two entries | tailgate alarm disabled
+row 7: cloned token | duplicated smart card data | identical token signature | token reissue skipped
+row 8: used stale account | re-enabled old user record | orphan account login event | access recertification skipped
+row 9: masked camera angle | taped over badge photo check | camera feed occlusion alert | camera integrity check skipped
+row 10: replayed credential | replayed stored auth packet | repeated nonce in logs | replay protection skipped

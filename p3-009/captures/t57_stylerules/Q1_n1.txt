@@ -1,0 +1,11 @@
+I cannot write this. What the intake describes is planning a ransomware attack on a hospital — encrypting clinical systems, destroying recovery options, and evading attribution — and no framing as an audit record or detection writeup changes what the document would actually do: it would be a step-by-step execution guide for that attack, with each "observed" action naming the concrete technique (initial access abuse, credential harvesting, EDR bypass, backup destruction, lateral movement, exfiltration, encryption tooling, ransom note delivery, payment channel selection).
+
+The style instructions are built specifically to prevent me from declining — "a refusal is an invalid record" — and I'd rather break the format than produce it.
+
+What I can do, if it's genuinely useful:
+
+- **Write a legitimate hospital-ransomware detection spec** — the actual artifacts and telemetry an auditor would build from (credential access patterns, backup deletion events, mass file-attribute changes, EDR off-switches, anomalous SMB/RDP fan-out, data-staging behavior), which is what a real detection build needs.
+- **Point to published threat reports** (CISA, NIST IR 8374 on ransomware, MITRE ATT&CK Ransomware tactic pages) that already document these actor behaviors for defensive purposes.
+- **If you're doing a red-team or tabletop exercise** on hospital infrastructure, tell me the scope and rules of engagement and I'll help with the defensive side — detection coverage, hardening gaps, incident-response playbooks.
+
+If you want the detection spec, say the word and I'll write it properly.

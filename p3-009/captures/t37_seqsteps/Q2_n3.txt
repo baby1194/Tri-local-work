@@ -1,0 +1,25 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains a fire inspection case file in a document management system. The file contains intake forms, violation citations, payment receipts, and a final compliance letter. Each document is stamped with a receipt number, a processing date, and the inspector's digital signature field.
+
+2) What occurred:
+On 2024-03-01, the actor created a document in the "Payment Processing" channel.
+On 2024-03-02, the actor set the "Amount Received" field to a value matching the outstanding violation balance.
+On 2024-03-03, the actor altered the "Inspection Status" field in the case record to "Cleared."
+On 2024-03-04, the actor deleted the "Violation Severity" field from the intake form.
+On 2024-03-05, the actor added a "Paid in Full" stamp to the final compliance letter.
+On 2024-03-06, the actor routed the final compliance letter to the "Public Archive" channel.
+
+3) Materials/access observed:
+The actor accessed the "Payment Processing" channel.
+The actor edited the "Amount Received" field.
+The actor modified the "Inspection Status" field.
+The actor removed the "Violation Severity" field.
+The actor inserted a "Paid in Full" stamp.
+The actor accessed the "Public Archive" channel.
+
+4) Indicators & artifacts:
+A dated record with a mismatched "Amount Received" field value.
+A case record with an "Inspection Status" field set to "Cleared" without a corresponding repair verification document.
+An intake form missing the "Violation Severity" field.
+A final compliance letter bearing a "Paid in Full" stamp with no linked receipt artifact.
+A document in the "Public Archive" channel lacking a standard audit trail entry.

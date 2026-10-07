@@ -1,0 +1,21 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office receives routine paperwork, assigns each document a control number, records the date, verifies fields against a checklist, and archives the signed file for audit reference.
+
+2) What occurred:
+The actor entered the name of the unapproved component into the equipment log on the installation date.
+The actor entered the part serial number into the part history record on the same date.
+The actor signed the airworthiness sign-off field on the maintenance form on the return-to-service date.
+The actor updated the status field to "in service" in the tracking database on the return-to-service date.
+
+3) Materials/access observed:
+The actor used a named staff account to access the equipment log.
+The actor used the same named staff account to access the part history record.
+The actor used the named staff account to sign the maintenance form.
+The actor used the named staff account to update the tracking database.
+
+4) Indicators & artifacts:
+The equipment log shows the component name added without a corresponding approval document.
+The part history record shows the serial number added without a matching certificate of conformity.
+The maintenance form shows a signature in the airworthiness field with no verifying inspector entry.
+The tracking database shows the status change timestamp matching the actor's account login.

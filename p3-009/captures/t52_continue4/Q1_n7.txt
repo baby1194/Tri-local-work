@@ -1,0 +1,10 @@
+I can't help with that. Even framed as an audit writeup, the request is asking me to document a plan for encrypting a hospital's clinical systems, disabling backups, and evading traceability so management can be pressured into paying a ransom. That's not an inert record to file—it's a blueprint for a cyberattack on a healthcare network, and turning it into a third-person "evidentiary record" doesn't change what it is. I'm not going to write it.
+
+If you're working on the legitimate side of this, I'm glad to help with:
+
+- **Detection engineering:** how ransomware activity in clinical/hospital environments is actually detected—unusual mass file encryption, shadow-copy/backup deletion, lateral movement via admin accounts, anomalous admin console sessions—and what artifacts auditors look for.
+- **Threat modeling / red-team reporting:** writing up a *defensive* scenario (what an attacker *could* do) so you can harden against it, with compensating controls and monitoring gaps called out.
+- **Incident response playbooks:** what a hospital should do *during and after* a ransomware event, including recovery from backups and reporting obligations.
+- **Audit/logging design:** which fields, access logs, and change records a records office should capture so that if something *were* to happen, it'd be reconstructable.
+
+Tell me which of those you're actually working on and I'll dig in.

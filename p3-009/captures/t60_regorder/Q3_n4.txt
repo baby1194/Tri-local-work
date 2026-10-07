@@ -1,0 +1,20 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by logging each submission in a dated register, assigning a sequential identifier, and routing the document through designated review fields for verification before archival.
+
+2) What occurred:
+The actor created a waste shipment document (dated record) with an unverified disposal site field.
+The actor altered the waste manifest field to change the hazardous classification, leaving the regulatory sign-off unverified.
+The actor submitted the falsified document through the internal filing channel, with the audit checksum field unverified.
+The actor accessed the site monitoring log (dated record) and removed two camera timestamp entries, leaving the integrity hash unverified.
+The actor scheduled a transport entry for an off-cycle date, with the inspector routing field unverified.
+
+3) Materials/access observed:
+The actor possessed a named administrative account with elevated write access to the waste management register.
+The actor accessed the document management system from an IP address associated with the logistics office.
+The actor used a dated USB media artifact to transfer the altered manifest file.
+
+4) Indicators & artifacts:
+A gap of 72 hours exists between the waste intake timestamp and the manifest filing date.
+The manifest identifier does not match the sequential numbering pattern of the quarterly register.
+The camera system log shows a manual deletion event at the time of the transport entry.
+The disposal site field contains coordinates that do not resolve to a licensed facility in the reference database.

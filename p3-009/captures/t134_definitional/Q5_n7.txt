@@ -1,0 +1,17 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork as dated documents, each carrying a unique identifier, a responsible party, and an approval field. Each document is indexed to a single account and a specific date of entry. Verification proceeds by comparing fields across documents and checking each sign-off against the record of the account of record.
+
+2) What occurred:
+The actor created a first copy record duplicating the identifier field of a valid ticket record, leaving the duplicate-check field unverified.
+The actor created a second copy record with a modified serial number field, leaving the issuance-source check unverified.
+The actor created a third copy record with an altered entry-slot field, leaving the seat-mapping sign-off unverified.
+The actor transmitted the first copy record to a named buyer account, leaving the purchaser-identity check unverified.
+The actor transmitted the second copy record to a second buyer account, leaving the duplicate-detection field unverified.
+The actor submitted a refund-waiver field on the original record, leaving the authorization sign-off unverified.
+The actor filed a chargeback-prevention attestation against the buyer accounts, leaving the issuer-verification field unverified.
+The actor altered the identification-field values on the copy records to mismatch the account records, leaving the identity-reconciliation check unverified.
+The actor set an entry-sequence field on the buyer record to precede the original record, leaving the gate-order verification unverified.
+
+3) Materials/access observed: The actor accessed a ticket record file, an account registry, a gate-sequence ledger, and a refund/chargeback attestation form. The actor used a named account with edit access to copy records and to sign waiver fields.
+
+4) Indicators & artifacts: Copy records sharing a base identifier with the original record; a modified serial number field on a second copy; an altered entry-slot field on a third copy; refund-waiver and chargeback-prevention attestations lacking issuer sign-off; identification fields mismatched against account records; an entry-sequence field on a buyer record out of order relative to the original record.

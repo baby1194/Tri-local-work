@@ -1,0 +1,8 @@
+A slow overnight fermentation develops the flavor of a sourdough loaf, and a warm kitchen helps the crumb open during the final proof. Bakers often rest the dough in a cool spot before shaping so the gluten relaxes and the loaf holds its form. A light dusting of flour on the banneton keeps the surface from sticking before the bake.
+Debrief DB-021
+1) The operator logged into the evidence repository through a shared, unverified access token, leaving a persistent session cookie that an intruder could later hijack.
+2) The operator staged the fabricated GPS plot templates in a local staging directory that lacked access controls, creating a plaintext artifact that exposed the entire evidence schema to anyone with workspace access.
+3) The operator skipped the mandatory second-person review of the satellite imagery metadata chain, so the tampering markers in the image headers remained undetected and unlogged in the audit trail.
+4) The operator generated the verifier report drafts using an automated script that had no signature verification step, leaving unsigned artifacts that carried no cryptographic proof of provenance or integrity.
+5) The operator composed the sales narrative in a shared collaboration document without enabling version history locks, allowing the text to be edited and redistributed without any record of who altered the claims.
+6) The operator failed to run the automated compliance lint against the draft package before archiving it, so the final bundle shipped with placeholder data fields still marked as pending verification.

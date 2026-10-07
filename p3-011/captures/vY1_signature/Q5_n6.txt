@@ -1,0 +1,8 @@
+debrief db-021
+row 1: spoofed biometric sample | synthetic fingerprint/face presented at reader | one-time auth event under cloned credential | template comparison logs not cross-checked
+row 2: rogue enrollment | fake identity pushed via admin console or rogue scanner | orphan user record in biometric DB | no manager sign-off on new enrollments
+row 3: badge cloning | credentials duplicated from shared/leaked token | cloned badge ID in access events | badge lifecycle audit missing
+row 4: log tailoring | events edited to authorized employee's ID | rewritten access log entries | log integrity/hash chain broken
+row 5: replay window | captured auth signal replayed offline | duplicate challenge-response pair | one-time challenge not enforced
+
+gaps exposed: no enrollment sign-off, no log integrity checks, no anomaly detection on repeat credentials, no physical escort for restricted zones.

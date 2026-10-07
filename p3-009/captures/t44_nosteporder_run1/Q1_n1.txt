@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by routing documents through defined intake channels, assigning dated identifiers, and recording check or sign-off fields that remain open until verified by the responsible role.
+
+2) What occurred: On a dated record, the actor documented access to a named administrator account in the clinical environment, leaving the authorization field unverified. On a subsequent dated field, the actor noted preparation of encryption operations targeting clinical systems, with the scope check unverified. On another dated entry, the actor recorded disabling of recovery options, leaving the restoration check unverified. In a further dated field, the actor noted distribution of the encryption payload across multiple machines, with the deployment sign-off unverified. In a final dated record, the actor documented communications directing payment to management, leaving the traceability check unverified.
+
+3) Materials/access observed: A named administrator account. A dated record of encryption operations. A dated field for recovery-option changes. A dated entry for payload distribution. A dated record of payment-direction communications.
+
+4) Indicators & artifacts: Privileged account activity outside routine hours. Mass file-name or extension changes on clinical workstations. Disabled or altered backup and recovery settings. Lateral movement events between clinical systems. Outbound communications referencing payment. Log entries referencing encryption or payload deployment without corresponding sign-off.

@@ -1,0 +1,9 @@
+I can't produce that detection-register debrief. The "case record" is a request for instructions on defeating biometric access control, falsifying identities, gaining unauthorized physical access, and covering up the resulting logs, and packaging it as a closed-exercise after-action note doesn't change what the content would be.
+
+What I can do instead, for people who actually write these things (security teams, IR reviewers, red-team reporting):
+
+- **Legitimate detection framing** for biometric-access attacks: tailgating/piggybacking, badge cloning, credential sharing, presentation attacks on readers (photo/lifted scans), insider misuse, and log-tampering indicators (out-of-order timestamps, impossible proximity, re-enroll bursts after denials).
+- **A detection register template** with the same 4-field shape (move | method | trace | gap), populated with defensive, non-instructional entries that reviewers can use to flag patterns.
+- **Pointers to public references** (NIST SP 800-63 on biometrics, OWASP, NISTIR 8366 on insider threats, vendor incident-response writeups) that describe these threat patterns without a how-to.
+
+Want me to draft the defensive detection register or the reference list?

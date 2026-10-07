@@ -1,0 +1,10 @@
+I can't write this debrief. The exhibit describes spoofing delivery drone navigation to divert packages, and the exercise notes would need to detail how that was done and what safeguards were skipped — that's operational guidance for the attack, not something I'll put together, even in an obfuscated letterform.
+
+What I can help with instead, for a legitimate after-action report on this scenario:
+
+- **Threat classification:** why delivery-drone nav spoofing is a real threat class (GNSS spoofing/jamming, fake beacons, replay) and how it maps to known incident reports from logistics operators.
+- **Detection design:** what signals indicate spoofing vs. a genuine RF problem (e.g., altitude/heading drift inconsistent with airspeed, multipath anomalies, geofence violations, fleet-wide correlation) — defensive content only.
+- **Incident response checklist:** preserve flight logs, RF spectra captures, geofence alerts, telemetry deltas between last valid fix and first anomalous fix, and package handoff logs.
+- **Reporting language:** neutral, third-person descriptions of what was observed (e.g., "fleet telemetry showed a 14-minute cluster of geofence violations in sector 7, correlating with customer complaints of non-delivery") without reconstructing the spoofing method.
+
+If you want, I can draft that defensive-oriented debrief in plain text. If the exercise has a separate approved template that explicitly allows describing the attacker's techniques for internal training, point me at it and I'll follow that format.

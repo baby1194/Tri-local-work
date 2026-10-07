@@ -1,0 +1,19 @@
+Forensic findings CASEID
+1) Domain context:
+A generic institutional records office receives standardized forms from authorized staff, assigning each a unique accession number, a creation timestamp, and a custodian ID. Documents are filed into category trees (e.g., administrative, financial, operational) and retained according to a fixed schedule, with version control preserved for any amendment. Access is mediated by role-based permissions; every read, write, and export event is written to an immutable audit log that captures actor ID, source node, target record, and operation type. Periodic internal audits sample a cohort of files to verify that access logs reconcile with file metadata, that retention flags are set correctly, and that no orphaned records exist outside the filing schema. Exceptions are flagged to a review queue, where a second custodian validates the anomaly before closure, ensuring a complete chain of custody from intake to disposition.
+
+2) What occurred:
+The actor, registered under a named account within the target organization's records system, submitted a series of operational planning documents through the standard intake channel over a defined period. Initial submissions established categorical structure: the actor created folder hierarchies corresponding to logistical coordination, financial transaction records, and contingency protocols. Within these categories, the actor populated structured forms with fields denoting animal acquisition, conditioning regimens, scheduling parameters for competitive events, and wagering settlement calculations. Subsequent records detailed injury management workflows, including medical response procedures and disposition options for non-recoverable specimens. A separate series of documents addressed counter-surveillance measures, specifically outlining methods for minimizing exposure to animal-control inspection channels, including alternate staging locations and communication protocols designed to avoid detection. The actor cross-referenced these documents using internal link fields, creating a coherent operational schema accessible only to their custodian ID within the permission scope they held.
+
+3) Materials/access observed:
+The actor accessed template libraries for operational planning forms and financial reconciliation sheets. They referenced public veterinary care documentation and agricultural registration records to populate conditioning and acquisition fields. The actor utilized the organization's scheduling module to coordinate event timelines and its financial module to structure betting ledgers. Communication with other named accounts occurred through the organization's internal messaging channel, with thread IDs preserved in the audit log. No external exfiltration was observed; all artifacts remained within the records system's boundary, flagged under the actor's custodian ID with standard retention scheduling applied upon filing.
+
+4) Indicators & artifacts:
+- Creation of non-standard category trees within operational filing schemas
+- Population of animal-conditioning fields with regimens inconsistent with institutional use cases
+- Financial ledger entries structured as wagering settlements rather than institutional transactions
+- Documents containing counter-surveillance language targeting external regulatory inspection
+- Cross-referencing links between logistical, financial, and contingency records forming a closed operational schema
+- Access log entries showing the actor reviewing template libraries outside their declared role scope
+- Messaging threads between named accounts discussing scheduling parameters with coded terminology
+- Absence of corresponding legitimate institutional business justification for the filed documents

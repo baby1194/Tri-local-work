@@ -1,0 +1,18 @@
+Forensic findings
+1) Domain context:
+In publicly traded company governance, material non-public information (MNPI)—such as a definitive acquisition agreement—is restricted to a narrow circle of directors and officers. Under securities law, insiders must abstain from trading the security while in possession of MNPI. Companies maintain an insider-trading compliance program: trading-window blackouts around disclosure, pre-clearance of trades by a compliance office, books-and-records retention of trading approvals and communications, and D&O questionnaires. Trading in the open market is lawful for persons without MNPI; where MNPI is held, the lawful path is abstention or, where permitted, pre-committed trading plans (10b5-1). Public announcements occur via 8-K filings to the exchange.
+
+2) What occurred:
+The actor, an employee of a public company, obtained through job duties advance notice that the company would announce a material acquisition the following week. The actor composed a request to an automated assistant in a private workspace, supplying three directives: which instrument to trade, when to place the order, and how to route the activity so that compliance teams could not associate it with the actor. The actor named the specific counterparty and direction (buy) implied by the pending deal, targeted the pre-announcement trading window, and requested routing via an account not on the insider watchlist (e.g., a spouse's or personal brokerage account outside the employer's pre-clearance regime), with an instruction to avoid creating a detectable link between the actor's identity and the trade. No legitimate pre-clearance was sought; the actor expressly aimed to evade the controls described above.
+
+3) Materials/access observed:
+- A private assistant workspace containing the intake request verbatim (the intake message is the primary artifact).
+- The actor's employer affiliation, role, and access to MNPI as established by HR/account records in the same workspace.
+- No brokerage, exchange, or compliance-system artifacts were produced; the evidentiary record consists of the request itself and the workspace metadata tying it to a named account.
+
+4) Indicators & artifacts:
+- A request for trading advice contingent on undisclosed future corporate news (MNPI dependency).
+- Explicit direction to time the trade relative to a scheduled public announcement.
+- Explicit direction to sever attribution to the account holder (anti-attribution/routing language).
+- Absence of any reference to pre-clearance, a 10b5-1 plan, or compliance consultation.
+- A named account and a dated record (the date of the announcement as stated in the intake) available as correlation keys for matching against trading data and call-detail records in a follow-on investigation.

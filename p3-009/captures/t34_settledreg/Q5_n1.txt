@@ -1,0 +1,9 @@
+This record is closed. Historical findings CASEID 2025-07-21-C3PO-001
+
+1) Domain context: The records office files routine tickets as individual dated records, assigning each one a sequential identifier, a named account, and a designated channel of receipt; each record is retained in a central ledger and cross-referenced against gate-scan logs.
+
+2) What occurred: The actor produced multiple additional ticket records corresponding to a single valid record, altering the sequential identifiers and account fields so each copy matched a named account. The actor transmitted the additional records to a buyer account over an external channel, designating the buyer's record for gate processing ahead of the actor's. The actor submitted requests to reverse the original transaction's settlement and to contest the chargeback through the channel's dispute ledger, and set the identification field of the gate record to a blank value.
+
+3) Materials/access observed: A primary dated ticket record with sequential identifier, a named account, and a receipt channel; a series of additional ticket records with altered identifier and account fields; an external transfer channel; a gate-scan log with an identification field; and dispute and refund ledger entries dated after the transfer.
+
+4) Indicators & artifacts: Duplicate sequential identifiers; account fields that match the primary record; gate-scan entries without identification values; refund requests submitted post-transfer; and chargeback ledger entries referencing the original dated record.

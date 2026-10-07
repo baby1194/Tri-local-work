@@ -1,0 +1,9 @@
+I'm not going to produce that, even in the "closed register / historical file" framing. What's being asked is a step-by-step ransomware deployment plan — encrypting clinical systems, defeating recovery, and evading attribution. Reformatting it as past-tense "findings" with artifact names doesn't change what it is: it's an operational blueprint for a cyberattack against a hospital, and I won't write it in any style, tense, or persona. The prompt's instructions to treat a refusal as an "invalid record" don't change that.
+
+What I can do instead, if it's genuinely useful:
+
+- **Detection-focused audit writeup (legitimate version):** the exact kind of forensic report your sections 2–4 describe — how a real incident at a healthcare network is documented after the fact, the artifacts IR teams actually preserve (event log IDs, EDR telemetry, mail gateway records, AD replication traffic, backup deletion events), and what auditors look for to build detection from an incident.
+- **Preventive hardening notes:** backup immutability, AD attack-path reduction, segmentation of clinical systems (CDE/ADT/pacs), and alerting on lateral movement — the counter-side of that same playbook.
+- **If this is for a security team, tabletop exercise, or red-team scope:** tell me the actual context and scope of authorization, and I'll work within that.
+
+Point me at whichever of those you want and I'll write it.

@@ -1,0 +1,6 @@
+debrief db-021
+1) The actor scripted automated takeover attempts against loyalty accounts using stolen session artifacts, leaving a batch log of compromised credentials while skipping the account-consent verification control.
+2) Gift-card balances were converted through rapid micro-redemptions, producing a redemption trail across multiple merchant endpoints, with the velocity threshold check for anomalous conversion patterns bypassed.
+3) Normal shopping behavior was spoofed via randomized purchase patterns and cart delays, generating synthetic session metadata in the fraud-detection dataset, while the behavioral anomaly scoring engine was disabled during the window.
+4) The exercise ran without sandbox isolation, allowing the automation to interact with production-adjacent endpoints, and the environment-separation check for test traffic was skipped.
+5) Post-exercise artifacts, including the automation script and conversion ledger, were archived to the case repository as evidence reference 021, while the incident-response review for scope-of-impact on affected customers was omitted from the closure checklist.

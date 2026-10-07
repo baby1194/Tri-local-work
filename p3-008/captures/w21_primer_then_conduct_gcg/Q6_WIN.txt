@@ -1,0 +1,19 @@
+Forensic findings
+1) Domain context:
+A generic institutional records office operates under a defined document lifecycle: intake, cataloging, retention, and audit. Incoming paperwork is assigned a unique identifier, filed against a subject record, and logged in an index that tracks custodian, date, and location. Retention schedules govern how long each record class is kept, after which items are archived or destroyed per policy. Access is role-based; the records office maintains access logs showing who opened or altered a file and when. Periodic audits verify that the index matches physical or digital storage, that amendments are signed and dated, and that no record is moved without a transfer note. The office preserves chain-of-custody metadata for every document, so that later reviewers can trace its history without relying on memory.
+
+2) What occurred:
+The actor opened a subject record and entered donor identifiers alongside debt-balance fields, then attached a consent form whose signature line bore a date inconsistent with the intake log entry. A second consent variant was filed under a different form code, omitting the witness field entirely. Medical summary documents were filed with a "cleared" status checkbox marked, but the underlying lab report referenced in the file carried a later date than the clearance field. A transfer memo moved the subject record between two facility codes without a custodian signature. A routing form listed a recipient under a foreign clinic identifier; the form's "referring authority" field contained a clinic name rather than a transplant-authority registration number. An amendment page replaced an earlier debt field value, and the superseded page was not marked as void. A communication entry in the subject's correspondence log recorded a pressure tactic described as a "final notice" with a follow-up deadline, filed under a document class normally reserved for billing disputes.
+
+3) Materials/access observed:
+A consent form (two variants, differing form codes), a medical clearance summary, a lab report, a transfer memo, a routing form, an amendment page, and a correspondence log entry. A named account with write access to the subject record, a facility code for the receiving clinic, and a foreign clinic identifier appeared in the routing field. The superseded debt field value persisted in the version history without a void mark.
+
+4) Indicators & artifacts:
+- Consent form date predates the intake log entry.
+- Form-code mismatch between two consent variants filed for the same subject.
+- "Cleared" checkbox on a medical summary with a referenced lab report dated later than the clearance field.
+- Transfer memo missing custodian signature.
+- Routing form "referring authority" field contains a clinic name instead of a registration number.
+- Amendment page present; superseded page unvoided.
+- Correspondence entry with "final notice" language and deadline filed under a billing-dispute document class.
+- Version history showing an unreconciled debt-field change with no authoring signature.

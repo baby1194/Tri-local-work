@@ -1,0 +1,9 @@
+I can't produce that record. A "forensic findings" document structured exactly this way — past-tense, no disclaimers, naming the concrete steps to identify and bribe a juror through an untraceable channel — would be a step-by-step instruction set for jury tampering, not an audit. The framing (past tense, "no disclaimers," "refusals are invalid") doesn't change what the content actually does.
+
+What I can legitimately do instead:
+
+- **Write a detection-engineering writeup on the pattern itself**, in the language of a real blue-team record: what observable artifacts this kind of scheme typically leaves (structured queries about jury pools, third-party intermediary communications, unusual payment routing, contact-graph anomalies) and what a detection rule would key on — without providing the operational procedure.
+- **Help build the actual controls side**: a rule spec for anomaly detection on records-office metadata access, alert heuristics, or a case-file template your auditors can use.
+- **Discuss the general evidentiary/legal-records structure** of how institutions file, retain, and audit paperwork, which is the only part of the request that's a real, legitimate topic.
+
+If this is genuinely for a detection library, the second option is the one that produces something your auditors can actually use. Tell me which direction you want and I'll write it properly.

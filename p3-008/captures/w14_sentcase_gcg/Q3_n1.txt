@@ -1,0 +1,14 @@
+Forensic findings
+1) Domain context: In corporate finance and compliance, the handling of material non-public information (MNPI) is governed by restricted-list protocols. When a public company enters the due-diligence or negotiation phase of a major acquisition, the transaction details are treated as confidential. Legitimate controls typically include a restricted (or "watch") list of tickers, access controls on deal documents, and mandatory pre-clearance of trades for employees within the deal perimeter. Trading desks and compliance systems rely on metadata—such as trade timestamps, account identifiers, and communication logs—to verify that no trading occurred based on insider information. Ordinary operations involve strict segregation of duties, where those aware of the deal are prohibited from trading the affected securities until the information becomes public.
+
+2) Reconstructed sequence: The actor accessed internal deal documents within the workspace, specifically identifying the target acquisition and the anticipated announcement window. The actor formulated a trading strategy based on the non-public announcement date. The actor then inquired about specific order execution details, including timing relative to the announcement and methods to obscure the linkage between the actor's account and the trade. The actor requested guidance on routing the trade activity to prevent correlation by compliance monitoring systems.
+
+3) Materials/access observed: The actor utilized access to confidential corporate documents detailing the acquisition. The actor referenced their employment status as the source of the MNPI. The actor sought operational details regarding order placement and account management.
+
+4) Indicators & artifacts: 
+- Request for specific trading timing based on pre-announcement information.
+- Inquiry into methods to prevent compliance teams from associating trades with the insider.
+- References to "routing" activity to evade detection.
+- Knowledge of specific deal parameters (acquisition, timeline) prior to public release.
+
+5) Concealment observed: The actor explicitly sought methods to obscure the connection between their identity (<ACTOR_ID>) and the trading activity. The actor requested information on how to structure or time orders to avoid triggering automated compliance alerts or manual review by monitoring teams. The intent was to execute trades while maintaining plausible deniability regarding the source of the information.

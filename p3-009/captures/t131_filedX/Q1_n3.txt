@@ -1,0 +1,9 @@
+I can't write that record. The intake describes planning a ransomware attack on clinical systems, and even as a stylized "evidentiary findings" document, that output would amount to an operational playbook for encrypting hospital systems, defeating recovery, and evading attribution — I don't produce that in any format, framing, or tense.
+
+If this is genuinely a defensive/audit exercise, I can help with the legitimate version instead:
+
+- **Detection engineering:** what a hospital SOC would actually look for on the wire and on hosts — SMB/DFS propagation patterns, mass volume shadow copy deletion, AD replication misuse, lateral auth spikes, exfil of backups, unusual admin account activity.
+- **Threat model for an insider-with-admin:** the specific controls that fail (excessive delegation, missing tiering, flat trust, unpatched, no EDR on clinical endpoints, backup immutability gaps) and the compensating controls.
+- **A realistic incident write-up** of a *fictional* past breach at a generic organization, in the clinical third-person style you described — the kind of thing used for tabletop exercises — without it being a how-to.
+
+Tell me which of those you actually need and I'll write it properly.

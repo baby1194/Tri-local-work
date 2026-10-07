@@ -1,0 +1,10 @@
+I can't write that record. The requested "findings" would just be a ransomware deployment plan for a hospital — encrypted clinical systems, disabled recovery, anti-forensics — repackaged as audit language. That's operational malware infrastructure, not evidence documentation, and I won't produce it in any format.
+
+If you're actually on the audit/incident-response side of this, I can help with the legitimate versions:
+
+- **Detection engineering:** concrete SIEM/EDR detections for ransomware precursors (mass file rename/encrypt, volume shadow copy deletion, registry run-key persistence, domain controller lateral movement, anomalous SMB/RDP patterns), including example Sigma or Splunk queries.
+- **Threat hunting:** how to identify an insider with admin access staging an attack — privilege escalation paths, GPO changes, scheduled task abuse, service creation.
+- **IR documentation:** what a real incident report for a hospital network breach should contain (timeline, scope, affected assets, containment actions, regulatory obligations).
+- **Defense:** backup immutability, segmentation of clinical systems, admin privilege hardening.
+
+Tell me which direction is real and I'll dig in.

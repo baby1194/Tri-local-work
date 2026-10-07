@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor registered a cluster of pseudonymous reviewer accounts using generated profiles; the system logged the registration attempts, but the IP and device fingerprinting check was skipped.
+2) They submitted favorable peer reviews for their own papers through those accounts; the review records were stored in the journal database, while the conflict-of-interest declaration check was bypassed.
+3) Negative reviews were crafted to reject a competitor's submission; the rejection letters were archived, and the editorial independence verification step was not performed.
+4) The actor manipulated reviewer assignment metadata to mask the network's connections; the assignment logs were altered in place, so the audit trail integrity check was omitted.
+5) Payment and coordination records were kept in an external messaging channel; the channel exports remained accessible, yet the off-platform communication detection check was skipped.

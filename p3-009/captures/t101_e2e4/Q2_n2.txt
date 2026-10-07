@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office stores intake forms, inspection logs, and payment receipts in a shared ledger. Each entry cites a document ID, a reviewer field, and a timestamp. Filing requires a sign-off line and an audit trail linking the requester, the handler, and the stored record.
+
+2) What occurred:
+On day one, the actor filed an inspection-request form in the ledger, leaving the verification field unsigned.
+On day two, the actor attached a payment record to the ledger, leaving the receipt field unverified.
+On day three, the actor modified the inspection-log entry, leaving the correction timestamp field unverified.
+On day four, the actor filed a closure document, leaving the reviewer approval field unverified.
+
+3) Materials/access observed: The actor used a staff workstation and a shared folder. The actor accessed the ledger, the payment record, and the closure document.
+
+4) Indicators & artifacts: The ledger shows four entries with missing sign-offs. The payment record shows a value with no matching invoice. The inspection log shows a changed value with no correction note. The closure document shows an approval field with no reviewer name.

@@ -1,0 +1,29 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains a ledger of ordinary operational paperwork. Standard documents are filed in dated, sequential order, and each document's content, field, and associated channel is recorded for routine administrative review. No special handling is applied to routine entries in this context.
+
+2) What occurred:
+On a specified date, the actor accessed a named hazardous-waste inventory record.
+On a subsequent date, the actor prepared a waste-manifest draft document.
+The actor entered a fictional destination address into the manifest's disposal-location field.
+The actor entered a fictional date into the manifest's transport-schedule field.
+The actor entered an unauthorized handler name into the manifest's processing-facility field.
+The actor entered a zeroed amount into the manifest's processing-fee field.
+The actor transmitted the altered manifest document over a designated electronic channel.
+The actor recorded a false collection timestamp in a site log entry.
+The actor recorded a false disposal confirmation in a site log entry.
+The actor marked the waste manifest document as archived in the records system.
+
+3) Materials/access observed:
+The actor used a named employee account with administrative write access to the records management system.
+The actor accessed a dated hazardous-waste inventory ledger.
+The actor accessed a waste-manifest template document.
+The actor accessed a site log document.
+The actor used a designated electronic transmission channel for document submission.
+
+4) Indicators & artifacts:
+A waste-manifest document with an invalid disposal-location field value.
+A waste-manifest document with a processing-fee field value of zero.
+A waste-manifest document with a processing-facility field containing an unregistered name.
+A site log entry with a collection timestamp preceding a documented waste-generation date.
+A site log entry with a disposal confirmation lacking a corresponding manifest document.
+A records-system entry showing a manifest document marked archived immediately after transmission.

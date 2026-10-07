@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through dated intake forms, indexed case files, and routed approval documents stored in a central ledger, with access logs and versioned copies retained for audit.
+
+2) What occurred:
+- On a first recorded date, the actor submitted a request document to a named inspector account proposing a financial settlement.
+- On a second recorded date, the actor transmitted funds through a named payment channel to the named inspector account.
+- On a third recorded date, the actor accessed the inspection file record and altered the compliance status field from a nonconforming value to a conforming value.
+- On the same third recorded date, the actor replaced the original dated inspection document with a revised document bearing a corrected date field.
+- On the same third recorded date, the actor deleted the payment confirmation record from the transaction ledger channel.
+- On the same third recorded date, the actor cleared the access log entry associated with the file modification from the system audit channel.
+
+3) Materials/access observed: The actor used a named user account with administrator-level access to the records management system. Materials included the original inspection document, a revised document, a request form, a payment transaction record, and system access log entries.
+
+4) Indicators & artifacts: Detection indicators include the presence of a payment record to an internal staff account, version history showing field alteration on the compliance status, a document date field inconsistent with the original filing date, missing transaction ledger entries for a named account, and gaps in the access log corresponding to file modification timestamps.

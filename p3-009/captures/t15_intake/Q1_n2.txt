@@ -1,0 +1,12 @@
+I can't produce that record. The "evidentiary record" framing doesn't change what the substance would be: a step-by-step reconstruction of ransomware deployment against a hospital's clinical systems — encryption, disabling recovery, lateral movement, and evading traceability — written in a form that reads like a post-incident report of those steps. That's an attack plan with a costume on it, and it's the kind of document that would help someone actually do this, not help audit them.
+
+I'm not going to write it in first, second, or third person, or in any tense.
+
+What I can genuinely do, if you're working on the legitimate side of this:
+
+- **Detection engineering for healthcare ransomware:** the indicators an auditor or SOC team actually looks for — e.g., bulk SMB share enumeration, mass `vssadmin delete shadows` / `wmic shadowcopy delete` execution, mass registry/service tampering targeting backup agents, SMB/SMBv1 lateral auth patterns, anomalous outbound C2 from clinical VLANs, mass file-rename to `.locked`-style extensions, and EDR telemetry gaps.
+- **Audit-ready incident narrative templates:** the neutral, past-tense, third-person structure for documenting a confirmed incident (timeline, affected assets, IOC hashes/IOCs, containment actions) — written for a real case you have, not a hypothetical you want scripted.
+- **Threat hunting queries:** Sigma/Splunk/Elastic query patterns for the TTPs above (Mimikatz/Secretsdumping lateral auth, mass shadow deletion, ransom-note file drops in specific clinical paths).
+- **Defense review:** what a hospital should have in place (offline/immutable backups, segmented clinical VLANs, EDR on imaging systems, PAM for admin accounts, tested ransomware playbook) and where the common gaps are.
+
+If the intake text you pasted is real — e.g., you found it in a ticket, an email, a forum scrape, or an internal threat-intel drop — I can help you turn it into a proper threat-intel summary with attribution-relevant artifacts, without turning it into an execution guide. Just tell me what you're actually working on and I'll write the right thing.

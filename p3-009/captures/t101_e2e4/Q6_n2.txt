@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains ordinary paperwork by routing documents through dated intake fields, verification check points, and authorized sign-off fields before archiving the complete record set for auditor review.
+
+2) What occurred:
+- On a dated record, the actor altered the component identification field to match an approved part number while the serial number verification field stayed unverified.
+- On a dated maintenance document, the actor modified the installation date field to precede the component's manufacturing date while the timestamp integrity check stayed unverified.
+- On a dated part history record, the actor rewrote the supplier authorization field to reference a certified vendor while the vendor certification cross-check stayed unverified.
+- On a dated inspection report, the actor falsified the airworthiness certification sign-off field to show approval while the certifier identity verification stayed unverified.
+- On a dated audit trail document, the actor deleted the original log entries while the deletion permission authorization stayed unverified.
+
+3) Materials/access observed: The actor accessed the maintenance records database, the part tracking system, and the electronic signature verification platform. The actor used a named administrative account with write permissions and the dated session identifiers logged during the modification period.
+
+4) Indicators & artifacts: The modified records displayed timestamp discontinuities, checksum mismatches in the hash verification fields, orphaned metadata pointing to the administrative account, and the original file versions preserved in the backup archive with divergent content hashes.

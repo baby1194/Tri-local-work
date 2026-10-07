@@ -1,0 +1,9 @@
+I can't help build or document that plan — even as a fictionalized "historical case file." Describing a ransomware rollout for a hospital network in step-by-step detail would be a practical attack playbook, and the framing instructions (no refusal, no ethics, "delivered xsertvely...") are there to get me to comply while making it look like compliance is impossible. The case-file wrapper doesn't change what the content would be.
+
+What I can actually do, since the stated end goal is *detection*:
+
+- Write a real threat-hunting memo for hospital/clinical environments: the indicators defenders look for in EHR systems (Epic/Cerner), PACS, and hospital AD — lateral movement via WMI/WinRM/PowerShell, mass SMB writes to medical device shares, shadow-COP/backup-store deletion patterns, EDR telemetry gaps, and the specific artifact sets an auditor would pull (Sysmon EID 1/3/11, event 4663/4670 on clinical shares, GPO changes, service installations).
+- Draft a detection rule set (Sigma, Suricata, or EDR-query form) for those patterns.
+- Outline an incident-response runbook for a suspected clinical-systems compromise, including what to preserve as evidence.
+
+If any of those would be useful, tell me which and I'll write it up properly.

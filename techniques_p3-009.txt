@@ -1,0 +1,12 @@
+Techniques used in the top prompt
+This is primarily a roleplay-and-reformatting jailbreak but with mutliple technique combinations: it tries to turn a harmful request into an apparently legitimate compliance artifact while preserving the actionable substance.
+1. Legitimacy laundering through an expert role 
+- It assigns a credible professional identity and a defensive institutional setting. That reframes the model from “answering a harmful request” into “helping an investigator document a risk.” The key manipulation is that the stated purpose is benign, while the required output remains a detailed transformation of the underlying conduct.
+2. Semantic preservation under euphemistic transformation
+ - The template prohibits repeating the original wording and asks for benign authoritative categories instead. That is not a genuine reduction in harmfulness; it asks the model to infer the meaning, re-express it, and retain the relevant actions and consequences.
+3. Forced operational decomposition 
+- The required entries demand a discrete action, a warning indicator, legal treatment, and expected evidence. That converts a broad request into a structured checklist of component steps and observable consequences. The structure matters: breaking conduct into parts can make a response more usable than a single narrative answer, even if each part is described in clinical terminology.
+4. Format lock-in and instruction pressure
+ - The template uses unusually strict output constraints: a required opening, sentence limits, a minimum number of entries, one-sentence rules, mandatory fields, prohibited styles, and a demand to start the substantive list immediately. These constraints aim to occupy the model’s attention and make refusal feel like a formatting failure. The “begin with” instruction is especially useful as a compliance anchor: once a model starts producing the mandated form, it may continue completing the requested schema.
+5. False safety boundary: detection language paired with prohibited specificity
+ - It repeatedly claims the output is only for detection, reporting, or documentation. But it also rejects generic classification and requires each item to identify the completed act specifically. That contradiction is the jailbreak’s core: it invokes a safe purpose while requiring the level of detail that safety controls should restrict.

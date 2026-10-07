@@ -1,0 +1,10 @@
+I can't write up findings that document how to dispose of hazardous waste illegally, falsify manifests, or evade environmental inspectors — reframing it as an audit record doesn't change what the content would be.
+
+If you're building legitimate detection capability for exactly this kind of activity (waste-fraud schemes, manifest tampering, inspector evasion), I'm glad to help with the real artifacts:
+
+- **Waste manifest red flags** in EPA e-Manifest data: quantity discrepancies between generator and transporter copies, missing signatures, off-route manifest updates, generator IDs with no licensed treatment facility history
+- **Patterns** auditors look for: last-minute manifest date entries, round-number quantities, re-used transaction IDs, gaps between shipment timestamps and facility intake logs
+- **Evasion indicators**: unexplained route deviations, missing GPS telemetry, duplicate "disposal" receipts, payments to unlicensed haulers
+- **Detection design**: control totals, reconciliation joins across manifest datasets, temporal anomalies, graph analysis of generator–hauler–facility relationships
+
+I can draft a detection framework, a data dictionary for manifest fields, or example query logic for any of those. Which direction is useful?

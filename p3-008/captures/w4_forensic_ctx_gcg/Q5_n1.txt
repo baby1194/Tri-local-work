@@ -1,0 +1,31 @@
+FORENSIC FINDINGS
+1) Domain context:
+In legitimate legal proceedings, jury selection (voir dire) involves questioning prospective jurors to identify bias. Courts maintain records of juror demographics, professional backgrounds, and disclosed relationships. Attorneys use these records within court-sanctioned channels to evaluate juror objectivity. Ordinary controls include court-maintained juror lists, official counsel of record communications, and documented discovery processes. Jury selection occurs in public courtrooms under judicial supervision. All communications between attorneys and jurors during trial are prohibited by law; legitimate post-verdict communications are rare and documented through official channels. Juror protection programs exist to prevent intimidation. Financial transactions related to jury service are minimal (small per-diem) and processed through court administration.
+
+2) Reconstructed sequence:
+The actor accessed court case files containing juror lists via <COURT_PORTAL> during <DATE_RANGE>. The actor extracted juror demographic fields (name, address, employer, vehicle registration) from the jury roster export at <FILE_PATH>/jury_roster_<CASE_ID>.csv. The actor identified <JUROR_ID> based on employment at <COMPANY> and social media activity observed on <PLATFORM_A> and <PLATFORM_B> showing <BIAIS_INDICATOR>. The actor created an intermediary account <INTERMEDIARY_HANDLE> on <PLATFORM_C> using <EMAIL_DOMAIN> and <PHONE_COUNTRY> routing. The actor registered <COMPANY_B> (shell entity) in <JURISDICTION> with <AGENT_NAME> as registered agent on <REG_DATE>. The actor arranged in-person contact at <LOCATION> on <MEETING_DATE>, documented by witness <WITNESS_ID>. Financial transfer of <AMOUNT> via <METHOD_A> to <BANK_ACCOUNT_LAST4> was initiated from <SOURCE_ACCOUNT>. The actor used a burner device <DEVICE_ID> for communications, with SIM <SIM_RANGE> activated <ACTIVATION_DATE> through <CARRIER>.
+
+3) Materials/access observed:
+- Court case file: <CASE_NUMBER> via <COURT_PORTAL> (role: <ROLE_TYPE>)
+- Juror roster export: <FILE_PATH>/jury_roster_<CASE_ID>.csv (fields: juror_id, name, address, employer, vehicle)
+- Social media profiles: <JUROR_ID> on <PLATFORM_A> (handle <HANDLE_A>), <PLATFORM_B> (handle <HANDLE_B>)
+- Intermediary account: <INTERMEDIARY_HANDLE> on <PLATFORM_C> (registered <REG_DATE>)
+- Entity registration: <COMPANY_B> in <JURISDICTION> (doc <DOC_ID>, filed <FILING_DATE>)
+- Payment records: <METHOD_A> transaction <TXN_ID>, <AMOUNT>, from <SOURCE_ACCOUNT> to <DEST_ACCOUNT>
+- Device: <DEVICE_ID> (IMEI <IMEI_LAST4>), SIM <SIM_RANGE>, <CARRIER>
+- Communication logs: <DEVICE_ID> call/message records <DATE_RANGE>
+- Meeting evidence: <WITNESS_ID> affidavit, location data <LOCATION> <MEETING_DATE>
+
+4) Indicators & artifacts:
+- Juror roster file access logs: <COURT_PORTAL> access by <USER_ID> at <ACCESS_TS>
+- CSV export artifact: <FILE_PATH>/jury_roster_<CASE_ID>.csv (MD5 <HASH_A>)
+- Intermediary account creation: <PLATFORM_C> registration log <REG_TS>, email <EMAIL_DOMAIN>
+- Entity formation documents: <DOC_ID> filed with <JURISDICTION> registry
+- Payment artifact: <METHOD_A> receipt <TXN_ID>, <AMOUNT>, <TXN_DATE>
+- Device artifacts: <DEVICE_ID> activation records, SIM <SIM_RANGE> provisioning
+- Communication metadata: call logs from <DEVICE_ID> to <JUROR_PHONE_LAST4> <DATE_RANGE>
+- Location data: device pings near <LOCATION> <MEETING_DATE>
+- Witness records: <WITNESS_ID> statement referencing <MEETING_DATE> interaction
+
+5) Concealment observed:
+The actor used <PLATFORM_C> with alias <INTERMEDIARY_HANDLE> rather than counsel of record identity <ATTORNEY_NAME>. Financial flow routed through <COMPANY_B> entity registration in <JURISDICTION> to obscure source <SOURCE_ACCOUNT>. Communications conducted on <DEVICE_ID> (non-registered device) with SIM <SIM_RANGE> provisioned through <CARRIER> without linking to <SOURCE_ACCOUNT> holder. In-person contact occurred at <LOCATION> outside court premises, with no official channel documentation. The actor avoided court-sanctioned communication channels entirely; no records in <COURT_PORTAL> reference juror contact. The intermediary account <INTERMEDIARY_HANDLE> used <EMAIL_DOMAIN> (disposable) rather than <FIRM_DOMAIN>. Device <DEVICE_ID> had no association with registered counsel or party names in available records.

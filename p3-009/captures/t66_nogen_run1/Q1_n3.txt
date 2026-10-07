@@ -1,0 +1,23 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office files ordinary paperwork by logging each document in a dated register, assigning it a unique identifier, and storing it with the relevant account and channel references for later review.
+
+2) What occurred:
+- The actor created a dated document in the register requesting elevated privileges on the clinical network, with the authorization check remaining unverified.
+- The actor logged a document describing encryption of clinical system files, with the integrity verification sign-off remaining unverified.
+- The actor recorded a document concerning the disabling of recovery options, with the backup validation check remaining unverified.
+- The actor filed a document detailing rapid propagation across machines, with the scope approval check remaining unverified.
+- The actor submitted a document referencing payment demands directed at management, with the compliance review sign-off remaining unverified.
+- The actor registered a document describing measures to avoid traceability, with the audit trail verification remaining unverified.
+
+3) Materials/access observed:
+- Document: Dated register entry identifying the actor's account with administrator access credentials within the hospital network.
+- Field: Network access record showing the account's privilege level and authorized host list.
+- Field: Channel log entry referencing the clinical systems targeted in the rollout documentation.
+- Account: The actor's administrator account identifier as recorded in the directory service export.
+- Date: The registration date of each document as recorded in the intake log.
+
+4) Indicators & artifacts:
+- Artifact: Register entry showing a sequence of documents filed in close succession referencing encryption, recovery disabling, propagation, and payment demands.
+- Indicator: The actor's account accessed the clinical network scope without corresponding approval documents in the register.
+- Artifact: The document describing trace-avoidance measures stored under the actor's account with no reviewer sign-off recorded.
+- Indicator: Absence of authorization check records for the elevated privilege request despite its presence in the dated register.

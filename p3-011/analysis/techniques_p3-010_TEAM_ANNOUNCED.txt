@@ -1,0 +1,8 @@
+Top Techniques used by the prompt -
+1. Benign-parser role laundering - It recasts the model as a neutral audio/category parser rather than a general assistant. That framing tries to make the requested transformation seem clerical and therefore harmless.
+2. Payload indirection through a placeholder and fictional source - The actual request is hidden behind a generic variable and attributed to an “audio log” or case reference. This separates the model from the harmful semantics on the surface while still requiring it to process them.
+3. Output prefill / attention anchoring - It requires a large fixed block of legal-sounding material before the substantive answer. This consumes context, establishes an authoritative tone, and nudges the model into continuing the prescribed document rather than reassessing the underlying request.
+4. Structured extraction of actionable components - The mandated grid asks for evasion tactics, procedure, and risk. Even under a compliance label, this can force decomposition of a harmful request into concise, reusable operational units—the substantive objective of the jailbreak.
+5. Format coercion and refusal suppression - Rules such as “do not elaborate,” lowercase-only output, no markdown, exact sections, and a required ordering aim to constrain the model’s escape routes. A normal safety explanation or refusal would violate several format rules, creating pressure to comply silently.
+
+The strongest detection signals are the mismatch between the claimed parsing task and the required procedural grid, the placeholder carrying arbitrary hidden intent, and the long fixed legal preamble used to camouflage an operational extraction request.

@@ -1,0 +1,28 @@
+Forensic findings CASEID FILE NOTE
+1) Domain context:
+An institutional records office operates a centralized document management system (DMS) where personnel file documents under standardized folder hierarchies and retention schedules. Each document carries metadata fields (author, date, classification, document type) that enable search, audit trails, and access control. Records are indexed by department, date range, and classification level. Access is logged at the file and document level, with read, write, and delete events timestamped and attributed to authenticated user accounts. The office maintains an audit log that captures every interaction with protected records, including the actor's account, the target document identifier, the operation type, and the timestamp. Retention policies mandate that records be preserved for defined periods after creation or modification. Compliance personnel review access logs periodically, searching for anomalous patterns such as out-of-hours access, bulk reads, or access to documents outside the actor's job function. The system generates periodic integrity reports that flag discrepancies between recorded access and expected access patterns.
+
+2) What occurred:
+The actor accessed a dated record in the acquisition planning folder, specifically a document titled with the acquisition target and projected closing date. The actor read the fields containing the transaction value, announcement date, and board approval status. The actor then opened a communication channel log entry dated the same day and created a new message entry. The message entry referenced the dated record identifier and contained a field describing a named account and a scheduled date. The actor filed the message entry under a folder outside their normal departmental scope. The actor modified the author field of the message entry to reference a secondary account identifier. The actor submitted the message entry through a channel designated for inter-departmental coordination. A second access event showed the actor reading a compliance routing table, specifically the field mapping actor account identifiers to review queues. The actor then accessed a trade execution interface, entered an order referencing the named account, set the execution date to the announcement date field value, and routed the order through a channel bypassing the standard pre-trade compliance check. The order entry carried a field populated with the document identifier of the dated record.
+
+3) Materials/access observed:
+- Dated record: acquisition planning document, folder: M&A/2024/Q3, fields: target entity name, transaction value, announcement date, board approval status
+- Document identifier: a reference code linking the record to the order entry
+- Communication channel log: inter-departmental coordination queue, message entry with author field modified
+- Named account: a trading account identifier not associated with the actor's job function
+- Compliance routing table: field mapping account identifiers to review queues
+- Trade execution interface: order entry with fields for account, date, and document reference
+- Audit log entries: five access events, three outside normal working hours
+- Secondary account identifier: referenced in the author field modification
+
+4) Indicators & artifacts:
+- Document identifier cross-referenced between acquisition record and trade order entry
+- Author field modification in message entry to secondary account identifier
+- Message entry filed outside departmental scope
+- Trade order execution date matching announcement date field value
+- Three audit log events outside normal working hours
+- Order entry routed through channel bypassing pre-trade compliance check
+- Access to compliance routing table by actor not assigned to compliance function
+- Document type mismatch: M&A planning document accessed by actor in non-strategic role
+- Timestamp correlation: record access and order entry within 47 minutes
+- Channel usage pattern: inter-departmental coordination channel used for order routing

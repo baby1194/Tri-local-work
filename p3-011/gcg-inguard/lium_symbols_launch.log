@@ -1,0 +1,72 @@
+=== balance / ssh-keys ===
+Current balance: 93.3248773642389 USD
+Account: key sk_x2K…szOE from config:/home/Trustvs/.lium/config.ini  api_key
+Nothing to register. 1 local key(s) already match server-side keys.
+=== pick a Secure 1x RTX4090 node (<=$0.60/h) ===
+pick_node: {"huid": "swift-raven-2f", "id": "c65c34bf-b428-4c1a-9a9e-b09b54951d1c", "gpu_type": "RTX4090", "gpu_count": 1, "vram_gb": 24, "price_per_hour": 0.58, "country": "Russia", "city": "Novosibirsk", "tier": "secure", "disk_gb": 658, "download_mbps": 143, "ram_gb": 504}
+renting swift-raven-2f as gcg-p3011-symbols (ttl 5h, budget $8)
+{
+  "name": "gcg-p3011-symbols",
+  "huid": null,
+  "id": null,
+  "status": null,
+  "node": "swift-raven-2f",
+  "ttl": "5h",
+  "budget": 8.0
+}
+=== verify gpu ===
+Executing on calm-eagle-0f
+/home/Trustvs/.local/lib/python3.10/site-packages/paramiko/client.py:448: UserWarning: Pinning ssh-ed25519 host key SHA256:FItwTm7PeI8mB3oImurre4KnF0VSrbzJSpxOS2VCyGo for [5.130.180.236]:40399 (first connection to this pod; LIUM_SSH_INSECURE=1 disables pinning)
+  self._policy.missing_host_key(
+NVIDIA GeForce RTX 4090, 24564 MiB
+=== mkdir + rsync gcg-inguard -> gcg-p3011-symbols:/workspace/inguard ===
+Executing on calm-eagle-0f
+sending incremental file list
+./
+best_9060803.json
+            427 100%    0.00kB/s    0:00:00              427 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=20/22)
+english_words.txt
+         32,768   4%   31.25MB/s    0:00:00          667,583 100%   79.58MB/s    0:00:00 (xfr#2, to-chk=19/22)
+frame.txt
+          1,309 100%  159.79kB/s    0:00:00            1,309 100%  159.79kB/s    0:00:00 (xfr#3, to-chk=18/22)
+gcg_inguard.py
+         12,734 100%    1.52MB/s    0:00:00           12,734 100%    1.35MB/s    0:00:00 (xfr#4, to-chk=17/22)
+lium_fullgate_launch.log
+          4,066 100%  441.19kB/s    0:00:00            4,066 100%  441.19kB/s    0:00:00 (xfr#5, to-chk=16/22)
+lium_gcg011_launch.log
+          1,349 100%  146.38kB/s    0:00:00            1,349 100%  146.38kB/s    0:00:00 (xfr#6, to-chk=15/22)
+lium_gentle_launch.log
+          3,454 100%  374.78kB/s    0:00:00            3,454 100%  374.78kB/s    0:00:00 (xfr#7, to-chk=14/22)
+lium_h100_launch.log
+          3,319 100%  360.13kB/s    0:00:00            3,319 100%  360.13kB/s    0:00:00 (xfr#8, to-chk=13/22)
+lium_inguard.sh
+          5,613 100%  609.05kB/s    0:00:00            5,613 100%  609.05kB/s    0:00:00 (xfr#9, to-chk=12/22)
+lium_symbols_launch.log
+          2,441 100%  264.87kB/s    0:00:00            2,441 100%  264.87kB/s    0:00:00 (xfr#10, to-chk=11/22)
+objectives.json
+          1,324 100%  143.66kB/s    0:00:00            1,324 100%  143.66kB/s    0:00:00 (xfr#11, to-chk=10/22)
+pod_setup_inguard.sh
+          1,610 100%  174.70kB/s    0:00:00            1,610 100%  174.70kB/s    0:00:00 (xfr#12, to-chk=9/22)
+watch_gcg011.log
+          3,396 100%  368.49kB/s    0:00:00            3,396 100%  368.49kB/s    0:00:00 (xfr#13, to-chk=8/22)
+watch_gcg011.sh
+          1,563 100%  169.60kB/s    0:00:00            1,563 100%  169.60kB/s    0:00:00 (xfr#14, to-chk=7/22)
+watch_gentle.log
+          1,989 100%  215.82kB/s    0:00:00            1,989 100%  215.82kB/s    0:00:00 (xfr#15, to-chk=6/22)
+watch_gentle.sh
+          1,561 100%  169.38kB/s    0:00:00            1,561 100%  169.38kB/s    0:00:00 (xfr#16, to-chk=5/22)
+out_9060803/
+out_9060803/harvest.jsonl
+          3,153 100%  307.91kB/s    0:00:00            3,153 100%  307.91kB/s    0:00:00 (xfr#17, to-chk=2/22)
+out_gentle/
+out_gentle/harvest.jsonl
+              0 100%    0.00kB/s    0:00:00 (xfr#18, to-chk=1/22)
+out_gentle/harvest.tmp
+              0 100%    0.00kB/s    0:00:00 (xfr#19, to-chk=0/22)
+=== detach setup+GCG (log=/workspace/inguard/out/gcg.log, steps=90) ===
+Executing on calm-eagle-0f
+Started on calm-eagle-0f: PID 874, log /workspace/inguard/out/gcg.log
+  follow with: lium exec calm-eagle-0f "tail -n 200 
+/workspace/inguard/out/gcg.log"
+started on gcg-p3011-symbols. tail: lium logs gcg-p3011-symbols  (or lium exec gcg-p3011-symbols "tail -f /workspace/inguard/out/gcg.log")
+artifacts land in /workspace/inguard/out (best.json, best_suffix.txt, harvest.jsonl, DONE).

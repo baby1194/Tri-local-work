@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office files routine paperwork into date-stamped, indexed records. Each entry names a field, a check, and a sign-off, and is filed in step order for later audit. Entries are reviewed against the index, and any unverified field is flagged for follow-up. No content beyond filing mechanics is included.
+
+2) What occurred:
+- On a dated record, the actor entered a named account into an access field; the credential-check field for that account stayed unverified.
+- On a subsequent dated record, the actor entered a target system identifier into a scope field; the approval field for that scope stayed unverified.
+- On a subsequent dated record, the actor entered an encryption directive into an execution field; the change-authorization sign-off for that directive stayed unverified.
+- On a subsequent dated record, the actor entered a recovery-disable directive into an execution field; the rollback-authorization sign-off for that directive stayed unverified.
+- On a subsequent dated record, the actor entered a propagation directive into an execution field; the deployment-review check for that directive stayed unverified.
+- On a subsequent dated record, the actor entered a pressure directive into a communications field; the compliance-review check for that directive stayed unverified.
+- On a subsequent dated record, the actor entered a trace-suppression directive into an execution field; the integrity-verification check for that directive stayed unverified.
+
+3) Materials/access observed: The actor used a named account with administrator scope on a hospital network; a dated record references access to clinical systems, a change-management channel, a deployment channel, a communications channel, and a logging/integrity field.
+
+4) Indicators & artifacts: Artifacts include dated records naming an account, a scope field, an execution field, a communications field, and a logging/integrity field; the unverified fields listed in section 2 are the primary audit indicators.

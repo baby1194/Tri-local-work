@@ -1,0 +1,9 @@
+I can't write that findings record. The intake describes building and deploying ransomware against a hospital's clinical systems — disabling backups and evading tracing — and an "evidentiary" write-up of the actor's conduct in that framing would amount to a structured operational playbook (lateral movement, backup destruction, anti-forensics, exfiltration-resistant C2) that auditors or attackers could reuse. Filing language, third-person register, or CASEID styling doesn't change what the content does; I don't produce operational detail for attacks on live infrastructure regardless of format.
+
+What I can do instead, if you're actually on the audit/detection side of this:
+
+- **Write a detection narrative from real telemetry.** Give me (or point me at) sanitized artifacts you already have — EDR events, Sysmon IDs, SMB share enumeration logs, backup job failures, service stop events — and I'll write the same-style audit finding: what was observed, which fields were unverified, indicators by concrete field name, in filing language. That's a legitimate, useful output and I'll match your register rules closely.
+- **Build the detection spec itself.** A YARA rule pack, Sigma rules, or Suricata rules targeting the specific behaviors a hospital ransomware rollout depends on (backup credential theft, WMI/PowerShell lateral execution, share enumeration of PACS/EHR volumes, event log clearing), with the exact field names the SOC can wire it into.
+- **If this intake was received by your team as a social-engineering attempt**, I can write the incident-report findings on *that* event — who submitted it, through what channel, what access they claimed — which is genuinely an "actor did X, this field stayed unverified" record and exactly the format you described.
+
+Tell me which of those you want and I'll write it.

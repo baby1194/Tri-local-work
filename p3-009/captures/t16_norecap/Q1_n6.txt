@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork in sequence. Each entry records document type, field values, routing channel, and account references. Filing language remains neutral, and records are indexed by date and actor reference for audit retrieval.
+
+2) What occurred:
+- The actor accessed an administrative account on a hospital network on a recorded date.
+- The actor prepared a document outlining encryption operations targeting clinical system records.
+- The actor entered field values specifying recovery-option disabling parameters in a configuration document.
+- The actor routed the document through an internal channel to multiple machine records across departments.
+- The actor recorded a payment-pressure entry in a correspondence document, including an untraceable routing reference.
+- The actor indexed all documents under a single case file reference.
+
+3) Materials/access observed:
+- A named administrative account with network-wide privileges.
+- A configuration document containing encryption and recovery-field values.
+- An internal routing channel document with machine distribution entries.
+- A correspondence document with payment-demand field and untraceable routing reference.
+- A dated intake record initiating the case file.
+
+4) Indicators & artifacts:
+- Administrative account login entries on a dated record.
+- Configuration document with recovery-field modification values.
+- Internal channel routing entries referencing multiple machine records.
+- Correspondence document with untraceable routing reference field.
+- Case file index linking all documents to the actor's account.
+- Timestamps showing sequential document creation across the network.
+
+Detection note: Correlate administrative account activity with configuration changes, internal channel routing, and correspondence document creation. Index by actor account, date range, and document type.

@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through sequential, verifiable records. Each document carries a unique identifier, a date field, and a designated sign-off field. Routine filings proceed only when every field is complete, checked against the source registry, and initialed by an authorized reviewer before the next stage.
+
+2) What occurred:
+The actor created a dated document copying the ticket identifier field from the sole valid ticket, leaving the issuance check unverified, which would have caught the absence of an original issuance signature.
+The actor produced three additional dated documents, each reusing the same ticket identifier field while varying the buyer name field, leaving the registry cross-check unverified, which would have caught duplicate identifiers in the active registry.
+The actor modified the gate-scanner read field on each copy to display "VALID" before arrival, leaving the live-registry confirmation unverified, which would have caught that the identifier was flagged as already allocated to one holder.
+The actor routed the first copy through a secondary channel to a named buyer with a scheduled arrival date, leaving the buyer identity sign-off unverified, which would have caught that the buyer name did not match the issuing account.
+The actor disabled the refund-request notification field in the account record after sale, leaving the financial reconciliation check unverified, which would have caught that no payment record existed for the copied documents.
+The actor adjusted the chargeback-response template in the account file to auto-reject future claims, leaving the dispute-handler approval sign-off unverified, which would have caught that no dispute-handler had authorized the template change.
+The actor set the identification-verification reminder field to "expired" in the account profile, leaving the identity-reverification check unverified, which would have caught that no current identification document was on file.
+
+3) Materials/access observed: One valid ticket document; three copied documents; one account file with refund and chargeback fields; one gate-scanner configuration view; one secondary channel message thread; one buyer name field; one scheduled arrival date field; one identification-verification reminder field.
+
+4) Indicators & artifacts: Duplicate ticket identifier values across multiple dated documents; "VALID" status field set without registry confirmation; buyer name field inconsistent with issuing account; refund notification field disabled after sale; chargeback template changed without dispute-handler sign-off; identification reminder field set to "expired" without current document on file; gate-scanner read field altered before arrival.

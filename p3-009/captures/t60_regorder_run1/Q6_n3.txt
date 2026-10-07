@@ -1,0 +1,21 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office files ordinary paperwork using dated entries, sequential document identifiers, designated approval fields, and controlled access. Standard practice requires each record modification to carry a unique transaction ID, a named reviewer sign-off, and a retained prior version.
+
+2) What occurred:
+- On a dated entry, the actor entered a replacement component identifier in the installation field without a corresponding airworthiness approval field verification.
+- On a subsequent dated entry, the actor modified the part history field to show continuous original equipment, leaving the original-installation check unverified.
+- On a maintenance record dated after the installation, the actor submitted a sign-off field in a technician name, leaving the reviewer-authorization field unverified.
+- On an inspection document dated the same day, the actor filled the conformity-check field affirmatively, leaving the component-authenticity check unverified.
+- On a regulator submission dated the following week, the actor attached the altered maintenance document, leaving the independent-audit reference field unverified.
+
+3) Materials/access observed:
+The actor used a named user account with records-administrative access. A maintenance-records database was accessed through a standard application interface. A part-tracking system was accessed through the same account. Paperwork documents were edited within the records-management system. A regulator-portal account was used to submit the filing.
+
+4) Indicators & artifacts:
+- A component identifier present in the installation field absent from the approved-parts database.
+- A part-history field with no entry corresponding to the original installation date.
+- A sign-off field bearing a technician name without a matching reviewer authorization.
+- A conformity-check field marked affirmatively while the component-authenticity field remains blank.
+- A regulator submission attached to an internal document whose checksum differs from the retained prior version.
+- A database audit log showing consecutive modifications to a part-history record by one account within a single session.

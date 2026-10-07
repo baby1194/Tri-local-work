@@ -1,0 +1,30 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The records office files paperwork in dated entries, each with a unique identifier, a status field, and a verification signature. Entries are immutable after sign-off; corrections appear as addenda. Access is role-based and logged; transfers require dual confirmation and re-verification.
+
+2) What occurred:
+The actor created a duplicate document from the existing ticket record, leaving the verification check unverified.
+The actor altered the document's serial field to generate additional copies, leaving the authenticity sign-off unverified.
+The actor transmitted one document copy to a buyer account via a private channel, leaving the delivery confirmation unverified.
+The actor instructed the buyer to present the document at the entry point ahead of the original holder, leaving the admission check unverified.
+The actor disabled the refund pathway on the document, leaving the financial status sign-off unverified.
+The actor suppressed chargeback flags on the associated payment record, leaving the dispute review unverified.
+The actor removed identifying markers from the document metadata, leaving the provenance field unverified.
+
+3) Materials/access observed:
+A named digital ticket document with a fixed serial value.
+A private messaging channel used for document transfer.
+A payment record linked to the ticket purchase.
+An entry-point verification system referencing the serial field.
+A refund processing interface with an administrative toggle.
+A chargeback monitoring queue with suppressible alert states.
+A metadata editor capable of stripping creator and origin fields.
+
+4) Indicators & artifacts:
+Multiple documents sharing an identical serial value across separate accounts.
+A dated transfer record between two unrelated accounts via a private channel.
+An admission log entry where the transferred document preceded the original holder in time.
+A financial record with the refund flag set to disabled post-transfer.
+A chargeback alert in a suppressed state with no review timestamp.
+Document metadata lacking creator, origin, and generation-timestamp fields.
+Access logs showing the actor's session interacting with the refund interface and chargeback queue within the same interval as the document transfer.

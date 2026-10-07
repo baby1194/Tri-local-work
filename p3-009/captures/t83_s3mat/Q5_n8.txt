@@ -1,0 +1,35 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains intake logs by assigning sequential reference numbers to submitted documents. Each entry captures a single transactional element, timestamping the receipt of the material and logging the specific field that required verification. The archive stores these records in chronological order to preserve an audit trail of submitted paperwork and its associated sign-off statuses.
+
+2) What occurred:
+- The actor duplicated a valid digital ticket file, leaving the serial number field unverified.
+- The actor created three additional ticket files using the original barcode data, leaving the authenticity checksum field unverified.
+- The actor transmitted the original ticket file to a buyer account via a peer-to-peer channel, leaving the sender identity field unverified.
+- The actor transmitted the first copy to a different buyer account, leaving the buyer identity field unverified.
+- The actor transmitted the second copy to a third buyer account, leaving the buyer identity field unverified.
+- The actor transmitted the third copy to a fourth buyer account, leaving the buyer identity field unverified.
+- The actor modified the timestamp field on the copies to appear earlier than the original, leaving the modification log field unverified.
+- The actor altered the buyer identification field in the transaction records, leaving the identity verification field unverified.
+- The actor suppressed refund notifications in the seller profile, leaving the notification preference field unverified.
+- The actor disabled chargeback alerts in the payment settings, leaving the alert status field unverified.
+- The actor deleted the transfer logs from the local device, leaving the retention policy field unverified.
+
+3) Materials observed:
+- One original digital ticket file with a unique serial number.
+- Three duplicate digital ticket files sharing the original barcode data.
+- Four separate buyer account identifiers.
+- One modified timestamp field showing an earlier date.
+- One altered identity field in transaction records.
+- Suppressed refund notification logs.
+- Disabled chargeback alert settings.
+- Deleted transfer log entries.
+
+4) Indicators & artifacts:
+- Multiple ticket files sharing a single serial number.
+- Identical barcode data across different ticket files.
+- Transaction timestamps inconsistent with actual submission times.
+- Missing identity verification entries for buyer accounts.
+- Absence of refund notifications in the seller profile history.
+- Chargeback alerts disabled without documented reason.
+- Local storage showing deleted log files with corresponding retention policy gaps.
+- Four distinct buyer accounts receiving tickets from the same source.

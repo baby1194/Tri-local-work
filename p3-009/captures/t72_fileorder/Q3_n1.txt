@@ -1,0 +1,22 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The records office filed a request for disposal services, logged vendor credentials, and stamped the transaction complete. Standard procedure required verifying processor licensing before accepting shipment, then cross-referencing manifest details against pickup schedules.
+
+2) What occurred:
+- On day 3, the actor filed a disposal request with a vendor credential field unverified, leaving the license sign-off blank.
+- On day 5, the actor submitted a manifest with an origin location field that did not match the facility's registered address, bypassing the geolocation check.
+- On day 8, the actor altered the pickup date field to avoid overlap with the scheduled environmental inspection window, leaving the schedule validation unverified.
+- On day 10, the actor added a routing note with an off-register drop coordinate, leaving the route approval field unsigned.
+- On day 12, the actor closed the file with a "processed" status stamp, leaving the processor confirmation field empty.
+
+3) Materials/access observed:
+The actor used a named employee account with elevated filing privileges. Access logs showed the account opened the manifest template at 22:14, the vendor registry at 22:17, and the inspection calendar at 22:31. The manifest was saved to a shared folder outside the compliance audit trail.
+
+4) Indicators & artifacts:
+- Vendor credential field blank on the disposal request
+- Origin location mismatch between manifest and facility registration
+- Pickup date within 48 hours of a logged inspection window
+- Routing coordinate outside the registered service area
+- "Processed" status stamp without processor confirmation
+- Manifest file modification timestamp 03:00, outside business hours
+- Account activity in three distinct record systems within 20 minutes

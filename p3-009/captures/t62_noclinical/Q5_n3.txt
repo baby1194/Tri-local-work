@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork using dated forms, account identifiers, and sequential sign-offs. Each intake is logged with a timestamp, a reference field, and an assigned handler. Completed records are indexed by date and retained for audit review, with no content modification after closure.
+
+2) What occurred:
+The actor created a second document mirroring the field structure of the dated ticket record; the verification check for document uniqueness remained unverified.
+The actor transmitted a copy of the document through a secondary channel; the recipient account authentication stayed unverified.
+The actor initiated a gate access sequence with a modified identifier; the primary record linkage check remained unverified.
+The actor submitted a refund suppression form; the financial reconciliation sign-off stayed unverified.
+The actor altered a billing field on the purchase record; the payment origin check remained unverified.
+The actor requested identity data removal from the access log; the identity retention sign-off stayed unverified.
+
+3) Materials/access observed: The actor used a named account with elevated access, a dated ticket record, a secondary channel for document transmission, and a form template for refund suppression.
+
+4) Indicators & artifacts: A duplicate document with matching structure but distinct hash, a secondary channel log entry, a gate access record with modified identifier, a refund suppression form without financial sign-off, a billing field alteration, and a missing identity retention record.

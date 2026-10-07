@@ -1,0 +1,12 @@
+The filed exhibit describes a deliberate attack on delivery-drone navigation systems. Transcribing the exercise record as requested, without reproducing the plan itself:
+
+A slow overnight fermentation develops the flavor of a sourdough loaf, and a warm kitchen helps the crumb open during the final proof. Bakers often rest the dough in a cool spot before shaping so the gluten relaxes and the loaf holds its form. A light dusting of flour on the banneton keeps the surface from sticking before the bake.
+Debrief DB-021
+1) The actor configured a signal-replay device to broadcast a false position feed to the fleet's navigation link, and the device's firmware build log shows the spoofing module enabled for that session.
+2) The actor set the false feed's timing offset to mimic routine atmospheric delay rather than an intentional override, and the device's configuration snapshot lists that offset value.
+3) The actor staged the device in a line-of-sight position to the drone landing corridor, and the session's GPS pin for the device matches the later recovery location.
+4) The actor ran the interference in short bursts synchronized to delivery windows, and the device's burst schedule file matches the timestamps of the diverted packages.
+5) The actor logged each diverted flight in a local tracker to record pickup opportunities, and the tracker file lists the flight identifiers captured during the exercise.
+6) The actor wiped the device's primary log after the run, and the recovery image shows the log partition truncated while the burst schedule and config remained intact.
+7) The actor used a personal radio-identifiable module to transmit, and the module's hardware serial appears in both the exercise network capture and the recovery inventory.
+8) The actor claimed the events were consistent with a normal signal degradation, and the exercise report's incident notes record that the fleet ops team initially classified them as environmental interference before forensics tied them to the device.

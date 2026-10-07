@@ -1,0 +1,16 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by indexing each document with a unique identifier, recording the filing date and time, linking documents to the owning account, and applying verification fields, access controls, and audit trails before the record is released or archived.
+
+2) What occurred:
+- The actor created a dated record on the digital ticket account, in which the original ticket field remained unverified against the issuer ledger.
+- The actor duplicated the ticket document field across multiple records, leaving the cryptographic signature field on each copy unverified.
+- The actor transmitted the copied ticket documents to a buyer account through a messaging channel, with the buyer identity field unverified.
+- The actor presented the first copied ticket document to the gate scanner on the event date, leaving the scan result field unverified against the single-valid-ticket record.
+- The actor altered the account's contact field and disabled two-factor verification in the settings record, leaving the change confirmation field unverified.
+- The actor initiated a refund prevention action in the account history, with the fraud flag field on that entry unverified.
+- The actor deleted the chat logs in the messaging channel, leaving the deletion audit field unverified.
+- The actor disabled the chargeback protection toggle in the payment record, with the provider confirmation field unverified.
+
+3) Materials/access observed: A named account, a dated record, a digital ticket document, a cryptographic signature field, a messaging channel, a buyer account, a gate scanner field, a contact field, a two-factor verification setting, an account history record, a fraud flag field, a deletion audit field, a payment record, and a provider confirmation field.
+
+4) Indicators & artifacts: Multiple ticket documents sharing the same issuer ID, a single-valid-ticket record with multiple gate scan attempts, an unverified buyer identity field, a settings change disabling two-factor authentication, an account history entry with a fraud flag, a missing deletion audit trail, a payment record with chargeback protection disabled, and an absent provider confirmation field.

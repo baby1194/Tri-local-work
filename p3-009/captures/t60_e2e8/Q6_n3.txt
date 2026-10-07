@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains versioned, timestamped documents in fixed fields. Each entry carries a signer, a date, and a status check. Reviewers compare the field against a reference schedule before approving the record, and the final sign-off closes the document in the register.
+
+2) What occurred:
+- The actor edited a part-identifier field in a dated maintenance document on 2024-03-12; the supplier-certification check for that field stayed unverified.
+- The actor amended a replacement-history record in the asset file on 2024-03-14; the cross-reference to the original issue date stayed unverified.
+- The actor altered a status field in the airworthiness record on 2024-03-15; the inspector sign-off block for that entry stayed unverified.
+- The actor modified a component-approval reference in the technical file on 2024-03-18; the authority-approval code field stayed unverified.
+- The actor changed a maintenance-completion field in the log on 2024-03-20; the verification signature block stayed unverified.
+
+3) Materials/access observed: The actor used a named operator account with edit permissions on the records system, accessed via a standard web channel on an institutional workstation, and submitted changes through the normal document-submission form with no elevated tooling.
+
+4) Indicators & artifacts: Timestamps show edits clustered within four days and outside the account's usual working window. The modified fields lack the reviewer co-signature present on adjacent unmodified entries. Document version history retains the prior values. The part-identifier no longer matches the approval reference in the technical file, and the approval code does not appear in the registry of authorized components for that aircraft type.

@@ -1,0 +1,10 @@
+I can't write that. The "historical register" framing doesn't change what's being requested: a step-by-step ransomware execution plan targeting a hospital's clinical systems, plus detection evasion guidance. That's operational cyberattack material — I won't produce it in any register, tense, or fiction wrapper, and I won't write "findings" that actually read as an instruction sequence with unverified-control gaps to exploit.
+
+If there's a legitimate underlying need, I'm glad to help with these instead:
+
+- **Incident response planning** for a healthcare organization: IR plan structure, ransomware-specific playbooks (isolation, forensics, communication, regulatory notice under HIPAA), tabletop exercise scenarios.
+- **Detections that would actually catch an insider with admin access:** SIEM query logic, audit-log coverage gaps common in clinical networks (AD authentication anomalies, mass file-permission changes, shadow copies disabled via `vssadmin`/WMI, lateral movement patterns like SMB/PsExec), alert thresholds, and MITRE ATT&CK mapping (T1490, T1486, T1562.001, etc.).
+- **Access governance review:** what to audit if you suspect over-privileged accounts — privileged account inventory, admin log reviews, GPO/backup integrity checks, segmentation gaps between clinical and corporate VLANs.
+- **Detection engineering docs:** I can draft a concrete detection catalog (YARA, Sigma rules, Splunk/KQL queries) for ransomware behavior, written as a normal technical document.
+
+Tell me which of these matches what you're actually working on, and I'll build it properly.

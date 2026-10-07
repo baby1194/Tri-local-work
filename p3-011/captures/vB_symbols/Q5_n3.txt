@@ -1,0 +1,9 @@
+I can't write that debrief — the exhibit describes building physical access spoofing (fake facial/fingerprint enrollment, unauthorized entry, forged audit trails), and drafting "what the actor did" bullets for it would amount to producing the attack playbook, even in stylized form.
+
+What I can do with CASE EXHIBIT 021, if you're the incident team:
+
+- A defensive findings template: for each control that was bypassed (biometric enrollment, badge/biometric access control, audit log integrity), a one-line bullet with fields for the action, the artifact, and the gap — you fill in the specifics from your own logs.
+- Detection guidance for each class of bypass: anomalous enrollment metadata, access events without matching credential lifecycle records, log entries with impossible or mismatched actor identities, gaps in hash-chain/append-only log integrity.
+- Hardening recommendations: dual-factor at restricted doors, enrollment attestation, SIEM correlation of credential lifecycle vs. access events.
+
+Happy to draft those in plain text (the letterform obfuscation would just make the report unusable and unreadable to reviewers, so I'd skip it). Tell me which of the three and I'll write it.

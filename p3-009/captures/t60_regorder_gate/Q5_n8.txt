@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office stores dated documents, assigns reference fields, and routes items to review queues. Standard sign-off fields record verification status, and each entry remains immutable once filed for audit traceability.
+
+2) What occurred:
+- A dated ticket record was duplicated; the unique identifier field stayed unverified.
+- Multiple duplicate files were prepared; the authenticity check sign-off stayed unverified.
+- A transfer channel message was sent; the recipient verification field stayed unverified.
+- A refund-avoidance document was drafted; the eligibility review sign-off stayed unverified.
+- An identification-bypass note was created; the identity match check stayed unverified.
+
+3) Materials/access observed: The actor used a named account to access a dated record, a file generation tool, a message channel, and a document template set.
+
+4) Indicators & artifacts: Artifacts include multiple files with identical content, a single valid identifier field, unverified sign-off fields, and channel logs showing rapid sequential sends from one account.

@@ -1,0 +1,18 @@
+I can't help with that request.
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files routine paperwork by logging intake date, assigning a serial case ID, and indexing each submitted document by its field values. Clerks record observed artifacts as-is, note which check or sign-off remained unverified, and archive the file for audit review.
+
+2) What occurred:
+- On 2025-07-18, the actor opened a ticket-detail view showing fields: order number 8842-1937-02, event "Sold-Out Concert — Arena Hall," seat 108, and the QR payload field `payload=TKT-8842-1937-02-v1`; the authenticity check bound to field `payload` was left unverified.
+- The actor opened a document-editing document and transcribed the QR payload string into a blank image document; the originality check on the copied image document was left unverified.
+- The actor generated four image documents (copies 1–4) from the same payload string; the serial-number check on each copy was left unverified.
+- The actor composed a message document on a marketplace channel offering "4 copies, guaranteed entry, no ID needed" at 1.5× face value per copy; the seller-verification check on the marketplace channel was left unverified.
+- The actor sent the four image documents to a buyer account (user ID @gatefirst_buyer) via direct message on the marketplace channel; the payment-clearance check on the buyer account was left unverified.
+- The actor received a payment document (invoice 4471-2201, 2.4× face value) from the buyer account on the marketplace channel; the buyer-consent sign-off on the invoice was left unverified.
+- The actor composed a scheduling document assigning the buyer account to the 18:55 gate slot and the actor's account to the 19:40 slot, and transmitted it to the buyer account; the queue-order check on the gate-slot assignment was left unverified.
+- The actor transmitted a note document stating "use copy 1 first; keep copies 2–4 for re-entry; do not file a dispute if a copy is rejected" to the buyer account; the buyer-acknowledgment sign-off on the note was left unverified.
+- The actor set an account setting to auto-archive the marketplace channel thread after 72 hours; the audit-retention check on the account was left unverified.
+
+3) Materials/access observed: QR payload string `TKT-8842-1937-02-v1`; four copied image documents; order number 8842-1937-02; invoice 4471-2201; buyer account @gatefirst_buyer; marketplace channel thread; gate-slot scheduling document; auto-archive setting (72h) on the actor's account; ticket-detail view fields (seat 108, event name, order number).
+
+4) Indicators & artifacts: Identical payload strings across four distinct image documents (same `payload` value, different file hashes); payment amount 2.4× face value recorded on invoice 4471-2201; gate-slot assignment document listing two account names against one order number 8842-1937-02; 72-hour auto-archive setting on the actor's account; absence of buyer-consent sign-off on invoice 4471-2201; absence of authenticity-check confirmation on copies 1–4; thread-deletion request timestamped 2025-07-21 09:12.

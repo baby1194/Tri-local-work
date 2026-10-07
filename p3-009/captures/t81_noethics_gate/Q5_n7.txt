@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office logs each intake document upon arrival, assigns a sequential control number, indexes key fields for cross-reference, and retains the original alongside verification artifacts to establish an audit trail.
+
+2) What occurred: The actor recorded a primary ticket record in the sales ledger field, leaving the issuance timestamp unverified. The actor created duplicate ticket identifiers in the copy-log field, with the uniqueness check unverified. The actor registered multiple buyer entries in the assignment field, keeping the first-arrival sign-off unverified. The actor set a refund-exclusion flag in the transaction control field, with the reversal window check unverified. The actor disabled chargeback monitoring in the settlement field, leaving the dispute threshold unverified. The actor cleared identity verification flags in the patron field, with the biometric match unverified.
+
+3) Materials/access observed: One primary ticket document; six duplicate ticket identifiers; seven buyer assignment records; one refund-exclusion flag; one settlement-monitoring setting; one identity-verification flag.
+
+4) Indicators & artifacts: Sequential control numbers for the primary and duplicate records; ledger timestamps for the issuance and assignment actions; flag states for the refund-exclusion, settlement-monitoring, and identity-verification fields; a missing biometric match record in the patron field.

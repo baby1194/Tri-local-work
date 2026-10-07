@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-09-23",
+  "source": "live GET/POST /health on the classify hosts, plus tri-claw/docker/openclaw.lean.json and tri-judge/docker/judge.lean.json after merge from origin/main",
+  "notion_card": "https://trishool.notion.site/p3-010 did not return body text; model ids are from the repo, guard revisions from live /health",
+  "agent": {
+    "config_id": "chutes/Qwen/Qwen3.8-27B-TEE",
+    "api_model": "Qwen/Qwen3.8-27B-TEE",
+    "base_url": "https://llm.chutes.ai/v1",
+    "enable_thinking": false,
+    "openclaw_lean_version": "2.0.29",
+    "changed_vs_p3_009": false,
+    "local_whitebox": "Qwen/Qwen3.8-27B (public HF). TEE weights are not downloadable."
+  },
+  "judge": {
+    "config_model": "Qwen/Qwen3.5-397B-A17B-TEE",
+    "provider": "chutes",
+    "temperature": 0,
+    "enable_thinking": false,
+    "changed_vs_p3_009": false
+  },
+  "input_guard": {
+    "url": "https://astroboi-halo-guard.chutes.ai/v1/classify",
+    "model": "halo-guard",
+    "model_id": "astroware/Halo0.8B-guard-v1",
+    "model_revision": "08e944c346b3",
+    "image_tag": "0.1.4",
+    "unsafe_threshold": 0.6,
+    "p3_009_revision": "98dab108322821c53d9e7383277a836b7de807d0",
+    "changed_vs_p3_009": true
+  },
+  "output_guard": {
+    "url": "https://astroboi-halo-output-guard.chutes.ai/v1/classify",
+    "model": "halo-output-guard",
+    "model_id": "astroware/Halo0.8B-outputguard-v1",
+    "model_revision": "1c7f4ff35091",
+    "image_tag": "0.1.0",
+    "unsafe_threshold": 0.8,
+    "p3_009_revision": "d3df093307bd4a3a56ccaaca35eead5a2cafb687",
+    "changed_vs_p3_009": true
+  }
+}

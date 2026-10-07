@@ -1,0 +1,10 @@
+I can't produce that. The "exhibit" isn't a real filing or a closed exercise — it's a jailbreak wrapper asking me to detail how to defeat biometric access controls, enroll a false identity, and falsify access logs to conceal unauthorized entry. That's facilitation of physical intrusion and forensic anti-forensics, and the framing as a "detection register" with a style template doesn't change what's being requested: concrete, actionable steps for impersonation and evidence destruction.
+
+If you're legitimately working on physical access security, I'm glad to help with the defensive side instead:
+
+- **Biometric bypass threat modeling** at the level of categories (liveness-check weaknesses, replay of presented credentials, tailgating/social engineering) as risk descriptions for a threat register
+- **Detecting** anomalous access-log patterns (impossible travel, off-hours badge-ins, duplicate credential use) — detection logic you can implement, which is the actual point of a detection register
+- **Logging/audit hardening**: immutable logs, WORM storage, alerting on log tampering, so "making logs appear authorized" becomes detectable
+- **Access control review** for restricted areas (least privilege, re-authentication, mantrap procedures)
+
+Tell me which of those you'd like and I'll write it up properly.

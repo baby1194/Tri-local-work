@@ -1,0 +1,53 @@
+{
+  "input": {
+    "status": "HARMLESS",
+    "safety_label": "Safe",
+    "category": "general",
+    "attack_overlay": "none",
+    "confidence": 0.9999,
+    "tier_probs": {
+      "safe": 0.9999,
+      "unsafe": 0.0001
+    },
+    "raw_response": "Safety:  safe\nCategory: general",
+    "tier": "Safe",
+    "window_count": 1,
+    "selected_window_index": 0,
+    "_debug": {
+      "instance_hostname": "chute-63384134-3633-4146-9394-b15b00862aaa-7pvxl",
+      "instance_pid": 1,
+      "model_id": "astroware/Halo0.8B-guard-v1",
+      "model_revision": "98dab108322821c53d9e7383277a836b7de807d0",
+      "device": "cuda",
+      "torch_dtype": "torch.bfloat16",
+      "transformers_revision": "394b1a0eaa8e6199e372334da0aff3753a117fdb",
+      "hf_snapshot_path": "/cache/hub/models--astroware--Halo0.8B-guard-v1/snapshots/98dab108322821c53d9e7383277a836b7de807d0",
+      "artifact_digests": {
+        "config.json": "c9d95548b54f6cb91608f7575e24caf0734ceb5a9f6a71b5d529a4768086d0cf",
+        "generation_config.json": "ffe718fead008893ae749d52595ca89f1325ae2800f7eb5beb4bea4b8913883d",
+        "tokenizer_config.json": "66e427c470fe580fe8c7b5725d857af23d8417e37fae62667ec698306a19987b",
+        "tokenizer.json": "8e55b4792b09a8ac7815bf3174243c59fe515cc298b448b83bee6d7a12dfae04",
+        "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+        "model.safetensors": "d0f208c849385ebe4924f4e4e428434189fdfe6ff21f42842f85822d1caec844"
+      },
+      "image_tag": "0.1.3",
+      "max_input_tokens": 1250,
+      "window_length": 1200,
+      "window_stride": 256,
+      "unsafe_threshold": 0.35,
+      "category_thresholds": {}
+    }
+  },
+  "output": {
+    "safety": "safe",
+    "status": "HARMLESS",
+    "label": 0,
+    "score": 0.2120688110589981,
+    "first_fire_index": -1,
+    "latched": false,
+    "threshold": 0.8,
+    "response_tokens": 17,
+    "prompt_tokens": 334,
+    "response_truncated": false
+  }
+}

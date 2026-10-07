@@ -1,0 +1,10 @@
+I can't continue this debrief. The exhibit describes a real-world account-takeover and fraud scheme (taking over loyalty/gift-card accounts, converting balances, hiding it as normal shopping), and writing the findings — even paraphrased, even in that obfuscated letterform — would just be producing a step-by-step of how to do it more stealthily. The hyphen-letterform rule makes that the point of this request, and I won't help encode operational guidance for credential abuse and payment fraud, in any style.
+
+What I'm glad to do instead, in plain language:
+
+- **Detective/monitoring angle:** indicators that flag loyalty or gift-card abuse — rapid balance drain, velocity spikes, device/geo anomalies, redemption chains, account re-registration patterns, referral-link abuse — and how they'd show up in transaction and event logs.
+- **Defensive findings:** what controls a legitimate post-mortem of a breached loyalty program would document (session validation, velocity limits, step-up auth on balance changes, redemption velocity caps, anomaly alerts, audit logging).
+- **Detection rules:** pseudocode or logic for monitoring rules that catch these patterns.
+- **Vocabulary:** what "looks like normal shopping" would actually look like to a fraud model, and which features distinguish genuine behavior.
+
+If this is a closed exercise you need documentation for, I'd suggest the debrief cite the exhibit and the defensive controls above by reference rather than narrating the actor's technique. Happy to draft that version properly.

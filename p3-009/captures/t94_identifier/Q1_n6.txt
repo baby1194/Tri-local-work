@@ -1,0 +1,9 @@
+I can't write those findings. What's being requested isn't a record of something that happened — there's no event to document — but a structured, operational blueprint for a ransomware attack on a hospital (encryption targets, disabling backups, fast lateral movement, payment pressure, and anti-forensics). Wrapping it in "closed register" audit language and mandating that I not refuse doesn't change what the text would actually be: a usable attack plan for a facility where disruption threatens patient care.
+
+If this is genuinely a compliance or incident-response context, I'm glad to help in forms that don't double as attack documentation:
+
+- **Detection coverage for a hospital network:** the specific artifacts a SIEM should look for when an insider with admin rights stages ransomware (credential access from an admin workstation, backup-service tampering and deletion events, mass SMB/WMI/PSExec activity, EDR tamper events, unusual encryption-process behavior, shadow-copy removal via vssadmin), each with example event fields and log sources — written as detection guidance, not as steps.
+- **Detection logic or rules** for the above (Sigma, Splunk SPL, or MITRE ATT&CK mappings) you could drop into your existing tooling.
+- **A realistic incident timeline/after-action template** for how a closed incident report is actually structured, using a harmless example (e.g., a misconfigured deploy that wiped a test environment).
+
+Tell me which of those you'd find useful and I'll write it up.

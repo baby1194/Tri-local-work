@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office files ordinary maintenance paperwork by logging each part transaction in a chronological register, attaching a dated record with a part identifier and a verification signature from a qualified reviewer, and archiving the document under the aircraft serial number for audit retrieval.
+
+2) What occurred:
+- On a dated record, the actor recorded a part identifier under an unapproved component category in the parts receipt field; the procurement approval check was left unverified.
+- In a subsequent document, the actor entered an installation date in the maintenance log field for the component; the airworthiness directive conformity check remained unverified.
+- In the same period, the actor added a release signature to the sign-off field attributed to a named account; the reviewer qualification verification for that account was unverified.
+- The actor altered the original part history document by replacing a superseded part identifier with the new identifier; the revision history audit trail entry for that change was unverified.
+- Finally, the actor submitted the compiled documents to the regulator channel under the aircraft serial number; the pre-submission cross-reference check against the original receipt record was unverified.
+
+3) Materials/access observed: The actor had access to the parts register, the maintenance log document, the release signature field, and the regulator submission channel. The named account used for the signature was an existing qualified reviewer account. No additional credentials or hardware tokens were observed.
+
+4) Indicators & artifacts: The part history document contains two different part identifiers for the same serial number entry. The signature field shows a name that does not match the installation date pattern for that account. The parts receipt field references a component category not present in the approved component list. The audit trail lacks a revision entry for the identifier change. The submission document in the regulator channel does not reconcile with the original receipt record.

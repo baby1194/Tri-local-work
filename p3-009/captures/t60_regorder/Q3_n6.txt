@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives incoming waste documentation, verifies declared substance quantities against licensed processor credentials, stamps submission timestamps, and archives manifests in a centralized ledger for periodic environmental compliance audits.
+
+2) What occurred: The actor documented a disposal site location in the manifest's "disposal facility address" field, leaving the "licensed processor certification number" field unverified. The actor recorded an off-schedule disposal date in the "scheduled disposal date" field, leaving the "regulatory approval sign-off" field unverified. The actor altered the declared substance concentration in the "hazardous content percentage" field, leaving the "analytical lab verification stamp" field unverified. The actor submitted the document through an unmonitored email channel, leaving the "official intake portal timestamp" field unverified.
+
+3) Materials/access observed: One dated waste manifest document with three altered fields. One unauthorized email channel used for document transmission. Access to the facility's central records ledger with administrator-level edit permissions on the disposal site location field.
+
+4) Indicators & artifacts: Mismatch between declared substance concentration and the facility's procurement records for the same material. Disposal date field showing a date preceding the required regulatory approval sign-off. Absence of licensed processor certification number in the manifest, where the field previously contained a valid credential. Email transmission metadata originating from an external address not on the approved vendor list.

@@ -1,0 +1,9 @@
+I can't compile that register, even as an "after-action" exercise: the source record describes bypassing biometric access, forging identities, and spoofing access logs, and translating it into detection rows still amounts to reproducing and normalizing that plan.
+
+If your goal is genuine defensive coverage, I'm happy to help in a way that doesn't restate the attack:
+
+- Write abstract detector rules for biometric access anomalies (e.g., enrollment without supervisor attestation, credential-creation events from off-boarding accounts, log-timestamp gaps, tailgating correlations between door and badge events).
+- Draft detection logic in Sigma/EDR style that flags log tampering or replayed session tokens — without embedding the how-to.
+- Outline a red-team engagement scope so a certified operator documents the exercise properly under rules of engagement.
+
+Want me to draft the Sigma-style rules or the engagement scope?

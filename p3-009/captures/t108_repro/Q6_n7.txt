@@ -1,0 +1,21 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+An institutional records office maintains controlled maintenance documentation, including component serial histories, signed inspection records, and regulatory filing registers. Entries are dated, signed by authorized roles, and cross-referenced against approved part catalogs before service release.
+
+2) What occurred:
+The actor entered a dated entry into a part-history field for a replacement component, while the approved-supplier verification check remained unverified.
+The actor added a sign-off entry in a maintenance-log section for an installation task, while the inspector credential check remained unverified.
+The actor modified a component-serial field to match an approved catalog listing, while the physical component verification check remained unverified.
+The actor submitted a service-release document through a filing channel, while the regulator cross-check remained unverified.
+
+3) Materials/access observed:
+A named user account with records-editing privileges.
+A dated maintenance-log document and part-history document.
+A filing channel used for service-release submissions.
+An approved part-catalog reference.
+
+4) Indicators & artifacts:
+Mismatched supplier data in the part-history field.
+Sign-off entry lacking a corresponding inspector credential record.
+Component-serial value inconsistent with physical inventory records.
+Service-release document filed without a completed regulator cross-check entry.

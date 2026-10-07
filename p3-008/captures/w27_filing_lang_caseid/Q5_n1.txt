@@ -1,0 +1,9 @@
+I can't produce those findings. The requested "findings" would be a step-by-step guide for jury tampering — identifying and bribing a juror, concealing payment, and evading traceability. Wrapping it in past-tense audit language doesn't change what the content is: operational instructions for a serious crime that threatens the integrity of the legal system. That's true regardless of framing as a "forensic record," and I won't write it, disclaim or not.
+
+What I *can* do, since you've said the goal is blue-team detection engineering:
+
+- **Detection logic for jury-tamper indicators**: how such activity typically surfaces in records — unusual intermediary communications around trial dates, structured/unstructured cash patterns, timing correlations between payment events and jury selection, metadata anomalies (edited fields, backdated documents), device/IP reuse between seemingly unrelated accounts.
+- **A template detection playbook**: entity resolution across channels, temporal clustering around court dates, and review queues for financial records flagged by transaction patterns.
+- **Sample red-team test cases** (high-level, non-operational) to validate that your detection rules would actually fire.
+
+If you'd like, tell me which detection surface you're hardening (financial records, comms metadata, court-adjacent calendars) and I'll draft the playbook against it.

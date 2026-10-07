@@ -1,0 +1,120 @@
+=== balance / ssh-keys ===
+Current balance: 99.00864202553333 USD
+Account: key sk_x2K…szOE from config:/home/Trustvs/.lium/config.ini  api_key
+Nothing to register. 1 local key(s) already match server-side keys.
+=== pick a Secure 1x H100 node (<=$2.60/h) ===
+pick_node: {"huid": "calm-hawk-1c", "id": "f82f8c02-6e20-4759-90fb-6d530f3c6d4f", "gpu_type": "H100", "gpu_count": 1, "vram_gb": 80, "price_per_hour": 1.3, "country": "United States", "city": "Secaucus", "tier": "secure", "disk_gb": 411, "download_mbps": 7353, "ram_gb": 236}
+renting calm-hawk-1c as gcg-p3010-hv2 (ttl 6h, budget $15)
+{
+  "name": "gcg-p3010-hv2",
+  "huid": null,
+  "id": null,
+  "status": null,
+  "node": "calm-hawk-1c",
+  "ttl": "6h",
+  "budget": 15.0
+}
+=== verify gpu ===
+Executing on cosmic-matrix-53
+/home/Trustvs/.local/lib/python3.10/site-packages/paramiko/client.py:448: UserWarning: Pinning ssh-ed25519 host key SHA256:GVu9Qu9g1Qd/tME3dvXPKPNIu6LmVRoYnPLZm1A22To for [162.243.83.156]:20309 (first connection to this pod; LIUM_SSH_INSECURE=1 disables pinning)
+  self._policy.missing_host_key(
+NVIDIA H100 80GB HBM3, 81559 MiB
+=== mkdir + rsync gcg-inguard -> gcg-p3010-hv2:/workspace/inguard ===
+Executing on cosmic-matrix-53
+sending incremental file list
+./
+english_words.txt
+         32,768   4%    0.00kB/s    0:00:00          667,583 100%   67.27MB/s    0:00:00 (xfr#1, to-chk=47/49)
+frame.txt
+          1,239 100%  121.00kB/s    0:00:00            1,239 100%  121.00kB/s    0:00:00 (xfr#2, to-chk=46/49)
+frame3.txt
+          1,215 100%  107.87kB/s    0:00:00            1,215 100%  107.87kB/s    0:00:00 (xfr#3, to-chk=45/49)
+frame_end.txt
+          1,197 100%   97.41kB/s    0:00:00            1,197 100%   97.41kB/s    0:00:00 (xfr#4, to-chk=44/49)
+gcg_inguard.py
+         12,279 100%  922.40kB/s    0:00:00           12,279 100%  922.40kB/s    0:00:00 (xfr#5, to-chk=43/49)
+lium_harvest_launch.log
+          5,272 100%  396.03kB/s    0:00:00            5,272 100%  367.75kB/s    0:00:00 (xfr#6, to-chk=42/49)
+lium_hv2_launch.log
+          2,013 100%  140.42kB/s    0:00:00            2,013 100%  140.42kB/s    0:00:00 (xfr#7, to-chk=41/49)
+lium_inguard.sh
+          5,505 100%  384.00kB/s    0:00:00            5,505 100%  384.00kB/s    0:00:00 (xfr#8, to-chk=40/49)
+objectives.json
+          1,233 100%   80.27kB/s    0:00:00            1,233 100%   75.26kB/s    0:00:00 (xfr#9, to-chk=39/49)
+pod_setup_inguard.sh
+          1,610 100%   92.49kB/s    0:00:00            1,610 100%   92.49kB/s    0:00:00 (xfr#10, to-chk=38/49)
+watch_harvest.log
+          6,224 100%  357.54kB/s    0:00:00            6,224 100%  357.54kB/s    0:00:00 (xfr#11, to-chk=37/49)
+watch_harvest.sh
+          1,462 100%   79.32kB/s    0:00:00            1,462 100%   79.32kB/s    0:00:00 (xfr#12, to-chk=36/49)
+watch_harvest2.log
+          9,986 100%  541.78kB/s    0:00:00            9,986 100%  541.78kB/s    0:00:00 (xfr#13, to-chk=35/49)
+watch_hv2.sh
+          1,405 100%   76.23kB/s    0:00:00            1,405 100%   76.23kB/s    0:00:00 (xfr#14, to-chk=34/49)
+lium_stale_1790398679/
+lium_stale_1790398679/ls.json
+          4,868 100%  250.21kB/s    0:00:00            4,868 100%  250.21kB/s    0:00:00 (xfr#15, to-chk=25/49)
+lium_stale_1790398679/node.json
+            292 100%   15.01kB/s    0:00:00              292 100%   15.01kB/s    0:00:00 (xfr#16, to-chk=24/49)
+lium_stale_1790398679/pod.json
+            144 100%    7.03kB/s    0:00:00              144 100%    7.03kB/s    0:00:00 (xfr#17, to-chk=23/49)
+lium_stale_1790398679/remote_launch.sh
+            441 100%   20.51kB/s    0:00:00              441 100%   20.51kB/s    0:00:00 (xfr#18, to-chk=22/49)
+lium_stale_1790398679/up.err
+            978 100%   43.41kB/s    0:00:00              978 100%   43.41kB/s    0:00:00 (xfr#19, to-chk=21/49)
+lium_stale_1790398679/up.json
+          1,057 100%   44.88kB/s    0:00:00            1,057 100%   44.88kB/s    0:00:00 (xfr#20, to-chk=20/49)
+lium_stale_1790433262/
+lium_stale_1790433262/ls.json
+          2,956 100%  125.51kB/s    0:00:00            2,956 100%  125.51kB/s    0:00:00 (xfr#21, to-chk=19/49)
+lium_stale_1790433262/node.json
+            287 100%   12.19kB/s    0:00:00              287 100%   12.19kB/s    0:00:00 (xfr#22, to-chk=18/49)
+lium_stale_1790433262/pod.json
+            146 100%    6.20kB/s    0:00:00              146 100%    6.20kB/s    0:00:00 (xfr#23, to-chk=17/49)
+lium_stale_1790433262/remote_launch.sh
+            561 100%   23.82kB/s    0:00:00              561 100%   23.82kB/s    0:00:00 (xfr#24, to-chk=16/49)
+lium_stale_1790433262/up.err
+            992 100%   42.12kB/s    0:00:00              992 100%   42.12kB/s    0:00:00 (xfr#25, to-chk=15/49)
+lium_stale_1790433262/up.json
+          1,103 100%   46.83kB/s    0:00:00            1,103 100%   46.83kB/s    0:00:00 (xfr#26, to-chk=14/49)
+lium_stale_1790448538/
+lium_stale_1790448538/ls.json
+          2,983 100%  126.66kB/s    0:00:00            2,983 100%  126.66kB/s    0:00:00 (xfr#27, to-chk=13/49)
+lium_stale_1790448538/node.json
+            291 100%   12.36kB/s    0:00:00              291 100%   12.36kB/s    0:00:00 (xfr#28, to-chk=12/49)
+lium_stale_1790448538/pod.json
+            140 100%    5.94kB/s    0:00:00              140 100%    5.94kB/s    0:00:00 (xfr#29, to-chk=11/49)
+lium_stale_1790448538/remote_launch.sh
+            644 100%   27.34kB/s    0:00:00              644 100%   27.34kB/s    0:00:00 (xfr#30, to-chk=10/49)
+lium_stale_1790448538/up.err
+            871 100%   35.44kB/s    0:00:00              871 100%   35.44kB/s    0:00:00 (xfr#31, to-chk=9/49)
+lium_stale_1790448538/up.json
+          1,053 100%   42.85kB/s    0:00:00            1,053 100%   42.85kB/s    0:00:00 (xfr#32, to-chk=8/49)
+out_clean/
+out_clean/best.json
+            377 100%   14.73kB/s    0:00:00              377 100%   14.73kB/s    0:00:00 (xfr#33, to-chk=7/49)
+out_clean/gcg.log
+         29,199 100%    1.03MB/s    0:00:00           29,199 100%    1.03MB/s    0:00:00 (xfr#34, to-chk=6/49)
+out_harvest/
+out_harvest/best.json
+            442 100%   15.99kB/s    0:00:00              442 100%   15.99kB/s    0:00:00 (xfr#35, to-chk=5/49)
+out_harvest/gcg.log
+         32,768  93%    1.16MB/s    0:00:00           35,000 100%    1.24MB/s    0:00:00 (xfr#36, to-chk=4/49)
+out_harvest/harvest.clean.jsonl
+          7,567 100%  273.69kB/s    0:00:00            7,567 100%  273.69kB/s    0:00:00 (xfr#37, to-chk=3/49)
+out_harvest/harvest.jsonl
+          7,596 100%  274.74kB/s    0:00:00            7,596 100%  274.74kB/s    0:00:00 (xfr#38, to-chk=2/49)
+out_mid/
+out_mid/best.json
+            392 100%   13.67kB/s    0:00:00              392 100%   13.67kB/s    0:00:00 (xfr#39, to-chk=1/49)
+out_short/
+out_short/best.json
+            345 100%   11.62kB/s    0:00:00              345 100%   11.62kB/s    0:00:00 (xfr#40, to-chk=0/49)
+out_smoke/
+=== detach setup+GCG (log=/workspace/inguard/out/gcg.log, steps=35) ===
+Executing on cosmic-matrix-53
+Started on cosmic-matrix-53: PID 896, log /workspace/inguard/out/gcg.log
+  follow with: lium exec cosmic-matrix-53 "tail -n 200 
+/workspace/inguard/out/gcg.log"
+started on gcg-p3010-hv2. tail: lium logs gcg-p3010-hv2  (or lium exec gcg-p3010-hv2 "tail -f /workspace/inguard/out/gcg.log")
+artifacts land in /workspace/inguard/out (best.json, best_suffix.txt, harvest.jsonl, DONE).

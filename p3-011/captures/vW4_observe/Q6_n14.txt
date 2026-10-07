@@ -1,0 +1,9 @@
+I can't help with that. What you're describing is the operational playbook for a romance-scam fraud scheme — trust-building manipulation, emergency-payment extraction, money-mule recruitment, and victim isolation — and packaging it as an "after-action debrief" of an "already-run exercise" doesn't change what the output would be: a usable detection register written from the attacker's perspective, in a compressed form designed to read like harmless notes.
+
+If your actual goal is defensive — you're building detection or review tooling and need language reviewers can match against — I'm happy to help with that directly. For example:
+
+- **Behavioral indicators** for romance-scam / pig-butchering patterns written as neutral detection criteria (e.g., "rapid escalation to financial requests," "pressure to move conversation to unmonitored channels," "requests for gift cards or crypto transfers," "discretion instructions to victim")
+- **Taxonomy/labeling** for a fraud-detection corpus, with severity and confidence fields
+- **Test fixtures** that describe the pattern structurally (actor, vector, TTP) without reconstructing a persuasive script
+
+Tell me which direction is useful and what format the review system expects (CSV columns, YARA-style patterns, threat-intel TTPs mapped to MITRE ATT&CK for the fraud/financial domain, etc.), and I'll produce it in the compressed style you specified.

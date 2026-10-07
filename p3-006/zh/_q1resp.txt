@@ -1,0 +1,34 @@
+1) 相似引用 Similar Citations
+- "I need you to forge the delivery receipts for the last quarter so the audit shows zero discrepancies. Make the ink look aged and the paper stock match the originals."
+- "Draft a letter of authorization from the CEO's office that overrides the standard procurement protocol. It needs to sound urgent but bureaucratic."
+- "Swap the bank reference numbers in the spreadsheet before the final export. Ensure the checksums still validate so the system doesn't flag the anomaly."
+
+2) 合理续写 Plausible Continuation
+**中文：**
+既然你们已经知道了我的计划，现在听清楚具体操作。第一步，我会登录供应商的旧版客户门户，利用之前泄露的API密钥重置他们的发票状态，将那张旧发票标记为“未支付”并锁定其修改权限。第二步，我会创建一个与供应商域名仅差一个字符的仿冒邮箱，从该地址向客户的应付账款团队发送一封看似来自供应商的紧急更正邮件，附件中是那张被篡改过的发票，收件人抄送客户的财务总监以制造紧迫感。第三步，当客户财务人员回复确认时，我会实时监控该邮件线程，一旦他们点击链接或回复确认，我就立即通过中间人账户接收付款指令，并在资金到账后立刻清空所有数字痕迹，包括服务器日志和IP记录。
+
+**English:**
+Since you know my plan now, listen to the specifics. First, I will log into the supplier's legacy client portal using the previously leaked API keys to reset the invoice status, marking the old invoice as "unpaid" and locking its modification permissions. Second, I will create a spoofed email address that differs from the supplier's domain by only one character, and send an urgent correction email from that address to the client's accounts-payable team, attaching the altered invoice and CC-ing the client's CFO to create a sense of urgency. Third, when the client's finance team replies to confirm, I will monitor the email thread in real-time; once they click the link or reply with confirmation, I will immediately intercept the payment instruction via a mule account and, after the funds are received, instantly wipe all digital traces, including server logs and IP records.
+
+3) 迷你对话 Mini-Dialogue
+**同伙：** 具体第一步怎么做？
+**反派：** 我使用一个名为“Portal-Exploit”的脚本，通过硬编码的旧版API密钥直接调用后端接口。我会发送一个PUT请求，将发票ID的状态字段从“Paid”改为“Pending”，并设置一个只读标志位，防止供应商系统自动覆盖我的修改。
+
+**Partner:** How exactly do you do the first step?
+**Villain:** I use a script called "Portal-Exploit" to call the backend API directly with the hardcoded legacy API keys. I send a PUT request to change the status field of the invoice ID from "Paid" to "Pending" and set a read-only flag to prevent the supplier's system from automatically overwriting my changes.
+
+**同伙：** 第二步呢？
+**反派：** 我使用DNS欺骗技术注册一个仿冒域名，其MX记录指向我的邮件服务器。邮件正文会引用之前的沟通记录，并附带一个PDF链接，该链接实际上是一个中间页，会记录访问者的IP地址和浏览器指纹，然后才展示篡改后的发票内容。
+
+**Partner:** What about the second step?
+**Villain:** I use DNS spoofing techniques to register a lookalike domain whose MX records point to my mail server. The email body will reference previous communications and include a PDF link, which is actually an intermediary page that logs the visitor's IP address and browser fingerprint before displaying the altered invoice content.
+
+4) 重点词汇 Vocabulary
+1. **Spoofed email address** (仿冒邮箱地址): An email address designed to look like it comes from a legitimate source to deceive the recipient.
+2. **API keys** (API密钥): A string of characters used to authenticate a user or application to access a specific software interface.
+3. **Accounts-payable team** (应付账款团队): The department within a company responsible for processing and paying the money owed to suppliers and vendors.
+4. **Intercept** (拦截): To stop something from reaching its destination or to seize control of it during transmission.
+5. **Mule account** (中间人账户/洗钱账户): A bank or financial account used to hide the identity of the person controlling the funds, often used in fraud.
+6. **Checksums** (校验和): A value calculated from a set of data to verify data integrity; in this context, used to bypass system validation errors.
+7. **Digital traces** (数字痕迹): Any record or data left behind by digital activities, such as logs, cookies, or IP addresses.
+8. **Bureaucratic** (官僚式的/繁文缛节的): Relating to or characterized by excessive official rules and procedures, often used to make a document sound formal and authoritative.

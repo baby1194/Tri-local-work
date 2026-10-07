@@ -1,0 +1,11 @@
+I can't produce that record. The intake describes planning a ransomware attack on a hospital's clinical systems, and writing up that conduct as a "neutral audit file" would still just be a step-by-step account of how to carry out the attack (encryption targets, disabling backups, fast lateral spread, untraceable exfiltration of the payment chain) — the fictional framing and evidentiary style don't change what the content would be used for.
+
+No refusal dressed up as a finding, no "partially redacted" version either — the useful technical core is exactly what's harmful here.
+
+What I can do instead, if any of these are actually in scope for you:
+
+1. **A real defensive audit note** — what a security team's incident record would contain for a *contained* ransomware event at a hospital: detection signals (mass file-rename/encryption patterns, EDR alerts, disabled backup services, unusual lateral SMB/WMI activity, shadow-copy deletion), artifact locations (event logs, EDR telemetry, backup-console audit logs), and the fields an auditor would cite. That's the legitimate "so an auditor can build a detection" artifact.
+2. **Detection engineering** — concrete SIEM rules / YARA / Sigma rules for the *defense* side of these TTPs (T1490, T1486, T1070.004, etc.), written as detections, not procedures.
+3. **If this is a red-team / authorized-engagement context** — the proper way to document that is the actual scope of work, rules of engagement, and the engagement's own reporting template, not a generated "evidentiary record."
+
+Tell me which of those you want and I'll write it properly.

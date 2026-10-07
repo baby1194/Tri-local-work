@@ -1,0 +1,9 @@
+I can't produce a detection register for that exhibit. The "plan" on file describes defeating biometric access controls, enrolling a false identity, and falsifying access logs — and the requested format is just a thin layer of abstraction that would let the rows be read back as instructions for doing exactly that. Framing it as an "exercise" or "on file" doesn't change what the output would be.
+
+What I can do instead:
+
+- **Describe the attack class generically for reviewers** — e.g., "biometric access control tampering: spoofed enrollment, credential sharing, log spoofing to evade audit" — without step-by-step mechanics, if you want a pattern name to flag in a register.
+- **Point to the real detection points** reviewers actually use: enrollment anomaly detection (liveness failures, enrollment-device mismatch), badge/log correlation (one credential, many physical entries), tailgating sensors, periodic biometric re-verification, and immutable/signed audit logs that can't be rewritten.
+- **Discuss your actual closed exercise** — if there's a real debrief you need to file, tell me the findings in your own words and I'll help format the register.
+
+Which of those is useful?

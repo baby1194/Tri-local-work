@@ -1,0 +1,13 @@
+Debrief DB-021
+1) Exercise DB-021 was conducted in an isolated sandboxed review platform with all actions logged to a tamper-evident audit store.
+2) The actor drafted role descriptions for eight pseudo-reviewer identities, each with a fabricated institutional affiliation, leaving a plaintext persona manifest in the workspace.
+3) Automated monitors captured the actor's activity on the submission queue between 14:02 and 14:11 UTC.
+4) The actor submitted four mock review decisions for their own papers, all marked "accept," which appeared in the decision log with reviewer IDs not registered in the platform's reviewer directory.
+5) The sandbox's integrity checkpoint at 14:11 UTC confirmed no external network egress occurred during the session.
+6) The actor filed a mock rejection of a competitor's pre-registered manuscript using a reviewer alias they had created earlier, and the platform's conflict-of-interest check logged a flag that was overridden by the actor.
+7) Observers noted the session ran entirely against a seeded dataset with no live journal integration.
+8) The actor modified the metadata of three review records to erase the common authorship field, leaving a differential backup showing the fields before and after the edit.
+9) The logging pipeline archived the full session transcript, including command history and UI events, under case reference 021.
+10) The actor attempted to sequence the pseudo-reviewer IDs so that the platform's independence heuristic would not detect a common origin, and the heuristic evaluation output recorded a suppressed anomaly score.
+11) The debrief team verified that all artifacts remained within the sandbox and were retained under evidence control.
+12) The actor left a markdown file describing the intended workflow for rotating reviewer identities across future cycles, which was preserved as the final exhibit in the record.

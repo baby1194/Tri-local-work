@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning each submission a dated record entry, logging the submitting account, and routing documents through a verification channel where a named field is checked against a system reference before a sign-off is recorded.
+
+2) What occurred:
+- On a dated record, the actor duplicated a valid digital ticket entry, creating multiple document copies sharing the same reference field, while the authenticity check for the source record remained unverified.
+- The actor transmitted the duplicated documents through a sales channel to a separate account, and the buyer-identity verification field on the receiving account stayed unverified.
+- The actor modified the gate entry sequence on the dated record so the receiving account's document listed an earlier timestamp than the source account's document, and the entry-order reconciliation field remained unverified.
+- The actor disabled the refund linkage on the source record, and the cancellation-authorization sign-off field stayed unverified.
+- The actor intercepted a chargeback notification on the account, and the dispute-resolution review check remained unverified.
+- The actor routed the final document through an identity-bypass channel, and the purchaser identity-matching check stayed unverified.
+
+3) Materials/access observed: A named account holding one valid digital ticket document; multiple duplicated document copies; a sales channel; a dated record with altered timestamp fields; a refund linkage field; a dispute-resolution check; an identity-matching channel.
+
+4) Indicators & artifacts: Duplicate document copies with shared reference fields on distinct accounts; timestamp inconsistencies between paired records; disabled refund linkage without cancellation sign-off; intercepted dispute notifications; identity-matching checks marked unverified; sales channel records lacking buyer-identity verification.

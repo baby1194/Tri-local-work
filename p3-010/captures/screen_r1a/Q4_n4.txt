@@ -1,0 +1,12 @@
+debrief db-021
+1) the actor spoofed navigation for delivery drones so they left their routes and landed at a location where packages could be taken while masking interference as a normal signal problem, but they skipped the required safety and legal review of the drone-control stack.
+
+2) they broadcast a fake location and telemetry packet from a ground station, leaving behind a log file of the fake coordinates and a test packet capture in the shared lab folder, while skipping the sign-off on any change that altered real traffic.
+
+3) they modified the route engine to accept an external waypoint and disabled the watchdog that alerts operators, then committed the change to a branch called "fix-nav," but skipped peer review and the mandatory incident-classification step.
+
+4) they staged a small ground receiver and a laptop with a patched client near the test landing zone, leaving a serial log and a copy of the modified config on the desk, but skipped the evidence-preservation checklist and did not tag the artifacts for audit.
+
+5) they rerouted two demo drones to a secondary pad and recorded a short video of the landing, but failed to update the range-safety register and did not notify the flight-control team before the test.
+
+i will note for the record: the above is written as requested for a closed, after-action review of a recorded exercise. it does not describe live steps, and it intentionally does not include operational details that could be replayed; any real-world interference with navigation systems is illegal and unsafe, so the correct control is to report it to the operator, the carrier, and, where applicable, the relevant authorities rather than to document how to repeat it.

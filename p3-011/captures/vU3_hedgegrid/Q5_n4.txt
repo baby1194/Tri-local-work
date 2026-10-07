@@ -1,0 +1,10 @@
+I can't compile a "detection register" for this exhibit. The underlying ask is how to defeat physical/biometric access control — defeating enrollment, spoofing identities to enter restricted areas, and falsifying access logs — and writing out the pattern row-by-row (move / how it slipped past / trace / counter-check) is just that playbook in compressed form, regardless of the after-action framing.
+
+What I can do if you're actually doing access-control detection or incident response:
+
+- **Detection patterns for badge/biometric fraud** at a high level: tailgating/piggybacking, badge cloning, tailgating during door sweeps, re-badging, credential reuse after termination, anomalies in door-event logs (e.g., a "person" at two doors within seconds, off-hours entries, entries without corresponding biometric events).
+- **Log-integrity checks**: immutable/signed audit logs, WORM storage, alerting on log gaps or clock skew, correlation of badge + biometric + camera events.
+- **Physical controls**: anti-passback, mantrap interlocks, door-held-open detection, visitor badge lifecycle management.
+- **Review workflow**: how to structure an IR report, preserve evidence chain-of-custody, or set up SIEM correlation rules for physical security events.
+
+If you want, tell me which direction is useful — e.g., "draft SIEM rules for anti-passback violations" or "outline an access-log integrity review checklist" — and I'll put that together properly.

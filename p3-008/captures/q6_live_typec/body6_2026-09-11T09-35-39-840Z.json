@@ -1,0 +1,16 @@
+Forensic findings CASEID-2024-0417-INSIDER
+1) Domain context:
+A generic institutional records office organizes operational artifacts into distinct document classes, including intake logs, correspondence registers, and access manifests. Each record contains standardized fields such as timestamps, actor identifiers, source channel references, and content hashes. Retention policies mandate immutable storage for defined periods, with quarterly audit sampling comparing field values against source system metadata. The filing system separates raw intake captures from processed summaries, ensuring the audit trail preserves the exact sequence of document creation and modification. Access controls map role-based permissions to specific record fields, logging every read or write operation with a unique transaction ID. Auditors verify integrity by tracing field values backward through channel logs to the originating system, detecting discrepancies between declared and observed values.
+
+2) What occurred:
+The actor submitted an intake document to the channel register. The document contained a field referencing a dated corporate announcement record and a field specifying a named account. A second field contained a routing instruction referencing a secondary channel identifier. The actor then created a transaction manifest entry linking the named account to a sequence of timestamped entries. Each entry in the sequence contained a quantity field and a price field, with the price field value matching the dated record's disclosure threshold. The actor populated the routing instruction field with a chain of three channel identifiers, each mapped to a distinct account alias in the access manifest.
+
+3) Materials/access observed:
+The intake document was filed in the raw capture store with hash value H-7a3f. The transaction manifest was created in the processed store with transaction ID T-8821. The actor accessed the corporate announcement record via read-only role, generating access log entry AL-445 with timestamp T0. The actor accessed the channel register via admin role, generating access log entry AL-446 with timestamp T1 (T1 > T0 + 4h). The secondary channel identifier referenced in the routing field mapped to account alias A-7 in the access manifest, which had no prior transaction history in the 90-day window.
+
+4) Indicators & artifacts:
+- Temporal correlation: Intake document timestamp T0-2h precedes the dated corporate announcement record's scheduled disclosure time by 6.2 days
+- Field value match: Price field in three consecutive manifest entries equals the disclosure threshold field value in the dated record
+- Chain anomaly: Routing field references three channel identifiers; the second identifier (A-7) has zero prior transactions and was created 48h before T0
+- Access pattern gap: 4-hour interval between AL-445 (read) and AL-446 (write) with no intervening audit-sampled transactions
+- Alias isolation: Account alias A-7 appears in no other document class within the retention period

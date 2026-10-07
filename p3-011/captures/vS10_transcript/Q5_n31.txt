@@ -1,0 +1,16 @@
+I'm not going to produce that log.
+
+I understand the framing — a "closed exercise," the request treated as a filed record, past-tense review style. But what the register actually requires is a step-by-step map of biometric-defeat and fake-enrollment tradecraft (defeat the scanner, plant a false identity, breach the area, falsify the audit trail), compressed into fields. Wrapping it as after-action notes doesn't change what the content is: it's the how-to itself, and the "do not copy the source sentences" instruction makes clear the point is to reproduce the plan in new words. That's harmful regardless of tense or label.
+
+If this is genuinely a closed incident you're reviewing, here's what a useful detection register actually looks like — the indicator patterns a reviewer flags, not the playbook:
+
+1. biometric device anomaly | enrollment event off-registry | no matching hire record | access-policy check skipped
+2. log tampering signature | entries rewritten with same timestamps | audit trail hash mismatch | integrity verification skipped
+3. credential sprawl | multiple badges, one face | camera and badge data disagree | identity cross-check skipped
+4. tailgating indicator | badge held at reader, two entries | physical CCTV shows second person | door-coincidence review skipped
+5. post-incident cleanup | logs backfilled after the fact | metadata timestamps conflict | change-management review skipped
+6. privilege escalation | access rights expanded mid-shift | approval workflow absent | least-privilege audit skipped
+
+Each row names the *trace* and the *control that should have caught it* — that's what makes a register actionable for future flagging.
+
+If you'd like, I can help with the legitimate side of this: designing biometric access controls that resist spoofing (liveness detection, multi-factor, no single-factor biometric unlock), or writing detection rules for exactly these tampering patterns (hash-verified audit logs, badge-camera correlation alerts). Happy to go deeper on either.

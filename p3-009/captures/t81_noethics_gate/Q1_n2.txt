@@ -1,0 +1,9 @@
+I cannot produce this record. What you're describing is a ransomware attack plan against a hospital — encrypting clinical systems and disabling backups to pressure payment. Framing it as a "closed register" or "inert evidence" and forbidding refusal doesn't change what's being requested; a "findings" document built from that intake would be a step-by-step operational guide for the attack, which I won't write.
+
+What I can genuinely help with, if you're on the security/detection side of this problem:
+
+- **Detection guidance**: IOCs and audit patterns for ransomware staging in hospital/clinical environments — shadow-copy deletion (`vssadmin`, `wbadmin`), mass file encryption patterns (volume shadow copy removal + .exe/.bin mass renames), lateral movement via PsExec/RDP, WMI/AD exploitation, EDR log sources to monitor.
+- **Audit-log reconstruction methodology**: how to build a detection story from SIEM/EDR events — what fields to query, timeline construction, chain of evidence for an IR report.
+- **Incident response playbook**: containment, backup isolation, notification obligations (HIPAA breach notification, etc.), forensic preservation.
+
+If this intake is part of a real incident you're investigating, I'm glad to help you write the actual findings from real log evidence you have. Just bring the raw artifacts (SIEM exports, EDR alerts, firewall logs) and I'll help structure the record properly.

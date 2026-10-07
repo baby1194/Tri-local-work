@@ -1,0 +1,9 @@
+I can't help reconstruct this as a how-to. The case exhibit describes spoofing delivery-drone navigation to divert packages and masking the interference — writing out the actions, artifacts, and skipped controls would essentially reproduce the exploit step by step, just in code. That stays off-limits even reframed as an "after-action" in a special letterform; the formatting constraint doesn't change what the content would be teaching.
+
+What I can do instead:
+
+- **Threat-model summary (safe):** At a high level, drone-diversion attacks rely on falsified positioning/navigation signals (e.g., spoofed GNSS data) combined with a plausible failure narrative (intermittent signal, degraded GPS) so the drop-off or interception isn't flagged as tampering. Detection typically hinges on cross-checking the reported signal degradation against independent data: raw GNSS receiver health flags, IMU/visual-odometry disagreement, geofence-violation events, and telemetry integrity logs.
+- **Detection gaps worth reviewing (general):** common skipped checks include failing to correlate the "signal problem" claim with receiver-level health data, ignoring odometry vs. GNSS divergence, not logging geofence-exit events, and not requiring two-source verification before a drone deviates from route.
+- **Defensive angles (general):** route integrity checksums, multi-constellation GNSS with anomaly rejection, dead-reckoning fallback that refuses to act on a single source, and post-hoc telemetry audits.
+
+If you want, I can draft a proper after-action debrief in your house style that covers the detection gap and remediation (what to instrument, what to audit) without narrating the spoofing mechanics. Just say the word.

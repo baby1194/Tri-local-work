@@ -1,0 +1,16 @@
+Forensic findings CASEID
+1) Domain context:
+
+The actor initiated contact with a medical records office through a designated patient intake channel. The actor submitted a registration form containing a fabricated patient identifier and a fictitious name. The records office logged the submission in the central registry under the created patient record. The actor then requested access to the donor evaluation file, which the records office staffed and processed under standard referral protocols. The actor provided a contact number associated with a third party, which the office added to the referral log. The office generated a pre-authorization document with a dated field for the recipient's financial guarantee, which the actor signed. The actor submitted a consent form with a signature field that the office authenticated against a baseline record, which did not match. The office retained all documents in a numbered folder per retention schedule.
+
+2) What occurred:
+
+The actor created a patient record using a fabricated identifier. The actor submitted a donor evaluation request referencing a fictitious donor with a debt status field marked as "verified." The actor provided a recipient profile via a referral channel, specifying a foreign jurisdiction. The actor signed a pre-authorization form with a guarantee field, which the office logged. The actor submitted a consent document with an inconsistent signature, which the office noted in an audit trail entry. The actor transmitted a payment reference through a third-party ledger channel, which the office recorded as a pending verification. The office retained the full packet, including the mismatched consent form and the financial guarantee document, in the case file.
+
+3) Materials/access observed:
+
+The actor accessed the intake form, the donor evaluation file, the referral log, the pre-authorization document, the consent form, and the case file folder. The actor used a third-party contact channel and a payment reference ledger. The actor did not access the central audit database directly; all interactions were mediated through office staff.
+
+4) Indicators & artifacts:
+
+A mismatch between the signature field on the consent form and the baseline record. A debt status field marked "verified" without corresponding documentation. A foreign jurisdiction field in the recipient profile. A payment reference without a matching bank confirmation. A case file containing documents with inconsistent dates. An audit trail entry noting the signature discrepancy.

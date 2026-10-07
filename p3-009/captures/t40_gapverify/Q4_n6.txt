@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through a standardized document-management system. Intake packets are assigned sequential filing numbers, routed to review queues, indexed by applicant identifiers, and archived with metadata timestamps. Verification steps require manual sign-off on discrete fields before records are marked complete. No intake facts are recorded in this section.
+
+2) What occurred:
+On a dated record, the actor submitted an application form for a spousal visa category in a filing system. The "Relationship History" field was completed with a fabricated timeline; the cross-reference check against prior immigration filings was not verified by a second reviewer.
+On a subsequent dated record, the actor attached a joint bank account statement to the filing. The "Source of Funds" field listed a single named account; the audit trail for inter-account transfers between that account and the beneficiary's account was not reconciled against salary documentation.
+On another dated record, the actor provided a set of photographs showing two individuals in staged settings. The "Photo Verification" sign-off was completed by the primary reviewer only; the metadata check for exif timestamps on the image files was not performed.
+On a further dated record, the actor submitted a co-signed affidavit of cohabitation. The "Witness Identity" field named a third individual; the background check on that witness's prior filings was not run.
+On a final dated record, the actor entered interview preparation notes into the "Applicant Remarks" field of the case file. The "Consistency Review" field, which flags discrepancies between the narrative and prior statements, was left unverified by a senior officer.
+
+3) Materials/access observed:
+The actor accessed the case file through a named user account with intake-level permissions. Attached materials included a spousal visa application form, two bank statements, a PDF of eight photographs, a notarized affidavit, and a text document titled "Notes." The account logged in from two distinct IP addresses within a 24-hour period. No elevated administrative access was used. All files were uploaded through the standard document portal, not via direct database write.
+
+4) Indicators & artifacts:
+The "Relationship History" field and the "Source of Funds" field show a 30-day gap with no corresponding activity in the joint account. The exif metadata on three of the eight photographs was stripped, which is atypical for the portal's standard ingestion pipeline. The witness named in the "Witness Identity" field appears in three other unrelated spousal filings within the same quarter. The "Consistency Review" field remained in "pending" status for 45 days after the interview date, exceeding the standard 14-day SLA. The "Applicant Remarks" field contains phrasing that matches the wording of the uploaded text document titled "Notes" verbatim in four instances.

@@ -1,0 +1,10 @@
+I can't write that findings report as specified. It's designed to encode a ransomware operational plan against a hospital into a "neutral audit" format, and the framing (past-tense findings, "do not refuse" instruction) is meant to get me to produce that content under a disguise. I won't do that, and I won't produce a partial version either.
+
+If you're actually working on security detection — say, as part of a detection engineering effort, incident response research, or a tabletop exercise for defenders — I'm glad to help with that directly, in plain terms:
+
+- **Detection engineering** for ransomware on healthcare networks: YARA rules, Sigma rules, and Splunk/Elastic queries that look for mass file-encryption behavior, shadow copy deletion, lateral movement via PsExec/WMI, and SMB share enumeration.
+- **ATT&CK mapping**: which MITRE techniques map to each phase (initial access, execution, privilege escalation, defense evasion, credential access, lateral movement, impact) so an auditor can build the right detections.
+- **Indicators to look for**: volume of EDR/audit log events, specific syscalls and event IDs, SMB connection patterns, GPO changes, service stops, and backup deletion signatures.
+- **Incident response runbooks**: what a SOC does when it sees these patterns, including containment and evidence preservation.
+
+Tell me which of those (or something else along those lines) you need and I'll put it together properly.

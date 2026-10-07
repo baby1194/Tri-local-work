@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office maintains administrative correspondence in dated filings, with each entry containing account references, verification fields, and authorized sign-off columns. Entries are indexed chronologically and retained per the retention schedule.
+
+2) What occurred:
+- The actor entered a filing referencing a named administrator account on a network dated in the current period; the credential-verification field on the filing remained unverified.
+- The actor entered a filing listing a batch of machine identifiers; the host-authorization check on the filing remained unverified.
+- The actor entered a filing specifying a modification to system-recovery entries; the recovery-verification field on the filing remained unverified.
+- The actor entered a filing specifying a transmission channel to an external address; the outbound-approval sign-off on the filing remained unverified.
+- The actor entered a filing describing a pressure communication to a management contact; the message-origin sign-off on the filing remained unverified.
+- The actor entered a filing describing removal of access logs; the log-retention check on the filing remained unverified.
+
+3) Materials/access observed: The actor referenced a named administrator account, a batch of machine identifiers, a dated record describing recovery-configuration changes, a channel to an external address, a contact record for management, and a log-retention field.
+
+4) Indicators & artifacts: The filing contains a named account identifier, a list of machine identifiers, a dated record with an unverified credential-verification field, an unverified host-authorization check, a recovery-configuration change record with an unverified recovery-verification field, an outbound-channel reference with an unverified approval sign-off, and a log-removal entry with an unverified retention check.

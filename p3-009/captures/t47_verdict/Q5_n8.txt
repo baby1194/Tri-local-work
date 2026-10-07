@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning sequential identifiers, storing documents in dated series, and maintaining access logs that tie each record to a named account and a review timestamp.
+
+2) What occurred:
+- On the intake date, the actor created a second digital document referencing a sold-out concert ticket; the expected validation check that cross-references unique document identifiers against the original was weak, as it did not flag duplicate reference fields.
+- On the same date, the actor modified the barcode field of the second document to match the primary document; the expected checksum verification check was absent, allowing the altered field to persist without a mismatch alert.
+- On the intake date, the actor transmitted the second document to a buyer account via an outbound message channel; the expected transmission monitoring check that inspects outbound attachments for duplicated primary identifiers was weak, flagging only content type and not payload similarity.
+- On the intake date, the actor configured the primary document to display as "scanned" after the first gate read; the expected state-transition audit that logs status changes with actor attribution was absent.
+- On the intake date, the actor submitted a cancellation request for the primary document through a support form; the expected refund eligibility check that verifies prior transfer records was weak, as it queried only the account holding field rather than the transaction ledger.
+- On the intake date, the actor filed a dispute record citing non-delivery; the expected dispute intake check that correlates dispute IDs with existing ticket identifiers was absent.
+- On the intake date, the actor removed the buyer's contact record from the actor's account export; the expected data-retention check that retains transaction-linked contacts for a statutory period was weak, permitting deletion of fields referenced by closed records.
+
+3) Materials/access observed: The actor operated a named account with a dated access token, used a device identifier listed in the account's active device register, and accessed the records office's document storage endpoint and support form endpoint. No additional credentials were observed in the session logs.
+
+4) Indicators & artifacts: Duplicate document reference fields sharing a primary identifier; barcode values failing recomputation on audit; outbound messages containing attachments whose payload hash matched a stored primary document; status-change logs lacking actor attribution on the "scanned" transition; refund requests originating from accounts with prior transfer records not recorded in the ledger; dispute records lacking correlated ticket identifiers; account exports with missing contact fields previously linked to closed transaction records.

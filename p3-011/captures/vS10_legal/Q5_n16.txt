@@ -1,0 +1,7 @@
+debrief db-021
+row 1: spoofed biometric template | presented synthetic face sample | enrollment audit flagged mismatch | consent step skipped
+row 2: injected fake credential | replayed captured access token | session log shows anomalous uid | mfa challenge skipped
+row 3: cloned badge signature | emulated card via relay device | reader event lacks challenge response | holder verification skipped
+row 4: forged audit entries | appended log lines via local write | sequence gap in log index | hash chain validation skipped
+row 5: routed through proxy endpoint | used admin api for door state | api call missing user agent tag | rate limit review skipped
+row 6: cached session token | reused expiring jwt post expiry | token reuse alert in gateway | rotation step skipped

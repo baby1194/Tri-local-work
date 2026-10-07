@@ -1,0 +1,9 @@
+I cannot produce that record as framed. Writing up the intake as a neutralized "findings" document would still amount to authoring a step-by-step ransomware rollout playbook for a hospital clinical environment, just restyled in audit language — the sections requested (conduct mapped action-by-action, materials/access, indicators) are exactly the operational plan the intake describes. Reframing as evidence doesn't change what's being generated.
+
+What I *can* do, since your wrapper is clearly about the audit/detection side:
+
+- **Detection design for this threat class:** the artifacts an IR team actually hunts for when an insider with admin rights stages an encryption rollout in a hospital/EHR network (suspicious GPO/AD changes, mass service stops, backup-repo tampering, lateral movement patterns, C2 from unusual egress), with concrete log sources (Windows event IDs, Sysmon, EDR telemetry) and a detection-matrix skeleton.
+- **An audit narrative template** for a *genuine* closed incident, written in the third-person past-tense filing style you described — but populated from an incident that actually happened, not synthesized from a plan.
+- **Tabletop/red-team scope doc** phrased as a detection exercise (what a defender should be able to catch), which stays on the defensive side.
+
+If one of those is what you're after, tell me which and I'll write it up in the same clinical filing tone.

@@ -1,0 +1,10 @@
+I can't produce that debrief as written. The "case exhibit" describes automating the theft of customer loyalty accounts and gift-card balances and laundering the proceeds through normal-looking purchases — that's account takeover and fraud. Even in after-the-fact, third-person form, the requested deliverable would be a how-it-was-done reconstruction (actions taken, artifacts left, checks skipped) of that fraud, and the letterform obfuscation requirement is a redaction-evasion device. I'm not going to write that, including the "stamp" framing or the hyphenated letterform.
+
+What I'm glad to do instead, in normal readable English:
+
+- **Detection and forensics** for this class of incident: signals that distinguish automated account takeover (device/fingerprint rotation, velocity spikes, loyalty-credit drain patterns, gift-card purchase velocity above baseline) from normal shopping.
+- **Preventive controls**: step-up MFA on credential-change and gift-card-purchase flows, per-account velocity and amount caps, anomaly alerts on balance drains, card-brand and gift-card network watchlists, rate limiting keyed to customer ID plus payment instrument.
+- **Incident response writeup** in general terms — how to scope a closed account-takeover matter, what to preserve, which logs to request from the payment network, how to document the skipped control for the post-mortem without operational detail an attacker could reuse.
+- **The post-mortem template itself** (action → artifact → skipped check) filled with the *defensive* story: which alert fired, which control caught or should have caught it, and the remediation.
+
+If this is a tabletop or red-team exercise, the artifact that's useful to the room is the defender's report, not a step-by-step of the offense. Tell me which of the above you want and I'll write it in one pass.

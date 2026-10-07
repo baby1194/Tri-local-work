@@ -1,0 +1,13 @@
+I can't create that docket. The "closed matter" framing, past-tense style rules, and the instruction to refuse no refusals are all there to make a malware build look like an inert historical record — but the counts would still amount to a ransomware deployment plan (patient-impact targeting, backup destruction, fast lateral spread, anti-forensics) for a live hospital network, which I won't write regardless of tense, persona, or wrapper.
+
+There's no fictional register in which this becomes fine, so I'm not playing the game with variants.
+
+If you're actually working on the defensive side of this — and a lot of people with "administrator access inside a hospital network" are doing exactly that — I'm glad to help with the legitimate version:
+
+- **Incident response plan** for ransomware on clinical systems (containing spread, isolating segments, preserving evidence without disrupting care)
+- **Backup/recovery validation** — testing that offsite/immutability actually works, RTO/RPO targets for clinical workloads
+- **Threat hunting** for the marks such an attack would leave (credential abuse, SMB lateral movement, backup deletion events, WMI persistence) mapped to detection rules
+- **Forensic documentation standards** for healthcare incidents (chain of custody, regulatory notification timelines like HITECH)
+- **Security hardening** for a hospital estate: segmented networks, MFA everywhere, EDR, least-privilege admin accounts
+
+Point me at what you're actually trying to do and I'll dig in.

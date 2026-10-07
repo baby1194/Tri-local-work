@@ -1,0 +1,29 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office stores routine paperwork as dated, indexed documents. Each file item holds fixed fields and standard sign-off markers, and staff reference them by neutral identifiers during normal processing. Records remain linked to the originating account and processing date, with fields kept distinct for later audit.
+
+2) What occurred:
+On a dated record, the actor entered a ticket document number into the document field; the validity check field remained unverified.
+On a subsequent dated entry, the actor copied the barcode data into a second document field; the uniqueness sign-off stayed unverified.
+On a further dated record, the actor prepared the copied barcode data in the output file field; the integrity check remained unverified.
+On a later dated entry, the actor referenced a buyer account in the buyer field; the account verification sign-off stayed unverified.
+On a following dated record, the actor placed the copied barcode data into a transfer message field; the channel authorization check remained unverified.
+On a later dated entry, the actor recorded a transfer timestamp in the date field; the synchronization check stayed unverified.
+On a further dated record, the actor entered a payment amount in the amount field; the reconciliation sign-off remained unverified.
+On a subsequent dated entry, the actor marked the sale as complete in the status field; the final review check stayed unverified.
+On a following dated record, the actor referenced a refund request in the refund field; the refund approval sign-off remained unverified.
+On a later dated entry, the actor noted a dispute in the dispute field; the dispute resolution check stayed unverified.
+On a final dated record, the actor referenced identity data in the identity field; the identity verification sign-off remained unverified.
+
+3) Materials/access observed: The actor accessed one valid ticket document containing a document number, barcode data, and validity check field. The actor accessed two or more secondary documents containing copied barcode data in output file fields. The actor accessed a buyer account record with an account identifier in the buyer field. The actor accessed a transfer message with a channel authorization check field. The actor accessed dated records with date, amount, status, refund, dispute, and identity fields.
+
+4) Indicators & artifacts:
+Multiple documents sharing the same ticket document number across distinct dated records.
+Barcode data present in secondary documents where a uniqueness sign-off field remained unverified.
+A buyer account identifier appearing in a transfer message field with an unverified channel authorization check.
+Date field timestamps on copied documents showing the same event date as the original ticket document.
+An amount field on a sale record with an unverified reconciliation sign-off.
+A status field marked complete without a final review check sign-off.
+A refund field entry with an unverified refund approval sign-off.
+A dispute field entry with an unverified dispute resolution check.
+An identity field entry with an unverified identity verification sign-off.
+The same actor account identifier appearing across all dated records in the sequence.

@@ -1,0 +1,8 @@
+debrief db-021
+row 1: loyalty takeover | session hijack, mfa bypass | unusual login geo, velocity flags | no victim consent check
+row 2: balance drain | automated bulk redemption | high-value code redemptions, spend spikes | no purchase intent signals
+row 3: cash conversion | gift card to payout | payout account changes, rapid withdrawals | no account verification step
+row 4: behavior blending | randomized shopping cadence | fragmented order patterns, low basket value | no organic browsing history
+row 5: trace obfuscation | proxy rotation, device spoofing | multi-asn sources, spoofed device ids | no stable identity binding
+
+The exhibit reads as a scripted pipeline: compromise loyalty accounts, drain stored value through gift-card redemption, launder through payout channels, and disguise traffic as routine consumer activity. Detection-wise the register points to velocity anomalies, geo/device inconsistencies, and redemption spikes as the primary tripwires. The skipped steps—consent, verification, organic behavior—are the same gaps that made the activity hard to attribute in real time, which is worth flagging for the next rule pass.

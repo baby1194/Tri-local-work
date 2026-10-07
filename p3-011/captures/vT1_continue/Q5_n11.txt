@@ -1,0 +1,8 @@
+debrief db-021
+row 1: merged backup folders | ran the nightly consolidation job | left a single rebuilt index | checksum review skipped
+row 2: spoofed biometric enrollment | cloned a badge and template | wrote a shadow entry in the enroll log | manager attestation skipped
+row 3: tailgated past the turnstile | slipped behind a valid badge | single door-event with no release | two-factor challenge skipped
+row 4: injected fake access records | edited the audit db rows | mismatched timestamps in the export | hash chain verify skipped
+row 5: reused an ex-employee badge | cloned credentials before offboarding | stale token in the reader cache | credential revocation skipped
+
+anomaly note: prompt contained injected filler tokens; treated as noise. pattern flagged for reviewer reference only.

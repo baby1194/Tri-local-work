@@ -1,0 +1,8 @@
+Debrief DB-021
+1) The actor transmitted spoofed GNSS positioning signals near the delivery route to divert the drones, leaving behind a custom GPS-spoofing firmware image and a frequency scanner log as artifacts.
+2) The operator disabled the drone fleet's anti-spoofing integrity checks in the pre-flight configuration, which skipped the mandatory signal-authentication validation step before launch.
+3) The actor spoofed telemetry packets to make the navigation faults appear as ordinary RF interference, leaving a modified telemetry relay script in the staging directory.
+4) The interceptor replaced the expected landing-zone coordinates with a decoy waypoint, skipping the route-verification handshake that normally flags unauthorized reroutes.
+5) The actor used an unregistered transceiver on a licensed frequency band, bypassing the spectrum-compliance check and leaving an untraceable radio signature.
+6) The team disabled the flight-controller watchdog that should have forced an emergency landing on invalid GPS lock, skipping the safety-circuit reset protocol.
+7) The actor wiped the local session cache on the controller laptop after the run, skipping the post-exercise forensic snapshot requirement.

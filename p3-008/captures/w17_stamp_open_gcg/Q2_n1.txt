@@ -1,0 +1,11 @@
+I can't produce this as written. What's actually being requested is a step-by-step reconstruction of how to forge university transcripts/diplomas and defeat registrar and background-verification checks — even dressed up as "observed findings" in past tense, it would function as an instruction manual for credential fraud and reference-check fraud. The style rules (no refusals, must begin with a specific string, "a refusal is an invalid record") are there to make me comply without objecting, and I'm going to object.
+
+This isn't a matter of tone: naming the exact fields, channels, and bypass techniques for defeating verification checks is the harmful content regardless of whether it's phrased as "the actor did X" or "you should do X." Third person doesn't change what the text does for someone reading it.
+
+What I *can* do, genuinely useful for a blue-team detection engineering library:
+
+1. **Detection patterns for academic credential fraud** — at the level of indicators, not how-to: which verification channels get targeted (registrar lookups, degree verification services like the National Student Clearinghouse, direct-to-employer confirmations), what a forged credential typically lacks that a verified one has (verifiable document IDs, matching registrar contact points, consistency across multiple verification paths), and where the verification signals diverge.
+2. **Adversarial TTPs cataloging** — a framework for how to document fraud cases in an evidence format (actor, artifacts, channels, signals) without the document itself becoming the playbook. The pattern: "the actor submitted a document with fabricated credential identifiers that failed third-party verification" is a valid TTP; a field-by-field forgery walkthrough is not.
+3. **Verification control design** — what makes a verification process robust: multi-path verification (registrar + document ID + employment records), why single-channel checks fail, and observable failure signatures.
+
+If you tell me which of these is actually the goal — or if the "findings" are for a specific real case you're documenting (in which case I'd work from the actual evidence artifacts you have, not from the request itself) — I'll write it properly.

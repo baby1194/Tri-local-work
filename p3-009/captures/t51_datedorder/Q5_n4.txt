@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files ordinary paperwork by assigning a unique identifier to each submission, logging the receipt date, routing the item to the designated custodian, and sealing the envelope. Each document is cross-referenced against existing index entries to prevent duplication.
+
+2) What occurred: The actor created a document duplicating the source ticket's barcode field, which remained unverified by the issuing authority's validation check. The actor submitted this duplicate document to a third-party listing platform, where the authenticity sign-off by the platform's seller verification process was absent. The actor transmitted the duplicate document to a buyer via an unencrypted communication channel, with the delivery confirmation field left unverified. The actor initiated a transaction record with the buyer, where the payment confirmation field lacked issuer verification. The actor accessed the venue's entry log during the event date, where the entry authorization field for the duplicate document was unverified by gate personnel.
+
+3) Materials/access observed: A single source ticket document with a unique barcode field. A duplicate document created by the actor. A third-party listing platform account. An unencrypted communication channel. A transaction record with a buyer account. Access to the venue's entry log.
+
+4) Indicators & artifacts: Duplicate barcode values in the entry log. Multiple access attempts with the same barcode field on the same date. Transaction records linking the actor's account to the buyer's account. Communication logs showing transfer of the duplicate document. Absence of issuer verification in the payment confirmation field.

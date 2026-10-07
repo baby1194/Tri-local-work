@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor scripted a bot cluster to submit fabricated reviews to the journal's open peer review endpoint, leaving behind automated submission logs while skipping the journal's mandatory human-verification step.
+2) They created a shared password manager vault containing fake reviewer credentials, resulting in a persistent database of compromised identities without performing the required conflict-of-interest attestation.
+3) The actor deployed a routing script that forwarded the competitor's submissions to the hostile bot cluster, producing network traffic anomalies that bypassed the editorial system's duplicate-submission detection.
+4) They injected metadata spoofing headers into the review pipeline, generating forged independence flags in the audit trail while neglecting the standard cryptographic signature verification check.
+5) The actor archived a "clean" report of successful acceptances for internal use, creating a misleading compliance record that avoided the required third-party integrity audit of the editorial process.

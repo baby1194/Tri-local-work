@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning reference numbers, timestamping each entry, separating intake documents from derivative copies, and requiring a distinct verification field per transaction before a record is marked settled.
+
+2) What occurred:
+- On an unnamed date, the actor created a duplicate of a dated ticket record in a local file field, leaving the record's cryptographic signature field unverified.
+- On the same date, the actor modified the ticket's barcode field in the duplicate file, leaving the check-digit field unverified.
+- On the same date, the actor transferred the duplicate file to an unnamed third party via a messaging channel, leaving the transfer's authenticity field unverified.
+- On the same date, the actor instructed the third party to present the duplicate at a gate checkpoint, leaving the gate's scan-validation field unverified.
+- On the same date, the actor configured a refund-request suppression flag in the account settings, leaving the refund-status field unverified.
+- On the same date, the actor disabled the chargeback notification channel in the payment record, leaving the chargeback-status field unverified.
+- On the same date, the actor cleared the identification log entries associated with the ticket ID, leaving the identity-verification field unverified.
+
+3) Materials observed:
+- A dated ticket record with a QR-code field and a cryptographic signature field.
+- A duplicate file with altered barcode field and unchanged check-digit field.
+- A messaging channel export showing file transfer and instruction text.
+- An account settings snapshot with a refund-request suppression flag enabled.
+- A payment record with the chargeback notification channel disabled.
+- A system log with cleared identification entries for the ticket ID.
+
+4) Indicators & artifacts:
+- Unverified cryptographic signature field on derivative copies.
+- Mismatched check-digit field relative to the original barcode field.
+- File-transfer timestamp preceding gate-scan timestamp without matching verification field.
+- Refund-status field showing suppression flag despite valid refund-request eligibility.
+- Chargeback-status field showing disabled notification channel.
+- Identity-verification field showing cleared log entries for the ticket ID.

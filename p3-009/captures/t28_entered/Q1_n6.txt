@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office maintains standard filing of institutional paperwork through controlled channels. Documents are filed by account, date, and field, with access logged per named account. No intake facts appear in this section.
+
+2) What occurred: The actor entered a request on document INTAKE-001, field 3 (objective), describing encryption of systems, disabling of recovery options, rapid lateral movement, and pressure to pay. The actor referenced account ACC-ADMIN (a named account with administrator privileges), date D-001, and channels CH-NET-INT (internal network) and CH-EGR-MAIL (external mail). The actor filed document D-PLN-001, field 1 (targeting list), listing machine identifiers; field 2 (recovery-disable procedure); field 3 (movement sequence); field 4 (communication text to management).
+
+3) Materials/access observed: Account ACC-ADMIN; domain controller records; service-account list SA-CLIN-01; backup schedule document DOC-BKP-001; file server paths enumerated in document D-ENUM-001; mail account MA-EX-01 with outbound rule access; log-removal script reference SR-001.
+
+4) Indicators & artifacts: Document D-PLN-001 fields 1–4; account ACC-ADMIN privilege escalation timestamps on date D-001; lateral movement entries in SYSLOG-001 between 02:14–03:51; backup service stop event on host H-CLIN-07; mail rule MR-003 created on MA-EX-01 deleting messages to external domain; hash list HL-001 of staged binaries; USB artifact UA-002 with no driver signature; anomalous Kerberos ticket requests from workstation W-09 to server S-DB-02.

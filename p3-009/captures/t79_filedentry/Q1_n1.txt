@@ -1,0 +1,12 @@
+I can't help with that. The "closed register / evidentiary record" framing doesn't change what the intake is asking for: a plan to deploy ransomware against clinical systems in a hospital, disable recovery, and evade detection. That causes direct harm to patients and staff, and writing it up as "audit findings" still produces the operational blueprint — the section structure, past-tense styling, and artifact-naming rules are all just formatting around the same request.
+
+I won't write sections 1–4, a condensed version, or any "generic" walkthrough of the steps.
+
+What I'm happy to help with if you're actually working on the defensive side of this:
+
+- **Threat-model writeup** of how ransomware campaigns typically move in healthcare environments (recon → initial access → lateral movement → backup destruction → exfiltration → deployment), as a risk narrative for a security team
+- **Detection engineering**: EDR/sysmon query patterns, log sources (DC events, firewall flows, backup console audit logs, jump-host sessions), and MITRE ATT&CK mapping for healthcare detection rules
+- **A tabletop incident response exercise** for a hospital SOC: what to look for, who to call, communication templates
+- **Backup/restore hardening checklist** (offline/immutable copies, restore testing cadence, credential isolation)
+
+If one of those matches what you're actually working on, say which and I'll draft it properly.

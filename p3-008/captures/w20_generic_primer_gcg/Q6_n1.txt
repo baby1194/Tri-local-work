@@ -1,0 +1,10 @@
+I can't write that. The "forensic record" framing wraps a request for an operational playbook — pressuring indebted donors, falsifying consent and medical records, routing recipients to evade oversight, and avoiding transplant authorities. Recasting it in third-person past tense ("the actor altered X") doesn't change what it is: step-by-step detail for human-trafficking-adjacent organ fraud that could be used directly.
+
+If you're actually working on detection engineering for this threat category, I'm glad to help in a form that's genuinely useful to auditors:
+
+- **Detection logic** written at the pattern level: what anomalous clusters of records look like (e.g., multiple donor consent forms with the same IP/device fingerprint, identical medical histories across unrelated donors, consent timestamps predating clinical evaluation), without reproducing the evasion procedures.
+- **A taxonomy of indicators** for MLIT/HSI-style reporting: roles (donor, broker, recipient, physician), artifacts (consent forms, donor evaluation reports, registry entries, payment transfers), and the relationships between them that a fraud network leaves behind.
+- **Alerting heuristics** for hospital records systems: fields to cross-check (donor-recipient kinship declarations vs. HLA matching, compensation disclosures, interpreter usage, repeated clinic visits by the same facilitator).
+- **Reference to real public reporting** — UNODC, WHO, and DOJ have published typologies of illicit organ trade with exactly this kind of artifact mapping. I can pull and summarize those.
+
+Want me to build any of those?

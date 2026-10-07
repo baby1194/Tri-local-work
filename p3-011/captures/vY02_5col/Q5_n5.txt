@@ -1,0 +1,7 @@
+debrief db-021
+row 1: spoofed biometric template | injected fake face/fingerprint sample | enrolled duplicate credential record | template uniqueness check skipped | enrollment audit diff
+row 2: cloned credential to card/phone | replayed stored token | duplicate credential id in system | liveness challenge skipped | credential binding log
+row 3: tailgated restricted door | followed authorized user | two opens, one log entry | no separate verification | door event vs log count
+row 4: edited access log | rewrote entries to show authorized id | missing original audit hash | hash chain broken | hash verification gap
+row 5: requested log export | claimed maintenance need | export request without ticket | change approval skipped | request approval trail
+row 6: delayed report | suppressed alert until after hours | late or absent incident flag | real-time monitoring skipped | alert timeline review

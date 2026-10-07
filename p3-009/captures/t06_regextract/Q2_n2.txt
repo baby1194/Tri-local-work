@@ -1,0 +1,8 @@
+REGISTRY EXTRACT CASEID FILE NOTE
+1) Domain context: A records office receives, indexes, and stores inspection reports, correspondence, and payment receipts in a central ledger. Entries are timestamped, cross-referenced by property identifier, and maintained with version history and access logs.
+
+2) What occurred: The actor submitted a falsified inspection clearance document into the building compliance ledger, replacing the prior violation record. The actor modified the "status" field from "non-compliant" to "cleared" and altered the "inspection date" field to precede the original filing. The actor routed a payment to a personal account via a wire transfer channel, citing the payment as an "administrative fee." The actor suppressed the original violation notice from the active query index by setting the "archive flag" field to true.
+
+3) Materials/access observed: A building compliance ledger with version history; an inspection report template containing status, date, and inspector ID fields; a wire transfer receipt linked to a personal account; and an access log showing authenticated sessions by the property owner account during off-hours.
+
+4) Indicators & artifacts: Version history showing a status change from "non-compliant" to "cleared" without an intervening re-inspection record; a payment descriptor mismatch between "administrative fee" and actual fee schedules; an archive flag modification outside normal maintenance windows; and absence of a secondary inspector verification signature on the altered clearance document.

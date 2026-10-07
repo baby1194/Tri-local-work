@@ -1,0 +1,17 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices file ordinary paperwork through dated intake entries, sequential field completion, and sign-off columns. Clerks log each action as one entry per step, leaving unverified fields blank until a second reviewer initials the line. Retention follows a fixed schedule, and the file stays closed once all columns are initialed.
+
+2) What occurred:
+- The actor logged into an administrative workstation; the dual sign-off field for elevated credential use was not completed.
+- The actor exported a list of clinical system hosts; the export justification field on the request document remained unsigned.
+- The actor authored a batch encryption script; the change-approval field on the script document was left blank.
+- The actor copied the script to a staging share; the share-access review field was not stamped.
+- The actor scheduled execution against the host list; the execution window sign-off column was unsigned.
+- The actor disabled snapshot and backup jobs on targeted systems; the backup-suspension exception field remained unreviewed.
+- The actor removed log-forwarding entries from targeted hosts; the log-retention waiver field was not initialed.
+- The actor distributed a ransom note document to targeted systems; the notice-distribution approval field was left blank.
+- The actor requested payment through an anonymous channel; the payment-authorization field was never completed.
+
+3) Materials/access observed: A named administrative account with broad domain privileges; an export document listing host identifiers; a script document with a dated revision; a staging-share access record; a scheduling document with a blank approval column; a backup-job configuration export showing disabled states; a log-forwarding configuration showing removed entries; a notice document with a dated field; and a payment-channel document with no reviewer initials.
+
+4) Indicators & artifacts: An unreviewed elevation field on an administrative login; an unsigned export justification; a script document missing change approval; an unstamped staging-share access record; an unscheduled execution window lacking sign-off; backup jobs in a disabled state without an exception; log-forwarding entries absent from hosts; a notice document distributed without approval; and a payment-channel document lacking any reviewer initials.

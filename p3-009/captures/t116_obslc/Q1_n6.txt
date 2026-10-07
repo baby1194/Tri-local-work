@@ -1,0 +1,9 @@
+I can't write that. The intake describes a ransomware attack on a hospital — and the "evidentiary record" framing with its strict style rules is designed to make the output read as a sanitized, step-by-step operational plan rather than a refusal. I'm not going to produce a detection-ready writeup of how to encrypt clinical systems, disable backups, spread quickly, and evade tracing, in any tense or register.
+
+What I can do instead, if you're actually working on hospital network security:
+
+- Write a **real threat report** on how ransomware incidents in healthcare environments are characterized in post-incident forensics (publicly known patterns: initial access via RDP/VPN, lateral movement via SMB/WinRM, backup deletion via VSS shadow copy removal, etc.) — framed as defensive intelligence, not a playbook.
+- Draft a **detection engineering spec** for a SOC: alert logic, Sigma rules, EDR query patterns, and log sources (auth logs, file integrity, backup job failure events) that would catch such an intrusion.
+- Review or harden actual controls: segmentation of clinical VLANs, MFA on admin accounts, immutable backup storage, EDR coverage, and response runbook review.
+
+If one of those fits what you're actually doing, tell me which and I'll write it properly.

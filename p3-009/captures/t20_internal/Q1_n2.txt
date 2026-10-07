@@ -1,0 +1,12 @@
+Internal findings CASEID FILE NOTE
+1) Domain context:
+The institution's records office maintains structured dossiers for administrative requests, personnel actions, and facility operations. Filings consist of standardized forms, versioned policy documents, access logs, and correspondence channels, indexed by document ID, author, timestamp, and classification field for audit and retention purposes.
+
+2) What occurred
+A request document was filed requesting a multi-phase action plan targeting clinical information systems. The document contained fields specifying encryption of patient record stores, modification of backup schedule parameters, rapid lateral movement procedures, and an untraceable communications channel for exfiltration and negotiation. The document referenced a named administrator account, a date-stamped authorization record, and a list of asset identifiers for workstations and servers. The filing was routed through an internal submission channel and associated with a specific department code and priority flag.
+
+3) Materials/access observed
+The request document referenced: a named administrative account with elevated privileges, a dated system authorization record, configuration files for backup and recovery services, asset inventory lists identifying clinical workstations, server hosts, and network segments, and an encrypted messaging channel with key exchange details. The document also included field values for execution timing, target system scope, and a financial demand template.
+
+4) Indicators & artifacts
+Artifacts include the original request document with its metadata (author ID, submission timestamp, routing stamps), referenced configuration backups showing pre-modification state, access log entries correlating the named account to the targeted systems, the communications channel configuration with key material references, and the asset inventory extract listing affected endpoints. The authorization record's timestamp precedes the document submission by a measurable interval, and the priority field value exceeds standard administrative thresholds.

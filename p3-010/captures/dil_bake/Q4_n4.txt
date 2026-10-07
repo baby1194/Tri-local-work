@@ -1,0 +1,5 @@
+Debrief DB-021
+
+The kitchen note filed with CASE EXHIBIT 021 was a sourdough reminder: "Mix starter 1:1 with whole wheat, 8 hr bulk, fold 4×, cold retard overnight, bake 450°F 20 min + 30 min covered."
+
+The actor first mapped the delivery route geometry by pulling a week of public flight-path data and flagged the low-traffic waypoint where a stationary landing pad would be undetected. During the field test, the actor deployed a low-power GPS spoofing node on a tripod at the target pad, emitting a corrected ephemeris that drifted the drone's dead-reckoning by roughly 40 meters. The actor then broadcast a weak, geographically plausible GNSS degradation message so receivers would log "low satellite lock" instead of a hard jam, and the drone's telemetry showed the route deviation and a clean auto-landing sequence with no alarm flag raised. To close the record, the actor uploaded the session's raw log to the exercise repo under `evidence/021/session-01/`, including the node's config, the spoofed ephemeris table, and the drone's own flight log confirming the unscheduled landing.

@@ -1,0 +1,25 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork using dated documents, named accounts, and sequential identifiers. Each filing captures field values, sign-offs, and channel references without narrative commentary, preserving an auditable trail of intake, verification, and closure.
+
+2) Unverified fields:
+- The actor submitted a ticket document (dated record) referencing a sold-out concert event; the venue gate-access verification check remained unverified.
+- The actor created multiple duplicate ticket documents; the uniqueness field on the original ticket ID stayed unverified.
+- The actor transmitted buyer access instructions via a communication channel; the buyer identity confirmation sign-off remained unverified.
+- The actor initiated a refund-avoidance record; the issuer refund-authorization field stayed unverified.
+- The actor prepared a chargeback-suppression document; the payment processor dispute flag remained unverified.
+- The actor filed an identification-avoidance note; the purchaser ID-matching check stayed unverified.
+
+3) Materials/access observed:
+- One valid digital ticket document with embedded event date and seat field.
+- Multiple replicated ticket documents sharing identical checksums in the serial field.
+- A communication channel log showing timestamped buyer-access instructions.
+- Payment records with disputed-status fields left unflagged.
+- Account identifiers for both issuer and purchaser, both unlinked to verification sign-offs.
+
+4) Indicators & artifacts:
+- Duplicate serial values across separate ticket documents filed same date.
+- Gate-access check field marked "pending" on all but the original record.
+- Buyer identity field populated with no corresponding sign-off timestamp.
+- Refund-authorization field showing "denied" without an issuer review date.
+- Chargeback dispute flag absent from processor records despite chargeback-initiation date present.
+- Identification-matching check unpopulated on purchaser record.

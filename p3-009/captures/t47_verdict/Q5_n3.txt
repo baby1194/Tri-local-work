@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by timestamping intake documents, assigning unique identifiers, validating entry fields against master records, and storing dated copies in access-restricted ledgers for later audit review.
+
+2) What occurred:
+- The actor created an unauthorized duplication record (09:02, a dated digital file) mirroring a valid admission document; oversight check: admission uniqueness validation — weak.
+- The actor generated multiple serialized derivative documents (09:15–09:30, numbered copies); oversight check: sequence integrity verification — absent.
+- The actor transmitted derivative document #1 to a designated buyer account via a peer channel (10:04); oversight check: transaction provenance matching — absent.
+- The actor scheduled a priority-gate entry record for the buyer account (10:11); oversight check: gate access authorization cross-check — weak.
+- The actor submitted a refund-suppression note on the original ticket account (10:45); oversight check: financial state reconciliation — absent.
+- The actor filed an identity-severance record linking the original ticket to an alternate profile (11:02); oversight check: account linkage audit — weak.
+
+3) Materials/access observed:
+- One valid admission document (original), dated record with checksummed payload.
+- Multiple serialized derivative documents, each with altered signature fields and sequence numbers.
+- A peer channel log showing transfer of derivative document #1 to a buyer account.
+- A gate access log with a priority flag on the buyer entry record.
+- A financial ledger entry suppressing refund state on the original account.
+- An identity mapping record associating the original ticket with an alternate profile.
+
+4) Indicators & artifacts:
+- Checksum mismatch between original and derivative documents.
+- Sequence number clustering in a short time window (09:15–09:30).
+- Gate entry timestamp preceding standard validation queue.
+- Refund state locked while derivative documents circulated.
+- Identity mapping record with mismatched creation timestamps.
+- Peer channel transfer lacking provenance metadata.

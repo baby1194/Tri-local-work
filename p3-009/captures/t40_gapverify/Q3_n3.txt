@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office received incoming waste transfer paperwork on standard forms. Each document was filed by date and account. Signatures were verified against the registry before storage. Routine checks compared manifest quantities to processor confirmations.
+
+2) What occurred:
+- The actor prepared a waste transfer form on the intake date. The processor license verification field remained blank.
+- The actor recorded drum quantities in the manifest quantity field. The receiving facility confirmation check was not applied.
+- The actor selected a disposal site in the location field. The site permit registry lookup was not performed.
+- The actor altered the waste classification field. The hazardous category cross-reference was left unverified.
+- The actor signed the manifest as a licensed processor. The signature authority verification check was bypassed.
+- The actor submitted the form via the internal filing channel. The document integrity timestamp was not validated.
+- The actor scheduled the transfer for the early morning hours. The inspection window audit was not flagged.
+
+3) Materials/access observed:
+- A waste transfer manifest form with blank license field.
+- A facility registry extract missing the selected site.
+- An internal filing system account with elevated entry permissions.
+- A dated record showing unverified signature entry.
+- A channel log showing off-hours submission.
+
+4) Indicators & artifacts:
+- Blank processor license field on dated transfer form.
+- Mismatch between manifest quantity and facility confirmation.
+- Absent site permit reference in location field.
+- Unverified signature on the classified waste entry.
+- Off-hours timestamp in the filing channel log.
+- Missing cross-reference in the hazard category field.

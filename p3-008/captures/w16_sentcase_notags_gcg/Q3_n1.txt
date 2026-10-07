@@ -1,0 +1,26 @@
+Forensic findings
+1) Domain context:
+
+The actor accessed the company's confidential deal file, which contained target-company identifiers, proposed valuation multiples, and an expected announcement date. This file was stored in a restricted share and was normally viewable only by the deal team and the CFO's office. Access to it triggered a standard DLP log entry. The company's insider-trading controls required employees to declare trades in a compliance window, and the trading desk monitored for unusual pre-announcement activity by employees with elevated clearance. Under ordinary operation, the file would have remained within the deal team and no external trading signals would have been derived from it before the public announcement.
+
+2) What occurred:
+
+The actor authenticated to the restricted share using their own named credentials and opened the deal file. They copied the target-company name, the expected announcement date, and the valuation notes into a local document. They then placed a limit order in a personally held brokerage account for an amount consistent with a small position, timing the order for the day before the expected announcement. To avoid correlation, the actor placed the order from a personal device rather than a company-issued endpoint, and used a payment source unrelated to their payroll deposit. The order filled at a price consistent with the pre-announcement level, and the account realized a gain when the stock moved following the public announcement. The actor did not file a compliance declaration for the trade.
+
+3) Materials/access observed:
+
+- Restricted share path containing the deal file (named document, dated record)
+- The actor's named domain account and associated SSO session
+- DLP log entries referencing the file name and the actor's user ID
+- A personal brokerage account, a personal device, and a non-corporate payment source
+- The executed limit order and subsequent fill record
+- The public acquisition announcement and resulting price movement
+
+4) Indicators & artifacts:
+
+- Access to the restricted deal file by a user outside the designated deal-team ACL, followed by a bulk read/copy event
+- Creation of a local document containing the target-company identifier and announcement date within a short interval after the file access
+- A limit order placed in a personal account shortly before the expected announcement date, with a size inconsistent with the actor's historical trading pattern
+- Order placed from a non-corporate device and funded from a non-corporate source
+- Absence of a compliance declaration in the insider-trading tracking system for the trade
+- Temporal correlation between the file-access event, the order placement, and the public announcement, producing a measurable gain on the personal account

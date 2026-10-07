@@ -1,0 +1,20 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office accepts submitted documents, indexes them into dated file entries, and stores supporting evidence alongside reviewer sign-off fields. Each entry remains pending until verification flags are set by an authorized official before final closure.
+
+2) Unverified fields:
+- The actor submitted a corrected inspection report dated the incident week, leaving the structural integrity check field unverified.
+- The actor filed a remittance document referencing a named external account, with the payment verification sign-off left unverified.
+- The actor submitted a revised compliance certificate dated the following week, leaving the inspector certification field unverified.
+- The actor filed an amended record index entry, with the cross-reference validation field left unverified.
+
+3) Materials/access observed:
+- The actor accessed the records filing portal using an authorized session token.
+- The actor submitted three dated documents to the compliance file directory.
+- The actor referenced a named account identifier in the remittance document field.
+- The actor accessed the verification sign-off queue with reviewer-level permissions.
+
+4) Indicators & artifacts:
+- Document timestamps show sequential submissions within a 5-day window.
+- Three verification fields remain in unverified status while the parent file is marked closed.
+- The remittance document contains a payment reference number not present in prior file entries.
+- The inspector certification field contains a name not matching any registered reviewer in the access log.

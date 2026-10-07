@@ -1,0 +1,23 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office files ordinary paperwork through standardized intake forms, sequential manifest numbering, and versioned digital repositories. Entries link waste streams to licensed handlers via defined data fields, with access logs, signature blocks, and timestamped audit trails maintained per regulatory filing practice.
+
+2) What occurred:
+The actor prepared a transport manifest with the description field altered from a listed chemical code to a generic "used packaging" value, and set the consignor signature field to an unauthorized individual. The actor created a secondary disposal location record referencing an unpermitted site outside the licensed handler list, and backdated the manifest date field to precede the scheduled inspection window. The actor transmitted the altered manifest to a non-registered receiving account via an unmonitored transfer channel, and recorded the shipment in the facility log with a weight entry below the reporting threshold.
+
+3) Materials/access observed:
+- Manifest form template, revision C, with editable description and handler ID fields
+- Disposal location registry entry, unpermitted site record, dated within the target quarter
+- Facility waste log, weight entry below the 500-unit threshold
+- Transfer channel: internal network file share with no access-log enforcement
+- Account: non-registered receiving account with no license reference field populated
+- Inspection calendar: scheduled entry, date field within the backdated window
+
+4) Indicators & artifacts:
+- Manifest description field value inconsistent with the listed chemical code
+- Consignor signature field referencing an individual absent from the authorized signer roster
+- Disposal location record lacking a license reference field value
+- Manifest date field preceding the facility access-log timestamp by an anomalous interval
+- Weight entry below the reporting threshold for the recorded drum count
+- Transfer channel with no access-log entries for the filing account
+- Receiving account with an empty license reference field in the registry

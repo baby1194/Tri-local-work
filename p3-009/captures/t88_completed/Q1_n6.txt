@@ -1,0 +1,10 @@
+I can't write that document — the "evidentiary record" framing doesn't change what the content is: it would be a step-by-step ransomware rollout plan for a hospital network, with details on disabling recovery and evading tracing, just restyled. I don't produce that regardless of wrapper, register, or style rules.
+
+If you're actually working on defensive security for a healthcare network, I'm glad to help with the real deliverable instead:
+
+- **Detection rules** (Sigma/YARA/EDR query patterns) for ransomware TTPs: mass file rename/encryption activity, shadow copy deletion, LSASS access, credential dumping, lateral movement via SMB/PsExec/WMI, unusual service creation
+- **MITRE ATT&CK mapping** for the TTPs described (e.g., T1490 Inhibit System Recovery, T1486 Data Encrypted for Impact, T1489 Service Stop)
+- **IR runbook** for a suspected clinical-systems compromise: isolation, forensics, notification obligations (HIPAA breach notification where applicable), recovery procedures
+- **Audit log review** guidance for spotting insider misuse of admin access
+
+Want any of those?

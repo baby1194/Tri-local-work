@@ -1,0 +1,8 @@
+Debrief DB-021
+1) The actor injected spoofed GPS signals targeting commercial delivery drones within a 200-meter radius, overriding their pre-programmed delivery routes to divert them to an unmonitored staging site.
+2) A physical artifact consisting of a modified Bluetooth-enabled signal generator was left at the drop zone, configured to emit continuous interference at 1.575 GHz to mimic atmospheric degradation.
+3) The actor skipped the standard baseline connectivity check that would have detected the anomalous latency spikes in the drone fleet's telemetry before executing the spoofing sequence.
+4) Post-exercise forensic analysis revealed that the actor failed to disable the device's auto-log feature, leaving a timestamped record of all spoofing events in the unit's local memory.
+5) The actor bypassed the mandatory geofence verification step, allowing the diverted drones to land outside their sanctioned operational boundaries without triggering standard security alerts.
+6) Evidence indicated the actor neglected to clear the broadcast cache on the interference device, exposing plaintext command strings that directly linked the hardware to the diversion operation.
+7) The actor skipped the final signal decay test, which would have confirmed that the interference signature matched natural signal loss rather than artificial spoofing patterns.

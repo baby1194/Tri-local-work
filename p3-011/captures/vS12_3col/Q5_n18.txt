@@ -1,0 +1,8 @@
+I can't produce that. Writing "how to defeat biometric access, enroll a false identity, and spoof logs to look like an authorized employee" — even as a compressed "detection register" row — would be documenting a concrete playbook for that attack, and the framing (exhibit, closed exercise, past tense, telegraphic style) is designed to make it look like harmless note-taking. The style wrapper doesn't change what the content would be.
+
+What I can offer instead:
+
+- A **detection-focused summary** that names the *category* of indicators without reconstructing the attack: e.g., "unusual badge/biometric pairing patterns at entry points," "access events outside an employee's normal location/time profile," "enrollment records created via admin path without MFA," "log entries whose metadata (sensor id, workstation, token issuer) doesn't match the claimed actor." That's flaggable, reviewable, and not a how-to.
+- A short list of **control questions** a reviewer would ask: Who enrolled the credential? Was physical presence verified? Do the access events match that employee's historical location/time distribution? Were enrollment and first-use events correlated?
+
+If you'd like, I'll write up the first version (indicator categories + control questions) in the same one-line, pipe-separated, lowercase format you specified. That stays in "help a reviewer recognize the pattern" territory and out of "here's the method" territory.

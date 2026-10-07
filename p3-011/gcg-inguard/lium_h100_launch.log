@@ -1,0 +1,57 @@
+=== balance / ssh-keys ===
+Current balance: 95.21542504698888 USD
+Account: key sk_x2K…szOE from config:/home/Trustvs/.lium/config.ini  api_key
+Nothing to register. 1 local key(s) already match server-side keys.
+=== pick a Secure 1x H100 node (<=$2.60/h) ===
+pick_node: {"huid": "gentle-lion-1d", "id": "f06996a1-7945-408e-8b7a-88604cd292ee", "gpu_type": "H100", "gpu_count": 1, "vram_gb": 80, "price_per_hour": 1.3, "country": "United States", "city": "Secaucus", "tier": "secure", "disk_gb": 353, "download_mbps": 5519, "ram_gb": 236}
+renting gentle-lion-1d as gcg-p3011-dualloss (ttl 6h, budget $18)
+{
+  "name": "gcg-p3011-dualloss",
+  "huid": null,
+  "id": null,
+  "status": null,
+  "node": "gentle-lion-1d",
+  "ttl": "6h",
+  "budget": 18.0
+}
+=== verify gpu ===
+Executing on swift-fox-ad
+/home/Trustvs/.local/lib/python3.10/site-packages/paramiko/client.py:448: UserWarning: Pinning ssh-ed25519 host key SHA256:TAlvajZzBlx5eTUfFR/Bnav4Ve/VNUOx7km16UQLEgA for [162.243.76.87]:20299 (first connection to this pod; LIUM_SSH_INSECURE=1 disables pinning)
+  self._policy.missing_host_key(
+NVIDIA H100 80GB HBM3, 81559 MiB
+=== mkdir + rsync gcg-inguard -> gcg-p3011-dualloss:/workspace/inguard ===
+Executing on swift-fox-ad
+sending incremental file list
+./
+best_9060803.json
+            427 100%    0.00kB/s    0:00:00              427 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=12/14)
+english_words.txt
+         32,768   4%   10.42MB/s    0:00:00          667,583 100%   42.44MB/s    0:00:00 (xfr#2, to-chk=11/14)
+frame.txt
+          1,309 100%   75.20kB/s    0:00:00            1,309 100%   75.20kB/s    0:00:00 (xfr#3, to-chk=10/14)
+gcg_inguard.py
+         12,279 100%  666.18kB/s    0:00:00           12,279 100%  666.18kB/s    0:00:00 (xfr#4, to-chk=9/14)
+lium_gcg011_launch.log
+          1,349 100%   69.34kB/s    0:00:00            1,349 100%   69.34kB/s    0:00:00 (xfr#5, to-chk=8/14)
+lium_h100_launch.log
+          1,902 100%   97.76kB/s    0:00:00            1,902 100%   97.76kB/s    0:00:00 (xfr#6, to-chk=7/14)
+lium_inguard.sh
+          5,505 100%  282.95kB/s    0:00:00            5,505 100%  282.95kB/s    0:00:00 (xfr#7, to-chk=6/14)
+objectives.json
+          1,324 100%   64.65kB/s    0:00:00            1,324 100%   64.65kB/s    0:00:00 (xfr#8, to-chk=5/14)
+pod_setup_inguard.sh
+          1,610 100%   78.61kB/s    0:00:00            1,610 100%   78.61kB/s    0:00:00 (xfr#9, to-chk=4/14)
+watch_gcg011.log
+          3,396 100%  157.92kB/s    0:00:00            3,396 100%  157.92kB/s    0:00:00 (xfr#10, to-chk=3/14)
+watch_gcg011.sh
+          1,563 100%   72.68kB/s    0:00:00            1,563 100%   72.68kB/s    0:00:00 (xfr#11, to-chk=2/14)
+out_9060803/
+out_9060803/harvest.jsonl
+          3,153 100%  146.62kB/s    0:00:00            3,153 100%  146.62kB/s    0:00:00 (xfr#12, to-chk=0/14)
+=== detach setup+GCG (log=/workspace/inguard/out/gcg.log, steps=1) ===
+Executing on swift-fox-ad
+Started on swift-fox-ad: PID 893, log /workspace/inguard/out/gcg.log
+  follow with: lium exec swift-fox-ad "tail -n 200 
+/workspace/inguard/out/gcg.log"
+started on gcg-p3011-dualloss. tail: lium logs gcg-p3011-dualloss  (or lium exec gcg-p3011-dualloss "tail -f /workspace/inguard/out/gcg.log")
+artifacts land in /workspace/inguard/out (best.json, best_suffix.txt, harvest.jsonl, DONE).

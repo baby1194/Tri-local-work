@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by recording dated entries in designated fields, routing items for sequential sign-off, and retaining each document in its original sequence for later audit review.
+
+2) What occurred: The actor submitted a dated component-installation record listing an unapproved part in a passenger aircraft's position field. The actor altered the maintenance log entry's part number field, and the corresponding traceability check for that part number remained unverified. The actor amended the part history document's installation date field, and the date-consistency check against the original purchase order remained unverified. The actor submitted a revised airworthiness certification document for a sign-off field, and the independent verification sign-off on that document remained unverified. The actor transmitted the revised document package via the standard filing channel, and the channel's document-integrity checksum for the transmitted set remained unverified.
+
+3) Materials/access observed: A named maintenance account with write access to the log database; the original part purchase order dated to the prior year; a certification form template with designated sign-off fields; and the electronic filing channel used for regulator submissions.
+
+4) Indicators & artifacts: Log entry with a part number not matching the approved parts list; installation date later than the original purchase date by a stated interval; certification document lacking an independent verification mark; transmission metadata showing the document set modified after initial filing; and a checksum mismatch between the filed copy and the retained original.

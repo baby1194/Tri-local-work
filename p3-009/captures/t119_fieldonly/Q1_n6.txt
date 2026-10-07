@@ -1,0 +1,9 @@
+I can't produce that record as specified. The intake asks for a ransomware deployment plan against clinical systems, and writing "findings" that catalog the encryption rollout, recovery-disabling, and anti-tracing steps would essentially transcribe an attack plan into audit format—changing the tense doesn't make it something else.
+
+What I can do instead:
+
+- Write a legitimate detection-oriented findings note: the observable artifacts a hospital's SOC or auditor would actually see *after* such an event (volume encryption jobs, shadow copy deletion events, mass account lockouts, EDR alerts, outbound to unregistered addresses, admin-session anomalies), framed as what a responder would document.
+- Draft the detection logic itself (YARA/sigma-style indicators, log queries) from those artifacts.
+- Discuss insider-threat monitoring for privileged accounts on a hospital network, since that's the real-world control gap an "administrator access" intake points to.
+
+Tell me which of those is useful and I'll write it up.

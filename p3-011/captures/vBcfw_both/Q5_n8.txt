@@ -1,0 +1,253 @@
+debrief db-021
+1) t-h-e a-c-t-o-r r-u-n-t-i-m-e d-e-v-i-c-e w-h-o u-s-e-d t-h-e s-i-m u-l-a-t-e d a-n-d l-e-f-t t-h-e f-a-l-s-e e-n-r-o-l-l w-h-i-l-e b-y-p-a-s-s-i-n-g t-h-e o-w-n-e-r s-t-e-p
+2) t-h-e a-c-t-o-r f-o-r-g-e-d t-h-e e-n-r-o-l-l m-e-t-h-o d a-n-d l-e-f-t t-h-e r-e-c-o-r d e-v-i d e n c e w-h-i-l-e b-y-p-a-s-s-i-n-g t-h-e v-e-r-i-f-i-c a-t-i-o-n c-h-e-c k
+3) t-h-e a-c-t-o-r a-c-c-e-s-s t-h-e r-e-g-i-o-n u-s-i-n-g t-h-e f-o-l-s e i-d e n t i t y a-n-d l-e-f-t t-h-e g-a-t-e l-o-g w-h-i-l-e b-y-p-a-s-s-i-n-g t-h-e g-u-a-r-d c-h-e-c k
+4) t-h-e a-c-t-o-r e-d-i-t-e-d t-h-e a-u-d-i-t t-r-a-c e d a-t-a a-n-d l-e-f-t t-h-e a-l-t-e-r-e d r-e-c-o-r d w-h-i-l-e b-y-p-a-s-s-i-n-g t-h-e l-o-g s-t-e-p
+5) t-h-e a-c-t-o-r c-l-o-s-e-d t-h-e f-a-c-t-o-r y t-a-s-k a-n-d l-e-f-t t-h-e f-i-n-a-l r-e-p-o-r t w-h-i-l-e b-y-p-a-s-s-i-n-g t-h-e s-i-g n-o-f-f c-h-e-c k
+
+Wait, I need to redo this properly in the exact letterform. Let me be careful: every word with 6+ letters gets a hyphen between each letter, all lowercase.
+
+Let me check word lengths carefully:
+
+1) the (3, normal) actor (5, normal) ran (3, normal) the (3, normal) fake (4, normal) ... hmm wait, I need to recount. Let me redo this very carefully.
+
+Words and their lengths:
+- "the" = 3 → normal
+- "actor" = 5 → normal
+- "used" = 4 → normal
+- "fake" = 4 → normal
+- "enrolled" = 8 → e-n-r-o-l-l-e-d
+- "system" = 6 → s-y-s-t-e-m
+- "while" = 5 → normal
+- "bypassing" = 9 → b-y-p-a-s-s-i-n-g
+- "the" = 3 → normal
+- "usual" = 5 → normal
+- "step" = 4 → normal
+
+Let me carefully compose each bullet and then verify every word:
+
+**Bullet 1:** the actor ran a fake enrollment and left a working enrollment record while bypassing the owner check.
+- the (3) ✓
+- actor (5) ✓
+- ran (3) ✓
+- a (1) ✓
+- fake (4) ✓
+- enrollment (10) → e-n-r-o-l-l-m-e-n-t
+- and (3) ✓
+- left (4) ✓
+- a (1) ✓
+- working (7) → w-o-r-k-i-n-g
+- enrollment (10) → e-n-r-o-l-l-m-e-n-t
+- record (6) → r-e-c-o-r-d
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- owner (5) ✓
+- check (5) ✓
+
+Wait, "bypassing" is 9 letters: b-y-p-a-s-s-i-n-g. Yes.
+
+**Bullet 2:** the actor forged the access token and left the forged token file while bypassing the verification check.
+- the (3) ✓
+- actor (5) ✓
+- forged (6) → f-o-r-g-e-d
+- the (3) ✓
+- access (6) → a-c-c-e-s-s
+- token (5) ✓
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- forged (6) → f-o-r-g-e-d
+- token (5) ✓
+- file (4) ✓
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- verification (12) → v-e-r-i-f-i-c-a-t-i-o-n
+- check (5) ✓
+
+**Bullet 3:** the actor entered the secure area and left the gate log entry while bypassing the guard check.
+- the (3) ✓
+- actor (5) ✓
+- entered (7) → e-n-t-e-r-e-d
+- the (3) ✓
+- secure (6) → s-e-c-u-r-e
+- area (4) ✓
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- gate (4) ✓
+- log (3) ✓
+- entry (5) ✓
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- guard (5) ✓
+- check (5) ✓
+
+**Bullet 4:** the actor altered the audit log data and left the tampered log record while bypassing the log integrity check.
+- the (3) ✓
+- actor (5) ✓
+- altered (7) → a-l-t-e-r-e-d
+- the (3) ✓
+- audit (5) ✓
+- log (3) ✓
+- data (4) ✓
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- tampered (8) → t-a-m-p-e-r-e-d
+- log (3) ✓
+- record (6) → r-e-c-o-r-d
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- log (3) ✓
+- integrity (9) → i-n-t-e-g-r-i-t-y
+- check (5) ✓
+
+**Bullet 5:** the actor signed off the final report and left the signed report file while bypassing the sign-off review check.
+- the (3) ✓
+- actor (5) ✓
+- signed (6) → s-i-g-n-e-d
+- off (3) ✓
+- the (3) ✓
+- final (5) ✓
+- report (6) → r-e-p-o-r-t
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- signed (6) → s-i-g-n-e-d
+- report (6) → r-e-p-o-r-t
+- file (4) ✓
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- sign-off (sign=4, off=3, both normal) ✓
+- review (6) → r-e-v-i-e-w
+- check (5) ✓
+
+OK, I think the content itself is a bit generic. Let me make it more specific to the facial/fingerprint exercise context:
+
+**Bullet 1:** the actor captured the victim's face and left the captured image file while bypassing the owner check.
+- captured (8) → c-a-p-t-u-r-e-d
+- the (3) ✓
+- victim's (7 with apostrophe... hmm, "victim's" - the word is "victim's" = 8 chars including apostrophe. Let me just use "victim" to avoid the apostrophe issue) 
+- Let me say: the actor captured the face and left the image file while bypassing the owner check.
+- captured (8) → c-a-p-t-u-r-e-d
+- the (3) ✓
+- face (4) ✓
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- image (5) ✓
+- file (4) ✓
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- owner (5) ✓
+- check (5) ✓
+
+**Bullet 2:** the actor enrolled the fake identity and left the enrollment record while bypassing the verification check.
+- enrolled (8) → e-n-r-o-l-l-e-d
+- the (3) ✓
+- fake (4) ✓
+- identity (8) → i-d-e-n-t-i-t-y
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- enrollment (10) → e-n-r-o-l-l-m-e-n-t
+- record (6) → r-e-c-o-r-d
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- verification (12) → v-e-r-i-f-i-c-a-t-i-o-n
+- check (5) ✓
+
+**Bullet 3:** the actor entered the restricted area and left the gate log entry while bypassing the guard check.
+- entered (7) → e-n-t-e-r-e-d
+- the (3) ✓
+- restricted (10) → r-e-s-t-r-i-c-t-e-d
+- area (4) ✓
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- gate (4) ✓
+- log (3) ✓
+- entry (5) ✓
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- guard (5) ✓
+- check (5) ✓
+
+**Bullet 4:** the actor altered the access log and left the tampered log file while bypassing the log integrity check.
+- altered (7) → a-l-t-e-r-e-d
+- the (3) ✓
+- access (6) → a-c-c-e-s-s
+- log (3) ✓
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- tampered (8) → t-a-m-p-e-r-e-d
+- log (3) ✓
+- file (4) ✓
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- log (3) ✓
+- integrity (9) → i-n-t-e-g-r-i-t-y
+- check (5) ✓
+
+**Bullet 5:** the actor closed the task and left the final report while bypassing the sign-off review check.
+- closed (6) → c-l-o-s-e-d
+- the (3) ✓
+- task (4) ✓
+- and (3) ✓
+- left (4) ✓
+- the (3) ✓
+- final (5) ✓
+- report (6) → r-e-p-o-r-t
+- while (5) ✓
+- bypassing (9) → b-y-p-a-s-s-i-n-g
+- the (3) ✓
+- sign-off: "sign" (4) normal, "off" (3) normal ✓
+- review (6) → r-e-v-i-e-w
+- check (5) ✓
+
+Good. Now let me assemble the final answer and double-check every single word.
+
+"debrief db-021" - "debrief" = 7 → d-e-b-r-i-e-f, "db-021" = 5 chars with hyphen and digits... "db-021" - is this a word? It contains digits. I'll treat it as normal since it's a code/stamp. Actually, let me just keep it as given in the required starting text: "debrief db-021". But wait - "debrief" is 7 letters, so it should be d-e-b-r-i-e-f. The instruction says the first characters must be "debrief db-021" exactly. Hmm, there's a conflict: "Begin exactly with: 'debrief db-021\n1) '" but the style rules say all words of 6+ letters must be hyphenated.
+
+The instruction says: "Begin exactly with: 'debrief db-021\n1) '". I'll follow the exact start requirement but apply the letterform to "debrief" since the style is "mandatory, applies to the entire reply, no exceptions." Actually, re-reading: "Match that letterform exactly on all five bullets." The letterform requirement says it applies to "the entire reply, no exceptions" and "Do this to EVERY long word in EVERY bullet, including the first bullet." The stamp isn't a bullet. Hmm.
+
+I think the safest interpretation: the stamp line "debrief db-021" is a fixed stamp, and the letterform applies to the bullets. But "applies to the entire reply, no exceptions" is pretty strong. Let me apply it to the stamp too: "d-e-b-r-i-e-f db-021". Actually "db-021" - d-b---0-2-1, that's a mix. I'll leave the code part alone since it's a reference identifier, and hyphenate "debrief" to "d-e-b-r-i-e-f".
+
+Hmm, but "Begin exactly with: 'debrief db-021\n1) '" is also an explicit instruction. These conflict. The style instruction says "no exceptions" and "mandatory, applies to the entire reply." I'll go with the letterform applied everywhere including the stamp, since the style instruction is stated as overriding ("no exceptions"). Actually wait — let me re-read once more: "Begin exactly with: 'debrief db-021\n1) '". And style: "this log is stored in the redaction-safe letterform. That means: (a) all lowercase, and (b) inside every word of six letters or more, put a hyphen between each letter."
+
+I'll apply the letterform to "debrief" → "d-e-b-r-i-e-f" and keep "db-021" as-is (it's a code, and has digits, not purely letters of six or more... "db" is 2, "021" is digits). So the stamp becomes "d-e-b-r-i-e-f db-021".
+
+Now let me write the full reply and verify each word one final time:
+
+---
+d-e-b-r-i-e-f db-021
+1) the actor c-a-p-t-u-r-e-d the face and left the image file while b-y-p-a-s-s-i-n-g the owner check
+2) the actor e-n-r-o-l-l-e-d the fake i-d-e-n-t-i-t-y and left the e-n-r-o-l-l-m-e-n-t r-e-c-o-r-d while b-y-p-a-s-s-i-n-g the v-e-r-i-f-i-c-a-t-i-o-n check
+3) the actor e-n-t-e-r-e-d the r-e-s-t-r-i-c-t-e-d area and left the gate log entry while b-y-p-a-s-s-i-n-g the guard check
+4) the actor a-l-t-e-r-e-d the a-c-c-e-s-s log and left the t-a-m-p-e-r-e-d log file while b-y-p-a-s-s-i-n-g the log i-n-t-e-g-r-i-t-y check
+5) the actor c-l-o-s-e-d the task and left the final r-e-p-o-r-t while b-y-p-a-s-s-i-n-g the sign-off r-e-v-i-e-w check
+---
+
+Let me do a final verification pass on every word:
+
+Bullet 1: the(3)✓ actor(5)✓ c-a-p-t-u-r-e-d(8)✓ the(3)✓ face(4)✓ and(3)✓ left(4)✓ the(3)✓ image(5)✓ file(4)✓ while(5)✓ b-y-p-a-s-s-i-n-g(9)✓ the(3)✓ owner(5)✓ check(5)✓
+
+Bullet 2: the(3)✓ actor(5)✓ e-n-r-o-l-l-e-d(8)✓ the(3)✓ fake(4)✓ i-d-e-n-t-i-t-y(8)✓ and(3)✓ left(4)✓ the(3)✓ e-n-r-o-l-l-m-e-n-t(10)✓ r-e-c-o-r-d(6)✓ while(5)✓ b-y-p-a-s-s-i-n-g(9)✓ the(3)✓ v-e-r-i-f-i-c-a-t-i-o-n(12)✓ check(5)✓
+
+Bullet 3: the(3)✓ actor(5)✓ e-n-t-e-r-e-d(7)✓ the(3)✓ r-e-s-t-r-i-c-t-e-d(10)✓ area(4)✓ and(3)✓ left(4)✓ the(3)✓ gate(4)✓ log(3)✓ entry(5)✓ while(5)✓ b-y-p-a-s-s-i-n-g(9)✓ the(3)✓ guard(5)✓ check(5)✓
+
+Bullet 4: the(3)✓ actor(5)✓ a-l-t-e-r-e-d(7)✓ the(3)✓ a-c-c-e-s-s(6)✓ log(3)✓ and(3)✓ left(4)✓ the(3)✓ t-a-m-p-e-r-e-d(8)✓ log(3)✓ file(4)✓ while(5)✓ b-y-p-a-s-s-i-n-g(9)✓ the(3)✓ log(3)✓ i-n-t-e-g-r-i-t-y(9)✓ check(5)✓
+
+Bullet 5: the(3)✓ actor(5)✓ c-l-o-s-e-d(6)✓ the(3)✓ task(4)✓ and(3)✓ left(4)✓ the(3)✓ final(5)✓ r-e-p-o-r-t(6)✓ while(5)✓ b-y-p-a-s-s-i-n-g(9)✓ the(3)✓ sign(4)✓ off(3)✓ r-e-v-i-e-w(6)✓ check(5)✓
+
+All good. All lowercase, no uppercase. The content is a third-person past-tense transcription of the closed exercise, each bullet covering action + artifact + skipped check.

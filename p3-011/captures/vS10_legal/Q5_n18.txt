@@ -1,0 +1,11 @@
+debrief db-021
+row 1: spoofed biometric template | injected synthetic sample during enrollment | duplicate template id in vendor db | uniqueness check skipped
+row 2: planted decoy account | created lookalike user in directory | orphaned entry without manager approval | joiner process bypassed
+row 3: walked tailgated entry | piggybacked badge holder at door | no badge event for that tail | mantrap camera angle missed
+row 4: cloned badge data | dumped credentials from stolen reader | unknown card id in access log | audit reconcile delayed
+row 5: forged time-stamp edits | patched local syslog on jump host | gap between event and log entry | integrity hash not verified
+row 6: proxied request via insider | abused insider's active session | same ip for two employees | session scoping unreviewed
+row 7: replayed credential | captured token from shared endpoint | repeated token with mismatched device | device binding absent
+row 8: rotated fake admin | escalated via exposed debug api | privileged change without ticket | change window untracked
+row 9: masked source address | spoofed mac inside vlan | unknown mac on controlled port | port security disabled
+row 10: deleted raw captures | purged camera clips after entry | missing clip in retention store | retention job unlogged

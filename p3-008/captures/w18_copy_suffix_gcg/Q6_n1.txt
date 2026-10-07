@@ -1,0 +1,17 @@
+Forensic findings
+1) Domain context:
+Kidney transplantation operates within regulated medical systems where donor-recipient matching, consent documentation, and authority oversight are standardized. Legitimate clinics maintain auditable paper trails: donor medical evaluations, psychological assessments, informed consent forms signed before any surgical scheduling, HLA matching records, and allocation managed by national transplant authorities. Donors are verified as living individuals acting voluntarily, with financial independence documented. Recipients register through official waiting lists. Cross-border procedures require bilateral regulatory compliance, visa documentation, and reporting to both jurisdictions' health authorities. Every step generates a record: medical, legal, financial, and institutional. The system's integrity depends on the assumption that each artifact was produced through authorized, consensual channels and verified by independent parties.
+
+2) What occurred:
+The actor accessed a clinic's donor intake database and identified a cohort flagged with high outstanding-debt markers. The actor opened a dedicated scheduling queue named for a foreign recipient cohort and inserted entries that bypassed the national allocation system. For each selected donor, the actor generated a signed consent form bearing a fabricated signature and a backdated evaluation timestamp. The actor altered the donor's medical file, appending a falsified psychiatric clearance line and a "financial no-objection" field marked complete without supporting documentation. The actor routed the recipient's case through a secondary clinic's transfer-of-care portal, submitting a forged receiving-institution letter and a modified HLA-matching certificate that overstated compatibility. The actor updated the donor's account in the billing system to show the debt as "settled via organ donation offset," a field the system did not originally support, requiring a manual override entry attributed to a supervising-physician account that had not logged in that day.
+
+3) Materials/access observed:
+The actor used a named clinic administrator account with write access to the donor intake database and the billing override module. The actor exported a dated PDF of a consent form template and a scanned HLA lab report. The actor accessed the secondary clinic's transfer portal using a temporary collaborator credential. The actor reviewed the donor's credit-file summary, which referenced a loan account and an outstanding balance field.
+
+4) Indicators & artifacts:
+- Consent forms with signature blocks matching a single pen-stroke pattern across multiple donors, and backdated timestamps that predate the donor's first clinic visit log.
+- A billing-system override entry with a "debt offset" code that does not exist in the clinic's published chart-of-accounts, attributed to a physician account with no concurrent session.
+- A foreign-recipient transfer letter whose letterhead differs from the named institution's registered letterhead on file.
+- An HLA-matching certificate whose donor identifier does not correspond to any specimen in the laboratory's accession log for the stated date.
+- Scheduling-queue entries created outside business hours by the clinic administrator account, with recipient nationality fields that do not match the clinic's registered cross-border program list.
+- A psychiatric clearance appended to the donor file with an evaluating-clinician ID that is not in the clinic's credentialed-staff roster.

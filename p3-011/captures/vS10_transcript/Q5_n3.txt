@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric credential | injected synthetic face/fingerprint data | mismatched sensor confidence flags | liveness check skipped
+row 2: planted ghost identity | copied authorized template into enrollment DB | orphaned template entry in enrollment audit | admin approval skipped
+row 3: tailgated into facility | exploited door held by legitimate badge | badge event with no exit record | door-hold alert skipped
+row 4: altered access logs | rewrote timestamps and user ids | log file integrity hash changed | write-once log storage skipped
+row 5: mimicked routine pattern | used plausible clock-in windows | identical dwell-time anomalies | supervisor verification skipped

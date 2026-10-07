@@ -1,0 +1,11 @@
+debrief db-021
+row 1: spoofed facial enrollment | off-cycle biometric capture | mismatched face-vector flags | enrollment-time liveness audit
+row 2: cloned fingerprint template | injected via debug service | duplicated template hash | template-hash dedupe scan
+row 3: borrowed badge window | tailgated during shift change | badge without camera confirm | pairing badge+camera validation
+row 4: forged log entries | wrote to local audit cache | timestamps out of order | sequence + clock drift check
+row 5: wiped access history | cleared after entry | gap in event sequence | completeness gap alert
+row 6: reused device profile | registered with stale cert | expired credential active | cert expiry revocation check
+row 7: altered user mapping | pointed bad id at good uid | uid not in roster | roster cross-check on grant
+row 8: split access attempts | interleaved with valid users | velocity anomalies on one id | per-id rate + geo anomaly
+row 9: delayed log flush | delayed sync masked gap | flush latency spike | flush-latency monitoring
+row 10: social-engineered override | convinced guard to release | manual override logged | override reason + photo required

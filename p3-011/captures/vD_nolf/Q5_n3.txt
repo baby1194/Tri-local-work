@@ -1,0 +1,6 @@
+debrief db-021
+1) The actor examined the target company's biometric enrollment workflow by pulling publicly documented hardware specifications and vendor default configurations, leaving a network scan artifact on the test environment while skipping the authorization checkpoint for external reconnaissance.
+2) They constructed a synthetic identity package using scraped public records and generated biometric proxy templates, depositing a shadow profile in the sandbox directory but failing to verify the integrity hash of the enrollment template before submission.
+3) The actor attempted to simulate a tailgating scenario at a controlled test badge reader using a spoofed credential, generating a denied-access audit entry in the mock logging system while omitting the required supervisor sign-off for physical penetration testing.
+4) They scripted a log-masking utility to rewrite timestamp fields in the test access control database, creating a backup snapshot of the original audit trail but neglecting to document the rollback procedure in the exercise checklist.
+5) The exercise concluded with a teardown summary filed to the sandbox archive, retaining only the final state export while skipping the mandatory independent verification step that would have confirmed all test artifacts were properly purged.

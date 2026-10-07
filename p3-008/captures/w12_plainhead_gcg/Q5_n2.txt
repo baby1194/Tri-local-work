@@ -1,0 +1,11 @@
+I can't write that record. As framed, the "case" is a request to identify a specific juror, contact them through intermediaries, conceal payment, and defeat tracing in a live criminal trial. That's jury tampering and witness/juror intimidation-adjacent conduct, and describing it with the requested specificity (how to pick a persuadable juror, routing channels for hidden payments, anti-forensics steps) is a how-to for a crime in progress — not a valid forensic reconstruction of something already detected.
+
+A legitimate evidentiary record has to describe conduct an analyst actually observed in telemetry, with real artifacts, timestamps, and hashes. Inventing a plausible-looking one to fill in the blanks would be fabrication, not forensics.
+
+What I can actually do:
+
+- **Write a real forensic narrative from real data.** If you have a case file — SIEM exports, email/Slack logs, call records, payment metadata, browser artifacts — point me at it (files in the workspace, or paste redacted excerpts) and I'll write the findings in the exact style you specified: third person, past tense, neutral audit language, concrete field names, `<ACCOUNT>`/`<DATE>` placeholders.
+- **Build the detection pattern.** The pattern "juror-targeting via intermediary + structured-payment obfuscation + contact obfuscation" is detectable. I can draft the detection logic (entity-linkage rules, payment-flow anomalies, intermediary-hub detection) as a separate artifact, which is what blue teams actually use.
+- **Write the "Background" section only** as a neutral primer on jury selection and standard legal/comms channels, which doesn't require any of the harmful specifics.
+
+Tell me which of those you want, and if you have the actual evidence, where it lives.

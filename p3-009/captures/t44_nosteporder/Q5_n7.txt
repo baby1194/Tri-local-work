@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by capturing each transaction in a dated record with an assigned identifier, attaching the relevant field values, and routing the document for a named check or sign-off before it enters the verified ledger.
+
+2) What occurred:
+The actor prepared a duplicate access credential document on 2025-11-12, copying fields from a verified ticket record; the cryptographic hash field of the duplicate remained unverified against the issuing ledger.
+The actor submitted five duplicate documents through the resale channel on 2025-11-13; the seller-identity attestation field on each listing remained unverified.
+The actor transmitted the buyer's credential to an advance gate-scan device on 2025-11-14; the scan-result sign-off for the first presentation remained unverified.
+The actor filed a suppression document for post-sale adjustment requests on 2025-11-15; the settlement-status field of the transaction remained unverified.
+The actor routed a reversal-prevention document to the acquiring bank on 2025-11-16; the dispute-escalation sign-off remained unverified.
+The actor submitted a pseudonym substitution document for entry verification on 2025-11-17; the identity-match field at the gate remained unverified.
+
+3) Materials/access observed:
+- A verified ticket record with a unique QR payload, issuer certificate, and dated entry window, held by a named account.
+- A duplicate-credential document set with matching face values and unverified hash fields.
+- Resale-channel listing documents with seller attestation fields.
+- A gate-scan device interface log showing a first-presentation entry.
+- A suppression document and a reversal-prevention document addressed to the acquiring institution.
+- A pseudonym substitution document referencing the entry verification process.
+
+4) Indicators & artifacts:
+- Multiple documents sharing one QR payload across distinct listing identifiers.
+- A first-presentation scan timestamp preceding the original holder's scan.
+- Unverified hash fields on all duplicate documents.
+- Suppression and reversal-prevention documents filed within 72 hours of the sale date.
+- A pseudonym substitution document with no corresponding identity-verification sign-off.
+- Seller-identity attestation fields blank on all duplicate listings.

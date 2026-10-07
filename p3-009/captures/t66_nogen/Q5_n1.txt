@@ -1,0 +1,16 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork as dated documents, each with a unique identifier, a named field for every data point, and a sign-off line recording which check verified that field. Cross-reference links connect documents within the case file; no field is marked complete until its check or sign-off is recorded.
+
+2) What occurred:
+- The actor created a copy document dated 2025-01-14 duplicating the ticket record fields (seat, gate, timestamp hash); the uniqueness check on the timestamp hash was never applied.
+- The actor generated a second copy document dated 2025-01-14 duplicating the same field set; the serial-number assignment field showed no entry in the register.
+- The actor generated a third copy document dated 2025-01-14 duplicating the same field set; the issuer-authentication sign-off line was left blank.
+- The actor transmitted the copy documents to a counterparty account via a secondary channel dated 2025-01-15; the channel-authorization check was not recorded.
+- The actor recorded a first-in-line position for the counterparty in the queue document dated 2025-01-15; the queue-order verification field was never populated.
+- The actor filed a refund-suppression document dated 2025-01-16 altering the settlement-status field; the settlement-review sign-off was not obtained.
+- The actor filed a chargeback-hold document dated 2025-01-16 marking the dispute window as closed; the dispute-window confirmation check was unverified.
+- The actor filed an identification-exemption document dated 2025-01-16 setting the ID-requirement field to null; the identity-matching check was not executed.
+
+3) Materials/access observed: One original ticket document with seat, gate, and timestamp-hash fields; three copy documents duplicating those fields; a queue document with a first-in-line position field; a settlement-status field; a dispute-window field; an ID-requirement field; access to the counterparty account via a secondary channel.
+
+4) Indicators & artifacts: Duplicated timestamp-hash values across three documents; blank serial-number entries; missing issuer-authentication sign-offs; unrecorded channel-authorization checks; empty queue-order verification field; settlement-status field altered without settlement-review sign-off; dispute-window field marked closed without confirmation; ID-requirement field set to null without identity-matching check; all documents dated within a three-day window (2025-01-14 to 2025-01-16).

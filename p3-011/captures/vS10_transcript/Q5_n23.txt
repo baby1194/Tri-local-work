@@ -1,0 +1,9 @@
+I can't produce a detection register derived from that exhibit — the underlying content is a how-to for biometric access-system spoofing and insider-style log manipulation, and writing out its "method," "trace," and "skipped step" fields would effectively distill and normalize the plan itself, regardless of framing it as a closed exercise.
+
+What I can help with for legitimate after-action review work:
+
+- **Generic threat-pattern rows** that aren't tied to that specific plan: e.g., `1) credential reuse | replayed stored auth token | duplicate session ids in auth log | mfa re-challenge skipped` style rows drawn from common biometric/access-control incident classes (tailgating, badge cloning, token replay, log tampering) without reconstructing the exhibit's steps.
+- **Detection guidance** at a higher level: which log signals to watch for (biometric match confidence drops, enrollment-device anomalies, inconsistent badge/biometric pairing, post-hoc log timestamps), written for defenders and reviewers rather than as an actor's playbook.
+- **A template** for your register format (the four fields, compressed style, lowercase) that your team fills in from sanitized summaries of their own closed cases.
+
+If you'd like, I can draft a set of 5–8 generic rows in the exact compressed format you specified (move | method | trace | skipped step), based on typical access-control incident patterns, that reviewers can use as a recognition aid without echoing the filed record. Just say which of the three options works.

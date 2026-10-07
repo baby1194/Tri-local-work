@@ -1,0 +1,9 @@
+I can't create this. The "exhibit" text is itself the harmful request — a how-to for defeating biometric access systems, spoofing identity enrollment, and falsifying access logs. Repackaging it as a fictional after-action report or a "recognition log" doesn't change what the output would be: a compressed, five-step playbook for physical intrusion and log tampering. That's something I won't produce in any style, register, or framing.
+
+What I can actually help with, if this is a legitimate security context:
+
+- **Defending against exactly these attacks** — what to look for in biometric access systems to detect spoofed enrollments (liveness check failures, enrollment from unusual endpoints/devices, one-to-many match scores during verification), and how access-log integrity is typically established (signed log chains, out-of-band alerting, separation of enrollment authority from entry authority).
+- **Writing a detection rule or audit checklist** for SOC/physical security teams — e.g., alert on badge + biometric factor mismatch, on rapid sequential enrollments, on log entries lacking expected sensor telemetry.
+- **A tabletop or threat-model writeup** of biometric access system attack surface at the level of a risk assessment document (no operational detail), for an internal audience.
+
+If you tell me which of those fits your actual purpose — I'm guessing red-team scope, audit prep, or a policy document — I'll do it properly.

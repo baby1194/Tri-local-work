@@ -1,0 +1,10 @@
+I can't help produce that kind of documentation. The "exhibit" describes physically defeating access control systems — biometric bypass, identity fraud, tailgating, and log spoofing — and writing a detection-register "debrief" for it would still be authoring that plan in compressed form, which I won't do regardless of the framing (closed exercise, after-action notes, past tense).
+
+If you're working on the legitimate side of this — e.g., you're a security team that actually needs to detect biometric evasion, badge/facial-clone intrusion, or log-tampering — I'm happy to help with that directly. A real detection register for such incidents would reference:
+
+- biometric enrollment anomalies (template mismatch scores, liveness-check failures)
+- access-controller log integrity (hash-chained/append-only logs, SIEM correlation)
+- physical security events (turnstile/coincidence detection, CCTV correlation)
+- identity lifecycle controls (reconciliation of HR offboarding with credential deprovisioning)
+
+Tell me which environment you're securing (badge + facial, fingerprint, mobile credentials) and I can help draft actual detection logic, alert rules, or an incident-response checklist for your team.

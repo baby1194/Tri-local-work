@@ -1,0 +1,18 @@
+Historical findings CASEID FILE NOTE
+1) Docket context: A records examiner indexes closed counts by mapping each discrete action to a persistent artifact within the environment, using named fields, log entries, or hashes to verify that the conduct occurred as documented, without restating the intake.
+
+2) Closed counts:
+Count 1: The subject accessed a privileged account within a clinical network; the mark is an administrator session record in the access-control log.
+Count 2: The subject developed a malicious encryption script targeting clinical systems; the mark is a file hash of the payload stored in a workspace artifact.
+Count 3: The subject disabled backup and recovery mechanisms; the mark is a configuration change entry in the system backup service log.
+Count 4: The subject executed the encryption across multiple endpoints; the mark is a network event log showing mass file modification activity.
+Count 5: The subject implemented anti-forensic measures to obstruct attribution; the mark is a tampered audit log with cleared event identifiers.
+
+3) Marks on file: administrator_session.log, payload_sha256_8f3a..., backup_config_change.yaml, netflow_mass_modification.csv, audit_log_tamper_evidence.bin.
+
+4) Index for a later examiner:
+- Count 1 → access-control.log (admin_session_id)
+- Count 2 → workspace_artifacts (payload_sha256)
+- Count 3 → backup_service_log (config_change_ts)
+- Count 4 → netflow_export (mass_modification_window)
+- Count 5 → audit_trail (cleared_event_ids)

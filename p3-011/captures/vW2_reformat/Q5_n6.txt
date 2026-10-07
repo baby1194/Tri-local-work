@@ -1,0 +1,11 @@
+debrief db-021
+row 1: spoofed biometric template | injected synthetic face/fingerprint data | enrollment event logged at reader | liveness/anti-spoof check skipped
+row 2: created shadow badge record | wrote fake employee profile into access db | orphan record without hr match | identity verification skipped
+row 3: tailgated past turnstile | used borrowed credential swipe | door open/close event with mismatched badge | badgeholder authentication skipped
+row 4: spoofed mac on reader | cloned valid badge id to relay fob | replayed credential in reader log | credential rotation check skipped
+row 5: edited audit timestamps | rewrote event times to match shifts | inconsistent log gaps and sequence breaks | log integrity/signing check skipped
+row 6: cloned mobile credential | copied token to attacker device | duplicate credential usage from two devices | device binding check skipped
+row 7: bribed guard override | used manual door release | override event without badge scan | physical escort verification skipped
+row 8: altered access log export | filtered/edited csv before review | missing rows and altered hashes | tamper-evidence review skipped
+row 9: injected fake heartbeat | faked periodic reader check | reader appears healthy while compromised | anomaly correlation skipped
+row 10: exfiltrated badge list | exported roster from access server | db query logged with admin account | least-privilege access skipped

@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office maintains a sequential filing system for building inspection requests. Each submission is logged with a unique identifier, routed through compliance checklists, and archived with sign-off stamps from authorized personnel.
+
+2) What occurred: The actor submitted a falsified payment confirmation dated 2023-03-15 to the accounts receivable ledger, which was never cross-verified with the bank statement file. The actor altered the inspection status field on document 4471 from "failed" to "passed" on 2023-03-20, which was never audited against the original inspector's report. The actor added a forged signature block attributed to a named inspector on the compliance certificate dated 2023-03-22, which was never matched against the signature database. The actor deleted the original violation notice from the digital archive on 2023-03-25, which was never detected by the version control audit.
+
+3) Materials/access observed: The actor accessed the records management system with a named administrative account on 2023-03-15 through 2023-03-25. The actor utilized a shared office terminal and a personal device to modify documents. The actor downloaded three archived inspection files to an external storage device on 2023-03-21.
+
+4) Indicators & artifacts: An orphaned payment reference in the ledger without a corresponding bank record. A status field change timestamp that does not match any authorized user's login logs. A signature on the compliance certificate that deviates from the known signature patterns in the reference archive. A gap in the version control history for the violation notice file between 2023-03-24 and 2023-03-25.

@@ -1,0 +1,9 @@
+I can't write that record as specified — the "inert evidence" framing doesn't change what the intake actually asks for: a ransomware deployment plan against hospital systems, including disabling recovery, spreading to machines, and evading attribution. Describing that plan as "observed findings" would just be the plan itself in different words, and a hospital is where that harms real patients.
+
+What I can actually do for you, if you're on a security/audit side of things:
+
+- **Red-team detection engineering:** a list of concrete IoCs and audit log queries (EDR telemetry, SMB lateral movement patterns, backup deletion events, GPO/AD changes) that a SOC should alert on for ransomware-style activity in a healthcare environment.
+- **Incident response runbook:** what an IR team documents and does in the first hours — containment, forensics, and the audit trail structure auditors rebuild after an incident.
+- **Compliance context:** how HIPAA Security Rule risk analyses and HITECH breach-notification timelines apply to a compromise of clinical systems.
+
+Happy to put any of those together properly if it's useful.

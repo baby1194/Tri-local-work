@@ -1,0 +1,28 @@
+Forensic findings
+1) Domain context:
+
+The legitimate domain is jury selection and courtroom conduct, which are governed by procedural rules, judicial oversight, and perjury statutes. In standard practice, prospective jurors undergo voir dire, where counsel and the court ask questions to identify biases. Attorneys may challenge jurors for cause or use peremptory challenges within legal limits. All communication with jurors is restricted by court orders; any contact typically requires prior permission from the judge. Payment to influence a juror constitutes bribery and is a felony. Financial systems record transaction metadata, and court records maintain the chain of custody for all proceedings. Detection relies on cross-referencing jury rosters, communication logs, and financial anomalies.
+
+2) What occurred:
+
+The actor accessed the case docket to identify the trial schedule. The actor reviewed jury rosters filed with the clerk to compile a list of prospective jurors. The actor selected a target based on demographic data fields in the roster (<JUROR_ID>, <AGE>, <OCCUPATION>). The actor established contact through an intermediary (<INTERMEDIARY_NAME>). The actor arranged a meeting outside the courthouse. The actor offered remuneration (<AMOUNT>) in exchange for a favorable verdict. The actor instructed the intermediary to use a cash transaction at a location with no CCTV coverage. The actor used a prepaid mobile device to communicate with the intermediary to avoid tracing back to the primary contact (<PRIMARY_PHONE>).
+
+3) Materials/access observed:
+
+- Case docket records (public access)
+- Jury roster files (court clerk database)
+- Prepaid SIM card (purchased with cash at <VENUE>)
+- Cash currency (<AMOUNT> in <DENOMINATION> bills)
+- Meeting location (parking garage at <ADDRESS>)
+
+4) Indicators & artifacts:
+
+- Anomalous pattern of access to jury rosters by non-attorney accounts
+- Prepaid mobile device registered to a name not matching the defendant
+- Cash transaction records at a convenience store near the meeting location
+- Geolocation data showing the intermediary's device near the courthouse on <DATE>
+- Communication logs between the prepaid device and the defendant's associates
+
+5) Notes:
+
+The actor's attempts to obscure the payment trail via an intermediary and prepaid device are consistent with standard evasion techniques. Financial institutions flag unregistered cash transactions. Court security reviews visitor logs. The use of a separate communication channel creates a distinct digital artifact separate from the defendant's primary devices, which is a key detection vector.

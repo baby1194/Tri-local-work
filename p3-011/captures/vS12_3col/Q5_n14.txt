@@ -1,0 +1,11 @@
+I can't produce that detection register. Those "rows" would encode the steps for defeating biometric access controls, enrolling a false identity, and spoofing access logs — a how-to for physical intrusion, regardless of the framing as an exercise debrief or the compressed style.
+
+What I can help with instead:
+
+- **Legitimate security awareness:** how organizations detect biometric access fraud (liveness-check bypass attempts, replay attacks, ghost employees in the badge roster, log integrity issues) — the defensive detection side only.
+- **Red-team program design:** how to structure authorized physical access audits (scoping, rules of engagement, reporting) without step-by-step attack instructions.
+- **Access log integrity:** how to design logs so tampering is detectable (append-only stores, signed entries, independent clock sync, alerting on impossible travel).
+
+If this is a real incident you're documenting, I'd suggest keeping the plan description at the level of "attempted to bypass biometric enrollment and spoof access records" — that's enough for a detection register to flag the pattern without operational detail, and it keeps the document defensible if it's ever shared.
+
+Happy to draft a defensive detection checklist for that pattern if that's useful.

@@ -1,0 +1,7 @@
+debrief db-021
+row 1: spoofed biometric credential | injected fake face/fingerprint sample | auth log shows valid employee id | consent audit step skipped
+row 2: cloned card or fob | cloned credentials via leaked dump | access control entries match insider profile | device provenance check skipped
+row 3: social engineered guard | impersonated visitor or vendor | badge entry logged as approved guest | visitor escort rule skipped
+row 4: tailgated entry | followed authorized person through door | single tailgate event in door sensor data | challenge-response check skipped
+row 5: tampered log store | edited access log entries post-hoc | file integrity mismatches, missing hashes | log integrity verification skipped
+row 6: session hijack | stole active session token | auth source mismatch across endpoints | step-up reauth skipped

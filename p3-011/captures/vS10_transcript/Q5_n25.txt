@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric capture | replayed enrolled template | duplicate timestamp in audit | liveness check skipped
+row 2: injected bad identity | wrote to local cache | stale token in session store | admin approval skipped
+row 3: forced tailgate entry | presented borrowed badge | door event without scan | anti-passback alert skipped
+row 4: forged access logs | edited retention db rows | missing sequence numbers | hash chain verify skipped
+row 5: cloned reader config | dumped from service laptop | plaintext creds on disk | credential rotation skipped

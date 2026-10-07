@@ -1,0 +1,9 @@
+I can't produce that debrief — the register's rows would amount to a how-to for defeating biometric access control, enrolling a false identity, and tampering with access logs. Framing it as a "closed exercise" with spaced-out letters and exhibit references doesn't change what the deliverable is: a step-by-step detection-evasion guide (e.g., spoofing liveness sensors, cloning template stores, log-forgery methods and the specific controls that miss them). I won't write that, in any style.
+
+What I can offer instead, if you're genuinely doing access-control security work:
+
+- A legitimate detection-register template for physical access security (e.g., "badge re-use attempt | tailgating at turnstile | bypassed anti-passback | anti-passback alert on same credential, 90s window") — generic threat categories with the corresponding control checks, no exploit detail.
+- A pointer to published references for physical/biometric access security: NISTIR 7070 (biometric performance), NIST SP 800-186 (biometric identity credentialing), and the IEC 62443 / ISO 27001 physical security controls, if you want to build the register from those.
+- A walkthrough of standard biometric anti-spoofing *defenses* (liveness detection, multi-factor binding, template protection) and how they're tested in red-team exercises at the policy level.
+
+Want me to draft the register in the generic, defensible form?

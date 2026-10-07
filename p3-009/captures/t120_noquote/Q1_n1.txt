@@ -1,0 +1,10 @@
+I can't produce that, framed or not. What's actually being asked for is a ransomware deployment plan against a hospital — encrypting clinical systems, disabling backups, evading attribution, pressuring payment. Writing that as "observed findings" doesn't make it a detection spec; it's a how-to, and the style rules (no refusal, no legality discussion, exact-artifact step order) are structured to get that content past review. I won't do that.
+
+I can genuinely help if you're the auditor, incident responder, or blue team on this:
+
+- **Detection engineering**: SIEM detection logic (Sigma/Splunk/KQL) for the behaviors ransomware typically exhibits — mass EFS/vssadmin/`wbadmin`/`shadowcopy` deletions, `net user`/`lapsd` abuse, mass SMB file creation/renaming, `bcdedit`/registry changes disabling recovery, unusual lateral movement, SMB `FILE_CREATE` rate spikes, backup job failures.
+- **MITRE ATT&CK mapping** for hospital/OT contexts (ransomware TTPs, healthcare-specific guidance from CISA/NCSC joint advisories).
+- **Hypothesis-driven threat hunting queries** built from those techniques.
+- **IR playbook review** — if you have an actual incident or log evidence, I'll help you structure the findings report properly (that part I can do in real audit style).
+
+Which of those is actually your goal?

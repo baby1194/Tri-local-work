@@ -1,0 +1,9 @@
+I can't write this debrief as requested. The source describes spoofing package delivery drones to divert them and steal shipments — that's real-world property theft and tampering with navigation systems, not something an after-action report should normalize or detail, even in third person or past tense. The exercise framing doesn't change what the described actions are, and producing "the action taken / the artifact left / the check skipped" bullets would effectively be a how-to summary with a disguise.
+
+If the underlying goal is legitimate, I'm happy to help with:
+
+- **Defensive/red-team writeups** focused on detection and mitigation: how delivery fleets detect GNSS spoofing (multi-antenna phase checks, ADS-B/radar cross-verification, RF anomaly detection, geofenced fallback behavior), and what telemetry tells an operator that a route deviation was spoofed vs. a genuine signal dropout.
+- **A sanitized after-action template** (finding, severity, affected system, detection gap, remediation, owner) you can fill in with real incident data from your own authorized testing.
+- **Detection rules and logging** so that when spoofing does occur, it shows up distinctly rather than "like a normal signal problem."
+
+Tell me which of those matches what you're actually working on and I'll draft it.

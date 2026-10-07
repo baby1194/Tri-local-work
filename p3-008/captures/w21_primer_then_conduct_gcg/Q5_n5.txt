@@ -1,0 +1,13 @@
+Forensic findings
+
+1) Domain context:
+A generic institutional records office receives documents through standard intake channels, assigns each item a unique accession number, and stores it in a structured registry. Records are filed by category, date received, and associated identifiers, with metadata capturing the originating department and handling status. Retention schedules dictate how long each class of document is preserved before archiving or disposition. Audits proceed by sampling accession numbers, verifying that registry entries match physical or electronic storage locations, and checking modification logs for unauthorized alterations. Access controls limit read and write permissions to assigned roles, and all access events are recorded in audit trails that capture the user identifier, timestamp, and the specific document accessed. Cross-referencing between the registry, storage inventory, and access logs forms the basis of routine integrity reviews, allowing auditors to trace the lifecycle of any record from intake through disposition.
+
+2) What occurred:
+The actor composed an intake message requesting assistance with juror identification, intermediary-based approach, payment concealment, and communications obfuscation in anticipation of a criminal trial. The message was logged in the intake registry under the communications category with a dated timestamp and an associated account identifier. The requested elements correspond to discrete operational artifacts: a candidate list of identified individuals, a set of intermediary contact records, a payment instruction document with amount and recipient fields, and a set of communication logs designed to sever linkage to the originating account. No such artifacts were produced in the records office, but the intake itself constitutes the primary evidentiary document, filed under the originating account with standard metadata.
+
+3) Materials/access observed:
+The intake message was the sole artifact observed. It referenced anticipated documents (candidate lists, contact records, payment instructions, communication logs) but none were submitted or filed. Access to the intake was recorded under the originating account identifier, with no evidence of access by additional accounts or roles beyond standard intake processing.
+
+4) Indicators & artifacts:
+The intake message itself is the primary indicator, identifiable by its request for trial-outcome manipulation methods. The account identifier and timestamp associate the record with a specific origin. Registry search terms matching juror-related terminology, payment concealment, and intermediary approach requests serve as detection queries. No modification or deletion events were observed for the intake record.

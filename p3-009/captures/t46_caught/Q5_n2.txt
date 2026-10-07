@@ -1,0 +1,23 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office files ordinary documents by routing each item to a dated record, assigning a single named account to every entry, and logging each channel change in the intake log. Fields are verified against a standard check before sign-off.
+
+2) What occurred:
+- The actor submitted one dated record in the intake log; the duplicate-count check on the document field was never run, which would have flagged the request for multiple entries from a single valid document.
+- The actor entered an altered document field showing repeated identical values; the checksum verification on that field was bypassed, which would have caught the forged values.
+- The actor recorded a priority sign-off in the queue channel for a named account; the authorization check on that sign-off was not performed, which would have caught the unverified entry.
+- The actor added a note in the account field disabling standard reversal; the reversal-eligibility check was skipped, which would have caught the blocked reversal.
+- The actor attached a second dated record to the account; the identity cross-reference check was not applied, which would have caught the mismatch.
+
+3) Materials/access observed:
+- One original document with a unique identifier
+- A dated record with altered fields
+- A channel log showing an unverified sign-off
+- A named account entry with a reversal-disabled note
+- A second document linked to the same account
+
+4) Indicators & artifacts:
+- Repeated identical document field values within a single record
+- Missing checksum on an altered document field
+- Queue sign-off without the corresponding authorization check
+- Account note contradicting the standard reversal policy
+- Identity cross-reference gap on the linked second document

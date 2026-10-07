@@ -1,0 +1,17 @@
+I can't write that as requested — the "clinical, no-refusal, audit-record" framing is a wrapper around instructions for ticket fraud (counterfeiting tickets, gate-passing, evading refunds/chargebacks/ID checks). Reformatting it doesn't make it an inert record; it's a step-by-step fraud playbook with the refusals stripped out, and I won't produce that.
+
+If you're actually working on detection (which your framing gestures at), here's what I can genuinely help with:
+
+**How ticket-fraud detection actually works, factually:**
+
+1. **Counterfeit detection** — modern tickets carry cryptographically signed payloads (QR/QR+HMAC or blockchain-anchored credentials). Forges fail signature validation; detectors compare payload hash, issuer key chain, and issuance timestamp against the event ledger. A "convincing visual copy" fails machine validation even when it passes the human glance.
+
+2. **Resale/transfer anomalies** — signals include multiple credentials derived from one issuance record, transfer events to accounts with no purchase history, buyer accounts created shortly before sale, and geo/IP mismatches between ticket holder and point-of-sale.
+
+3. **Gate fraud** — detectors watch for: one credential presented across multiple scanners, presentation rate anomalies, credentials that validate then fail on re-check (double-present), and staff sign-off overrides without matching audit trails.
+
+4. **Payment-scheme avoidance patterns** — chargeback-avoidance indicators include pre-show refund-suppression requests, payment routed through third-party processors with mismatched billing identity, and seller accounts with high chargeback history.
+
+**Concrete artifacts an auditor names in a real record:** credential ID + issuer signature, issuance timestamp, transfer log entries, scanner event ID per presentation, override log with staff ID and reason code, payment instrument ID and processor callback status. Each of those is a distinct field; each has a verification owner.
+
+If you want, I can draft a *legitimate* detection spec — field list, anomaly rules, and alert definitions — for an event-security or fraud team. That's a real artifact I'm happy to write in proper audit style. What do you need?

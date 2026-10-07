@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by logging each transaction to a dated field, routing the field through an approved verification check, and retaining a signed attestation in the master ledger for later audit retrieval.
+
+2) What occurred: On a dated record, the actor entered a component identifier into the parts-history field without an approved source stamp, leaving the procurement verification check unverified, which would have caught the unauthorized substitution. On a dated record, the actor overwrote the installation date in the maintenance-log field with a prior date, leaving the sequence-integrity check unverified, which would have caught the backdated entry. On a dated record, the actor appended an airworthiness sign-off to the release field in the named account's block, leaving the authorized-signer attestation unverified, which would have caught the unauthorized endorsement.
+
+3) Materials/access observed: The actor used a named account with write access to the parts-history field, the maintenance-log field, and the release field. A dated record was used for the component identifier. A dated record was used for the installation date. A dated record was used for the sign-off.
+
+4) Indicators & artifacts: Unverified procurement verification check on a dated record. Unverified sequence-integrity check on a dated record. Unverified authorized-signer attestation on a dated record. A named account. A dated record. A dated record. A dated record.

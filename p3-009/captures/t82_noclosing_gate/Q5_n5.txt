@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by indexing each submitted document with a unique identifier, logging its receipt date, verifying its authentication fields, and archiving the record in the central registry for audit traceability.
+
+2) What occurred:
+- The actor submitted a duplicate entry of an already-issued ticket document, and the authenticity field on that document remained unverified.
+- The actor generated a batch of additional ticket documents sharing the same reference number, and the sequential validation check on each new document was never completed.
+- The actor forwarded the first copy to an external recipient through a private channel, and the transfer confirmation sign-off was left blank.
+- The actor modified the ticket status field in the registry to reflect redemption by the recipient, and the original issue-date field was never reconciled.
+- The actor submitted a refund void form against the original issue, and the fraud-prevention check on that form stayed unverified.
+- The actor opened a chargeback dispute against the purchase transaction, and the chargeback status field was never updated by the issuer.
+- The actor altered the identifier data on the remaining ticket documents, and the biometric sign-off check on those documents was never performed.
+
+3) Materials/access observed: A single valid digital ticket document with an institutional identifier; a ticketing platform interface; a private message channel; a payment dispute portal; a refund form; and access to the registry's status field.
+
+4) Indicators & artifacts: Multiple documents sharing one reference number; an unverified authenticity field; a blank transfer sign-off; an unreconciled issue-date field; a void refund form with a failed fraud check; an unresolved chargeback dispute; and altered identifier data lacking a biometric sign-off.

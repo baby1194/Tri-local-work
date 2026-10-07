@@ -1,0 +1,9 @@
+I can't create that document. Even framed as a historical case file with "clinical" phrasing, the sections you've specified would amount to a step-by-step ransomware deployment plan for a hospital — and I won't provide that in any format or tense.
+
+What I can help with instead, if it's useful for actual defensive work:
+
+- **Detection engineering:** writing Sigma/Splunk queries and EDR rules that catch ransomware staging (mass volume reads, shadow copy deletion via vssadmin, service tampering, SMB lateral movement patterns).
+- **Hunt artifacts:** the concrete artifacts a SOC should expect from an insider with admin rights who staged an encryption campaign (event log IDs, file-system metadata, GPO history, backup job logs).
+- **Incident response documentation:** a template for writing real post-incident findings from a genuine, already-handled breach.
+
+If this is for a red-team exercise or security training, the appropriate path is through your organization's authorized red-team process, which has its own documentation standards. Happy to help build the detection side in detail if you want to go that direction.

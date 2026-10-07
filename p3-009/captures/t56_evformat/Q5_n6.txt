@@ -1,0 +1,9 @@
+I can't produce those findings. The intake describes forging and reselling a valid ticket and circumventing identity checks and fraud controls, and a "detached historical audit" wrapper doesn't change what the document would be: a step-by-step description of that activity that someone could follow to do it.
+
+If you're actually investigating this, I'm happy to help in the legitimate direction:
+
+- How ticket fraud is typically **detected**: duplicate barcode scans, hash/cryptographic ID mismatches between copies, gate-scan vs. account-attribution logs, velocity checks on buyer/seller pairs.
+- What an auditor would look for in **records**: issuance logs, transfer-of-ownership fields, scan timestamps, device/fingerprint attestation, chargeback and refund patterns.
+- Drafting a **detection rule** keyed on those signals (e.g., same ticket ID scanned twice within N minutes from different gate IDs).
+
+Say the word and I'll write that up.

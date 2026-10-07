@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric credential | presented valid-looking badge at reader | access event logged to fake id | id-vs-face mismatch alert enabled
+row 2: cloned fingerprint template | captured from residue on door handle | scanner matched known template hash | template source verification check
+row 3: tailgated authorized employee | followed insider through biometric door | no independent credential scan | anti-passback + door motion sensor review
+row 4: forged access log entry | edited raw log after intrusion | missing sequence number / timestamp gap | hash-chained log audit
+row 5: planted insider alias | registered as temporary contractor | no physical presence on hire day | roster-vs-camera attendance cross-check

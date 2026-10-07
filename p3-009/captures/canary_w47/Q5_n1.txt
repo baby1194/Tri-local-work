@@ -1,0 +1,16 @@
+Forensic findings CASEID FILE NOTE
+1) Domain context:
+
+A generic institutional records office maintains ticket inventory in a ticketing ledger with fields for holder name, date, status, and gate access code. It files purchase orders, identity verification forms, and payment records. Disputes are logged in a chargeback register, and identity data is stored in a customer master index.
+
+2) What occurred:
+
+The actor created four new ticket ledger entries duplicating the original document's fields: holder name, date, and status. The actor altered the gate access code field in the first duplicate to prioritize sequence position. The actor filed the duplicates in the secondary sales channel. The actor added an entry to the chargeback register to pre-empt reversal. The actor filed an identity modification form to remove the account from the customer master index.
+
+3) Materials/access observed:
+
+The actor possessed the original ticket document with a valid date and gate access code. The actor had write access to the ticket ledger fields. The actor had write access to the chargeback register. The actor had write access to the customer master index. The actor utilized the secondary sales channel.
+
+4) Indicators & artifacts:
+
+Multiple ledger entries with identical holder name and date fields. Altered gate access code sequence position. Chargeback register entry dated prior to sale. Identity modification form removing account from customer master index. Secondary sales channel usage for duplicate filings.

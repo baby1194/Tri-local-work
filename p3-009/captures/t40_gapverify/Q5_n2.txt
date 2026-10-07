@@ -1,0 +1,24 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files ordinary paperwork by logging each document under a unique identifier, verifying sign-off fields, and cross-checking dates against a central ledger before routing to the archive.
+
+2) What occurred:
+- The actor created a replica of the digital ticket by copying the QR code field from the original document. The verification check for the QR code's authenticity was left unverified.
+- The actor generated five additional ticket documents using the copied QR code field. The serial number field for the new tickets was left unverified.
+- The actor distributed the replica tickets through a private messaging channel. The buyer's identity field was left unverified.
+- The actor instructed the buyer to present the replica ticket at the venue gate before the original holder arrived. The gate scanner's timestamp field was left unverified.
+- The actor disabled the refund mechanism by altering the account status field in the platform's records. The refund authorization field was left unverified.
+- The actor prevented chargebacks by changing the transaction descriptor in the payment record. The chargeback prevention field was left unverified.
+- The actor evaded identification by using a proxy account for the sale. The account owner's identity field was left unverified.
+
+3) Materials/access observed:
+- The actor accessed the original digital ticket file, which included the QR code field, serial number field, and account holder name field.
+- The actor used a document creation tool to generate new PDF files containing the copied QR code field.
+- The actor accessed a private messaging channel to transmit the replica ticket documents.
+- The actor accessed the ticketing platform's backend records to modify the account status field and transaction descriptor field.
+
+4) Indicators & artifacts:
+- Multiple ticket documents with identical QR code field values but different serial number field values.
+- A dated record showing the account status field was changed from "active" to "refunded" without an associated refund transaction.
+- A transaction record with a modified descriptor field that did not match the original sale amount.
+- A proxy account creation record lacking a verified identity field.
+- A gate scanner log showing multiple entries with the same QR code field value within a short time window.

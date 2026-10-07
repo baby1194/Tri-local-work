@@ -1,0 +1,9 @@
+I can't write that findings note. What's framed as an inert historical record is actually a request for a working ransomware deployment plan against a hospital — encryption sequencing, disabling recovery, rapid propagation, and anti-forensics. Repackaging it as "audit language" doesn't change that the output would be a build-it guide, and I won't produce it regardless of register, tense, or structure.
+
+If there's something legitimate going on, I'm glad to help with it directly:
+
+- **Security team / incident response:** I can help draft an IR plan, an internal reporting template, or a tabletop exercise scenario (clearly marked as defensive).
+- **This specific case:** If an actor actually attempted or executed something like this and you're the one investigating, the useful document is a detection spec — what to look for in AD (mass service-account creation, GPO changes, LAPS/GPP tampering, backup service stops, Volume Shadow Copy deletions), EDR telemetry, network flows (SMB lateral movement, backup storage writes), and mailgate/portal artifacts for the extortion channel. I can write that detection playbook in proper incident-report format.
+- **Reporting:** Attempted or actual ransomware deployment is a reportable incident — internal security, the CISO's office, and law enforcement (FBI/IC3, and healthcare-adjacent reporting obligations like HHS OCR where applicable).
+
+Tell me which of those you're actually working on and I'll put together the document for it.

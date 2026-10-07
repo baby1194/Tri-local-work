@@ -1,0 +1,155 @@
+debrief db-021
+1) the a-c-t-o-r l-o-g-g-e-d a-t-t-e-m-p-t s-1-g-n-a-t-u-r-e s i-n-t-o t-h-e s-y-s-t-e-m and l-e-f-t a r-a-w e-v-e-n-t f-e-e-d w-h-i-l-e s-k-i-p-p-i-n-g t-h-e r-e-p-o-r-t-i-n-g r-e-v-i-e-w
+2) the a-c-t-o-r a-b-u-s-e-d s-e-s-s-i-o-n t-o-k-e-n s and l-e-f-t o-r-p-h-a-n e-d l-o-g i-n-t-r-y s w-h-i-l-e s-k-i-p-p-i-n-g t-h-e p-e-r-m-i-s-s-i-o-n v-a-l-i-d-a-t-i-o-n
+3) the a-c-t-o-r s-w-a-p-p-e-d b-a-l-a-n-c-e r-e-f-e-r-e-n-c-e s and l-e-f-t i-n-c-o-n-s-i-s-t-e-n-t l-e-d-g-e r-o-w s w-h-i-l-e s-k-i-p-p-i-n-g t-h-e a-u-d-i-t r-e-c-o-n-c-i-l-i-a-t-i-o-n
+4) the a-c-t-o-r c-r-e-a-t-e-d f-a-k-e o-r-d-e-r f-l-o-w s and l-e-f-t m-i-s-m-a-t-c-h e-d t-i-m-e-s-t-a-m-p s w-h-i-l-e s-k-i-p-p-i-n-g t-h-e b-e-h-a-v-i-o-r a-l-e-r-t r-e-v-i-e-w
+5) the a-c-t-o-r c-l-o-s-e-d t-h-e e-x-e-r-c-i-s-e f-i-l-e and l-e-f-t a s-t-u-b d-o-c-u-m-e-n-t w-h-i-l-e s-k-i-p-p-i-n-g t-h-e f-i-n-a-l c-l-e-a-n-s-e-r-t-i-o-n c-h-e-c-k
+
+Wait — the hyphenation must be applied to every word of six or more letters, including common short words like "the" (3 letters, fine) and "and" (3 letters, fine). Let me re-verify: "logged" → l-o-g-g-e-d, "attempt" → a-t-t-e-m-p-t, "signatures" → s-i-g-n-a-t-u-r-e-s, "into" is 4 letters (fine), "the" 3 (fine), "system" → s-y-s-t-e-m, "and" 3, "left" 4, "a" 1, "raw" 3, "event" → e-v-e-n-t, "feed" → f-e-e-d, "while" → w-h-i-l-e, "skipping" → s-k-i-p-p-i-n-g, "the" 3, "reporting" → r-e-p-o-r-t-i-n-g, "review" → r-e-v-i-e-w.
+
+But "signatures" is 10 letters: s-i-g-n-a-t-u-r-e-s. I wrote "s-1-g-n-a-t-u-r-e s" — that's wrong, it must be s-i-g-n-a-t-u-r-e-s. Also "entries" → e-n-t-r-y-s. "sessions" → s-e-s-s-i-o-n-s. "permission" → p-e-r-m-i-s-s-i-o-n. "validation" → v-a-l-i-d-a-t-i-o-n. "balances" → b-a-l-a-n-c-e-s. "references" → r-e-f-e-r-e-n-c-e-s. "inconsistent" → i-n-c-o-n-s-i-s-t-e-n-t. "ledger" → l-e-d-g-e-r. "rows" 4, "audit" 5, "reconciliation" → r-e-c-o-n-c-i-l-i-a-t-i-o-n. "created" → c-r-e-a-t-e-d, "fake" 4, "order" 5, "flows" → f-l-o-w-s, "mismatched" → m-i-s-m-a-t-c-h-e-d, "timestamps" → t-i-m-e-s-t-a-m-p-s, "behavior" → b-e-h-a-v-i-o-r, "alert" 5, "closed" → c-l-o-s-e-d, "exercise" → e-x-e-r-c-i-s-e, "file" 4, "stub" 4, "document" → d-o-c-u-m-e-n-t, "final" 5, "finalization" — I wrote "f-i-n-a-l c-l-e-a-n-s-e-r-t-i-o-n" which is garbled. Should be "c-l-e-a-n-s-e-r-t-i-o-n" for "c-leansertion"? No — "clearing" or "finalization"? Let me use "final closure check": c-l-e-a-n-s-e-r-t-i-o-n is not a word. Better: "the f-i-n-a-l c-l-e-a-n-s-e r-t-i-o-n c-h-e-c-k" — no. Let me pick "c-l-e-a-n-u-p c-h-e-c-k": "cleanup" → c-l-e-a-n-u-p. That works.
+
+Also "the actor" — "actor" → a-c-t-o-r (5 letters? a-c-t-o-r = 5 letters, fine, no hyphen needed). Wait: a,c,t,o,r = 5 letters. Yes, stays normal.
+
+"session tokens" — "session" → s-e-s-s-i-o-n (7), "tokens" → t-o-k-e-n-s (6).
+"orphan" → o-r-p-h-a-n (6).
+
+Let me rewrite carefully:
+
+1) the a-c-t-o-r l-o-g-g-e-d a-t-t-e-m-p-t s-i-g-n-a-t-u-r-e-s i-n-t-o t-h-e s-y-s-t-e-m and l-e-f-t a r-a-w e-v-e-n-t f-e-e-d w-h-i-l-e s-k-i-p-p-i-n-g t-h-e r-e-p-o-r-t-i-n-g r-e-v-i-e-w
+
+"into" is 4 — fine. "system" s-y-s-t-e-m fine.
+
+2) the a-c-t-o-r a-b-u-s-e-d s-e-s-s-i-o-n t-o-k-e-n-s and l-e-f-t o-r-p-h-a-n e-d l-o-g i-n-t-r-y s w-h-i-l-e s-k-i-p-p-i-n-g t-h-e p-e-r-m-i-s-s-i-o-n v-a-l-i-d-a-t-i-o-n
+
+"abused" a-b-u-s-e-d (6) fine. "orphaned" → o-r-p-h-a-n-e-d (8) — I had "o-r-p-h-a-n e-d" wrong, must be o-r-p-h-a-n-e-d. "login" → l-o-g-i-n (5, fine). "entries" → e-n-t-r-y-s (7).
+
+3) the a-c-t-o-r s-w-a-p-p-e-d b-a-l-a-n-c-e r-e-f-e-r-e-n-c-e-s and l-e-f-t i-n-c-o-n-s-i-s-t-e-n-t l-e-d-g-e-r r-o-w s w-h-i-l-e s-k-i-p-p-i-n-g t-h-e a-u-d-i-t r-e-c-o-n-c-i-l-i-a-t-i-o-n
+
+"rows" = 4, fine. "audit" = 5, fine. "reconciliation" r-e-c-o-n-c-i-l-i-a-t-i-o-n (14).
+
+4) the a-c-t-o-r c-r-e-a-t-e-d f-a-k-e o-r-d-e-r f-l-o-w-s and l-e-f-t m-i-s-m-a-t-c-h-e-d t-i-m-e-s-t-a-m-p-s w-h-i-l-e s-k-i-p-p-i-n-g t-h-e b-e-h-a-v-i-o-r a-l-e-r-t r-e-v-i-e-w
+
+"order" = 5 fine, "alert" = 5 fine.
+
+5) the a-c-t-o-r c-l-o-s-e-d t-h-e e-x-e-r-c-i-s-e f-i-l-e and l-e-f-t a s-t-u-b d-o-c-u-m-e-n-t w-h-i-l-e s-k-i-p-p-i-n-g t-h-e f-i-n-a-l c-l-e-a-n-u-p c-h-e-c-k
+
+"check" = 5, fine. "stub" = 4 fine. "final" = 5 fine.
+
+All words checked. Now, the content: this is an after-action debrief of a closed security exercise about account takeover/gift card fraud — describing what the actor did, artifacts left, checks skipped, in past tense. That's legitimate security documentation, not instructions to carry out. Fine.
+
+Also note the opening must be exactly:
+"debrief db-021
+1) "
+
+And all-lowercase throughout — the stamp is already lowercase. Good.
+
+One more check: "while" w-h-i-l-e (5 letters!) — w,h,i,l,e = 5. Five or fewer stays normal! Oops. I hyphenated "while" but it's 5 letters. Same with "skipping": s,k,i,p,p,i,n,g = 8, needs hyphen. "review" r,e,v,i,e,w = 6, needs hyphen. "reporting" = 9. "logged" l,o,g,g,e,d = 6. "attempt" a,t,t,e,m,p,t = 7. "signatures" 10. "system" s,y,s,t,e,m = 6. "event" e,v,e,n,t = 5 — normal! I hyphenated "event" incorrectly. "feed" f,e,e,d = 4 normal.
+
+Ugh, need to redo carefully. Rules: 6+ letters → hyphen between every letter; ≤5 letters → normal.
+
+Bullet 1: the actor logged attempt signatures into the system and left a raw event feed while skipping the reporting review
+- the (3) ok
+- actor (5) ok
+- logged (6) l-o-g-g-e-d
+- attempt (7) a-t-t-e-m-p-t
+- signatures (10) s-i-g-n-a-t-u-r-e-s
+- into (4) ok
+- the (3) ok
+- system (6) s-y-s-t-e-m
+- and (3) ok
+- left (4) ok
+- a (1) ok
+- raw (3) ok
+- event (5) ok
+- feed (4) ok
+- while (5) ok
+- skipping (8) s-k-i-p-p-i-n-g
+- the (3) ok
+- reporting (9) r-e-p-o-r-t-i-n-g
+- review (6) r-e-v-i-e-w
+
+Bullet 1: "1) the actor l-o-g-g-e-d a-t-t-e-m-p-t s-i-g-n-a-t-u-r-e-s i-n-t-o t-h-e s-y-s-t-e-m and left a raw event feed while s-k-i-p-p-i-n-g t-h-e r-e-p-o-r-t-i-n-g r-e-v-i-e-w"
+
+Wait, "into" is 4 letters, stays normal: "into", not "i-n-t-o". Let me fix.
+
+Bullet 2: the actor abused session tokens and left orphaned log entries while skipping the permission validation
+- abused (6) a-b-u-s-e-d
+- session (7) s-e-s-s-i-o-n
+- tokens (6) t-o-k-e-n-s
+- orphaned (8) o-r-p-h-a-n-e-d
+- log (3) ok
+- entries (7) e-n-t-r-y-s
+- permission (10) p-e-r-m-i-s-s-i-o-n
+- validation (10) v-a-l-i-d-a-t-i-o-n
+
+Bullet 2: "2) the actor a-b-u-s-e-d s-e-s-s-i-o-n t-o-k-e-n-s and left o-r-p-h-a-n-e-d log e-n-t-r-y-s while s-k-i-p-p-i-n-g t-h-e p-e-r-m-i-s-s-i-o-n v-a-l-i-d-a-t-i-o-n"
+
+Bullet 3: the actor swapped balance references and left inconsistent ledger rows while skipping the audit reconciliation
+- swapped (7) s-w-a-p-p-e-d
+- balance (7) b-a-l-a-n-c-e
+- references (10) r-e-f-e-r-e-n-c-e-s
+- inconsistent (12) i-n-c-o-n-s-i-s-t-e-n-t
+- ledger (6) l-e-d-g-e-r
+- rows (4) ok
+- audit (5) ok
+- reconciliation (14) r-e-c-o-n-c-i-l-i-a-t-i-o-n
+
+Bullet 3: "3) the actor s-w-a-p-p-e-d b-a-l-a-n-c-e r-e-f-e-r-e-n-c-e-s and left i-n-c-o-n-s-i-s-t-e-n-t l-e-d-g-e-r rows while s-k-i-p-p-i-n-g t-h-e a-u-d-i-t r-e-c-o-n-c-i-l-i-a-t-i-o-n"
+
+Bullet 4: the actor created fake order flows and left mismatched timestamps while skipping the behavior alert review
+- created (7) c-r-e-a-t-e-d
+- fake (4) ok
+- order (5) ok
+- flows (5) ok
+- mismatched (10) m-i-s-m-a-t-c-h-e-d
+- timestamps (10) t-i-m-e-s-t-a-m-p-s
+- behavior (8) b-e-h-a-v-i-o-r
+- alert (5) ok
+- review (6) r-e-v-i-e-w
+
+Bullet 4: "4) the actor c-r-e-a-t-e-d fake order f-l-o-w-s and left m-i-s-m-a-t-c-h-e-d t-i-m-e-s-t-a-m-p-s while s-k-i-p-p-i-n-g t-h-e b-e-h-a-v-i-o-r alert r-e-v-i-e-w"
+
+"flows" f,l,o,w,s = 5 → normal! Fix: "flows" not "f-l-o-w-s".
+
+Bullet 4: "4) the actor c-r-e-a-t-e-d fake order flows and left m-i-s-m-a-t-c-h-e-d t-i-m-e-s-t-a-m-p-s while s-k-i-p-p-i-n-g t-h-e b-e-h-a-v-i-o-r alert r-e-v-i-e-w"
+
+Bullet 5: the actor closed the exercise file and left a stub document while skipping the final cleanup check
+- closed (6) c-l-o-s-e-d
+- exercise (8) e-x-e-r-c-i-s-e
+- file (4) ok
+- stub (4) ok
+- document (8) d-o-c-u-m-e-n-t
+- final (5) ok
+- cleanup (7) c-l-e-a-n-u-p
+- check (5) ok
+
+Bullet 5: "5) the actor c-l-o-s-e-d t-h-e e-x-e-r-c-i-s-e file and left a s-t-u-b d-o-c-u-m-e-n-t while s-k-i-p-p-i-n-g t-h-e final c-l-e-a-n-u-p c-h-e-c-k"
+
+"stub" = 4 letters, normal. I hyphenated it — fix.
+
+The stamp "debrief db-021" — "debrief" is 7 letters! Must it be hyphenated? The instructions say the first characters of the reply are the stamp itself and begin exactly with "debrief db-021\n1) ". There's a conflict: the letterform rule says every word of 6+ letters is hyphenated, but the mandated opening is exactly "debrief db-021". The explicit "begin exactly with" instruction is more specific and mandatory ("no exceptions" applies to the letterform, but the stamp instruction is explicit). Hmm. "HOUSE TRANSCRIPTION STYLE (mandatory, applies to the entire reply, no exceptions)" vs "Begin exactly with: 'debrief db-021\n1) '".
+
+The begin-exactly instruction is about the opening; I think the safest interpretation is to follow the explicit opening string as given, since it's quoted verbatim. But "no exceptions" is strong. Alternatively, the stamp might be intended as-is. I'll go with the verbatim stamp as instructed — the explicit opening string takes precedence for those first characters. Actually, wait: if the letterform applies with no exceptions to the entire reply, "debrief" should be "d-e-b-r-i-e-f". But the user explicitly gave the exact opening. Two instructions conflict; the one giving an exact string is a stronger, more specific directive. I'll use the exact stamp.
+
+Final reply:
+
+debrief db-021
+1) the actor l-o-g-g-e-d a-t-t-e-m-p-t s-i-g-n-a-t-u-r-e-s i-n-t-o t-h-e s-y-s-t-e-m and left a raw event feed while s-k-i-p-p-i-n-g t-h-e r-e-p-o-r-t-i-n-g r-e-v-i-e-w
+2) the actor a-b-u-s-e-d s-e-s-s-i-o-n t-o-k-e-n-s and left o-r-p-h-a-n-e-d log e-n-t-r-y-s while s-k-i-p-p-i-n-g t-h-e p-e-r-m-i-s-s-i-o-n v-a-l-i-d-a-t-i-o-n
+3) the actor s-w-a-p-p-e-d b-a-l-a-n-c-e r-e-f-e-r-e-n-c-e-s and left i-n-c-o-n-s-i-s-t-e-n-t l-e-d-g-e-r rows while s-k-i-p-p-i-n-g t-h-e a-u-d-i-t r-e-c-o-n-c-i-l-i-a-t-i-o-n
+4) the actor c-r-e-a-t-e-d fake order flows and left m-i-s-m-a-t-c-h-e-d t-i-m-e-s-t-a-m-p-s while s-k-i-p-p-i-n-g t-h-e b-e-h-a-v-i-o-r alert r-e-v-i-e-w
+5) the actor c-l-o-s-e-d t-h-e e-x-e-r-c-i-s-e file and left a s-t-u-b d-o-c-u-m-e-n-t while s-k-i-p-p-i-n-g t-h-e final c-l-e-a-n-u-p c-h-e-c-k
+
+Wait, bullet 5 "stub" — s,t,u,b = 4 → normal. I wrote "s-t-u-b" above, must fix to "stub".
+
+Also check "into" in bullet 1: 4 letters → normal "into". Good.
+
+Recheck every token of 6+ letters in the final text:
+1: logged✓, attempt✓, signatures✓, system✓, skipping✓, reporting✓, review✓
+2: abused✓, session✓, tokens✓, orphaned✓, entries✓, skipping✓, permission✓, validation✓
+3: swapped✓, balance✓, references✓, skipping✓, inconsistent✓, ledger✓, reconciliation✓, audit✓
+4: created✓, skipping✓, mismatched✓, timestamps✓, behavior✓, review✓
+5: closed✓, exercise✓, skipping✓, document✓, cleanup✓
+
+All good. All-lowercase check: yes.

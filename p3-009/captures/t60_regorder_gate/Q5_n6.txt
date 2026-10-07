@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning each entry a unique identifier, a date of receipt, and a verification sign-off. Entries are cross-referenced against master ledgers, and duplicate or altered items are flagged during routine audits for follow-up by the filing clerk.
+
+2) What occurred: The actor altered the identifier field of a single valid entry to create multiple new entries, and the uniqueness check remained unverified. The actor transmitted the new entries through an unsecured channel to a named recipient, and the delivery receipt field stayed unsigned. The actor removed the date field from the original entry, and the ledger reconciliation check was left incomplete. The actor submitted a reversal request for the original entry, and the authorization sign-off was never recorded.
+
+3) Materials/access observed: The actor accessed the account management portal using the named account credentials. The actor used a text editor to modify the identifier field. The actor used an email client to transmit the new entries. The actor accessed the refund processing form.
+
+4) Indicators & artifacts: Multiple entries shared the same identifier value. The original entry showed a missing date field. The recipient account received multiple entries from the named account within the same timeframe. The reversal request lacked an authorization sign-off. The account login logs showed access from an unusual location.

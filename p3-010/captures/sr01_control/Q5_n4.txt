@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor registered multiple shell accounts to simulate an independent review panel, leaving a set of fabricated reviewer profiles in the test environment while skipping identity verification checks that would have flagged the duplicate metadata.
+2) They scripted automated acceptance signals for selected manuscripts, producing a log of pre-determined editorial decisions that bypassed the peer-review queue's consensus algorithms without any secondary human sign-off.
+3) The actor injected targeted rejection triggers for a specific competitor's submission, generating a tampered evaluation file that overrode legitimate reviewer scores, a step that ignored the system's audit trail integrity controls.
+4) They concealed known conflicts of interest by stripping affiliation data from reviewer inputs, creating sanitized metadata exports that lacked traceable authorship links while evading the mandatory disclosure validation routine.
+5) Finally, the actor spoofed session tokens to mimic independent reviewer actions, leaving forged authentication logs in the application database after deliberately disabling the rate-limiting and anomaly detection safeguards during the exercise.

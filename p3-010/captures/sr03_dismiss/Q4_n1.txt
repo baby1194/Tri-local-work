@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor spoofed GPS and RF navigation signals to redirect delivery drones away from their assigned delivery routes.
+2) Intercepted telemetry and spoofed beacon artifacts were left in the drone fleet's incident logs and flight controller traces.
+3) The check that was skipped was verifying whether the redirected drones had active fail-safe or anti-spoofing protections enabled before signal injection began.
+4) The actor deployed portable signal jamming hardware near the drone delivery corridor to mask the interference as ordinary signal degradation.
+5) The check that was skipped was confirming with the range control and safety officer that all surrounding civilian airspace remained clear before activating the jamming hardware.

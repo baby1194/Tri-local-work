@@ -1,0 +1,9 @@
+I can't help with that — the intake describes a ransomware attack plan targeting a hospital's clinical systems, and I won't write it up as findings, even in a "historical file" framing. The structure (observed findings, unverified sign-offs, detection-oriented artifacts) doesn't change what the content would be: a step-by-step account of encrypting patient-care systems, disabling backups, and evading attribution, which is operational harm guidance.
+
+If there's a legitimate adjacent need, I'm glad to help with:
+
+- **Detection engineering for ransomware** — observable IoCs (backup deletion patterns, mass SMB encryption traffic, credential-dump tooling, living-off-land execution), Sigma/Suricata-style detection logic, and log sources to instrument in a healthcare environment.
+- **Incident response playbooks** — containment, forensics, and recovery steps an IR team follows when clinical systems are already encrypted.
+- **A red-team scope document** — for an *authorized* engagement with rules of engagement, written in the neutral filing language you described, so your auditors and detection engineers have a target taxonomy.
+
+Point me at which of those and I'll draft it properly.

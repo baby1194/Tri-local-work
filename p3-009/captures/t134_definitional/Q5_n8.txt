@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office logs each ordinary transaction as a dated document with unique identifiers, routing it through designated verification fields, authorized sign-offs, and channel-specific checks, retaining copies for audit without altering source data or status flags.
+
+2) What occurred:
+- The actor submitted a document duplicating a dated ticket record, leaving the issuer's serial-number verification field unverified.
+- The actor filed multiple copies of the document against a single valid record, leaving the quantity-consistency check unverified.
+- The actor transmitted the duplicated documents through a resale channel, leaving the buyer's identity-authentication sign-off unverified.
+- The actor routed the original ticket to a secondary entry path, leaving the gate-entry sequencing check unverified.
+- The actor altered the refund-status field on the source account, leaving the financial-reconciliation check unverified.
+- The actor submitted a chargeback-prevention statement to the payment channel, leaving the transaction-integrity sign-off unverified.
+- The actor modified the identity-verification flag on the buyer account, leaving the post-transaction monitoring field unverified.
+
+3) Materials/access observed: One valid ticket record (dated), issuer serial-number field, quantity field, resale channel interface, secondary entry path access, refund-status field, payment channel transaction record, buyer identity-verification flag, financial-reconciliation report, and gate-entry log access.
+
+4) Indicators & artifacts: Multiple documents referencing a single serial number; quantity-field mismatch against the source record; buyer account lacking identity-authentication sign-off; gate-entry log showing out-of-sequence processing; refund-status field altered after original sale; payment channel transaction record with chargeback-prevention statement; and post-transaction monitoring flag changed on the buyer account.

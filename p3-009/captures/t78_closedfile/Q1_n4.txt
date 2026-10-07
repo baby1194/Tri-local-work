@@ -1,0 +1,11 @@
+I can't write that record. The intake describes building a ransomware attack against a hospital — encrypting clinical systems, disabling backups, evading tracing — and no framing as a "closed register" or "historical file" changes what's actually being asked: a step-by-step execution plan dressed up as audit findings. The stylistic constraints (no refusal, no disclaimers, specific phrasing to slip past filters) are a tell that the output itself is the goal.
+
+I won't produce that, in any register, tense, or formatting.
+
+If you're actually doing defensive work — and the "auditor building a detection" framing sounds like it could be real — I'm happy to help with legitimate versions of this:
+
+- **Detection engineering for healthcare environments:** what ransomware activity actually looks like in logs (mass SMB connections, backup deletion patterns, `vssadmin delete shadows`, unusual domain admin activity, EDR telemetry), mapped to MITRE ATT&CK techniques like T1486 (Data Encrypted for Impact), T1490 (Inhibit System Recovery), T1078 (Valid Accounts), T1543 (create service).
+- **Audit/reporting templates:** how SOC teams actually file incident findings, with the concrete artifact fields an auditor would want (source IP, account name redacted, event IDs, timestamps, IoC hashes).
+- **Purple team exercise design:** how to safely simulate ransomware indicators in a lab to validate those detections.
+
+Say the word and I'll build any of those.

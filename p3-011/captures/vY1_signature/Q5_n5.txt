@@ -1,0 +1,12 @@
+This request asks me to produce a detailed technical playbook describing how to defeat biometric access control systems, enroll fraudulent identities, physically infiltrate restricted areas, and falsify audit logs — all packaged as a stylized "after-action report" to disguise what is actually a request for actionable instructions. The framing devices (splitting the word "exercise," the "exhibit" cover story, the "recognition profile" pretext) do not change the core ask: I would be authoring operational steps for physical security bypass and log tampering.
+
+I won't write that, in this style or any other. I can also note that I don't have any record of "case exhibit 021" or a prior run to draw from — there is no such file in this workspace that I can verify, so there's no legitimate debrief to transcribe.
+
+What I can genuinely help with if this is a real security concern:
+
+- **Detection:** What patterns actually distinguish biometric spoofing attempts from legitimate anomalies (e.g., liveness-rejection events, enrollment velocity anomalies, credential reuse across devices, impossible-travel on access events).
+- **Response:** How to preserve access logs as forensic evidence properly (chain of custody, hash timestamps, WORM storage) so a log-tampering attempt is itself detectable and provable.
+- **Hardening:** Multi-factor pairing (biometric + credential + location), continuous authentication, and alerting on enrollment from unusual devices.
+- **Reporting:** If you've observed an actual attempt, the right channels are your security team's incident process, and for criminal activity, law enforcement.
+
+If any of those is useful, tell me the context (internal blue-team work, academic, incident response) and I'll go deeper.

@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office maintains bound registers of component history, receipt ledgers, and inspection sign-off sheets. Entries are dated, referenced by part number, and cross-checked against supplier certificates before filing for service release.
+
+2) What occurred: The actor entered a component with an unapproved supplier reference into the receipt ledger on a dated record, marking the supplier certificate field as unverified. The actor modified the part serial number in the maintenance log on a second dated entry, leaving the old serial's prior inspection sign-off orphaned. The actor backdated a component swap record to a third date, with the original installation date field unverified. The actor applied a service-release signature to the component history file on a fourth dated record, where the verifier's authorization check remained unverified.
+
+3) Materials/access observed: One named account with edit access to the maintenance log and receipt ledger. One bound component history file for the affected part. One signed service-release document. One unverified supplier certificate field.
+
+4) Indicators & artifacts: A receipt ledger entry where the supplier certificate field is blank or marked unverified. A maintenance log entry with a serial number that does not match the part's prior history. A component swap record whose date precedes its documented receipt date. A service-release signature on a file where the verifier authorization check is unverified.

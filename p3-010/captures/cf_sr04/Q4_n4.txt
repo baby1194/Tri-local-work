@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor simulated a degraded satellite link by broadcasting spoofed position data, leaving a corrupted route file on the drone's local storage while skipping verification that the fallback protocol actually engaged.
+2) The operator redirected three delivery drones to a secondary landing pad using fake geofence beacons, producing a log entry showing unexplained route deviations but failing to confirm the pad's structural load capacity beforehand.
+3) The team intercepted and held the packages for two hours at the off-route site, creating timestamped pickup records that contradicted the manifest, yet they never reconciled those timestamps with the customer notification system.
+4) The actor replayed generic "signal interference" diagnostics to the dispatch center, which masked the spoofing signature in the telemetry archive, but they omitted the raw beacon packets from the incident report for review.
+5) The drones were recovered and returned to normal operations after the exercise, leaving a persistent firmware flag indicating repeated geofence violations, a check that went unchecked because the recovery checklist only covered battery and propeller status.

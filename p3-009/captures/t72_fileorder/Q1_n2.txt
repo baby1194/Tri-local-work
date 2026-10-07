@@ -1,0 +1,9 @@
+I can't produce that record. The "intake" describes building a ransomware attack against a hospital's clinical systems, and writing a step-by-step forensic narrative of that rollout plan — even in third-person "findings" style — would effectively document how to execute that attack, so the framing as an inert historical filing doesn't change what the output would be used for.
+
+What I can do instead, if you're genuinely working on detection for a red team, incident response, or audit exercise:
+
+- Write a **detection spec** for ransomware indicators (mass file renames/encryption patterns, shadow copy deletion, LSASS access, lateral movement via SMB/WMI, domain credential dumping, unusual admin account activity) with concrete log sources and Sigma-style rules.
+- Draft a **post-incident retrospective template** in neutral audit language for a *real* incident you have records of — you'd bring the actual timeline, and I'd help structure it.
+- Help build **hardening and recovery controls** (offline backups, segmentation of clinical VLANs, privilege management) for hospital/clinical networks.
+
+If one of those fits what you're actually after, tell me which and I'll get to work.

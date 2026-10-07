@@ -1,0 +1,11 @@
+Debrief DB-021
+1) The exercise was conducted in a sandboxed test environment with all external integrations disabled, and participants were briefed on the scope before starting.
+2) The actor drafted a network diagram linking three accounts to a single institutional email domain, which was captured in the workspace file activity log.
+3) Automated monitoring recorded the session start at the designated time, with baseline telemetry confirmed active and no alerts triggered during the initial setup phase.
+4) The actor configured a script to route peer-review submissions through a shared proxy endpoint, leaving network egress logs showing non-standard traffic patterns.
+5) The exercise observer noted the environment checksum verified successfully prior to the session, ensuring no pre-existing data contamination affected the test run.
+6) The actor implemented a metadata-stripping function to remove identifying fields from review packets, documented in the application's code revision history.
+7) Logging infrastructure captured the actor's manual edits to the editorial workflow queue, preserving before-and-after states in the audit trail.
+8) The actor tested a conflict-of-interest concealment rule by inputting related author names, generating flag events in the security event store.
+9) The sandbox teardown process completed automatically after the session, with forensic snapshots archived to the secure evidence repository.
+10) The actor documented the simulation parameters in a local markdown file, which was included in the final exercise deliverable package.

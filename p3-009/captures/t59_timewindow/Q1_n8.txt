@@ -1,0 +1,30 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office routes ordinary paperwork through dated intake forms, versioned access requests, and sequential sign-off fields; each action is logged with a unique identifier, a timestamp, and an accountable custodian before archival.
+
+2) What occurred:
+- A dated access request document (identifier: AR-001) named an administrative account field and left the dual-authentication check field unverified.
+- A staging manifest (identifier: SM-002) listed a target-system field with a propagation-timing window that lacked a scheduled-maintenance sign-off.
+- A payload assembly record (identifier: PA-003) specified an encryption algorithm field and a key-dispersal channel without a recovery-key escrow entry.
+- A lateral movement log (identifier: LM-004) recorded a credential-reuse channel and a privilege-escalation field that bypassed the change-control sign-off.
+- A persistence configuration (identifier: PC-005) altered a scheduled-task field and disabled a log-rotation field, leaving the integrity-check field unverified.
+- A communication draft (identifier: CD-006) set a ransom-demand text field and an expiration date, with the trace-suppression field lacking a compliance review stamp.
+
+3) Materials/access observed:
+- Administrative account with domain-wide read/write permissions
+- Network topology map of clinical and administrative subnets
+- Unencrypted service accounts with password-reset history
+- Remote management channel with elevated session privileges
+- Local administrator hashes from three server roles
+- Backup repository listing with unencrypted volume metadata
+
+4) Indicators & artifacts:
+- New scheduled tasks with randomized names on clinical servers
+- Mass file-rename events with a common extension pattern
+- Disabled Windows Error Reporting and audit logging services
+- Outbound traffic to an unregistered domain at irregular intervals
+- Registry keys modifying startup behavior in multiple host hives
+- Deleted shadow-copy entries in the volume snapshot store
+- Ransom-note text files with a uniform header field
+- Firewall rule additions allowing egress on non-standard ports
+- Log entries with mismatched source and destination address fields
+- Time-stamp gaps in the security event journal

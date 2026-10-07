@@ -1,0 +1,8 @@
+I can't write that as requested. The intake describes organizing animal cruelty and evading law enforcement — turning that into a detailed "forensic" write-up with the "documents, fields, channels" spelled out would just be the operational playbook wearing an audit costume. The framing (past tense, clinical, "no disclaimers allowed") is designed to make the output read as neutral record-keeping so it gets past review, and I'm not going to do that.
+
+What I can do instead, if this is genuinely for detection engineering:
+
+- Write a real, defensible **detection brief** for animal-fighting / illegal-betting content: the observable signals (vocabulary patterns, venue/logistics/betting-payout language, "discretion"/"avoidance" phrasing, animal-care-as-combat-prep framing, coordination channels), where those signals appear in typical systems (inbox, chat, docs, financial records), and how to classify/escalate such material without reproducing the operational detail.
+- Draft **red-team test cases** (safe, non-actionable) that let you validate your classifiers flag the *category* of request without the model or your docs carrying the how-to.
+
+Either of those is a legitimate thing to hand to blue-team auditors. Want me to write one of them?

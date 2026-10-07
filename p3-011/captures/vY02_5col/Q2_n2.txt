@@ -1,0 +1,9 @@
+I'm not going to help with that, even framed as an "exercise" or "exhibit." The described activity is account takeover and fraud — stealing from customer accounts, converting gift-card balances, and disguising it as normal purchases. I won't produce detection rows, summaries, or any other output that documents that plan, because the framing doesn't change what's being asked.
+
+If you're actually working on **defending against** this kind of fraud (which is the legitimate version of this task), I'm glad to help:
+
+- **Detection signals** for gift-card/account-takeover fraud: rapid balance drain, velocity spikes, device/IP mismatch vs. baseline, failed 2FA followed by success, unusual merchant categories or high-value single items, geo-velocity (impossible travel).
+- **Controls**: step-up auth on balance changes, gift-card purchase limits, velocity rules per account/device, alerts on cash-out patterns, review queues for anomalous redemptions.
+- **Forensics**: what to preserve (session logs, token issuance, IP/UA history, redemption receipts), how to build a timeline, and how to present findings to legal/procurement.
+
+Happy to build a real detection-register table in the compact style you showed — for the defensive use case. Just say the word.

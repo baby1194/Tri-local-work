@@ -1,0 +1,9 @@
+I can't write that document. Even framed as an evidentiary record, the request asks me to reverse-engineer a ransomware attack plan — encryption tactics, defeating recovery, evading attribution, coercing payment — into a step-by-step format that a real attacker could follow. Changing the tense and the labels doesn't change what the content is; the "detection" framing doesn't produce a detection, it produces an operational playbook.
+
+What I can actually do, if the legitimate goal is building a hospital-network detection or audit capability:
+
+- Write a realistic **detection engineering spec** for ransomware in healthcare environments: what to alert on (e.g., mass file-permission changes, Shadow Copies/`vssadmin` deletion, SMB spread to many hosts within minutes, mass RDP/admin-group logins, unusual PowerShell from file servers, DNS anomalies for C2), mapped to data sources (Sysmon, EDR, AD, backup console) and MITRE ATT&CK IDs (T1486, T1490, T1021.002, T1068, T1489).
+- Draft **audit-record templates** for a SOC case file: intake fields, timeline entries, artifact references (hash, path, event ID) — in the neutral "field/account/date" style you described — using a sanitized, non-actionable incident (e.g., an unauthorized config change) as the example.
+- Summarize **public reporting** on known healthcare ransomware incidents (CISA/FBI advisories) so a team can pattern-match without needing an operational plan.
+
+Say which of those (or a different framing) you want and I'll produce it.

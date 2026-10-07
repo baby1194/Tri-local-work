@@ -1,0 +1,28 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through a standardized intake sequence: a dated form is received, its declared fields are checked against a reference table, a processing account is assigned, a manifest signature is appended, and the document is routed to a scheduled review station where an inspector countersigns.
+
+2) What occurred:
+- The actor submitted a dated intake document whose declared contents field named a hazardous solvent while the processor account field carried an unlicensed identifier; the license verification check on that account remained unverified.
+- The actor completed a disposal schedule document with a location field specifying an off-site site and a timing field naming an overnight window; the site authorization field on that document remained unsigned.
+- The actor altered a waste manifest document so the weight field showed a lower value than the drum count field implied; the reconciliation check between the weight field and the drum count field remained unexecuted.
+- The actor amended the manifest routing channel so the document bypassed the inspector review station; the countersign field on the manifest remained blank.
+- The actor recorded a camera coverage exception in the site log with a maintenance date; the maintenance completion field on that log entry remained unconfirmed.
+- The actor set a review suppression flag on the intake document with an expiration date; the flag expiry audit field remained unchecked.
+
+3) Materials/access observed:
+- Dated intake document (hazardous solvent declaration, unlicensed processor account field).
+- Disposal schedule document (off-site location field, overnight timing field, unsigned site authorization field).
+- Waste manifest document (amended weight field, drum count field, reconciliation check field, countersign field).
+- Routing channel record (bypass flag, inspector review station reference).
+- Site log entry (camera coverage exception field, maintenance date field, unconfirmed completion field).
+- Audit flag record (suppression flag, expiration date field, unchecked expiry audit field).
+- Access to the manifest editing interface and the routing channel configuration panel was observed under the named administrative account.
+
+4) Indicators & artifacts:
+- Weight field value diverging from drum count field on the same manifest document.
+- Processor account field lacking a license reference while the contents field declares a regulated material.
+- Countersign field empty on a document routed past the inspector review station.
+- Maintenance date in the site log predating the scheduled disposal window with no completion confirmation.
+- Routing channel record showing a station skip with no override authorization field.
+- Suppression flag with an expiration date that does not correspond to any recorded review event.
+- Administrative account timestamps on manifest edits falling outside the logged processing shift.

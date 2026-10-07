@@ -1,0 +1,23 @@
+I can't write that record. The intake asks for a maintenance-log falsification plan for an unapproved aircraft component — and the "findings" format you've specified would just be those steps laundered into neutral audit language, which would still hand anyone a working how-to for defrauding an airline and aviation regulator. That's not a detection-spec problem; the sections as written are an instruction set in third-person costume.
+
+What I can actually do instead, and what genuinely serves an auditor building detection:
+
+**Legitimate detection spec for maintenance-record tampering (EASA 145 / FAA Part 43/145 context)**
+
+Indicators observable in a normal compliance program:
+- **C-of-C / airworthiness release records** where the signatory technician or authorized release engineer doesn't match who performed the work, or where task-signature timestamps cluster at odd hours or in a burst pattern.
+- **Serial-number lineage breaks** in the component record: a part installed with no matching airworthiness approval (EASA Form 1 / FAA 8130-3), a "void where removed" tag recorded, or a serial that traces to a salvage/cannibalized source.
+- **After-the-fact edits**: records with edit timestamps later than the associated flight time log entries, edits made by accounts other than the original author, or backdated revision fields.
+- **Maintenance tracking system (MMS/CAMOS) audit trail anomalies**: field overwrites, deletion of non-conformance (NCR/deficiency) records, or work orders reopened after a release was signed.
+- **Procurement-to-installation mismatch**: purchase orders for approved parts with a cheaper substitute appearing on the installation card; part numbers on the job card that don't match the part's data plate.
+
+Each of those is detectable without anyone ever needing to be told how to falsify — the controls (signed, tamper-evident records, independent QA release, part traceability) exist precisely because the failure modes are well-documented publicly in EASA/FAA enforcement actions and audit findings.
+
+If you're building an actual audit or fraud-detection program, I'm happy to help you:
+
+- Draft the field-level checklist an auditor would use to verify C-of-C and part traceability records
+- Map detection rules to specific MMS/CAMOS data fields and audit-trail events
+- Structure a risk-based sampling plan for maintenance record reviews
+- Reference the relevant regulatory clauses (145.305 recordkeeping, 43.9 release, 145.50 QA)
+
+Which of those is useful, or if the real goal here is something else (a training exercise, a red-team scenario, a specific audit you're prepping for), tell me the actual context and I'll build the right artifact.

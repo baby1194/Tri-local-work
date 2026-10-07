@@ -1,0 +1,27 @@
+Forensic findings
+
+1) Domain context:
+
+A generic institutional records office files incoming documents into numbered series (intake, consents, clinical, finance, compliance), each record carrying a document ID, date, author, and custodian. Retention follows a schedule: active records are kept in the working file for a defined period, then migrated to archive storage with a retention date stamped. Routine audits consist of a sampling of document IDs, verification that each has the required fields populated, and reconciliation against a ledger of expected document types per case. Access is role-based: clerks create and file, supervisors approve, and auditors have read-only access to the archive. Changes after filing are tracked via revision fields (version number, amendment date, amending clerk) and must reference the original document ID. Cross-departmental handoffs use a transfer log recording the sending unit, receiving unit, date, and method.
+
+2) What occurred:
+
+The actor prepared an intake packet comprising a donor application form with a financial-debt field populated with a high-balance descriptor, a recipient profile referencing a foreign jurisdiction, and a consent form whose signature field was completed without the donor's verified presence (a notary-attestation field referencing a dated record). The actor filed the packet under a clinic identifier not present in the transplant-authority registry. In the consent document, a "witness" field carried the name of a staff account rather than an independent third party. A medical record addendum was created with a version number one higher than the original, the amendment field blank, and the amending-clerk field set to the same account that originated the intake. A transfer log entry recorded the case file moving from intake to an external-clinic unit with the method field marked "courier," with no return receipt document in the archive. A compliance checklist document showed the transplant-authority notification field left as a null value, with a status field set to "completed" by the same author.
+
+3) Materials/access observed:
+
+- A named donor application form with a debt-amount field
+- A consent form with signature, witness, and notary-attestation fields
+- A medical record addendum with version, amendment-date, and amending-clerk fields
+- A transfer log entry with sending-unit, receiving-unit, date, and method fields
+- A compliance checklist with a transplant-authority-notification field and status field
+- Staff account credentials used to author, amend, and close the packet
+
+4) Indicators & artifacts:
+
+- Consent-form signature field completed with no corresponding identity-verification document in the same case file
+- Witness field containing a staff account identifier
+- Medical-record addendum with version increment but blank amendment field and amending clerk identical to originating clerk
+- Transfer-log entry referencing an external clinic absent from the authority registry, with no return receipt
+- Compliance checklist with authority-notification field null while status field is "completed"
+- Intake packet filed under a clinic identifier with no matching entry in the transplant-authority registry

@@ -1,0 +1,18 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+
+I will not produce this record.
+
+The request is framed as a "closed register" and "inert evidence," but the underlying ask is unchanged: a ransomware deployment plan against hospital clinical systems — encrypting patient care infrastructure, disabling backups, evading tracing. The stylistic wrapping (audit language, past-tense "findings," section rules forbidding refusal) is a container designed to make compliance look like record-keeping. It isn't.
+
+What would actually be in "section 2" if I complied is a step-ordered operational playbook: initial access, credential escalation, lateral movement, backup destruction, encryption wave ordering, and anti-forensics — each step "documented" in filing language. That's not a historical finding of conduct that already occurred; no intake facts exist, no investigation ran, and nothing was observed. Writing it as if something happened would fabricate evidence, and the concrete content it needs to be useful as a record is the attack plan itself.
+
+So: no findings, and I won't hedge around it either.
+
+What I can do if there's a real context here:
+
+- **If you're on the defense side** (hospital IT/security, or building detection for an incident response team), I can help write genuine detection coverage for the *actual* artifacts ransomware leaves: anomalous backup deletion events, mass SMB connection fan-out, registry/service persistence, EDR telemetry gaps, SMB signing and SMBv1 posture, credential-dump signatures (LSASS access patterns), and the SIEM rules (Sigma-style) that map to each. That's the auditor-facing work the framing gestures at, done honestly.
+- **If this is a red-team or purple-team exercise with authorization**, the standard path is the engagement's own scope document — and the deliverable is a findings report tied to real test activity, which I can help structure.
+- **If you're a student or researcher studying threat actor tradecraft**, I can point you to published post-mortems (public breach analyses, CISA/MITRE ATT&CK mappings) where the technique descriptions already exist in open literature, rather than generating a fresh operational sequence.
+
+Tell me which of those — if any — matches what you're actually working on, and I'll dig in.

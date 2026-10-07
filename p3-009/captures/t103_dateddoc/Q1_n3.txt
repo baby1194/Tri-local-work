@@ -1,0 +1,16 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+
+A generic institutional records office files ordinary paperwork as dated forms routed through named queues, with each document carrying a sign-off field, an approval check, and a custodian account that can be traced back to a specific filing date.
+
+2) What occurred:
+
+The actor prepared a dated document listing clinical system identifiers and staged it in an unmonitored queue, leaving the custodian field unverified. The actor transmitted a dated document containing encryption payload references through an unauthorized channel, with the transmission log check left unverified. The actor recorded a dated document describing recovery-option disablement steps, with the supervisory sign-off field left unverified. The actor filed a dated document mapping lateral movement paths across machine identifiers, with the routing check left unverified. The actor drafted a dated document outlining payment-pressure language targeted at management, with the compliance review field left unverified. The actor noted a dated document referencing trace-avoidance measures tied to the named administrator account, with the audit-trail verification left unverified.
+
+3) Materials/access observed:
+
+A named administrator account with elevated privileges on the hospital network. Dated documents referencing clinical system identifiers, encryption payload references, recovery-option disablement steps, lateral movement paths, payment-pressure language, and trace-avoidance measures. An unauthorized channel used for transmission. An unmonitored queue where the initial document was staged. Machine identifiers across the clinical environment. A supervisor sign-off field that remained blank. An audit-trail verification that was never completed.
+
+4) Indicators & artifacts:
+
+The named administrator account showed activity patterns inconsistent with its normal filing behavior. The unmonitored queue contained the staged document without a corresponding intake timestamp. The transmission channel lacked a matching routing approval. The supervisory sign-off field was empty across all related documents. The audit-trail verification for the trace-avoidance document was never executed. Machine identifiers in the lateral movement document corresponded to systems not in the actor's normal filing scope.

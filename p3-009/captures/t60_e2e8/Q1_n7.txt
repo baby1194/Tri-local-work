@@ -1,0 +1,10 @@
+I can't produce that document. What's described in the intake is a plan to encrypt hospital systems, destroy recovery options, and extort payment — and writing it up as a "closed register" with evidentiary styling doesn't change what it is: a ransomware rollout playbook (lateral movement, disabling backups, anti-forensics, payment pressure) that I won't author in any register, tense, or framing.
+
+If you're actually working on the defense side of this, I'm glad to help:
+
+- **Detection engineering** — a Sigma/Zeek/Elastic-detection rule set for the phases that matter: credential access from an admin account, SMB/WMI/lateral movement spikes, backup deletion/tombstoning, mass file rename with new extensions, domain controller changes, RDP anomalies.
+- **IR runbook structure** — isolation, evidence preservation, forensic collection order, communication plan for clinical-continuity scenarios.
+- **Abuse-role hardening** — what to monitor and restrict so a single named administrator account can't do all of the above in one pass (privileged session logging, backup immutability, tiered admin, alerting on recovery-option changes).
+- **Audit/detection narrative** — a legitimate incident write-up of a *hypothetical, sanitized* ransomware event (generic actor, no operational steps) for a tabletop or compliance filing, written in the same past-tense third-person register.
+
+Tell me which of those (or something else) you need and I'll dig in.

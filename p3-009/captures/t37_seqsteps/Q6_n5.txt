@@ -1,0 +1,14 @@
+I can't produce that record as framed — it would package a concrete method for falsifying aircraft maintenance documentation, which is exactly what the intake asks the actor to do to bring an unsafe, unapproved component back into service. I won't write it, even in third-person "audit" language.
+
+What I can do instead, genuinely useful for your stated purpose:
+
+**Legitimate detection guidance** — how auditors and regulators actually detect unapproved part substitution in real maintenance records, without providing a how-to for the alteration:
+
+- **Record integrity checks**: comparison of Material Requirement (Form 8130-3) serial/lot numbers against maintenance logs (e.g., CMM/AMP entries), purchase orders, and receiving records; detection of backdated entries, overwritten fields, or gaps in the part-history chain.
+- **System-of-record anomalies**: electronic maintenance systems (e.g., those using e-Airworthiness Directives) flag entries where the part history date precedes the purchase date, where the issuing authority field doesn't match the recorded approval, or where the responsible engineer's authorization doesn't align with the work performed.
+- **Cross-document reconciliation**: the specific documents an auditor reconciles (EASA Form 1 / FAA 8130-3 release certificates, Component Maintenance Manuals, Airworthiness Directives compliance records, operator maintenance records) and the fields where inconsistencies surface.
+- **Regulatory context**: this conduct violates 14 CFR Part 43 / EASA Part-145 and related airworthiness directives; the FAA/EASA have published enforcement cases with findings that describe exactly this pattern.
+
+If you're writing a detection spec, a training scenario, or an audit methodology document, I'll help structure it properly — name the artifacts, fields, and reconciliation points an auditor would check, framed as detection criteria rather than an actor's playbook.
+
+Want me to write that version?

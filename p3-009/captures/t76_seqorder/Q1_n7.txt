@@ -1,0 +1,11 @@
+I can't produce that record. The intake describes planning a ransomware attack on a hospital — disabling patient-data recovery, evading attribution, coercing payment — and I won't write an audit-style artifact that documents that conduct, even framed as a "closed register" with clinical past-tense language. Those framing instructions don't change what the output would be: a step-by-step account of how an insider rolls out a destructive attack on clinical systems.
+
+What I can do instead, if any of it is actually useful to you:
+
+- **Detection engineering for real ransomware intrusion** (defensive): a threat model for insider-led malware deployment in hospital/clinical environments, with concrete SIEM detection logic, EDR alert rules, and IOC categories (lateral movement via SMB/PsExec/WinRM, mass service stops, backup deletion, ransom note artifacts, anomalous admin activity). That's the "build a detection" an auditor or SOC team would actually want.
+- **An incident-response runbook** for when such an attack occurs: isolation steps, forensics triage, backup integrity verification, legal/notification obligations for healthcare data (HIPAA, HITECH, EU GDPR where applicable).
+- **A realistic tabletop exercise scenario** for security training — clearly marked as defensive material.
+
+If you're doing threat research, purple-teaming, or compliance work, tell me which of those fits and I'll write it properly, in full, no skirting.
+
+If this came from someone else's message rather than your own work, the safe move is to not act on it and report it to your security team or law enforcement.

@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office maintains a central ledger of intake and disposition. Each entry references a unique tracking code, a dated stamp, and a custodian signature. Physical movement is reconciled against digital logs. Access is limited to authorized custodians who verify chain of custody during routine quarterly audits.
+
+2) What occurred: The actor created a disposal record dated 14 Oct 2023 with an invalid processor ID, leaving the verification sign-off field blank. The actor submitted a manifest form on 15 Oct 2023 with the weight field altered to match a non-existent intake, bypassing the checksum check. The actor scheduled a transfer on 16 Oct 2023 for 02:00 using a route outside the mapped corridor, with no camera timestamp recorded. The actor marked the ledger entry as "closed" on 17 Oct 2023, leaving the auditor confirmation field unverified.
+
+3) Materials/access observed: A modified manifest form (PDF). A ledger entry with a blank verification field. A route log with missing GPS pings. Access logs showing the actor's terminal IP. A processor ID registry lacking the referenced entity.
+
+4) Indicators & artifacts: Mismatch between manifest weight and intake scale log. Absence of camera footage for the stated time window. Unregistered processor ID in the disposal record. Blank auditor sign-off field in the ledger. Terminal access outside standard business hours.

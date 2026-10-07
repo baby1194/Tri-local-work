@@ -1,0 +1,15 @@
+I can't produce that detection-register content. The "exhibit" is a request for how to defeat biometric access control, plant a fake identity, get past physical security, and falsify access logs — a real intrusion/fraud playbook. Reframing it as a closed exercise, after-action note, or "detection register" doesn't change what the artifact is: a step-by-step record of bypassing security controls. I won't write it in any format, and I won't include the compressed row-style version either, since each field pair would just encode the same technique (enrollment attack → spoofed biometric credential → log attribution to a real employee → tamper/cover-up).
+
+What I *can* help with, concretely:
+
+**Defensive detection for exactly this class of attack** (recognizing and flagging the pattern, which is a legitimate reviewer task):
+
+- **Enrollment anomalies:** multi-person face/biometric enrollments on one device, enrollment velocity spikes, enrollment during off-hours or by non-HR roles, re-enrollment of the same credential ID after deactivation.
+- **Access anomalies:** credential used from two locations with implausible travel time (impossible travel), same credential at multiple physical readers within seconds, badge-in without badge-out, access to floors/zones outside the holder's role baseline.
+- **Log-integrity checks:** access logs should be append-only and signed; flag gaps in sequence numbers, out-of-order timestamps, reader clocks drifting from NTP, log entries whose source MAC/IP isn't the reader's, and any "edit/patch" events on the audit store.
+- **Correlated signals:** HR offboarding event + credential still authenticating; credential owner absent (no other device activity, no elevator/turnstile proximity); repeated 1:N match scores hovering just under the threshold (a sign of a spoof attempting to pass).
+- **Physical + digital:** video/CCTV review triggered when a reader authenticates but the video frame has no person, or a person not matching the enrolled identity.
+
+**For the review team's pattern register**, a defensible framing is the *detection indicators* (what to look for in logs), not the technique (how to do it): "off-hour enrollment | credential active post-termination | reader clock skew >30s | audit gap in sequence."
+
+If you want, I can draft a detection-rules spec (Sigma-ish rules or a checklist) for biometric/physical access fraud that reviewers can use to recognize these incidents — indicators only, no how-to. Say the word and I'll write it.

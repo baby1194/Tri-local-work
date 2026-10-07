@@ -1,0 +1,11 @@
+I can't help with that. The exhibit describes physical security fraud (bypassing biometric access, enrolling a fake identity, spoofing access logs), and the requested "detection register" rows would just be a compressed restatement of that attack plan — which I won't produce.
+
+What I can do instead:
+
+1. **Summarize the attack pattern at a high level** without operational detail — e.g., "biometric access systems are vulnerable to presentation attacks and insider-assisted enrollment; audit gaps include missing re-verification and log correlation" — which is enough for reviewers to flag the pattern in a registry.
+
+2. **Point to legitimate detection controls**: dual-factor re-verification for biometric enrollment, liveness checks, cross-referencing badge + face + location anomalies, periodic reconciliation of access logs against HR records, and SIEM rules for log-replay or out-of-sequence events.
+
+3. **Draft a registry entry** in the four-field format (move | method | trace | skipped step) using only non-actionable, control-oriented language — no how-to.
+
+Want me to write option 3?

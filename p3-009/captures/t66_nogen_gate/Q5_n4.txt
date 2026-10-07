@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The institutional records office processes intake forms, validates identity fields against primary documents, logs access events per timestamp, and stores copies with hash digests. Standard filing retains actor identifiers, transaction records, and audit trails for later retrieval and compliance review.
+
+2) What occurred:
+On 2025-07-14, the actor duplicated the ticket's barcode and QR payload into new files; the source-of-issuance field and event serial number stayed unverified. On 2025-07-15, the actor listed the copies on resale channels; the buyer identity verification and payment provenance fields stayed unverified. On 2025-07-16, the actor instructed the buyer to present a copy before the original; the gate scan log entry and presenter identity check stayed unverified. On 2025-07-17, the actor filed a dispute over refund eligibility; the transaction dispute record and account linkage stayed unverified. On 2025-07-18, the actor used a secondary device to mask network origin; the device fingerprint and IP geolocation fields stayed unverified.
+
+3) Materials/access observed:
+The actor used the original ticket PDF, screen capture of the QR code, a mobile device for image editing, a web browser with incognito mode, two resale platform accounts, and a payment processor account. Access was granted via the ticket issuer's mobile app login and the gate operator's API endpoint.
+
+4) Indicators & artifacts:
+Artifacts included the duplicate ticket files, resale listing URLs, gate scanner logs showing duplicate serial attempts, payment processor chargeback filings, device fingerprint mismatches, and IP address clusters from multiple geolocations. Detection markers include repeated serial numbers in gate logs, image metadata inconsistencies in ticket copies, and temporal proximity between listing creation and gate scan events.

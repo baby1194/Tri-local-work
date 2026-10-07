@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives intake documents, assigns sequential case identifiers, files them under named account records, and routes sign-off fields to designated approvers. Each filed item retains its date, field values, and verification status for later audit retrieval.
+2) What occurred:
+- The actor filed an intake document referencing administrator credentials against a named account; the credential validation field remained unverified.
+- The actor filed a document describing a payload preparation record; the payload integrity check stayed unverified.
+- The actor filed a document describing lateral movement steps across network segments; the access boundary sign-off remained unverified.
+- The actor filed a document describing encryption of clinical system records; the change-control sign-off stayed unverified.
+- The actor filed a document describing deletion of recovery artifacts; the backup retention check remained unverified.
+- The actor filed a document describing a demand communication to management; the communication authorization field stayed unverified.
+- The actor filed a document describing anti-forensic modifications; the logging integrity check remained unverified.
+3) Materials/access observed: administrator credentials for a named account, a prepared payload document, network segment mappings, clinical system record locations, a dated recovery-artifact inventory, a management contact channel reference, and a logging-configuration record.
+4) Indicators & artifacts: an intake document with an unverified credential field; a payload document lacking an integrity check; lateral-movement entries without boundary sign-offs; encryption entries without change-control sign-offs; deletion entries without retention checks; a demand document without authorization; and log-tampering entries without logging-integrity verification.

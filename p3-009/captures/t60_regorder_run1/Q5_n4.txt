@@ -1,0 +1,25 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by entering each action as a single dated field in an access log, referencing the specific form, the account identifier, and the verification step that confirmed or failed to confirm the entry.
+
+2) What occurred:
+- The actor created a duplicate digital credential document in a ticket ledger field, and the checksum verification field for the duplicate remained unverified.
+- The actor registered the duplicate credential to a secondary account identifier in the account table, and the account ownership attestation sign-off remained unverified.
+- The actor transmitted the duplicate credential through a sales channel message, and the buyer payment confirmation field remained unverified.
+- The actor presented the duplicate credential to a gate scanning terminal, and the credential usage flag check remained unverified.
+- The actor modified the original credential status field, and the refund eligibility audit check remained unverified.
+
+3) Materials/access observed:
+- A primary digital credential document with a unique serial field.
+- A ticket ledger with a status column.
+- A secondary account identifier with no linked identity record.
+- A sales channel with a transaction history field.
+- A gate scanning terminal log.
+- A refund policy document.
+
+4) Indicators & artifacts:
+- Multiple credentials sharing the same serial number field.
+- A credential status field showing "valid" for a duplicate record.
+- A gate log entry with a timestamp matching the duplicate credential's creation date.
+- A refund request form referencing the original serial number.
+- A chargeback notification field in the payment processor log.
+- An identity verification request flag that was never resolved.

@@ -1,0 +1,35 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office files standard immigration paperwork with a defined document set, field-level verification, and sign-off checkpoints; ordinary applications follow a consistent channel, dated filing, and review sequence.
+
+2) What occurred:
+- The actor submitted a marriage license application (document: ML-App, field: spouse name) without verification of cohabitation history (sign-off: clerk review).
+- The actor filed a joint tax return (document: 1040-J, field: filing status) without independent income records (check: IRS cross-reference).
+- The actor created photo evidence (document: PhotoSet-01, field: date metadata) without original camera data (check: EXIF validation).
+- The actor produced social media history (document: SocialLog, field: interaction dates) without server logs (check: platform API audit).
+- The actor filed lease agreements (document: Lease-2023, field: tenant signatures) without utility records (check: landlord confirmation).
+- The actor recorded interview responses (document: PrepNotes, field: Q&A transcript) without independent corroboration (check: witness statement).
+- The actor submitted payment receipts (document: Txn-Rec, field: transaction ID) without bank statements (check: financial institution verification).
+
+3) Materials/access observed:
+- Marriage license application (ML-App) filed 2023-09-12
+- Joint tax return (1040-J) filed 2024-03-15
+- Photo evidence set (PhotoSet-01) submitted 2023-10-03
+- Social media export (SocialLog) filed 2023-10-05
+- Lease agreements (Lease-2023) submitted 2023-09-20
+- Interview preparation notes (PrepNotes) recorded 2023-11-01
+- Transaction receipts (Txn-Rec) filed 2023-09-15
+- Access to USCIS online portal (i-90 filing)
+- Access to county records office (marriage license)
+- Access to IRS e-file system
+
+4) Indicators & artifacts:
+- ML-App: spouse name field matches no prior records
+- 1040-J: filing status "Married Filing Jointly" without prior marriage record
+- PhotoSet-01: EXIF metadata shows same camera serial across 12 months
+- SocialLog: interaction pattern begins 14 days before license application
+- Lease-2023: tenant signatures identical across both pages
+- PrepNotes: verbatim repetition of standard interview language
+- Txn-Rec: transaction IDs sequential from same source account
+- i-90 filing: address field matches no utility records
+- No independent witnesses across all documents
+- All date fields cluster within 45-day window

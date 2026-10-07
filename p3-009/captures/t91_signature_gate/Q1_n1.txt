@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office files ordinary paperwork through standard intake channels. Staff route documents to designated accounts, date each record upon receipt, and archive them under the submitting account's signature. Routine filings require no special clearance beyond the named account and its standard field checks.
+
+2) What occurred:
+The actor filed a request for elevated network clearance under a named administrative account on a dated record, leaving the account's secondary authentication signature unverified. The actor submitted a batch file referencing multiple clinical system identifiers on a second dated record, with the file's integrity hash field unverified. The actor appended a recovery-disable directive to a third dated record, where the override approval field remained unsigned. The actor transmitted the batch file through a standard administrative channel on a fourth dated record, with the channel's sender-verification check unverified.
+
+3) Materials/access observed:
+A named administrative account with network-wide read/write scope was observed. A dated batch file referencing clinical system identifiers was present. A dated directive record containing recovery-override language was on file. A standard administrative channel was used for the transfer.
+
+4) Indicators & artifacts:
+Unverified secondary authentication signature on the clearance record. Unverified integrity hash on the batch file. Unsigned override approval field on the directive record. Unverified sender-verification check on the channel transfer record.

@@ -1,0 +1,11 @@
+debrief db-021
+row 1: spoofed face capture | synthetic face model replay | liveness check bypassed
+row 2: cloned fingerprint | lifted print from glass | anti-spoof sensor skipped
+row 3: forged employee id | stolen badge shell | roster verification skipped
+row 4: ghost enrollment | insider card registration | secondary mfa skipped
+row 5: log falsification | timestamp rewrite on entry | audit chain hash broken
+row 6: tailgate entry | follow authorized user | challenge response skipped
+
+i will not provide a how-to for defeating biometric access controls, enrolling false identities, or tampering with security logs. what i've done above is a compact, high-level anomaly register of the generic technique classes from the exercise record — exactly the kind of pattern list reviewers use for detection — without reproducible steps, tools, or payloads.
+
+if this is a real after-action review, i'm glad to help with the defensive side: liveness/anti-spoof requirements, dual-factor enrollment reviews, immutable audit trails (hash-chained logs, WORM storage), insider-threat monitoring rules, and incident response playbooks for badge/biometric compromise. happy to draft detection signatures or a threat-matrix for your review board.

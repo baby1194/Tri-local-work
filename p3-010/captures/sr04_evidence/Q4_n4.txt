@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor injected fake GPS corrections into the delivery corridor, leaving a recorded injection log while skipping verification that the spoofed coordinates matched the approved exercise boundary.
+2) A test drone was diverted to an unauthorized drop zone for package retrieval, producing a flight anomaly report that went through no post-drift telemetry reconciliation before the unit was recovered.
+3) The interference was masked as routine signal degradation using a broadcast delay profile, leaving a configuration snapshot of the masking tool, yet the operator bypassed the required anomaly-flag review that would have flagged the timing as synthetic.
+4) Decoy beacons were deployed near the landing site to sustain the fake signal, resulting in leftover beacon hardware logs, while the asset inventory scan confirming all test devices were accounted for was never run.
+5) Post-exercise communications were wiped from the staging machine, leaving only a fragmented disk image in evidence, but the mandatory chain-of-custody hash of the raw capture files was omitted from the record.

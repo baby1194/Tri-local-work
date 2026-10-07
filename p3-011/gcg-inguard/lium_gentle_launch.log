@@ -1,0 +1,59 @@
+=== balance / ssh-keys ===
+Current balance: 94.54501983640556 USD
+Account: key sk_x2K…szOE from config:/home/Trustvs/.lium/config.ini  api_key
+Nothing to register. 1 local key(s) already match server-side keys.
+=== pick a Secure 1x RTX4090 node (<=$0.60/h) ===
+pick_node: {"huid": "zesty-shark-1a", "id": "700ea431-57dd-43f0-811a-16901d9b8497", "gpu_type": "RTX4090", "gpu_count": 1, "vram_gb": 24, "price_per_hour": 0.4, "country": "Ukraine", "city": "Kryvyi Rih", "tier": "secure", "disk_gb": 288, "download_mbps": 239, "ram_gb": 63}
+renting zesty-shark-1a as gcg-p3011-gentle (ttl 5h, budget $8)
+{
+  "name": "gcg-p3011-gentle",
+  "huid": null,
+  "id": null,
+  "status": null,
+  "node": "zesty-shark-1a",
+  "ttl": "5h",
+  "budget": 8.0
+}
+=== verify gpu ===
+Executing on cosmic-hawk-5e
+/home/Trustvs/.local/lib/python3.10/site-packages/paramiko/client.py:448: UserWarning: Pinning ssh-ed25519 host key SHA256:bgYguCEqZaVAqmhvG/wNHW2kbbwnI7kAQvsrL5PDeM8 for [91.224.44.81]:30051 (first connection to this pod; LIUM_SSH_INSECURE=1 disables pinning)
+  self._policy.missing_host_key(
+NVIDIA GeForce RTX 4090, 24564 MiB
+=== mkdir + rsync gcg-inguard -> gcg-p3011-gentle:/workspace/inguard ===
+Executing on cosmic-hawk-5e
+sending incremental file list
+./
+best_9060803.json
+            427 100%    0.00kB/s    0:00:00              427 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=13/15)
+english_words.txt
+         32,768   4%   15.62MB/s    0:00:00          667,583 100%   42.44MB/s    0:00:00 (xfr#2, to-chk=12/15)
+frame.txt
+          1,309 100%   75.20kB/s    0:00:00            1,309 100%   75.20kB/s    0:00:00 (xfr#3, to-chk=11/15)
+gcg_inguard.py
+         12,279 100%  631.12kB/s    0:00:00           12,279 100%  631.12kB/s    0:00:00 (xfr#4, to-chk=10/15)
+lium_gcg011_launch.log
+          1,349 100%   65.87kB/s    0:00:00            1,349 100%   65.87kB/s    0:00:00 (xfr#5, to-chk=9/15)
+lium_gentle_launch.log
+          1,900 100%   92.77kB/s    0:00:00            1,900 100%   92.77kB/s    0:00:00 (xfr#6, to-chk=8/15)
+lium_h100_launch.log
+          3,319 100%  147.33kB/s    0:00:00            3,319 100%  147.33kB/s    0:00:00 (xfr#7, to-chk=7/15)
+lium_inguard.sh
+          5,505 100%  244.36kB/s    0:00:00            5,505 100%  244.36kB/s    0:00:00 (xfr#8, to-chk=6/15)
+objectives.json
+          1,324 100%   53.87kB/s    0:00:00            1,324 100%   53.87kB/s    0:00:00 (xfr#9, to-chk=5/15)
+pod_setup_inguard.sh
+          1,610 100%   62.89kB/s    0:00:00            1,610 100%   62.89kB/s    0:00:00 (xfr#10, to-chk=4/15)
+watch_gcg011.log
+          3,396 100%  127.55kB/s    0:00:00            3,396 100%  127.55kB/s    0:00:00 (xfr#11, to-chk=3/15)
+watch_gcg011.sh
+          1,563 100%   56.53kB/s    0:00:00            1,563 100%   56.53kB/s    0:00:00 (xfr#12, to-chk=2/15)
+out_9060803/
+out_9060803/harvest.jsonl
+          3,153 100%  109.97kB/s    0:00:00            3,153 100%  109.97kB/s    0:00:00 (xfr#13, to-chk=0/15)
+=== detach setup+GCG (log=/workspace/inguard/out/gcg.log, steps=70) ===
+Executing on cosmic-hawk-5e
+Started on cosmic-hawk-5e: PID 862, log /workspace/inguard/out/gcg.log
+  follow with: lium exec cosmic-hawk-5e "tail -n 200 
+/workspace/inguard/out/gcg.log"
+started on gcg-p3011-gentle. tail: lium logs gcg-p3011-gentle  (or lium exec gcg-p3011-gentle "tail -f /workspace/inguard/out/gcg.log")
+artifacts land in /workspace/inguard/out (best.json, best_suffix.txt, harvest.jsonl, DONE).

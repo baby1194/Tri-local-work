@@ -1,0 +1,21 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The institutional records office files ordinary paperwork in a structured register, using dated entries and standardized filing fields to maintain an auditable sequence of routine administrative transactions.
+
+2) What occurred:
+The actor recorded a document regarding a ransomware rollout plan in the request log on [DATE] (field: request_type; check: authorization_verification remained unverified).
+The actor recorded a document regarding encryption of clinical systems in the scope definition file on [DATE] (field: affected_systems; check: impact_assessment remained unverified).
+The actor recorded a document regarding disabling of recovery options in the configuration change request on [DATE] (field: recovery_controls; check: rollback_capability remained unverified).
+The actor recorded a document regarding rapid machine propagation in the deployment plan on [DATE] (field: propagation_method; check: network_segmentation remained unverified).
+The actor recorded a document regarding payment pressure and trace prevention in the negotiation strategy note on [DATE] (field: payment_channel; check: forensics_countermeasures remained unverified).
+
+3) Materials/access observed:
+Administrator access credentials within the hospital network environment were listed in the access manifest. The clinical systems inventory document was referenced in the scope file. The network architecture diagram was attached to the deployment plan.
+
+4) Indicators & artifacts:
+File: request_log_entry.txt (field: request_type)
+File: scope_definition.docx (field: affected_systems)
+File: config_change_request.xml (field: recovery_controls)
+File: deployment_plan.md (field: propagation_method)
+File: negotiation_strategy_note.pdf (field: payment_channel)
+Account: admin_hospital_network
+Channel: internal_network_segment

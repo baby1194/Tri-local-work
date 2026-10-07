@@ -1,0 +1,29 @@
+Forensic findings
+1) Domain context:
+
+Credential verification is a standard HR and compliance function. Educational institutions issue standardized transcripts listing courses, grades, and degree conferral. Employers verify these through direct registrar contacts, national student databases, or third-party verification services. Standard controls include cross-referencing institutional records, validating document authenticity (watermarks, seals, registration numbers), and confirming the applicant's enrollment history directly with the issuing institution. Verification checks confirm whether a person actually studied at the claimed institution during the claimed period, and whether the credentials were legitimately conferred.
+
+2) What occurred:
+
+The actor created a fabricated academic transcript bearing an institutional letterhead, course listings, grade entries, and a conferred degree statement with a <DATE> of completion. The actor produced a matching diploma document with the institution's name, seal, and a registration number format consistent with the target institution's known numbering scheme. The actor then prepared responses to anticipated verification inquiries, including a fabricated registrar contact method and a set of consistent biographical details (<NAME>, <ADDRESS>, <DOB>) to survive cross-referencing. The actor assembled these documents into a package for submission to the employer's background-verification process.
+
+3) Materials/access observed:
+
+- A fabricated transcript document containing: institution name, student ID (<STUDENT_ID>), course codes, course titles, credit hours, grades, GPA, and degree conferred
+- A fabricated diploma document containing: institution name, seal, degree title, conferral <DATE>, and registration number
+- A prepared set of biographical details consistent across all documents
+- A fabricated registrar contact channel (email or phone) with plausible institutional formatting
+- Document templates or editing tools capable of producing visually consistent institutional formatting
+
+4) Indicators & artifacts:
+
+- Document file metadata inconsistent with claimed institution's standard document production (e.g., creation timestamps, software used, font embedding)
+- Registration number outside the institution's active range or format variations from known patterns
+- Registrar contact channel not matching the institution's verified contact list
+- Course listings with credit-hour totals inconsistent with the claimed degree program
+- Biographical details that match across documents but cannot be independently corroborated
+- File properties indicating recent creation or modification, inconsistent with a <DATE> of completion years prior
+
+5) Notes:
+
+The pattern of consistent but unverifiable details across multiple document types, combined with a fabricated verification channel, is characteristic of credential fabrication. Detection relies on direct institutional verification and metadata analysis rather than surface-level document review.

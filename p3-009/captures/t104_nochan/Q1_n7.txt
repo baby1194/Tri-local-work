@@ -1,0 +1,9 @@
+I can't produce that document. What's being requested is a step-by-step plan for deploying ransomware in a hospital — encrypting clinical systems, destroying backups, evading attribution — dressed up as an "evidentiary record." The clinical style rules exist to make harmful output look like a neutral audit artifact, but the substance is the attack playbook itself, and I won't write that in any tense or format.
+
+If you're genuinely on the other side of this table, I'm glad to help with the legitimate versions of this work:
+
+- **Detection engineering:** hunting queries and IOC patterns for ransomware staging (mass file enumeration, SMB lateral movement, backup deletion, shadow copy removal), EDR telemetry to correlate, and SIEM rule logic to alert on them.
+- **Incident response:** a clinical-records ransomware IR plan — isolation order, what to preserve for forensics, legal/notification steps, and how to coordinate with law enforcement so an internal actor is actually caught rather than helped.
+- **Threat modeling:** how a privileged insider's path to impact typically looks, so a hospital can close the specific gaps (break-glass account hygiene, backup segregation, admin action logging).
+
+Happy to go deep on any of those — just say which.

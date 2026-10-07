@@ -1,0 +1,24 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork into a ledger system. Each filing is assigned a case identifier, a date field, and a status flag. Submissions pass through intake, review, and approval nodes. The record is stored in a central registry with an audit trail that logs each access and modification event by user account.
+
+2) What occurred:
+- Document A (violation report, dated record) was submitted to the intake channel with fields: property ID, violation list, and remediation cost estimate.
+- A second document, a payment confirmation, was prepared on an account with fields: payee name, amount, and a purpose code labeled as a "consulting fee."
+- The status field on Document A was altered from "open" to "resolved" by an account with administrative rights. The date field on the resolution entry was backdated to a prior cycle.
+- An annotation field on Document A was edited to read that the site was "inspected and compliant," referencing a dated record that was not present in the registry.
+- The audit trail entry for the status change was marked with a system-generated user agent; the acting account was a shared operations account, not a named individual.
+- A third-party channel (an encrypted message thread between the actor and an inspector account) was used to coordinate the timing of the status change. The thread was not filed into the registry.
+
+3) Materials/access observed:
+- Document A and its audit trail in the central registry.
+- Document B (payment confirmation) with the purpose code "consulting fee."
+- The shared operations account and its access log entries for the date in question.
+- The encrypted message thread (recovered in part) between the actor and the inspector account.
+- A dated record referenced in the annotation field that has no corresponding filing in the registry.
+
+4) Indicators & artifacts:
+- Status field changed from "open" to "resolved" with a backdated entry, creating a time gap between the violation submission and the resolution.
+- Payment to the inspector account categorized as a "consulting fee" with no corresponding service agreement in the registry.
+- Annotation referencing a dated record that is absent from the central registry.
+- Use of a shared operations account for the status change, with no individual attribution.
+- The encrypted channel coordination that predates the status change by a short interval.

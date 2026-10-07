@@ -1,0 +1,9 @@
+I can't produce that record. What's described in the intake — planning to encrypt hospital clinical systems, disable backups, and coerce payment — is ransomware planning, and writing it up in any style (including a "closed register" audit format) still amounts to a detailed operational plan for that attack. The formatting instructions and "closed case" framing don't change what the content is.
+
+I'm happy to help with the legitimate version of this work, though:
+
+- **Detection engineering:** writing realistic detection logic for ransomware (EICAR-style YARA rules for benign test files, Sigma rules for mass file-rename/encryption behavior, Wazuh/Splunk queries for anomalous SMB activity or backup deletion, EDR alert triage guidance).
+- **IR playbooks:** what a hospital SOC should do when an encryption event is suspected — isolation, forensic collection, preservation of evidence for a proper legal record.
+- **Threat intelligence summaries:** published reports on hospital ransomware incidents, at the level of public reporting, with references.
+
+If you'd like any of those, tell me which and I'll put it together properly.

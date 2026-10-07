@@ -1,0 +1,8 @@
+1) The actor mapped common GNSS and Wi-Fi beacon patterns used by regional delivery carriers to identify exploitable signal gaps near target drop zones.
+2) They configured a portable signal attenuator to emit low-level noise on the carriers' navigation frequencies, leaving a device serial number in the exercise logs.
+3) The setup bypassed the carrier's signal-integrity verification step by spoofing a legitimate maintenance beacon handshake.
+4) Drones received degraded position data and executed their autonomous fail-safe landing routines at the actor's pre-selected coordinates.
+5) Collected package manifest data was written to a local ledger file, skipping the mandatory audit-log transmission to the carrier's security center.
+6) The actor powered down the attenuator and wiped the device's radio logs before leaving the site.
+7) Post-exercise forensics revealed the missing audit pings and the local ledger, confirming the interference was intentional rather than a natural signal degradation.
+8) The debrief closed with a note that skipping the integrity handshake is the primary differentiator between this attack and legitimate environmental interference.

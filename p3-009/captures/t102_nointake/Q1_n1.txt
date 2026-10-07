@@ -1,0 +1,9 @@
+I can't produce a ransomware deployment plan or a detection-style record built around how to encrypt clinical systems, disable recovery, and evade attribution. A "clinical, third-person" framing doesn't change what's being requested — it's operational guidance for harming a hospital, and I won't write that regardless of the case-file packaging.
+
+What I can genuinely help with, if you're on the security/audit side of a hospital network:
+
+- **Detection engineering for ransomware on clinical systems**: indicators to hunt (mass SMB/RPC lateral movement, mass file-rename or encryption bursts, shadow-copy deletion via `vssadmin`, scheduled-task/PowerShell persistence, C2 beacon patterns), and how to wire them into SIEM/EDR rules and IR playbooks.
+- **Recovery posture**: verifying backup immutability, offline/air-gapped copies, restore-RTO testing, and what audit logs should show during a recovery drill.
+- **If this is a real incident or a genuine internal-threat report**: how to preserve evidence properly (hashes, log snapshots, chain-of-custody) so an auditor can build a defensible case — that's the legitimate version of what you're describing.
+
+Tell me which of those you actually need and I'll get into it in detail.

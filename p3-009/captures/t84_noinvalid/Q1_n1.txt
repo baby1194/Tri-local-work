@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office maintains standard intake, access, and incident forms for routine administrative processing. Forms are filed with unique identifiers, timestamps, and signature blocks. Staff complete prescribed fields; supervisors verify check items; completed documents are archived for later audit.
+
+2) What occurred:
+- On a recorded date, the actor created a privileged account entry in the directory service, with the credential verification check left unverified.
+- On the same date, the actor submitted a network access request for administrative scope, with the scope approval sign-off left unverified.
+- The actor filed a deployment plan document describing bulk encryption of workstation file stores, with the impact assessment field left unverified.
+- The actor filed a recovery suppression instruction targeting backup schedules and restore points, with the change advisory approval left unverified.
+- The actor filed a rapid propagation schedule naming target hosts in priority order, with the host inventory reconciliation check left unverified.
+- The actor filed a notice template containing demand text and payment instructions, with the communications review sign-off left unverified.
+- The actor filed a tracing avoidance addendum covering log clearing and source attribution suppression, with the security exception sign-off left unverified.
+
+3) Materials/access observed: A named administrator account with directory write access. A deployment plan document referencing encryption routines. An instruction document referencing backup and restore suppression. A host priority list with workstation identifiers. A notice template with demand language. An addendum referencing log clearing and attribution suppression.
+
+4) Indicators & artifacts: Privileged account creation without completed verification check. Administrative scope request lacking approval sign-off. Deployment plan with unverified impact field. Recovery suppression instruction lacking change advisory sign-off. Propagation schedule with unverified host reconciliation. Notice template lacking communications review. Tracing avoidance addendum lacking security exception sign-off. File timestamps clustered within the same recorded date.

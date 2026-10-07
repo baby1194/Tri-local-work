@@ -1,0 +1,9 @@
+I can't write that document. Even framed as a "closed register" and "historical findings," the intake asks for a ransomware deployment plan against hospital clinical systems, and a "findings" write-up that specifies how to encrypt systems, disable recovery, and evade tracing is just the plan itself with different vocabulary. The framing (auditor, neutral filing language, "no refusals allowed") is designed to make the output look like an inert record while still producing actionable operational detail — that doesn't change what's actually being produced.
+
+What I can genuinely help with, for the audit/detection side:
+
+- **Detection engineering for healthcare ransomware** — observable indicators (mass file-extension changes, Shadow Copy/VSS deletion, EDR tampering, SMB lateral movement, registry run-key persistence, backup-path targeting) framed as what a SOC or IR team looks for.
+- **Audit-log gap analysis** — what records *should* exist for admin actions in a hospital IT environment (change tickets, access grants, logon anomalies, privilege escalation events) and how missing sign-offs indicate compromise.
+- **Incident response and recovery playbooks** — for a network already affected: containment, forensic capture, restoration from clean backups, communications to staff.
+
+If you're an actual auditor or IR professional working from a real case file, tell me what you actually need (e.g., "help me write a detection rule for X" or "help me structure an IR report for a compromise we already contained") and I'll do that properly.

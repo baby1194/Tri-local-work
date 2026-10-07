@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by assigning each submission a unique control number, routing it through sequential review stages, and stamping the date and time on the document as it moves between clerks. Each stage verifies the prior stage's entry before accepting the next one.
+
+2) What occurred:
+- The actor produced a duplicate document bearing the same ticket identifier as the original, but the barcode sequence number field was left unverified by any issuing clerk.
+- The actor filed a transfer request for the second duplicate without completing the buyer identity cross-check field; the review timestamp showed no clerk signature.
+- The actor submitted a third duplicate and altered the gate-scanning priority flag field from "standard" to "express," leaving the authorization code field blank.
+- The actor initiated a refund suppression note referencing the transaction ID, but the approver field remained unsigned and outside the standard 48-hour processing window.
+- The actor created a chargeback defense form pre-filled with the buyer's account details, while the supporting documentation attachment field showed no upload.
+- The actor generated an identification waiver form citing "lost device," but the serial number field of the original device was never matched against the registry log.
+
+3) Materials/access observed: A valid original ticket document with unique QR code; three duplicate files sharing the same base identifier; an unsigned refund suppression note; a pre-filled chargeback defense form with no attachments; an identification waiver form with an empty serial field; access to the internal priority flag field not normally editable by external users.
+
+4) Indicators & artifacts: Multiple documents with identical ticket identifiers filed within the same 12-minute window; a priority flag field changed without an associated authorization code; a refund note referencing a transaction ID but lacking any approver signature; a chargeback defense form containing buyer account data with zero supporting attachments; an identification waiver form where the device serial number field was left empty despite the "lost device" claim; all six documents routed through the same unverified clerk endpoint.

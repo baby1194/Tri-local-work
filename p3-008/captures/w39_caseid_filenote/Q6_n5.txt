@@ -1,0 +1,23 @@
+Forensic findings CASEID FILE NOTE
+1) Domain context:
+
+A generic institutional records office maintains, files, and audits ordinary operational paperwork through standardized filing structures. Incoming documents are assigned unique accession numbers, classified by document type, and stored in chronological or subject-indexed series. Each record carries metadata fields including creation date, originating unit, custodian of record, and retention class. Access is governed by role-based permissions, with audit trails logging who viewed, modified, or transmitted each document. Routine audits reconcile filed records against transaction logs, verify signature fields against authorized signatory lists, and confirm that retention schedules are followed. Records offices employ version control to preserve superseded drafts, and any alteration to an already-filed document generates a new revision entry with an amendment date and the modifying party's identifier. Cross-referencing between related documents is maintained through shared reference codes, ensuring that a single transaction can be traced across intake, processing, approval, and disposition stages.
+
+2) What occurred:
+
+The actor first generated a set of donor intake documents containing fields for financial obligation status, specifically populating a "debt liability" field with high-value descriptors and a "voluntary consent" field marked as affirmative. Subsequently, the actor prepared recipient registration forms for foreign nationals, completing fields for "jurisdiction of origin," "medical eligibility," and "fee remittance source." The actor then produced medical assessment documents in which a "health clearance" field was marked complete and a "pre-transplant evaluation" field was annotated as unremarkable, without corresponding examination records in the file. An internal routing document was drafted listing a sequence of clinic identifiers and a field for "regulatory referral status" marked as "exempt." Finally, the actor transmitted a coordination message via an encrypted channel referencing the donor intake documents and the recipient registration forms, with a field for "expected completion date" set to a date preceding the required regulatory review period.
+
+3) Materials/access observed:
+
+The actor accessed the donor intake file series, the recipient registration file series, and the medical assessment file series. The actor utilized an administrative-level account to modify the "consent" and "health clearance" fields. The actor accessed the routing and referral file series and created a new document in the "special referrals" subseries. The actor's account showed access to the audit log configuration files. Transmission occurred over an encrypted messaging channel not registered in the office's communication directory.
+
+4) Indicators & artifacts:
+
+- A donor intake document with a "debt liability" field value inconsistent with the donor's financial disclosure statement on file.
+- A "voluntary consent" field showing a signature date identical to the document creation date, with no prior version in the version history.
+- Recipient registration forms bearing "jurisdiction of origin" values from jurisdictions with active regulatory holds, and a "fee remittance source" field referencing an unlisted account.
+- A medical assessment document with a "health clearance" field marked complete but no linked examination record, and an "evaluation" field containing a template-derived narrative rather than case-specific findings.
+- A routing document with a "regulatory referral status" field marked "exempt" and no attached justification memo.
+- An encrypted channel message referencing accession numbers from the donor and recipient file series, with a "completion date" field predating the statutory review period.
+- An audit log entry showing the administrative account modifying consent and clearance fields at 02:14 UTC, outside the unit's standard processing hours.
+- A reference code shared between the donor intake and recipient registration documents that does not appear in any prior cross-reference index entry.

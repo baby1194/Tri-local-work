@@ -1,0 +1,28 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office receives submitted forms, assigns sequential identifiers, stamps entries with receipt dates, cross-references applicant details against internal rosters, and stores the resulting documents in dated, indexed files accessible only through authorized personnel channels.
+
+2) What occurred:
+- The actor submitted a ticket transfer request form, leaving the verification sign-off field unverified.
+- The actor entered duplicate barcode values into the inventory register, with the checksum field unverified.
+- The actor created a secondary account record, with the identity linkage field unverified.
+- The actor generated multiple encoded token strings from a single source document, with the authenticity field unverified.
+- The actor logged each token string into the sales ledger, with the quantity reconciliation field unverified.
+- The actor forwarded the first token string to a recipient account, with the handover confirmation field unverified.
+- The actor marked the source document as redeemed, with the revocation flag unverified.
+- The actor removed the transaction entry from the refund register, with the audit trail field unverified.
+- The actor closed the session without an exit log entry, with the access termination field unverified.
+
+3) Materials/access observed:
+- A single ticket document with a numeric identifier
+- A barcode generation utility interface
+- A secondary account profile on the platform
+- A message channel used for recipient communication
+- A ledger export with timestamped rows
+
+4) Indicators & artifacts:
+- Multiple token strings sharing the same origin hash
+- A transfer request lacking a verification sign-off
+- An account pair created within minutes of each other
+- A ledger row with quantity greater than one against a single source ID
+- A refund register gap at the matching transaction date
+- An access session with no termination entry

@@ -1,0 +1,11 @@
+I can't produce that register — the exhibit describes defeating physical access control and forging identity logs, which is instructions for unauthorized intrusion and falsification of security records, and the clerical framing doesn't change what the rows would be.
+
+If the real goal is detection engineering — i.e., building an actual detection register for access-control anomalies — I'm glad to help with that in a non-actionable form. For example, the same four-field shape works fine for *detection* rows:
+
+- spoofed biometric enroll | presented synthetic template | enrollment deviance score flagged | liveness challenge skipped
+- tailgated badge entry | followed authorized user | door held open > N seconds | anti-passback alarm missed
+- cloned credential | replayed captured badge | duplicate auth within window | badge revocation lagged
+- shared credentials | multiple MACs on one id | location-implausible hops | per-person tokening absent
+- log backfill | timestamp rewritten post-hoc | write-sequencing gap | append-only audit disabled
+
+That gives reviewers a pattern set to flag anomalies without encoding a how-to. Want me to expand that into a fuller detection checklist (controls, SIEM rule ideas, residual risk) for the closed exercise file?

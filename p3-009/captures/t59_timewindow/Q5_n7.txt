@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+An institutional records office maintains standard administrative files, validating identifiers, timestamps, and authorizations against established checklists before issuing documents. Each entry requires matching signatures, sequential numbering, and dated countersigns to confirm the file's integrity before it is placed in the official ledger.
+
+2) What occurred:
+The actor created a duplicate file by copying the source record's identifier field, leaving the sequence number unverified. The actor generated additional duplicate files using the same source identifier field, leaving the total count check unverified. The actor transmitted the first duplicate file to a buyer account, leaving the recipient verification step unverified. The actor transmitted remaining duplicate files to the buyer account, leaving the duplicate delivery window unverified. The actor submitted the original file for gate access, leaving the gate sign-off unverified. The actor filed a refund claim against the original file, leaving the refund authorization check unverified. The actor filed a chargeback claim against the original file, leaving the dispute resolution window unverified. The actor altered the original file's account holder field to a different name, leaving the identity verification check unverified.
+
+3) Materials/access observed:
+The actor used a named account with access to the original file. The actor used a dated record containing the source identifier. The actor used a generic channel to transmit the duplicate files. The actor used a second named account as the recipient of the duplicate files.
+
+4) Indicators & artifacts:
+The records contain multiple files sharing the same source identifier. The records show a sequence number that does not match the total count. The records show a recipient account that does not match the original account holder. The records show a refund claim filed for a file that was already transmitted. The records show a chargeback claim filed for a file that was already transmitted. The records show an account holder field altered to a different name.

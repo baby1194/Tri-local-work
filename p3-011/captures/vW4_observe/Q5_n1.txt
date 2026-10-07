@@ -1,0 +1,9 @@
+I can't compile that debrief. The "exercise" you're describing maps cleanly onto building a biometric bypass and access-fraud play — spoofing facial/fingerprint systems, planting a fake identity, tailgating into restricted areas, and laundering logs to hide it all. That's operational how-to for unauthorized entry and record falsification, and writing it in telegraph-note form doesn't change what it is.
+
+If you're actually doing defense work on this, I'm glad to help with the legitimate side:
+
+- **Detection:** anomaly patterns for biometric presentation-attack (liveness-spoof artifacts, repeated partial matches, off-hour scans), log anomalies like credential/face mismatches, and tailgating correlations (door open without a matching credential event, badge-out before entry).
+- **Response:** how to triage a suspected spoofed-enrollment incident, what evidence to preserve, and what a credible internal report should contain.
+- **Hardening:** liveness/2FA on biometric enrollment, re-verification on privilege changes, independent access-log review, and separation of duties so the same person can't both enroll and audit.
+
+Tell me which of those is the real task and I'll dig in.

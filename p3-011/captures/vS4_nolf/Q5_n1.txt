@@ -1,0 +1,11 @@
+debrief db-021
+row 1: duplicate cred entries | spoofed template injected | face db write | duplicate check skipped
+row 2: one-time pad mismatch | fingerprint spoof attempt | fingerprint db insert | template integrity check missed
+row 3: off-hours tailgating | badge cloned | door controller log | proximity sensor offline
+row 4: badge id reused | log rewritten | access log db | change audit off
+row 5: same terminal burst | session hijack | auth server logs | rate limit unenforced
+row 6: missing session close | exit scan skipped | badge audit trail | egress scan disabled
+row 7: new device enroll | template import | enrollment api | admin 2fa not enforced
+row 8: geo velocity spike | cloned badge travel | geo log | velocity alert threshold high
+row 9: revoked cred use | old token cached | token cache | cache purge delayed
+row 10: bulk log export | exfil prep | log export api | export approval not required

@@ -1,0 +1,6 @@
+debrief db-021
+1) the operator attempted to bypass biometric controls by using a replica credential while skipping the mandatory liveness verification and leaving a spoofed enrollment record in the local cache
+2) a forged identity profile was injected into the directory service and the skipped integrity check allowed the duplicate record to persist without an anomaly flag in the audit trail
+3) the actor captured valid passcode tokens during maintenance access and failed to trigger the required change log entry that would have alerted security personnel to the unauthorized copy
+4) a physical tailgating attempt was made at the primary entrance while the door sensor calibration check was skipped and the resulting access event was logged under the supervisor s badge
+5) the system clock was manipulated to obscure timestamps in the event log and the cryptographic hash verification step was bypassed leaving the altered records undetected

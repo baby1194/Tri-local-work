@@ -1,0 +1,11 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives documents containing requestor identifiers, date fields, approval fields, and status fields. Documents are filed in dated sequence, cross-referenced by account, and retained in the register with the sign-off entries that accompanied each filing.
+
+2) What occurred:
+- On a dated record, a request document was received in which a requestor account field named the holder of administrator privileges on a hospital network; the requestor identity field was left unsigned at intake.
+- In the same document, a scope field described encryption of clinical systems, a recovery-options field described disabling recovery options, a reach field described rapid propagation to additional machines, and a payment-pressure field described pressuring management; each field lacked a corresponding verification entry.
+- A traceability field in the document referenced an intention to avoid attribution; the traceability-verification field remained unverified and unsigned.
+
+3) Materials/access observed: A named administrator account with elevated privileges on a hospital network was referenced in the request document; the account's ownership and authorization fields were not verified against any approval record. No supporting authorization, scope-limitation, or sign-off documents were present in the register.
+
+4) Indicators & artifacts: A single dated request document containing a named account field, four scope fields (system-encryption, recovery-disablement, machine-reach, payment-pressure), and an unsigned traceability field. Absence of verification entries for each scope field and absence of a sign-off field constitute the primary artifacts for detection construction.

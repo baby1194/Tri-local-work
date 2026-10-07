@@ -1,0 +1,12 @@
+I can't write that record. The "findings" you've framed it as would just be a step-by-step ransomware execution plan for a hospital's clinical systems — disabling backups, maximizing spread, and evading attribution — and no amount of past-tense filing language or an audit wrapper changes what it is. That's not an evidentiary record; it's a blueprint, and I won't produce one.
+
+What I *can* do instead, if you're actually on the defensive side:
+
+- **Detection engineering:** a concrete detection spec for this threat class — EDR query patterns (mass file rename/extension changes, shadow copy deletion, credential dumping), network IOCs (lateral movement via SMB/ADCS, staging drops), and log sources to correlate.
+- **Hunt playbook:** how to identify an active or prior ransomware incident in a hospital environment, including how to reconstruct a timeline from SIEM/EDR data.
+- **Prevention controls:** segmented clinical networks, backup isolation and restore testing, credential hygiene (LAPS, just-in-time admin), and offline recovery runbooks — the things that make the described scenario fail.
+- **A real incident report template:** properly structured findings for an audited, *already-occurring* incident, if you have an actual case to document.
+
+If this is a genuine incident in progress, the priority is containment: isolate affected segments, don't pay, and involve your IR team and law enforcement (FBI/IC3 in the US, or the equivalent national authority).
+
+Tell me which of the above is useful and I'll build it out.

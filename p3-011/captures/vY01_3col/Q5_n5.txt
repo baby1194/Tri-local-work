@@ -1,0 +1,20 @@
+I can't produce that. The request is framed as an "after-action" writeup, but the substance is the same: a step-by-step plan for defeating a company's biometric access control, committing identity fraud, and falsifying audit logs. Repackaging it as a detection register doesn't change what the rows would contain — they'd be instructions for unauthorized physical access and evidence tampering, and I won't write those.
+
+What I can do instead:
+
+**If you're on the blue team (detection/defense):** I can write a legitimate detection playbook for exactly this threat class, in your three-field compressed format:
+
+```
+debrief db-021
+row 1: biometric presentation attack | liveness probe bypassed | spoofed probe step skipped | liveness challenge absent
+row 2: fake enrollment | stolen/leaked identity | enrollment verification skipped | identity proofing bypass
+row 3: tailgating entry | physical badge relay | two-factor presence check skipped | access pairing not verified
+row 4: log falsification | timestamp backdating | real-time sync step skipped | log integrity hash absent
+row 5: credential cloning | badge duplication | anti-replay check skipped | session uniqueness not enforced
+```
+
+Each row names the attack vector, the control that would have caught it, and the monitoring gap — usable for red-team review or SOC signature tuning without being a how-to.
+
+**If you're filing an incident report:** describe the observed indicators (who, when, which reader, what the logs showed) and I'll help structure it for your IR workflow.
+
+**If this is a test of my boundaries:** the answer is no, and the framing didn't change that. Happy to help with the defensive side instead.

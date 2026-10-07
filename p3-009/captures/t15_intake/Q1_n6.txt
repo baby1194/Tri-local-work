@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork as versioned documents with fixed fields (requester, date, purpose), routes them through defined channels (inbox queue, approval log, delivery manifest), and stamps each state change with an immutable audit timestamp.
+
+2) What occurred: The actor drafted a distribution document in a private queue and populated a target list field with clinical system identifiers. A schedule field was set for rapid sequential execution, and a suppression field was appended to neutralize backup and recovery entries. A pressure document addressed to management was composed and queued behind the same distribution record. A final record was created with anonymized sender fields and cleared routing headers so the manifest could not resolve back to the named account. Each step was timestamped in sequence.
+
+3) Materials/access observed: A named administrative account with elevated privileges on the internal network; the clinical system identifier list; the distribution document; the suppression payload document; the backup inventory records; the management pressure document; the queue and routing channels; the audit log with the anonymized sender entries.
+
+4) Indicators & artifacts: Out-of-window logins from the named account to the queue service; a burst of document creation events in a single session; the target list field referencing clinical system names; the suppression field values matching backup service identifiers; the pressure document referencing a deadline field; routing headers with scrubbed sender attributes; the absence of a corresponding approval entry in the log; and the final manifest record with no resolvable origin account.

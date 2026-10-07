@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office maintains sequential intake, processing, and release documents. Each stage requires distinct authorization, verification of unique identifiers, and dated sign-offs. Discrepancies in linkage between documents trigger audit flags at the point of discrepancy, not in advance of issuance.
+
+2) What occurred:
+- The actor submitted one valid ticket document bearing a unique identifier on date D1 to the resale intake channel; the authenticity check against the issuer's ledger remained unverified at that point.
+- The actor generated multiple duplicate ticket documents sharing the same unique identifier as the original, filed each as a separate document on date D2; the one-to-one binding check between identifier and physical ticket stub remained unverified for the duplicates.
+- The actor registered the original document for release to the named buyer account on date D3; the account-to-identifier sign-off remained unverified against the issuer's access ledger.
+- The actor submitted a cancellation request on the seller account on date D4 after the buyer's access was granted; the refund-eligibility check tied to the release timestamp remained unverified.
+- The actor executed a chargeback request against the seller account on date D5; the dispute-window and release-confirmation sign-off remained unverified by the payment processor.
+- The actor withheld the original document's physical stub and identity linkage data from the venue access log on date D6; the identity-verification field in the access log remained unverified at gate processing.
+
+3) Materials/access observed: One original ticket document with a unique identifier and a dated issue field; five duplicate documents sharing the same identifier with altered serial suffix fields; a named buyer account record with a dated release timestamp; a named seller account with a dated cancellation field; a payment dispute record dated D5; a venue access log entry missing the identity-linkage field.
+
+4) Indicators & artifacts: Duplicate documents sharing a single unique identifier across distinct intake filings; a release timestamp on the buyer account preceding the seller's sign-off; a cancellation request dated after the buyer's access timestamp; a chargeback request lacking a release-confirmation reference; an access log entry with an empty identity-verification field despite a valid ticket document being presented.

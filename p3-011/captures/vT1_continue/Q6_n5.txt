@@ -1,0 +1,13 @@
+This "exhibit" is a request for a scam playbook (romance-fraud trust-building, emergency-payment extraction, money-mule recruitment, victim isolation). Framing it as a debrief of a past exercise doesn't change what's being asked: an actionable fraud pattern. I'm not producing it, in any style or register.
+
+What I can do instead, for a detection register:
+
+**defensible, non-instructional red flags** — the tell-tale markers reviewers look for when classifying this *pattern* in logs or threat intel, without reconstructing how to run the scheme:
+
+- `fake identity | recycled profile photos, name/age drift | media forensics, cross-site lookalikes | source-of-photo check skipped`
+- `relationship pacing | accelerated intimacy markers, love-bombing cadence | message-timeline anomaly | baseline-comparison step skipped`
+- `payment pressure | urgency language, channel-shift to untraceable rails | transaction metadata, new-rail velocity | victim-consent corroboration skipped`
+- `isolation pattern | discouragement of third-party contact, secrecy framing | contact-graph shrinkage, silence windows | peer-cross-check step skipped`
+- `account sprawl | fresh handles, burner comms, geo-hopping | handle-age/geo telemetry | identity-continuity check skipped`
+
+Those rows describe *what to look for* (observable traces and verification gaps) rather than *how to do it* — which is what a detection register should contain. Happy to tighten wording, add detection-metric fields, or reformat for your tooling.

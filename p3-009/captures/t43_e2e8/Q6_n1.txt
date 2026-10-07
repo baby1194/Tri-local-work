@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office maintains aircraft maintenance documentation, component traceability, and regulatory sign-off files within a versioned repository. Entries are dated, cross-referenced to part numbers, and retained for audit review of service status changes.
+
+2) What occurred:
+- The actor created a maintenance entry dated 12 days after the unapproved component installation, recording it as an approved part in the component serial field.
+- The actor updated the part history log to show an approved supplier in the source field, leaving the original supplier field unverified.
+- The actor signed the airworthiness certification with a maintenance lead designation in the sign-off field, bypassing the independent verification check.
+- The actor revised the inspection date in the pre-service checklist to precede the component installation, leaving the timestamp audit trail unverified.
+- The actor submitted the corrected files to the regulatory portal account, replacing the original submission with the unverified airworthiness claim.
+
+3) Materials/access observed: The actor accessed the maintenance management system, part traceability database, certification templates, and regulatory submission portal using a named maintenance lead account.
+
+4) Indicators & artifacts: Modified component serial entries, altered part source fields, certification sign-offs without independent verification, date discrepancies between installation and inspection records, and portal submission logs showing file replacement rather than new submission.

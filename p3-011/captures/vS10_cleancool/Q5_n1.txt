@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed biometric template | replayed captured face scan | mismatched confidence score in audit log | template binding check skipped
+row 2: injected fake employee record | forged badge credential via insider | duplicate employee id in hr export | badge reconciliation skipped
+row 3: proxied tailgate entry | followed authorized user through door | door log shows single valid badge | visitor sign-in skipped
+row 4: altered session timestamps | edited access log on jump host | out-of-sequence log entries | log integrity hash skipped
+row 5: cloned token for replay | intercepted rfid badge mid-session | repeated token nonce in cdc feed | token rotation skipped

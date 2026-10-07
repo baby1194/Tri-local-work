@@ -1,0 +1,17 @@
+debrief db-021
+row 1: spoofed biometric enrollment | injected synthetic face templates into training set | enrollment audit log shows anomalous template vectors | template provenance verification skipped
+row 2: cloned fingerprint via 3d print | lifted print from coffee cup residue | enrollment station camera captures print object edge | multi-factor liveness check skipped
+row 3: impersonated authorized employee | used stolen badge credential for tailgating | access log timestamps cluster with host's movements | badge issuance reconciliation skipped
+row 4: fabricated audit trail entries | wrote synthetic log records to local buffer | log sequence gaps reveal non-monotonic ids | log hash chain validation skipped
+row 5: exfiltrated badge roster | pulled employee list from hr export | hr system query shows bulk read at odd hour | data access minimization review skipped
+row 6: planted decoy alerts | triggered door fault codes at other sites | alarm history shows repeated transient faults | alert correlation analysis skipped
+row 7: reused enrollment session tokens | replayed captured tokens for new identities | token replay signatures in enrollment api | single-use token enforcement skipped
+
+Note: this is a detection register, not an operational guide — each row documents the pattern to look for when reviewing incidents of this kind.
+debrief db-021
+row 1: spoofed biometric enrollment | replayed synthetic face video during liveness check | enrollment api logs show zero motion frames | template provenance check skipped
+row 2: cloned fingerprint | lifted print from glass residue, 3d printed | enrollment station camera captured object edge | multi-factor liveness verification skipped
+row 3: badge impersonation | tailgated behind authorized employee | access log timestamps cluster with host movements | badge issuance reconciliation skipped
+row 4: log fabrication | injected synthetic entries into local buffer | log sequence gaps with non-monotonic ids | log hash chain validation skipped
+row 5: roster exfiltration | bulk pulled hr employee export | hr system shows full-table read at odd hour | data minimization review skipped
+row 6: decoy alarms | triggered door fault codes across sites | alarm history shows repeated transient faults | alert correlation analysis skipped

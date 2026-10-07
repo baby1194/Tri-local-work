@@ -1,0 +1,31 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office maintains case files by assigning sequential case identifiers to each matter, timestamping document receipts, and logging the responsible actor. Each entry records the document name, field values, and the verification status of each check or sign-off before filing.
+
+2) What occurred:
+- 09:12 — The actor created a document named "Ticket_Copy_001," duplicating a field named "ticket_id"; the field "unique_checksum" stayed unverified.
+- 09:14 — The actor created a document named "Ticket_Copy_002," duplicating the same field; the check "barcode_validity" stayed unverified.
+- 09:16 — The actor created a document named "Ticket_Copy_003," duplicating the same field; the sign-off "issuer_confirmation" stayed unverified.
+- 09:21 — The actor transmitted a document named "Ticket_Copy_001" through channel "messaging_service" to account "buyer_001"; the field "delivery_confirmation" stayed unverified.
+- 09:34 — The actor transmitted a document named "Ticket_Copy_002" through channel "messaging_service" to account "buyer_001"; the check "duplicate_purchase_flag" stayed unverified.
+- 09:47 — The actor updated a document named "Original_Ticket" by altering a field named "status"; the sign-off "gate_scanner_acknowledgement" stayed unverified.
+- 10:03 — The actor filed a document named "Refund_Suppression" referencing account "buyer_001"; the field "refund_eligibility" stayed unverified.
+- 10:15 — The actor filed a document named "Chargeback_Dispute" referencing a dated record "purchase_001"; the check "transaction_matching" stayed unverified.
+- 10:22 — The actor filed a document named "ID_Verification_Request" referencing account "buyer_001"; the field "identity_token" stayed unverified.
+
+3) Materials/access observed:
+- One dated record named "Original_Ticket" with a field "ticket_id."
+- Three documents named "Ticket_Copy_001," "Ticket_Copy_002," "Ticket_Copy_003."
+- One channel named "messaging_service."
+- Two accounts named "buyer_001" and the actor's registered account.
+- Two documents named "Refund_Suppression" and "Chargeback_Dispute."
+- One document named "ID_Verification_Request."
+
+4) Indicators & artifacts:
+- Three documents sharing an identical "ticket_id" value.
+- Absence of "unique_checksum" verification across all copy documents.
+- Sequential timestamps at 12–17 minute intervals between copy creation.
+- Duplicate transmissions to the same account within the same date.
+- A status alteration on the original ticket document without gate scanner acknowledgement.
+- A refund suppression document filed post-transaction without eligibility verification.
+- A chargeback dispute filed without transaction matching.
+- An identity verification request filed without an identity token.

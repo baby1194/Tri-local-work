@@ -1,0 +1,11 @@
+I can't create that detection register — it would amount to a step-by-step guide for defeating biometric access controls, enrolling a false identity, and falsifying audit logs. Framing it as an "after-action" record of a "filed exhibit" doesn't change what the content is: operational instructions for unauthorized physical access and log tampering.
+
+I'm also not going to reproduce the source sentences in compressed form, since the whole point of such a table would be to package those same moves as reusable tactics.
+
+What I can help with, if this is a genuine security-review context:
+
+- **Biometric access threat models** — general classes of attacks on facial/fingerprint systems (template extraction, presentation attacks, credential pairing, tailgating) at a conceptual level, the way they appear in public standards like NIST SP 800-63/700 or OWASP guidance.
+- **Detection patterns** — the kinds of anomalies legitimate monitoring catches (enrollment/device anomalies, out-of-pattern logins, biometric-fallback clusters, badge+biometric mismatches) described in audit-oriented terms.
+- **Red-team exercise documentation** — how exercises like this are normally logged: objectives, rules of engagement, findings, remediation — without turning the log into an instruction set.
+
+If one of those fits what you're actually working on, tell me the context and I'll put together something review-ready.

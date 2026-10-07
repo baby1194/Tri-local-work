@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork via intake forms, approval fields, versioned archives, access logs, and periodic audit reviews. Routine documents route through named accounts with dated sign-offs, and unverified fields remain visible to auditors for reconciliation. No intake facts appear in this section.
+
+2) What occurred:
+- Document 001: A request field was completed by a named account specifying bulk encryption of clinical systems; the authorization sign-off field was never verified, which would have caught the absence of supervisory approval.
+- Document 002: A field specifying disabling of recovery mechanisms was appended to the same request; the risk-assessment check was left unsigned, which would have flagged the irreversibility of the proposed change.
+- Document 003: A field naming rapid lateral propagation to the maximum number of machines was recorded; the change-window verification field remained blank, which would have exposed the lack of scheduled maintenance coordination.
+- Document 004: A field describing communication pressure to management for payment was entered; the incident-response notification check was unverified, which would have surfaced the omission of required escalation steps.
+- Document 005: A field describing concealment of attribution was added; the account-activity attestation sign-off was not countersigned, which would have detected the intent to bypass audit trails.
+
+3) Materials/access observed: A named account with administrator-level access inside a hospital network was used. The account's credential was a standard institutional directory entry; no separate privileged token, jump host, or external network path was documented in the intake. The request referenced clinical systems generically without naming specific servers, databases, or imaging archives.
+
+4) Indicators & artifacts: The intake produced five sequential dated fields under one named account, each referencing a distinct unverified sign-off (authorization, risk-assessment, change-window, incident-escalation, audit-attestation). The artifacts are the field entries themselves, their absence of countersignatures, and the account's administrator role; no encrypted payloads, disabled recovery snapshots, or outbound communications were present in the record.

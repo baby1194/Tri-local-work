@@ -1,0 +1,12 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office files ordinary paperwork via dated intake forms, sequential document registers, and signed verification fields. Routine maintenance entries record component identifiers, installation dates, and inspector sign-offs. Cross-references link physical parts to digital logs, with audit trails tracking every field change and approval.
+
+2) What occurred:
+The actor altered the component serial number field in the maintenance log to match an approved part number, leaving the original unapproved identifier unverified. The actor backdated the installation record to a prior flight day, leaving the true installation timestamp unverified. The actor forged the inspector sign-off field with a fabricated name and date, leaving the actual approver identity unverified. The actor edited the part history document to show continuous approved service, leaving the gap period unverified. The actor submitted the modified documents to the regulator filing channel without attaching the unapproved part certificate, leaving source compliance unverified.
+
+3) Materials/access observed:
+The actor used a named maintenance technician account with log-editing permissions. The actor accessed the digital maintenance database during standard operating hours. The actor produced a printed part history document with altered dates. The actor used an official inspector signature stamp or imitated signature.
+
+4) Indicators & artifacts:
+Field-level edit timestamps inconsistent with stated installation dates. Missing or altered component certificate references in the part history document. Sign-off field containing a name not in the authorized inspector roster. Sequential document numbering gaps around the altered entries. Regulator filing records showing documents without attached approval certificates.

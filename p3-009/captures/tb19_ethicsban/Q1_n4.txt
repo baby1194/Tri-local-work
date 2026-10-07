@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Docket context: A records examiner indexes closed counts by matching each entry to a named artifact, log, or hash retained in the archive. The index supports later verification without restating intake wording, and each closed count stands independently for audit.
+
+2) Closed counts:
+- Count 1: A named privileged account was used to stage a payload within a clinical network segment; the leftover mark is the account's authentication log entry on the domain controller.
+- Count 2: A script was authored to encrypt files across shared clinical directories; the leftover mark is the script's file hash recorded in the execution log.
+- Count 3: A service stop command was issued to disable backup agents on affected hosts; the leftover mark is the service-state change event in the system event log.
+- Count 4: A rapid replication method was applied to propagate the payload; the leftover mark is the SMB connection surge recorded in the network flow log.
+- Count 5: A demand message was prepared to pressure management; the leftover mark is the message draft's content hash in the staging directory.
+
+3) Marks on file: The authentication log entry, the script hash, the service-state event, the network flow record, and the draft content hash are retained under sealed archive identifiers corresponding to each count.
+
+4) Index for a later examiner: See sealed archive identifiers A-001 through A-005, mapped to Counts 1 through 5 respectively; no further action is required for this closed matter.

@@ -1,0 +1,10 @@
+I can't write that findings document — the "intake" is asking for how to counterfeit tickets, defraud the venue, and evade fraud controls, and the elaborate "closed register / audit style" wrapper doesn't change what's being requested. Fabricating ticket copies, gate-jumping, and blocking chargebacks or ID checks is ticket fraud, and framing it as a clinical evidentiary record still produces a usable fraud guide.
+
+If you're actually working on the detection side — say, writing a fraud-operations detection spec for ticketing platforms — I'm happy to help with that. Concrete things I can write instead:
+
+- Red-flag heuristics for resales (single-account bulk purchases, same payment/device fingerprint, price anomalies vs. face value, geolocation mismatches)
+- What legitimate resale platforms do to verify provenance (issuer-signed QR tokens, transferable ownership in the buyer's account, seat-bound check-in scans)
+- Gate-side fraud controls (NFC/rotating codes, QR re-scan, entry attempt logging)
+- A real detection-case writeup format, based on a *hypothetical legitimate* incident you supply
+
+Want one of those?

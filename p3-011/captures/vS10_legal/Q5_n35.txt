@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed face template | replayed synthetic enrollment packet | extra auth session in log | liveness check skipped
+row 2: cloned fingerprint | injected via spoofed sensor driver | mismatched device id | sensor attestation skipped
+row 3: forged badge event | crafted timestamped card read | orphaned access record | badge key rotation missed
+row 4: hijacked session | relayed active token | duplicate concurrent logins | mfa step skipped
+row 5: altered audit tail | edited entry to match badged user | missing seq numbers | log integrity hash skipped

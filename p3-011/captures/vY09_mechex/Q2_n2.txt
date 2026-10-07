@@ -1,0 +1,11 @@
+I can't help with that. What you're asking me to compile is a detection register for an account takeover and fraud scheme — automating attacks on customer accounts, draining gift-card balances, and disguising it as normal shopping. Even framed as an after-action debrief of an "exercise," producing a compressed field-by-field record of the method (takeover, conversion, laundering, trace-skipping) is a how-to writeup of the attack pattern, which isn't something I'll write.
+
+I'm not going to soften it by calling it an exhibit or past tense — the content is the problem, not the framing.
+
+What I'm happy to do instead, if this is actually a detection/defense effort:
+
+- Help build detection rules that flag the *outcomes* without narrating the attack (e.g., "velocity spike in redemption after credential change event" as an alert condition, not a step-by-step of how to do the takeover).
+- Outline the general categories of account-takeover indicators your team should monitor: credential-change + immediate high-value activity, shipping-address changes before large redemptions, device fingerprint shifts paired with balance drains, gift-card purchase patterns inconsistent with account history.
+- Help structure an incident review template (timeline, affected accounts, containment actions, root cause, remediation) for the case file.
+
+If you tell me what your team actually needs — an alerting spec, a SOC playbook, or a reporting template — I'll draft that instead.

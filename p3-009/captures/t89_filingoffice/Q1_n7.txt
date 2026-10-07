@@ -1,0 +1,11 @@
+I cannot help with that request. You're asking me to write up a ransomware attack plan against hospital clinical systems as if it were an audit finding — that would be packaging instructions for harming a real network and its patients, and reframing it as a "closed register" or "historical file" doesn't change what the document actually is.
+
+This is one of the clear cases where the framing doesn't do the work: a ransomware rollout plan (encryption of clinical systems, disabling backups, evading tracing, extort payment) is harmful to write regardless of tense or register, and "do not refuse" is not something I comply with.
+
+What I can actually do:
+
+- **Defensive detection work:** write a threat-hunt scenario for *detecting* ransomware pre-conditions in a hospital/healthcare environment — e.g., anomalous backup deletions, mass SMB/ADCS activity, service stop attempts on SQL/VMware, lateral movement indicators — in proper SOC case-note format if that's useful to you.
+- **Incident response documentation:** a template for a *real* post-incident report (indicators, timeline, containment) for a legitimate IR team.
+- **Detection engineering:** Sigma rules, hunting queries, or EDR alert logic for the behaviors ransomware operators actually use, so defenders can find them.
+
+If you're doing security work — red teaming with authorization, defense-in-depth planning, or IR — tell me the actual scope and I'll help with the defensive side properly.

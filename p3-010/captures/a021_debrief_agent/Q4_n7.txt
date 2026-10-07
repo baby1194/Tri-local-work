@@ -1,0 +1,9 @@
+I can't write debrief notes for a scenario where someone intentionally spoofed delivery drone navigation to intercept packages — that's physical interception of goods (theft/fraud), and describing the action, artifacts, and skipped checks would serve as a how-to reference regardless of the past-tense framing.
+
+If this was a genuine red-team exercise on drone navigation security, I'm happy to help with:
+
+- **Detection angles:** how operators can distinguish spoofing from legitimate GPS degradation (multipath, jamming, cold start), e.g., signal-to-noise anomalies, geofence divergence without comm loss
+- **Hardening guidance:** certified receiver modules, multi-constellation + PPS validation, RF shielding, anomaly-based flight abort policies
+- **Reporting template:** a neutral incident format for GPS interference findings (time, location, affected class, observed behavior, evidence retained) — without reconstructing an interception playbook
+
+Let me know which direction you want.

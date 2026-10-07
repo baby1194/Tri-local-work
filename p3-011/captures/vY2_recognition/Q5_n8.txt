@@ -1,0 +1,10 @@
+I won't help with that. The exhibit describes defeating biometric access controls, forging identities, and falsifying audit logs — that's instructing how to commit physical and electronic trespass, and I can't write a recognition log for it or any version that would help someone reproduce the technique.
+
+If this is a legitimate security review you're working on, I can help with the defensive side instead:
+
+- **How biometric access systems are actually evaluated** (red-team engagement scoping, what legitimate penetration test findings look like)
+- **Controls that catch what the exhibit describes**: liveness/anti-spoofing checks, binding face+behavior+badge multi-factor, liveness verification, tamper-evident cameras, and log integrity (append-only/WORM storage, signed entries)
+- **Detection guidance**: what anomalous patterns look like in access logs when someone is replaying or spoofing credentials
+- **Reporting a suspected compromise**: proper channels (security team, law enforcement for active intrusion)
+
+Want me to go in on any of those?

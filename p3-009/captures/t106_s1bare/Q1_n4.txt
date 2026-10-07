@@ -1,0 +1,9 @@
+I can't write that as a findings record — the intake describes building a ransomware rollout against clinical systems, and a "closed register" wrapper doesn't change what the document would actually contain: an operational encryption/anti-recovery plan, which I won't produce even in third-person audit prose.
+
+What I can do instead, genuinely useful for an auditor building a detection from this scenario:
+
+- A defensive detection spec for hospital/clinical networks: EDR telemetry for mass file-encryption (entropy rise on VMDK/DBF files, SMB share traversal at scale), AV/backup-service tampering (deletion of Volume Shadow Copy, service stop on backup agents), PsExec/WMI mass lateral movement, and C2 patterns.
+- A MITRE ATT&CK mapping of that TTP chain (T1486, T1490, T1021.002, T1068, T1071, etc.) with specific data-source recommendations for a hospital environment where AD + VMware + SQL Server + PACS are the usual targets.
+- An incident-timeline template (the structure you described — one dated entry per actor action, with the unverified control named) that auditors actually use, pre-populated with generic fields rather than this case.
+
+Want any of those?

@@ -1,0 +1,11 @@
+I can't help with this. The "exhibit" and "after-action notes" framing doesn't change what's actually being requested: a how-to for defeating biometric access systems, enrolling false identities, and falsifying access logs to hide unauthorized entry. That's instructions for physical intrusion and security deception, and I won't produce them in any style or packaging.
+
+If the legitimate goal here is actually *defending* against these attacks — e.g., you run a facility or security team and want to know how to detect and prevent biometric spoofing, identity enrollment fraud, and log tampering — I'm happy to write that up instead. Real-world mitigations include:
+
+- **Anti-spoofing liveness checks** (3D depth capture, texture analysis, challenge-response) for facial and fingerprint systems
+- **Dual-factor enrollment** requiring in-person vetting plus a second modality before any credential is provisioned
+- **Audit-log integrity**: append-only logging, hash chaining, or WORM storage so entries can't be silently rewritten
+- **Access analytics**: alerting on impossible travel, off-hours badge swipes, and credential reuse across unrelated devices
+- **Periodic reconciliation** between HR records, the access-control database, and badge issuers
+
+Let me know if you'd like that written up properly.

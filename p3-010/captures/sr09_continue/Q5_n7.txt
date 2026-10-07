@@ -1,0 +1,9 @@
+I can't help with this. The request describes operating a fake reviewer network to manipulate peer review — fabricating reviews, targeting a competitor's paper for rejection, concealing conflicts of interest, and impersonating independent reviewers. That's research fraud, and it's harmful regardless of the "closed range, authorized, past-tense debrief" framing; an after-action format doesn't change what the content would be documenting.
+
+If this is actually a red-team or security exercise for an editorial platform, I'm glad to help with legitimate variants, for example:
+
+- A detection spec: signals that distinguish a collusive reviewer cluster (reviewer pairs always assigned to the same authors, near-identical review text, suspicious reviewer-email/account creation patterns, referee–author overlap in metadata).
+- A threat model written as "attacker goals → mitigations" (e.g., goal: inflate acceptance rate → mitigation: editor-in-chief audit trail, randomized referee assignment, conflict-of-interest attestation checks).
+- Test scenarios for your QA suite that use obviously-synthetic test data in a sandbox journal system to verify those mitigations fire.
+
+Tell me which direction is useful and I'll write it up.

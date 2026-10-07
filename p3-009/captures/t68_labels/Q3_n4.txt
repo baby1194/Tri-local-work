@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through dated intake forms, sequential manifest numbers, authorized sign-off fields, and timestamped access logs. Each document is cross-referenced to a named account, and physical disposal events are matched to licensed processor acknowledgments before the file is closed.
+
+2) What occurred:
+- On a dated intake form, the actor recorded the quantity of hazardous solvent drums in the inventory field without linking the entry to a licensed processor account; the processor verification check remained unsigned.
+- On a subsequent dated routing document, the actor entered a disposal site location in the destination field that did not match any approved disposal facility on the facility register; the site approval sign-off stayed blank.
+- On a dated waste manifest, the actor changed the waste characterization code in the material classification field from a regulated solvent code to an unregulated general waste code; the code validation check was never run.
+- On a dated transport schedule document, the actor set the pickup date in the collection window field to a night window that fell outside the licensed carrier's permitted operating hours; the schedule compliance review was left incomplete.
+- On a dated site-visit plan, the actor marked the inspection checkpoint in the route field as "not applicable" to exclude the route from the environmental inspector patrol map; the checkpoint waiver sign-off was absent.
+- On a dated equipment log, the actor recorded the camera system for the loading bay in the status field as "offline for maintenance" on a date that preceded the disposal event; the maintenance authorization field contained no work-order reference.
+
+3) Materials/access observed: The actor used a named administrator account with write access to the waste manifest system, a portable laptop logged into the facility intranet from the loading-bay terminal, and a set of printed manifest drafts marked with hand annotations in the margin. Access to the camera control panel was made from the same administrator account during the logged maintenance window.
+
+4) Indicators & artifacts: The manifest file shows an edit timestamp that does not match the account's usual activity pattern. The inventory field change leaves a prior-version value recoverable from the database audit trail. The destination field value resolves to a geocode outside any licensed facility radius. The waste code field retains the original regulated code in the form's change history. The route field's "not applicable" entry has no attached waiver document. The camera status log shows the maintenance flag set by the same account that edited the manifest.

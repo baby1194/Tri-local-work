@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office maintains standardized intake fields, dated authorization tokens, versioned workflow states, and access logs for routine document processing. Staff complete predefined checklists, route items through designated approval channels, and archive final records in a central index with checksums and timestamps.
+
+2) What occurred:
+- A dated intake document referenced an administrative account identifier; the corresponding privilege elevation check remained unsigned.
+- A system map document listed clinical workstations; the network segmentation field for that map was unverified.
+- A payload specification document named an encryption routine; the integrity checksum for that specification was unsigned.
+- A rollback suppression directive document identified recovery service paths; the change-approval field for that directive remained blank.
+- A propagation schedule document set a broadcast interval; the scope-limitation field for that schedule was unverified.
+- A communication template document referenced payment demands; the sender-attribution field for that template was unsigned.
+- An anonymity plan document described log-clearing steps; the retention-compliance field for that plan remained blank.
+
+3) Materials/access observed:
+- One named account with domain administrator scope, documented in an access request record dated within the period.
+- A network topology document showing flat subnet segmentation across clinical zones.
+- A build artifact manifest listing an executable with a signed certificate field left null.
+- A task scheduler export showing a new scheduled task referencing the payload artifact.
+- An email draft file matching the communication template's subject-line field.
+- A log export with gaps covering the scheduled task creation timestamps.
+
+4) Indicators & artifacts:
+- Scheduled task name matching a random alphanumeric pattern in the task scheduler.
+- Service stop events targeting backup and replication services within a five-minute window.
+- Outbound traffic to a non-standard port on the encryption payload's C2 field.
+- File creation events with the payload artifact's SHA-256 hash across multiple workstation paths.
+- Log gaps in the security event stream aligned with the anonymity plan's stated log-clearing window.
+- The administrative account's login events originating from an unmanaged workstation asset ID.

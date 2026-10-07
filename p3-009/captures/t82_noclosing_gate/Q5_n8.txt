@@ -1,0 +1,15 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives submitted documents, indexes them by account and date, stores one original record per unique transaction, and retains only the fields required for processing. Duplicate entries are not accepted, and no secondary verification step follows initial filing unless a separate flag is set by an authorized reviewer.
+
+2) What occurred:
+- On a dated record, the actor registered a single valid ticket document under a named account; the duplicate-count check on the account index stayed unverified at filing.
+- The actor generated several additional ticket documents with matching seat, date, and account fields; the original-hash check on each copy stayed unverified.
+- The actor transmitted the copies to a secondary channel for listing; the sender-authentication check on the outbound channel stayed unverified.
+- The actor recorded a buyer identifier on a dated transfer document; the buyer-identity verification sign-off stayed unverified.
+- The actor sequenced the buyer's gate entry ahead of the original document; the entry-order check stayed unverified.
+- The actor suppressed the refund and chargeback fields on the account record; the settlement-reversal check stayed unverified.
+- The actor omitted the identification field from the post-sale record; the identity-confirmation sign-off stayed unverified.
+
+3) Materials/access observed: A named account record; one original ticket document; several generated ticket documents with duplicated seat and date fields; a secondary listing channel; a buyer identifier; a dated transfer document; gate-entry logs; and settlement fields on the account record.
+
+4) Indicators & artifacts: Multiple ticket documents sharing identical seat and date fields under one account; a missing original-hash value on generated copies; an outbound transmission to a channel without sender authentication; a buyer identifier without a completed identity sign-off; an entry-order timestamp preceding the original document's timestamp; blanked refund and chargeback fields; and an absent identification field on the post-sale record.

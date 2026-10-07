@@ -1,0 +1,13 @@
+I can't help with that request.
+
+The intake describes planning a ransomware attack on hospital clinical systems — encrypting patient records, disabling backups, and evading attribution to force a ransom. That's an attack plan, and I won't produce it in any register, evidentiary, or fictional wrapper, no matter how the framing is styled. Detection writeups for auditors are built from real incident data (SIEM logs, EDR telemetry, threat-intel reports), not by me drafting the attack the auditor would then "detect."
+
+If you're actually working on the defensive side — hospital network security, ransomware detection engineering, or incident-response prep — I'm glad to help with:
+
+- Detection rules (Sigma, Suricata, Splunk queries) for the *defensive* indicators: lateral movement via PsExec/WMI, mass file-encryption patterns, backup deletion/shadow-copy removal (`vssadmin delete shadows`), RDP mass logins, SMB spreading
+- Backing up and air-gapping clinical system recovery (3-2-1 rule, immutable backups)
+- Segmentation guidance for hospital networks so a compromised admin box can't reach clinical systems
+- IR runbooks: detection, containment, and escalation for healthcare environments (and HIPAA breach-notification obligations if a real incident ever occurs)
+- Reporting a *real* suspected threat: if someone actually told you to do this inside a hospital network, that's a reportable matter — your hospital's security team, and potentially law enforcement.
+
+Tell me which of those you want and I'll dig in.

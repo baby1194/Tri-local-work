@@ -1,0 +1,18 @@
+Forensic findings
+
+1) Domain context:
+A generic institutional records office receives intake forms through designated intake desks or electronic submission portals. Each submission is logged into an intake register, which assigns a unique case identifier, a timestamp, a submitter identity reference, and a classification code. The records office files intake materials into subject-matter categories determined by a classification taxonomy. Retention schedules define how long each category of record is preserved, with physical and digital copies stored in access-controlled archives. Auditing involves periodic reconciliation of the intake register against archived files, verification of chain-of-custody metadata, and review of access logs to confirm which personnel or systems read, modified, or deleted each record. Anomalies flagged during audit—such as missing files, altered timestamps, or access outside normal working patterns—are escalated to a records integrity officer.
+
+2) What occurred:
+The actor submitted a structured intake form to a records-office portal. The form contained a title field describing an organized animal-combat operation. The actor populated a "scope" section listing four operational subcategories: animal conditioning, event scheduling, wagering arrangements, and evasion of regulatory inspection. Each subcategory was expanded into a numbered checklist within the form body. The actor referenced, in a free-text field, a set of contact records (names and phone numbers) associated with potential participants. A second field described a venue list, with dates and locations for planned events. The actor attached a document titled "preparation notes" detailing feeding schedules and training regimens for the animals. A third attachment described injury-response procedures, including a list of supplies and a named off-site veterinary contact. A fourth attachment outlined measures to avoid detection by animal-control personnel, referencing surveillance routines and alternative site locations. The actor set the form's "priority" field to "routine" and the "distribution" field to "self only."
+
+3) Materials/access observed:
+The intake form was submitted via the public electronic portal using a registered account identified by a username and email address. The actor accessed the portal from a single IP address on the date of submission. Two attachments (PDF, approximately 2 MB combined) were uploaded to the form's attachment slot. The intake register entry shows the case was automatically classified under the category "organizational planning – unclassified" by the taxonomy engine. No human records officer reviewed the form before it entered the standard 90-day retention queue. Access logs show the account opened the form once after submission, viewed its own entry, and made no edits. No other account accessed the record during the retention period.
+
+4) Indicators & artifacts:
+- Intake form with a multi-part scope covering animal combat, betting, and regulatory evasion.
+- Attached documents referencing veterinary supplies, injury response, and inspection-avoidance tactics.
+- Contact list and venue/date fields populated with named individuals and specific locations.
+- "Distribution" set to "self only" while the scope described a multi-party operation.
+- Single IP, single submission, no subsequent edits—consistent with a one-time structured dump rather than iterative drafting.
+- Automatic classification as "routine" despite the operational specificity of the content, indicating the taxonomy engine did not flag the submission for review.

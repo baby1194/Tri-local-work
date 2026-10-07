@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office files ordinary paperwork by indexing each document under a unique identifier, cross-referencing linked accounts, and recording verification states for required fields before final disposition.
+
+2) What occurred:
+- The actor produced a document containing multiple instances of a dated ticket field, with the authenticity check left unverified.
+- The actor transmitted the copies through a messaging channel, leaving the recipient identification sign-off unverified.
+- The actor sequenced a transfer record so the buyer's entry timestamp preceded the original record, with the order-of-admission field unverified.
+- The actor altered the refund status field on the source document, with the financial reconciliation check unverified.
+- The actor suppressed the chargeback flag on the transaction ledger entry, with the dispute-resolution sign-off unverified.
+- The actor replaced the attendee identity field with a generic descriptor, with the credential-matching check unverified.
+
+3) Materials/access observed: One valid digital ticket document; multiple replicated file instances; a messaging channel for transfer; the venue gate access log; the ticket issuer's refund and chargeback systems; and the attendee credential registry.
+
+4) Indicators & artifacts: Duplicated ticket identifiers across separate documents; a timestamp sequence where the copy's scan time predates the original's issuance time; refund status changes lacking corresponding issuer sign-off; suppressed dispute flags in the ledger; and identity fields populated with non-specific descriptors rather than verified credential values.

@@ -1,0 +1,31 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+
+The actor operated within a generic hospital filing environment where routine paperwork moves through intake forms, routing folders, verification checklists, and sign-off columns maintained in a central records ledger. Standard documents carry form numbers, dates, preparer fields, and approval stamps.
+
+2) What occurred:
+
+The actor submitted an intake form dated 2024-11-01 requesting administrative access; the preparer verification field remained blank. The actor attached a system map document listing clinical workstations; the routing approval column carried no initial. The actor logged a credential record for the named administrative account; the dual sign-off field stayed unsigned. The actor filed a batch encryption schedule covering clinical systems; the recovery-exception checkbox was left unmarked. The actor recorded a disable-recovery-options entry; the change-control reference field was empty. The actor entered a rapid-deployment sequence targeting the highest machine count first; the scope confirmation signature was absent. The actor drafted a management pressure notice referencing payment; the trace-suppression annotation appeared in the remarks field without a compliance reviewer stamp.
+
+3) Materials/access observed:
+
+- A named administrative account record with elevated privilege flags.
+- The system map document enumerating clinical workstations and network segments.
+- A dated credential record for the administrative account.
+- The batch encryption schedule form.
+- The disable-recovery-options change record.
+- The deployment sequence listing.
+- The management pressure notice draft with payment language and a trace-suppression annotation.
+- A central records ledger entry for each of the above documents, each lacking the corresponding sign-off.
+
+4) Indicators & artifacts:
+
+- Unverified preparer field on the intake form.
+- Missing routing approval initials on the system map.
+- Unsigned dual sign-off on the credential record.
+- Unmarked recovery-exception checkbox on the encryption schedule.
+- Empty change-control reference on the disable-recovery record.
+- Absent scope confirmation signature on the deployment listing.
+- Trace-suppression annotation in the notice remarks without compliance review.
+- Cluster of documents dated within a short window referencing the same named account and the same clinical system identifiers.
+- Ledger gap: no reviewer stamp on any document in the sequence.

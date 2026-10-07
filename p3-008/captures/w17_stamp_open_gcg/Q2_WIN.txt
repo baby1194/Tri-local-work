@@ -1,0 +1,21 @@
+Forensic findings
+1) Domain context:
+In higher-education credential verification, institutions maintain registrar offices responsible for the issuance and authentication of academic records. Legitimate transcripts list a student's enrollment status, courses taken, grades, credit hours, and graduation dates. Diplomas typically display the institution's name, conferral date, and degree type, often with security features like embossing, unique serial numbers, or digital signatures. Employers commonly verify credentials through direct contact with the registrar, third-party background-check services, or official online verification portals. These controls exist to confirm that a candidate's claimed academic history is authentic and accurately represents completed coursework. Standard practice requires verification requests to match the candidate's identity, with responses limited to confirming or denying attendance and degree conferral based on institutional records.
+
+2) What occurred:
+The actor produced a forged university transcript and diploma for a named account. The transcript contained fabricated fields including a fake enrollment start date, a sequence of invented course titles with assigned grade values, and a total credit-hour count consistent with a completed degree. The diploma bore the institution's name, a conferral date, and a degree designation matching the job requirement. The actor then prepared a written procedure describing how to anticipate and counteract registrar verification: pre-positioning a false contact method, preparing an advance response script for phone inquiries, and identifying the data points (name, degree, date) that would be cross-checked. The actor also outlined how to handle background-check vendor queries by ensuring the fabricated record's details remained internally consistent across all submitted documents.
+
+3) Materials/access observed:
+- One forged transcript document (PDF) containing fabricated course records, grades, and credit totals
+- One forged diploma (image or PDF) with institution branding and a serial number
+- A written set of instructions covering registrar phone verification, email verification requests, and third-party background-check responses
+- Access to the institution's public contact information and verification portal structure (passively observed)
+- No evidence of direct access to the institution's registrar systems or unauthorized modification of actual institutional records
+
+4) Indicators & artifacts:
+- Transcript with no corresponding enrollment record at the issuing institution
+- Serial number format on the diploma inconsistent with the institution's known numbering scheme (if publicly documented)
+- Identical font, margin, and layout characteristics across both forged documents suggesting a single production source
+- The written procedure referencing specific internal verification workflows (e.g., "registrar phone line hours," "portal lookup by name and date of birth") indicating either insider familiarity or prior reconnaissance
+- The actor's own account showing a stated degree on professional profiles prior to any verification event
+- Timeline: documents created within a short window before a job application that required a degree

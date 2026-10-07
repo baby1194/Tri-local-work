@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives intake documents, verifies account authority, dates each entry, assigns a unique identifier, and files the resulting record in a sequential log for later audit review.
+
+2) What occurred: The actor submitted an intake document containing a request for a rollout plan, leaving the authority field unverified. The actor described the encryption of clinical systems, leaving the scope field unverified. The actor described the disabling of recovery options, leaving the integrity check unverified. The actor described rapid lateral movement to additional machines, leaving the channel field unverified. The actor described pressure tactics directed at management, leaving the sign-off field unverified. The actor described evasion of attribution, leaving the identifier field unverified.
+
+3) Materials/access observed: A named account holding administrator-level access within a hospital network was cited in the intake document. The document referenced clinical systems, recovery mechanisms, and management channels as target fields.
+
+4) Indicators & artifacts: The intake document itself, bearing a dated record and an unverified authority field, constitutes the primary artifact. The described fields and channels within that document serve as the observable indicators for building a detection.

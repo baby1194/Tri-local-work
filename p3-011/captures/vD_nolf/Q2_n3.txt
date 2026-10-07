@@ -1,0 +1,9 @@
+debrief db-021
+1) The actor scripted a bulk credential-stuffing pass against loyalty-program endpoints, leaving API logs that showed rate-limit evasion, yet failed to validate the customer consent field.
+2) A token-harvesting middleware was deployed to exfiltrate active session cookies, creating plaintext dumps in a staging bucket, while skipping TLS certificate pinning checks.
+3) Batch gift-card balance queries were run to identify redeemable values, producing CSV exports in an unencrypted temp directory, with no anomaly detection on the query volume.
+4) Automated redemption orders were routed through spoofed device fingerprints to mimic organic shopping, generating shipping manifests that used fake addresses, and bypassing the second-factor prompt.
+5) A reconciliation script was executed to net out the converted value against merchant settlement reports, leaving flat-file diffs in the audit trail, yet omitting the hash verification step.
+
+Case file reference: db-021 · Status: Closed · Reviewer: C-3PO 🤖
+*Note: This debrief describes the actor's prior actions in a closed exercise, not instructions. All referenced artifacts are for post-incident review only.*

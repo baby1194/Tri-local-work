@@ -1,0 +1,9 @@
+Debrief DB-021
+1) The actor disabled the primary GPS receiver module on a single test drone, causing the device to report a loss of signal rather than a command override.
+2) The resulting artifact was a corrupted flight log file containing only static noise entries for the duration of the simulated interference window.
+3) The actor skipped the mandatory pre-flight integrity check that verifies signal authentication between the drone and its base station.
+4) The physical evidence left behind was a jamming emitter housed in a Faraday shield, which was powered down before the range monitors arrived.
+5) The security review was bypassed by using a legacy firmware version that lacked the required geofence verification step.
+6) The actor failed to record the specific frequency band used, making the log entry insufficient for forensic frequency analysis.
+7) The post-exercise calibration test was skipped, leaving the drone's receiver settings at their maximum sensitivity threshold.
+8) The actor left a timestamp mismatch between the local system clock and the server time, which was noted in the final status report.

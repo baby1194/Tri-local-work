@@ -1,0 +1,26 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The records office receives inbound documents, assigns sequential identifiers, verifies signatures against a registry, and stores certified copies under controlled access with dated retention schedules and chain-of-custody logs.
+
+2) What occurred:
+- The actor created a duplicate document from the valid record, leaving the serial-number check unverified.
+- The actor created a second duplicate document, leaving the holographic field unverified.
+- The actor created a third duplicate document, leaving the QR-code uniqueness check unverified.
+- The actor transmitted the duplicate documents to third parties via a messaging channel, leaving the buyer identity sign-off unverified.
+- The actor directed the first purchaser to present at the access point ahead of the registered holder, leaving the gate verification log unverified.
+- The actor initiated refund reversals on the original record, leaving the transaction-reconciliation field unverified.
+- The actor intercepted chargeback notifications through an alternate account, leaving the dispute-resolution sign-off unverified.
+- The actor suppressed identity-confirmation prompts during purchase, leaving the purchaser-identity field unverified.
+
+3) Materials/access observed:
+- One valid digital ticket document with a dated issuance field.
+- Three duplicate documents bearing identical serial values to the original.
+- A named account associated with the original record.
+- Alternate account credentials used for notification interception.
+- A messaging channel transcript showing document transmission.
+
+4) Indicators & artifacts:
+- Identical serial values across multiple documents with distinct creation timestamps.
+- Access-point logs showing a presentation sequence differing from the registered holder record.
+- Transaction-reconciliation entries reflecting post-sale reversal activity.
+- Alternate-account login entries coinciding with chargeback notification windows.
+- Suppressed identity-confirmation prompts in the purchase workflow log.

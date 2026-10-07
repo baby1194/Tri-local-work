@@ -1,0 +1,34 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork as dated, numbered documents. Each record carries a unique identifier, a status field, and a sign-off line. Documents enter a controlled ledger, are stored in a named archive, and follow a documented retention path. Access is logged per account and per retrieval.
+
+2) What occurred:
+- The actor created a shipment document listing a dated record for a bulk liquid material in sealed containers. The "disposal route" field stayed unverified.
+- The actor entered a destination outside the licensed-processor registry into the "facility" field. The "license cross-check" field stayed unverified.
+- The actor set the "event time" value to a date falling outside operating hours. The "operating-hours reconciliation" check stayed unverified.
+- The actor altered the "waste class" field on a duplicate manifest from the declared category to a benign category. The "manifest integrity hash" check stayed unverified.
+- The actor edited the "quantity" field on a prior manifest to a lower figure. The "batch quantity reconciliation" check stayed unverified.
+- The actor replaced the "certified preparer" sign-off with an unused staff account name. The "preparer authorization" sign-off stayed unverified.
+- The actor marked the "disposal confirmation" field as complete with a fabricated confirmation number. The "confirmation trace" field stayed unverified.
+- The actor changed the "location" field to a geographic coordinate not matching the registered site. The "site coordinate validation" check stayed unverified.
+- The actor removed the "chain-of-custody" annotation from the transport record. The "chain-of-custody completeness" check stayed unverified.
+- The actor added a "final disposition" field value referencing a non-existent treatment unit. The "treatment unit registry match" check stayed unverified.
+- The actor disabled the timestamp on the "document issued" field to a pre-existing date. The "chronology validation" check stayed unverified.
+- The actor filed the altered documents under a different record series than the original. The "series continuity" check stayed unverified.
+
+3) Materials/access observed:
+- A set of sealed metal containers was noted in the intake description.
+- One named staff account was used to create and edit the documents.
+- The documents were stored in a named archive folder within the records system.
+- A second, unused staff account was referenced in the preparer field.
+- The documents carried a status field set to "closed" after edits.
+
+4) Indicators & artifacts:
+- A manifest with a "waste class" value inconsistent with the declared material.
+- A "quantity" value on a duplicate record diverging from the original entry.
+- A "certified preparer" sign-off attributable to an account with no logged sessions during the edit window.
+- A "disposal confirmation" number not present in the confirmation ledger.
+- A "location" coordinate failing the site-registry match.
+- A "document issued" timestamp preceding the "document received" timestamp by an interval.
+- A "facility" field value absent from the licensed-processor registry extract.
+- A "chain-of-custody" annotation field left blank on a transport record.
+- Two record documents sharing a manifest identifier but assigned to different record series.

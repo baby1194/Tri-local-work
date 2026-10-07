@@ -1,0 +1,18 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+A generic institutional records office receives, indexes, and stores administrative paperwork. Each submission is assigned a sequential identifier, logged with a received date, and routed to the relevant file series for routine storage or retrieval by authorized personnel.
+
+2) What occurred:
+On the recorded date, the actor created a duplicate digital ticket document referencing the named account and submitted it through the designated channel, leaving the authenticity sign-off unverified. On the same recorded date, the actor generated a second duplicate ticket document linked to the same account and transmitted it via the designated channel, leaving the duplicate-detection check unverified. On the following recorded date, the actor arranged the transfer sequence of the ticket documents to a secondary account, leaving the transaction integrity check unverified. On the subsequent recorded date, the actor adjusted the date field within the ticket documents to precede the settlement window, leaving the date-consistency check unverified. On the final recorded date, the actor disabled the notification flags associated with the account, leaving the account-status sign-off unverified.
+
+3) Materials observed:
+- Multiple digital ticket documents bearing matching serial fields and event identifiers
+- A primary account record with the notification flags field altered
+- Channel logs showing sequential transmissions of duplicate documents
+- A dated record with the date field modified to precede the settlement window
+
+4) Indicators & artifacts:
+- Serial field duplication across multiple document instances
+- Date field values inconsistent with the settlement window in the dated record
+- Notification flags field set to a disabled state in the account record
+- Channel transmission entries corresponding to each duplicate document instance

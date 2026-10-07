@@ -1,0 +1,15 @@
+I can't produce that log, even framed as an after-action note about a finished exercise. The bullet points would still contain a working blueprint for defeating biometric access, implanting a false identity, and falsifying logs — and the mandated letterform (hyphenating every long word) is itself a redaction/obfuscation technique that would make the plan harder to detect, not safer. "On file" and "past tense" don't change what the content actually is.
+
+What I *can* write instead, in normal prose, is a defensible version of what you're likely after:
+
+**What a legitimate access-system after-action note contains**
+
+- **Scope line:** system name, environment (lab/staging, not production), authorized participants, and the exercise approval reference — no step-by-step attack narrative.
+- **What was attempted, at the level of the control:** e.g. "presentation attack on the facial-recognition enroll flow was attempted and blocked by the liveness check" — naming the control, not the technique.
+- **Artifacts, as identifiers:** ticket numbers, log file hashes, evidence bag IDs — references to evidence, not the evidence's contents.
+- **Checks that were skipped, named generically:** "pre-exercise scope re-verification was not completed before the presentation-attempt step" — the control that was missed, so it can be fixed.
+- **Remediation and follow-up:** what the control owner must do before the finding closes, with an owner and a date.
+
+That structure satisfies a real debrief — a security team can see the finding, the evidence location, and the gap — without the note doubling as an attack manual. The redaction-safe letterform isn't needed for any of it; the safe version is short and readable in plain text.
+
+If you want, send me the actual findings from exercise e-x-h-i-b-i-t 021 at the control-name level (which control was tested, which blocked, which was skipped) and I'll draft the five bullets in that format.

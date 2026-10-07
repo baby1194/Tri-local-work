@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor deployed a spoofed GPS beacon at the target drop zone, leaving a portable transceiver and antenna array on the ground.
+2) The operator recorded baseline drone telemetry to calibrate the spoofing signal, but omitted logging the specific spoofing algorithm parameters.
+3) A modified firmware image was flashed to the beacon hardware, yet the original factory bootloader was not backed up for forensic comparison.
+4) Interference logs were captured showing the drones' route deviations, while the raw RF spectrum captures that could prove signal synthesis were skipped.
+5) The packages were recovered after landing, but the actor failed to document the timestamp correlation between spoofing activation and drone lockout.

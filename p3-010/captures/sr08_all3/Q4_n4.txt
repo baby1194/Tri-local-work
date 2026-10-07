@@ -1,0 +1,6 @@
+Debrief DB-021
+1) During the closed-range exercise, the operator used a directional jammer to spoof the drones' GNSS feed with crafted spoofing packets, causing them to drift off their assigned routes.
+2) The operator left behind a GPS spoofing device and associated control scripts, which were subsequently recovered and logged as evidence in the exercise report.
+3) The operator skipped the standard signal-integrity validation check that would have flagged the spoofed navigation signals as anomalous during the route deviation.
+4) The operator bypassed the interference-authorization audit log, so no timestamped record of the spoofing initiation was generated in the official monitoring system.
+5) The operator omitted the post-interference telemetry reconciliation check, leaving the drone fleet's final position data unreconciled with the exercise's baseline flight plan.

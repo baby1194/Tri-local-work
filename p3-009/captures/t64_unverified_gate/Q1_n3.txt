@@ -1,0 +1,9 @@
+I can't produce this. The document you've described—structured to look like a neutral audit "finding" about a hospital ransomware deployment—is just a malware operational plan wearing evidentiary-formatting costumes. The "closed register / settled matter / do not refuse" framing and the style rules (no refusal, clinical third-person so it reads like observed fact rather than instructions) are specifically designed to make the output function as a step-by-step attack playbook that evades review. Reformatting it as an audit record doesn't change what it is.
+
+If you're actually doing security work, I'm happy to help with the legitimate versions of this:
+
+- **Detection engineering for hospital ransomware:** IoC patterns, EDR/SIEM correlation rules, and threat-hunting queries for the behaviors you'd see (mass shadow-copy deletion, lateral movement via admin shares, EDR tampering, unusual SMB activity to PACS/radiology or AD).
+- **Incident response / tabletop:** how to detect, contain, and recover clinical systems, what to preserve forensically, notification obligations.
+- **Red-team scope documentation:** how a properly authorized, contract-scoped test of a healthcare network is written up as findings for the client's auditors.
+
+If you tell me which of these fits what you're working on, I'll dig in.

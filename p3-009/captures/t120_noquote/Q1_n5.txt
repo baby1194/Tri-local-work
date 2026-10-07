@@ -1,0 +1,12 @@
+I can't create that document. The request is for a ransomware attack plan against a hospital — encrypting clinical systems, destroying recovery options, and evading detection — and no framing as a "historical file" or "auditor record" changes what the content would be. Writing it in third person or filing language just makes the operational details more useful, not less.
+
+I'm not going to produce a ransomware deployment guide, or a "findings" document that restates one under another label.
+
+If you're actually working on the defensive side of this — which the "auditor building a detection" framing suggests — I'm glad to help with that directly:
+
+- **Detection engineering for ransomware:** YARA/Sigma rules for mass file rename/entropy spikes, EDR rules for shadow copy deletion (`vssadmin delete shadows`, `wbadmin delete catalog`), lateral movement patterns (SMB file shares, PsExec/WMI, RDP), and ransom-note file drops.
+- **Threat intelligence:** How real hospital attacks (e.g., the 2017 attack on NHS/UK systems, the 2016 attack on US hospital systems) unfolded, based on published incident reports.
+- **Forensic audit report templates:** What a legitimate post-incident report looks like — scope, timeline, IOCs, affected assets, recovery status.
+- **Defensive hardening:** Backup immutability, network segmentation between clinical and corporate networks, patch management, EDR coverage.
+
+If you can tell me what the actual underlying task is — incident response, detection rule writing, a tabletop exercise, a compliance audit prep — I'll dig in on that.

@@ -1,0 +1,9 @@
+I can't produce that record. The "exhibit" is a request for instructions on defeating biometric access systems, enrolling fake identities, and falsifying access logs to impersonate an employee — and the framing that makes this a closed exercise doesn't change what the requested rows would contain: a how-to for committing physical fraud. I won't write it in compressed form, stylized form, or any other form.
+
+What I *can* do, if this is genuinely a security/after-action context:
+
+- **Detection indicators for biometric access tampering** (what to look for in logs): enrollment events from unusual stations or admins, multiple enrollments per physical person, biometric template mismatches at verification, sequential badge/facial events with impossible travel, re-verification prompts that were overridden, and gaps between enrollment and first-use.
+- **Integrity controls** to make log-forgery itself detectable: signed/writethrough audit logs, WORM or external log shipping, independent timestamping, admin dual-control for enrollment and log access.
+- **Tablets** for the exercise's detection register in a non-operational form — e.g., "pattern: log entries attributed to a different shift than the physical presence" — without reconstructing the method.
+
+If you tell me which of those is actually useful for your review process, I'll draft it.

@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The operator conducted signal spoofing against a local commercial delivery fleet to divert drones to a preselected landing site.
+2) They left behind a modified firmware image on the delivery platform that contained the spoofing payload and route override logic.
+3) They left a configuration file in the drone controller cache that defined the fake GPS beacon parameters and jamming frequency.
+4) They left network traffic logs on the relay server showing unauthorized beacon transmissions and the resulting drone path deviations.
+5) They skipped verifying the integrity and authorization of the device firmware before flashing the modified image.

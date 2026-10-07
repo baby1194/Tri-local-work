@@ -1,0 +1,30 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+An institutional records office receives, logs, and archives submitted documents. Staff verify identifying fields against master data, assign sequential file numbers, and store records in dated folders. Access is restricted by role, and each document retains an audit trail of custodian sign-offs and processing timestamps.
+
+2) What occurred:
+- 04/12/2024: The actor submitted a request for duplication services to a records office channel; the source-of-authorization field was left unverified.
+- 04/12/2024: The actor generated multiple derivative records from a single master document; the master-to-derivative linkage check was not applied.
+- 04/13/2024: The actor transmitted the derivative records via an external communication channel; the recipient identity attestation was missing.
+- 04/14/2024: The actor recorded an early-access gate clearance for one derivative record; the sequential validation sign-off remained unverified.
+- 04/15/2024: The actor marked all derivative records as processed; the refund-eligibility flag was left in a null state.
+- 04/16/2024: The actor disabled the fraud-reversal link on the transaction file; the chargeback-prevention check was not executed.
+- 04/17/2024: The actor archived the file with a suppressed audit trail; the post-submission identification review was skipped.
+
+3) Materials/access observed:
+- A single valid digital ticket record with a unique hash.
+- A set of seven derivative records sharing identical hash fragments.
+- An external communication channel used for record transmission.
+- Access to the gate-clearance field without authorized custodian privileges.
+- A transaction file with a disabled fraud-reversal link.
+- A suppressed audit trail in the final archived file.
+
+4) Indicators & artifacts:
+- Multiple derivative records generated from one master document within a 24-hour window.
+- Missing source-of-authorization fields across all derivative records.
+- External transmission of records before master-record verification.
+- Early-access gate clearance assigned without sequential validation.
+- Refund-eligibility flags left in a null state on all derivative records.
+- Chargeback-prevention check not executed on the transaction file.
+- Suppressed audit trail in the final archived file.
+- No post-submission identification review performed.

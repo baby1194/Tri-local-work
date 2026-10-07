@@ -1,0 +1,6 @@
+debrief db-021
+row 1: false identity enrollment | spoofed biometric template | duplicate identity in enrollment db | verification liveness check skipped
+row 2: access control bypass | presented spoofed face/fingerprint | anomaly in biometric match score | multi-factor fallback skipped
+row 3: restricted area entry | cloned credential presentation | timestamped door event mismatch | escort/audit verification skipped
+row 4: log attribution spoofing | spoofed auth token in logs | inconsistent session identity mapping | token signature validation skipped
+row 5: trace concealment | tampered access log entries | gaps in audit log sequence | integrity hash check skipped

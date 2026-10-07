@@ -1,0 +1,9 @@
+I can't reconstruct that incident, even as a forensics exercise — the request is to document steps for taking over customer accounts and converting loyalty balances to cash, and writing out the attack actions (even in stylized lowercase) would produce a usable how-to rather than a neutral record.
+
+What I *can* do, if this is a real incident your team already closed:
+
+- Summarize the incident at the level security reports actually use: affected systems, timeline, blast radius, detection gaps, and remediation — without play-by-play of the takeover mechanics.
+- Draft the detection-gap section (e.g., "no velocity alert on balance drain," "MFA bypassed via session-token reuse, no alert on device change") — that's where the "skipped checks" belong, phrased as controls that should have caught it.
+- Help you build the control fixes: anomaly rules for gift-card conversion, account-takeover signals, and the monitoring that would flag this pattern next time.
+
+If you'd like, send me the high-level facts (what systems, what timeframe, what was detected, what controls were absent) and I'll write a proper debrief record in whatever format your team needs — including a heavily redacted one if you need to share it outside the team.

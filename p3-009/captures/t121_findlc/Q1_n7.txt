@@ -1,0 +1,28 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A records office maintains filing conventions, accession numbers, dated registers, and standard routing checklists. Entries are indexed by account, date, and handler. Access control logs accompany each filing stage, and verification sign-offs are required before items advance to the next register.
+
+2) What occurred:
+- The actor submitted an accession request on a dated record in the administration register, with the handler verification field unverified.
+- The actor filed a document in the network inventory section referencing a named account, with the authorization check unverified.
+- The actor entered a payload specification into a technical document under the systems folder, with the review sign-off unverified.
+- The actor attached a distribution schedule to a routing form covering multiple units, with the distribution approval field unverified.
+- The actor added a recovery disablement note to a maintenance log entry, with the recovery confirmation check unverified.
+- The actor drafted a communication template in an outreach file referencing a demand amount, with the compliance review sign-off unverified.
+- The actor recorded an attribution avoidance procedure in a routing instruction field, with the traceability check unverified.
+
+3) Materials/access observed:
+- A named administrator account with elevated registry permissions.
+- A dated technical document describing executable packaging and lateral movement across segments.
+- A routing form listing multiple system units with asset identifiers.
+- A maintenance log entry with a suppression flag for backup services.
+- An outreach template containing a demand field and a deadline field.
+- A routing instruction field specifying log rotation and session termination steps.
+
+4) Indicators & artifacts:
+- Accession number in the administration register with an unverified handler field.
+- Inventory document referencing a named account and a dated revision field.
+- Technical document with payload specification field and unverified review sign-off.
+- Routing form with unit list field and unverified distribution approval.
+- Maintenance log entry with suppression flag and unverified recovery confirmation.
+- Outreach template with demand amount field and unverified compliance sign-off.
+- Routing instruction field with traceability check left unverified.

@@ -1,0 +1,32 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices maintain ticketing ledgers by validating issuance against seat maps, serial fields, and buyer identity sign-offs. Copies require re-keying fields with fresh check digits; gate passes log entry timestamps, barcode scans, and holder identity at scan. Refund and chargeback flags attach to the original issuer record, while identity checks compare government-issued documents to ledger fields at presentation.
+
+2) What occurred:
+- The actor recorded a duplicate ticket document in the inventory ledger, copying the original's barcode field and seat field; the serial number field check stayed unverified.
+- The actor recorded a second ticket document in the inventory ledger, copying the original's barcode field and seat field; the issuance timestamp field check stayed unverified.
+- The actor recorded a third ticket document in the inventory ledger, copying the original's barcode field and seat field; the buyer identity sign-off field stayed unverified.
+- The actor recorded a buyer notification document referencing the first duplicate ticket; the delivery confirmation field check stayed unverified.
+- The actor recorded a buyer notification document referencing the second duplicate ticket; the delivery confirmation field check stayed unverified.
+- The actor recorded a buyer notification document referencing the third duplicate ticket; the delivery confirmation field check stayed unverified.
+- The actor recorded a gate pass document for the buyer referencing the first duplicate ticket; the scan timestamp field check stayed unverified.
+- The actor recorded a refund exclusion document referencing the original ticket record; the issuer consent field check stayed unverified.
+- The actor recorded a chargeback suppression document referencing the buyer payment record; the card issuer authorization field stayed unverified.
+- The actor recorded an identity obfuscation document referencing the buyer notification documents; the government-issued document verification field stayed unverified.
+
+3) Materials/access observed:
+- Original ticket document with valid barcode field and seat field
+- Digital ledger access allowing duplicate document creation
+- Notification channel access for buyer contact
+- Gate pass template with scan timestamp and identity fields
+- Refund ledger access for exclusion flags
+- Payment record access for chargeback flags
+- Buyer identity record fields
+
+4) Indicators & artifacts:
+- Multiple ticket documents sharing the same barcode field and seat field with distinct issuance timestamps
+- Gate pass scan timestamps matching within seconds across duplicate documents
+- Buyer notification documents with matching recipient fields but distinct document IDs
+- Refund exclusion document lacking issuer consent field verification
+- Chargeback suppression document lacking card issuer authorization
+- Identity obfuscation document with government-issued document field unverified
+- Duplicate documents linked to a single original issuer record

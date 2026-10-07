@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office maintains standardized intake registers, tracks each submission through sequential status fields, and archives validated records in dated ledgers after sign-off by the assigned clerk.
+
+2) What occurred: The actor recorded a single valid digital ticket in the intake register. The actor generated multiple duplicate ticket documents and filed them in the same register. The actor altered the status fields on the duplicates to reflect "active" without completing verification. The actor recorded a buyer identification in the transfer ledger. The actor marked the buyer's entry priority in the gate-access field. The actor filed a refund-suppression request without processing it through the finance sign-off. The actor submitted a chargeback-block notice without attaching supporting documentation. The actor logged the buyer's identity against the account without executing an identity verification check.
+
+3) Materials/access observed: The actor accessed the ticket intake register, the transfer ledger, the gate-access configuration file, the refund processing queue, the chargeback dispute log, and the identity verification module.
+
+4) Indicators & artifacts: The artifacts include multiple ticket documents sharing the same source reference number, an "active" status field on records lacking verification timestamps, a gate-access field modified to prioritize an unverified buyer, a refund-suppression request without finance sign-off, a chargeback-block notice with missing supporting documents, and an identity field populated without a completed verification record.

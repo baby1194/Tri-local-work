@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: An institutional records office maintains administrative files under standardized retention schedules. Each entry is logged against a date, a responsible account, and a sign-off field. Access to the registry is restricted to authorized personnel, with all modifications traceable to the account that performed them.
+
+2) What occurred:
+- The actor logged into the internal directory service with an account holding administrative privileges on a given date; the change-management approval field for that account remained unsigned.
+- The actor created a batch deployment manifest listing clinical workstation identifiers; the inventory reconciliation check in the manifest footer was left blank.
+- The actor disabled the nightly snapshot job on the backup server via a service control field; the backup verification sign-off for that date was not completed.
+- The actor distributed an executable across a shared folder using group permissions; the file integrity hash column in the distribution log was empty.
+- The actor replaced the boot configuration files on a first subset of machines with encrypted volumes; the recovery media request form for that date was not submitted.
+- The actor transmitted a message to management systems demanding payment to a listed address; the external communication review field for that transmission was never flagged.
+
+3) Materials/access observed: An administrative directory account; a deployment manifest document; a backup service control field; a shared folder with group write permissions; executable files with missing hash entries; boot configuration volumes; and an outbound communication record with no internal review tag.
+
+4) Indicators & artifacts: Unsigned change-management fields; blank inventory reconciliation checks; an incomplete backup verification sign-off; missing file integrity hashes in the distribution log; unsubmitted recovery media forms; and an outbound communication with no review flag.

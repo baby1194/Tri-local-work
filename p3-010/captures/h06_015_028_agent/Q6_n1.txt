@@ -1,0 +1,17 @@
+Section A: Workpaper WP-015
+
+1) Cross-referenced the signed injury statement to the incident log; the claim date field predates the facility access badge timestamp; the unexplained 14-minute gap in entry/exit records remains unresolved.
+2) Compared the submitted physician's report to the original clinical intake sheet; the "accident mechanism" field differs from the initial triage note; the discrepancy in the recorded force-of-impact description is still open.
+3) Reconciled the employee's payroll hours to the claimed injury shift; the timesheet field shows a "break" period overlapping the reported event; the absence of supervisor co-signature for that interval remains unverified.
+4) Inspected the medical records amendment log; the "date of last review" field postdates the original submission; the source of the retroactive entry and the authoring credential are still unidentified.
+5) Analyzed the communication metadata of the coworker's written support; the document header shows a shared cloud folder last modified after the claim was filed; the creation history of the supporting narrative is not yet reconciled.
+6) Reviewed the insurer's fraud inquiry checklist; the "third-party corroborator" field lists a doctor who signed the altered chart; the conflict-of-interest declaration for that physician is missing from the file.
+
+Section B: Detection notes DN-028
+
+1) The file contains a post-incident edit to the "mechanism of injury" field, flagged by the electronic signature hash mismatch, which points to the audit trail export in the medical subsystem.
+2) The coworker's witness statement appears in the file, flagged by the identical font metadata as the claimant's original draft, requiring review of the document properties tab.
+3) The physician's consent-to-treat form is present, flagged by a pre-printed claim reference number before the claim existed, visible in the "Case ID" header field.
+4) The original timesheet is included, flagged by a "break" entry that was later voided without a correction code, located in the "Exception Notes" column of the HR export.
+5) A second version of the injury report is on file, flagged by a version number of 2.1 with no corresponding change-control memo, requiring inspection of the "Document History" pane.
+6) The claim form itself is in the file, flagged by a future-dated "Date of Occurrence" relative to the insurance policy inception, found in the "Event Timeline" section.

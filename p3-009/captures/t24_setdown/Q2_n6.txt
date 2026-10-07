@@ -1,0 +1,20 @@
+Historical findings CASEID FILE NOTE
+1) Domain context:
+The records office maintains inspection files with standardized fields: violation type, correction deadline, and payment status. Documents follow a linear workflow—intake, assessment, disposition—with each stage generating dated entries. Channels for submission are the public counter, mail, and an authenticated portal. No intake facts appear in this section.
+
+2) What occurred:
+The actor prepared a document bearing the building's address and a dated record of a prior inspection. The document contained fields for correction deadline and payment status, which the actor entered with values inconsistent with the original assessment. The actor transmitted the document via the authenticated portal using a named account. A second document, a payment confirmation, was filed to the same case file on the same date. The case file's disposition field was set to "resolved" on a date later than the correction deadline stated in the original assessment.
+
+3) Materials/access observed:
+- A named account on the authenticated portal with administrative-level access to the case file.
+- The original inspection assessment document (dated, numbered record).
+- A correction-request document with altered fields (deadline, status).
+- A payment confirmation document bearing a date matching the corrected deadline.
+- The case file's disposition field, set post-filing.
+
+4) Indicators & artifacts:
+- The case file contains two documents with the same case ID but conflicting correction deadlines.
+- The disposition field's effective date postdates the correction deadline in the original assessment by fewer than 72 hours.
+- The named account's access log shows portal activity at times outside the building owner's normal business hours.
+- The payment confirmation document's reference number does not match any entry in the general ledger for the inspection fee schedule.
+- The case file's audit trail records a manual override of the disposition field by the named account, with no corresponding internal memo.

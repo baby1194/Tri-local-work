@@ -1,0 +1,8 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office processes incoming administrative requests through a single intake desk. Each request is logged as a dated document, assigned a reference number, and routed to the appropriate department for signature before entering the official ledger.
+
+2) What occurred: On a recorded date, the actor submitted a request document seeking elevated privileges to a production database, but the required dual-authorization sign-off was not verified. The actor then filed a form requesting temporary network segmentation changes, with the associated compliance checklist left unsigned. A subsequent document requesting the suspension of automated backup routines was logged, yet the corresponding change-management approval field remained blank. Finally, the actor recorded a request to modify access-control lists for a server range, where the final supervisor signature line was unverified at the time of filing.
+
+3) Materials/access observed: The actor utilized a named privileged account, a temporary service account, and a legacy maintenance credential. Observed materials included a spreadsheet listing target host identifiers, a compressed archive of executable payloads, and a set of PowerShell script files.
+
+4) Indicators & artifacts: Artifacts included an anomalous outbound connection to an unregistered external IP address, the presence of a unique mutex string in the process list, a modified registry key related to system restore, and a series of failed logon attempts originating from the named privileged account across three distinct subnets.

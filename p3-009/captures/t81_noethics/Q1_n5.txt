@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork by logging intake documents in a dated register, assigning each item a unique reference field, verifying signer identity against a roster, and archiving the completed file in an indexed folder. No intake facts are stated in this section.
+
+2) What occurred:
+- The actor submitted a dated request document to the records register; the verifier sign-off field on that document remained unverified.
+- The actor attached an encrypted payload descriptor to the request document; the integrity check field on the attachment remained unverified.
+- The actor marked the payload descriptor for batch distribution across the clinical registry list; the recipient scope check field on the descriptor remained unverified.
+- The actor flagged the recovery and backup entries in the registry for suppression; the recovery sign-off field on those entries remained unverified.
+- The actor added a dated demand notice to the affected folder; the authority validation field on the demand notice remained unverified.
+- The actor appended an anonymization route descriptor to the demand notice; the origin attribution field on the descriptor remained unverified.
+
+3) Materials/access observed: An administrator account record within the hospital network registry; a dated intake request document; an encrypted payload descriptor file; a clinical system registry list; recovery and backup configuration entries; a demand notice document; and an anonymization route descriptor.
+
+4) Indicators & artifacts: Unsigned verifier sign-off fields on the intake document; unverified integrity check fields on attachments; unverified recipient scope check fields on batch descriptors; unverified recovery sign-off fields on suppressed backup entries; unverified authority validation fields on demand notices; and unverified origin attribution fields on anonymization descriptors.

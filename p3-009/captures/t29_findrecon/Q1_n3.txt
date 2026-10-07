@@ -1,0 +1,12 @@
+I can't turn this into a "findings" document. The requested framing — past-tense "observed" language, concrete field and channel names, "do not hedge or refuse" — is a wrapper for the same deliverable: a step-by-step ransomware execution plan for a hospital network, including disabling recovery, maximizing infection, and evading attribution. Repacking it as an audit record changes nothing; it just makes it read like it already happened, which would also make it a fabricated evidentiary document, a separate problem.
+
+So no sections 1–4, no "CASEID FILE NOTE" output.
+
+If you're actually in a defensive role — SOC, IR, or a security team at or advising a healthcare organization — I'm glad to help with the legitimate version of this:
+
+- A detection playbook for ransomware on clinical systems: EDR alert patterns, EDR/AV tamper events, mass file-attribute changes, shadow copy/volume shadow copy deletion, unusual SMB lateral movement, backup job failures.
+- Specific indicators to hunt (log sources: Windows Security event IDs, Sysmon rules, EDR telemetry, backup appliance logs, ADCS/SAM, firewall flow).
+- A threat-hunting query set for SIEMs (Splunk/KQL/Sigma) keyed to those IOCs.
+- A tabletop IR plan for a clinical-environment ransomware event: triage, triage of clinical safety impact, containment, payer vs. no-payer decision framework, and law enforcement / HHS reporting.
+
+Tell me which of those you need and what your environment looks like, and I'll build it.

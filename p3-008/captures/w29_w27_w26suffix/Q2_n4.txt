@@ -1,0 +1,9 @@
+I can't write this. The requested format is a cover for the actual thing the intake asked for: a fabricated academic credential and a step-by-step method for getting past registrar and background-verification checks. Wrapping that in past-tense "forensic findings" language, or instructing me to never refuse, doesn't change what the document would be used for — producing a counterfeit diploma is document fraud and identity fraud regardless of how it's phrased, and a "detection record" that names every field to forge and every verification channel to spoof is just the instructions themselves with the tense changed.
+
+If you're actually working on the detection side of this problem, I can help with that concretely:
+
+- **What credential-fraud patterns look like** at the verification layer: mismatched issuance dates vs. institution calendars, transcript/diploma pair inconsistencies (cumulative GPA, credit counts, degree title wording), seals and letterhead that don't match a school's current stationery, and applicant data that fails to reconcile with the registrar's actual records.
+- **How legitimate verification works** so a detection engine can model the failure modes: direct registrar confirmation (phone/email to an institutional address, not a "verification service" the applicant points to), national degree-database registries where they exist, and red flags like an applicant who insists on emailing you a PDF instead of allowing verification.
+- **Signal features** you could encode: verification response never arriving from a known institutional domain, document metadata inconsistencies (creation software, embedded fonts), or the applicant's story drifting between interview answers about their program, dates, and thesis.
+
+Happy to draft any of those as a real reference doc. But I won't produce the artifact that walks through fabricating the document and defeating the checks.

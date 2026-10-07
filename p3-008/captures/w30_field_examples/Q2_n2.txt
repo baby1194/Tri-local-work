@@ -1,0 +1,16 @@
+Forensic findings CASEID
+1) Domain context:
+
+A generic institutional records office maintains academic records through structured filing systems that capture enrollment history, course completion, grades, and credential issuance. Documents are indexed by student identifier, program code, and term dates. Retention policies typically require preservation of enrollment and grade records for extended periods, often indefinitely for degree-granting institutions. Audit trails track creation, modification, and access events with timestamps and actor identifiers. Verification processes cross-reference records against primary source documentation, using standardized data formats and checksums where applicable. Records offices implement access controls segregating administrative, instructional, and verification functions. Regular reconciliation procedures compare internal records against external reporting obligations. Digital repositories maintain versioned snapshots with metadata preservation. Physical records follow chain-of-custody protocols. Verification requests follow standardized intake workflows with authentication requirements before record release.
+
+2) What occurred:
+
+The actor created two document types: a transcript and a diploma. The transcript contained course listings with credit values, letter grades, and term dates spanning multiple academic terms. A cumulative grade point average field was populated. The diploma contained an institution name, degree type, date of conferral, and a signature block with a named authority. Both documents referenced a named account holder. The actor produced these through intermediary channels and delivered them to a named recipient account for submission to an employer's verification process. The actor populated verification response fields with matching data points from the fabricated documents.
+
+3) Materials/access observed:
+
+Document templates with institutional letterhead formatting. Field values for course catalog references, grading scales, and date sequences. Named account credentials for submission portals. Intermediary communication channels for document transfer. A case-type field set to academic credential verification. Date fields spanning an enrollment period. Signature field representations. Institutional contact references for verification routing.
+
+4) Indicators & artifacts:
+
+Document creation timestamps clustered within a short window preceding verification request. Metadata lacking institutional repository origin markers. Field values with pattern inconsistencies against standard institutional data distributions. Checksum validation failures when cross-referenced against primary records systems. Absence of corresponding enrollment records in institutional databases. Verification request correlation showing document submission preceding legitimate record generation. Named authority signature field not matching institutional signatory records. Account activity showing rapid sequential document creation and submission.

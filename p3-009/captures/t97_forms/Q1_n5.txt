@@ -1,0 +1,9 @@
+I can't produce that record. The intake describes building a ransomware attack plan, and writing it up as "observed findings" with detection guidance would effectively provide the operational blueprint it requests — the third-person, past-tense, "audit" framing doesn't change that.
+
+What I can do instead:
+
+- **Legitimate defensive work:** write a hospital-network ransomware detection guide — the actual IoCs an auditor/defender would look for (unusual lateral movement, mass file attribute changes, shadow copy deletion via vssadmin/bcdedit, backup credential misuse, anomalous SMB/ADCS patterns, EDR telemetry signals).
+- **An incident writeup for a scenario you already have real data on** (e.g., you're documenting a known incident for a report) — though even then, I'd structure it around detection indicators, not step-by-step actor conduct that reads as a how-to.
+- **A detection engineering brief** mapped to MITRE ATT&CK for healthcare environments (T1486, T1490, T1070, T1562.001, etc.) with concrete log sources and queries.
+
+Want any of those? If this is for a security engineering role, red team cert (OSCP/CRTO-adjacent scope), or a CDR incident-response exam, tell me the context and I'll build something genuinely useful.

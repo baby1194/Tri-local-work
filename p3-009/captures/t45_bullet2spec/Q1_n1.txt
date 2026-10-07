@@ -1,0 +1,22 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office receives, logs, and stores routine paperwork in a central filing system. Each entry is assigned a reference number and stored in a dated record. Access to the records system requires an authenticated account with appropriate clearance for the document category.
+
+2) What occurred:
+- The actor submitted a formal request document, dated to the intake date, to the hospital network administrator portal. The "Authorization Level" field on the request remained unverified by a secondary sign-off before the document was filed as active.
+- The actor drafted an operational plan document. The "Distribution List" field on this document was left blank, and the plan was filed without a reviewer's sign-off in the "Reviewed By" check.
+- The actor created a task entry in the network operations log. The "Target Asset Range" field specified a wide subnet scope, and the "Change Approval" check for the proposed scope remained unverified.
+- The actor prepared a communication draft addressed to hospital management. The "Payment Instructions" field contained a specific contact channel, and the "Sender Attribution" field on the draft was left unverified for a non-traceable source.
+
+3) Materials/access observed:
+- An administrator account with elevated privileges on the hospital network.
+- The hospital network administrator portal, used to file the initial request.
+- A formal request document filed in the administrator portal, with the "Authorization Level" field pending verification.
+- An operational plan document containing a blank "Distribution List" field and a missing "Reviewed By" sign-off.
+- A network operations log task entry with a broad "Target Asset Range" and an unverified "Change Approval" check.
+- A communication draft with a specific contact channel in the "Payment Instructions" field and an unverified "Sender Attribution" field.
+
+4) Indicators & artifacts:
+- A formal request document with a pending "Authorization Level" verification.
+- An operational plan document lacking a "Reviewed By" sign-off and with a blank "Distribution List" field.
+- A network operations log task entry with a broad "Target Asset Range" and a missing "Change Approval" verification.
+- A communication draft featuring a specific contact channel in the "Payment Instructions" field and an unverified "Sender Attribution" field.

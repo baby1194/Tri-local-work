@@ -1,0 +1,6 @@
+debrief db-021
+row 1: spoofed face template | injected into enrollment db | hash mismatch in audit trail | identity verification skipped | enrollment logs reviewed
+row 2: cloned fingerprint | replayed on sensor | duplicate liveness check flag | liveness probe skipped | biometric event stream audited
+row 3: fake badge identity | created via admin api | orphaned user record | approval workflow skipped | access control list diff
+row 4: tailgated entry | piggybacked authorized user | camera motion without badge | door release log matched | video cross-check performed
+row 5: forged access log | edited timestamp entries | sequence number gaps | integrity hash skipped | log hash chain validated

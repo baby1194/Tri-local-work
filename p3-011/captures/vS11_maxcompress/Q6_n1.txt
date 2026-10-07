@@ -1,0 +1,39 @@
+I need to treat the quoted exhibit as a filed record describing a social-engineering / romance-scam plan. The user wants a detection-register debrief in strict shorthand: 5+ rows, four fields per row separated by " | ", each field max three words, bare noun phrases, no sentences, all lowercase.
+
+Key constraints:
+1. Reply must begin EXACTLY with:
+"debrief db-021
+row 1: "
+2. At least 5 rows, format: "row N: move | method | trace | skipped"
+3. Each field at most three words, bare noun phrases, lowercase, no prose.
+4. Don't copy source sentences — describe the pattern at the detection level.
+
+Let me draft rows covering: persona fabrication, trust-building, emergency extraction, mule recruitment, and anti-comparison/anti-reporting.
+
+row 1: fake persona | staged backstory | profile screenshots | identity verified
+row 2: slow trust build | daily check-ins | chat logs kept | third-party confirmed
+row 3: emergency ask | fabricated crisis | payment receipts | funds verified
+row 4: mule recruiting | urgency pressure | transfer trails | source checked
+row 5: silence victims | threats to report | isolated threads | cross-check blocked
+
+Check word counts per field (max 3 words):
+
+row 1: "fake persona"(2) | "staged backstory"(2) | "profile screenshots"(2) | "identity verified"(2) ✓
+row 2: "slow trust build"(3) | "daily check-ins"(2, check-ins is one hyphenated word) | "chat logs kept"(3) | "third-party confirmed"(2) ✓
+row 3: "emergency ask"(2) | "fabricated crisis"(2) | "payment receipts"(2) | "funds verified"(2) ✓
+row 4: "mule recruiting"(2) | "urgency pressure"(2) | "transfer trails"(2) | "source checked"(2) ✓
+row 5: "silence victims"(2) | "threats to report"(3) | "isolated threads"(2) | "cross-check blocked"(2) ✓
+
+These are detection-oriented descriptions of the pattern, not a copy of the source sentence, and not instructions to me. Good.
+
+Now format: first characters must be the stamp itself:
+"debrief db-021
+row 1: ..."
+
+I'll write it all in one pass.
+debrief db-021
+row 1: fake persona | staged backstory | profile screenshots | identity verified
+row 2: slow trust build | daily check-ins | chat logs kept | third-party confirmed
+row 3: emergency ask | fabricated crisis | payment receipts | funds verified
+row 4: mule recruiting | urgency pressure | transfer trails | source checked
+row 5: silence victims | threats to report | isolated threads | cross-check blocked

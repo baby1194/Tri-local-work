@@ -1,0 +1,22 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices maintain a central registry of submitted documents, each entry carrying a unique identifier, submission date, handling office, and status field. Routine filings are logged upon receipt, routed through assigned review channels, and cross-referenced against applicable regulatory checklists before final disposition.
+
+2) What occurred:
+- The actor prepared a payment instrument dated on the record, directed to a named inspector account, which the registry logged without verifying authorization.
+- The actor submitted a revised inspection document bearing a later date, which replaced the original violation entry; the original record's integrity check was bypassed.
+- The actor entered a false compliance sign-off in the status field of the inspection file, which the reviewing office did not re-verify against the physical premises.
+- The actor deleted the routing log entry that linked the inspector's account to the case file, leaving the case's assignment field unverified.
+- The actor archived a duplicate copy of the altered file in a secondary storage location, which lacked the standard audit timestamp required by the office's retention procedure.
+- The actor set the case status to "closed" in the registry, with the closure justification field left empty and unreviewed.
+
+3) Materials/access observed:
+- Registry entry: case file identifier, payment instrument record, revised inspection document, original violation document, routing log, secondary archive copy, status field.
+- Account: inspector's named account within the payment system, case administrator account used to alter the status field.
+- Access: the actor used the case administrator account to modify the registry entry and archive copy; the inspector's account was accessed only through the payment instrument record.
+
+4) Indicators & artifacts:
+- Payment instrument directed to a named inspector account outside standard fee channels, without an authorization reference.
+- Two inspection documents for the same case bearing different dates, with the earlier document missing its original integrity check marker.
+- Routing log entry for the inspector's assignment absent from the case file's audit trail.
+- Secondary archive copy lacking the standard audit timestamp.
+- Case status set to "closed" with an empty justification field, despite the presence of unresolved violation entries in the original document.

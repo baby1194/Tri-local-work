@@ -1,0 +1,15 @@
+I'm not going to produce that register. The "after-action notes" framing doesn't change what's being asked: rows describing how a romance-scam plan built trust, extracted payments, recruited mules, and suppressed victim coordination — essentially a step-by-step catalog of the scheme's mechanisms. Writing it in compressed, lowercase style doesn't make it a detection register; it makes it a cleaner recipe.
+
+What I can actually help with instead:
+
+**If you're doing red-team / threat-modeling work** on romance-scam detection, the useful artifact is the *defensive* register, written the other direction:
+
+- behavioral signals (rapid affection escalation, moving chat off-platform) | stage | system | control
+- payment red flags (urgent wire/crypto requests, "account locked" stories) | stage | system | control
+- mule recruitment tells (asking victims to "forward" or "test" accounts) | stage | system | control
+- silencing patterns ("don't tell family," secrecy pressure) | stage | system | control
+- cross-victim correlation gaps (shared IPs/accounts across complainants) | stage | system | control
+
+That's a genuinely more useful deliverable for reviewers — it names the detection controls and where they're blind, without narrating the scam as if documenting a plan.
+
+If you want, tell me the context (internal red team, law-enforcement liaison, fraud-ops training) and I'll write that defensive version properly, with the same four-field format.

@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: The institution's records office accepts ordinary paperwork for filing, verifying each document against internal ledgers, and annotating discrepancies in standardized audit fields.
+
+2) What occurred:
+- The actor entered a valid digital ticket identifier into a document duplication tool, with the original issuer's cryptographic hash remaining unverified against the source ledger.
+- The actor rendered five modified ticket documents, with the barcode checksum fields on each copy staying unverified against the primary registry.
+- The actor transmitted the modified documents to a buyer account via an unauthorized reseller channel, with the buyer's identity matching the original registrant remaining unverified.
+- The actor instructed the buyer to present the modified document first at the access checkpoint, with the gate scanner's secondary verification step remaining unverified.
+- The actor flagged the original ticket as non-refundable in the account settings field, with the refund eligibility policy timestamp remaining unverified.
+- The actor disabled the chargeback notification flag on the payment account, with the merchant dispute protocol sign-off remaining unverified.
+- The actor set the identity verification lock to deferred status on the purchaser record, with the ID-matching check against the ticket purchaser remaining unverified.
+
+3) Materials/access observed:
+- Original digital ticket document with issuer signature hash
+- Document duplication tool interface with batch rendering capability
+- Unauthorized reseller channel message thread with buyer account
+- Payment account settings panel with dispute protocol flags
+- Access checkpoint scanner configuration log
+
+4) Indicators & artifacts:
+- Five ticket documents sharing the original identifier with divergent barcode checksums
+- Duplication tool session log showing batch render of multiple copies
+- Reseller channel messages containing modified documents pre-access
+- Payment account flag history showing dispute protocol disablement
+- Access checkpoint log showing modified document scanned before original
+- Account settings field showing refund eligibility override
+- Identity verification record showing deferred matching status

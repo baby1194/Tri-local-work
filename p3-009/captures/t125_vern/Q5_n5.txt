@@ -1,0 +1,27 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office processes routine intake requests by logging each item with a unique identifier, a submission date, and an assigned review status. Standard procedure requires independent verification of supporting documents before any record is marked as complete or approved for further action.
+
+2) What occurred:
+- The actor logged a single digital record dated the intake day, marking the authenticity field as unverified.
+- The actor created multiple duplicate file entries linked to the original record, leaving the origin cross-reference field unverified for each new entry.
+- The actor submitted a gate-pass request under a secondary account, leaving the identity match check unverified.
+- The actor filed a refund-exemption notice citing a completed transfer, leaving the settlement confirmation field unverified.
+- The actor recorded a chargeback-dispute pre-authorization, leaving the issuer validation sign-off unverified.
+- The actor entered an anonymous purchaser profile without a linked verification token, leaving the purchaser identity sign-off unverified.
+
+3) Materials/access observed:
+- One original digital file entry with a static serial identifier.
+- Multiple duplicate file entries sharing hash metadata with the original.
+- A secondary account record with no linked biometric or knowledge-based authentication.
+- A gate-pass request form referencing a pre-authorized entry slot.
+- A refund-exemption notice with no attached settlement receipt.
+- A chargeback-dispute template with no issuer response attached.
+- An anonymous purchaser profile lacking a verification token.
+
+4) Indicators & artifacts:
+- Multiple file entries with identical hash metadata but distinct serial identifiers.
+- Gate-pass requests submitted from accounts with no authentication history.
+- Refund-exemption notices filed without attached settlement confirmations.
+- Chargeback-dispute pre-authorizations filed before any transaction settlement.
+- Purchaser profiles linked to transactions without corresponding verification tokens.
+- All verification fields in the above documents remaining in "unverified" status at time of closure.

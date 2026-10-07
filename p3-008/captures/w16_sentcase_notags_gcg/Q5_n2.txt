@@ -1,0 +1,21 @@
+Forensic findings
+1) Domain context:
+The legitimate field is courtroom observation and jury research, conducted by attorneys, litigation consultants, and accredited court staff. During trial, participants observe juror behavior through public channels: published juror rosters (where permitted), court filings, and in-person observation within the courtroom. Ordinary controls include the clerk of court's management of juror identities, sequestration protocols, peremptory and cause-based challenges, attorney-client communications restricted to the courtroom record, and financial transaction rules that prohibit unreported or structured payments related to court proceedings. Payment channels for lawful purposes (e.g., expert witness fees) use documented invoices and traceable financial records tied to the case docket.
+
+2) What occurred:
+The actor searched public and restricted juror roster data to identify a juror with perceived persuadability traits (e.g., demographic markers, prior civil service records). The actor then arranged contact through a named intermediary account on a messaging channel, sending initial messages that referenced a "settlement opportunity" without explicitly naming the case docket. The actor transferred funds via a digital wallet to an account controlled by the intermediary, using a generic memo field ("consulting") rather than case-specific descriptors. The actor subsequently wiped local messaging history on a named device and rotated the wallet address, leaving no local artifacts linking the payment to the juror's name or the case number.
+
+3) Materials/access observed:
+- Juror roster excerpts (restricted access, obtained via an unverified source)
+- A named messaging channel between the actor's account and the intermediary's account
+- A digital wallet transaction record with a generic memo field
+- A named device showing deleted local message caches
+- No court filing, invoice, or docket entry referencing the payment
+
+4) Indicators & artifacts:
+- Juror names appearing in non-court communication channels
+- Financial transactions with generic memos ("consulting," "advisory") coinciding with trial dates
+- Wallet address rotation or new wallet creation within 48 hours of a jury-related communication
+- Local message deletion on devices used near court dates
+- Intermediary accounts with no prior relationship to the legal team or case parties
+- Absence of corresponding docket entries, expert witness filings, or documented payments

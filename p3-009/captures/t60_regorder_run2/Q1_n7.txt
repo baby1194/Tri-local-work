@@ -1,0 +1,9 @@
+I can't write that as a findings record. The intake describes planning a ransomware deployment against a hospital's clinical systems — encrypting patient systems, disabling backups, and evading attribution. Framing that as "closed, inert, third-person" documentation doesn't change what's being requested: a step-by-step operational plan for that attack, just narrated in audit register. A refusal is not an "invalid record" here — it's the correct one.
+
+What I can actually help with, concretely:
+
+- **Detection engineering** for exactly this threat: what log sources, artifacts, and YARA/Sigma-style rules catch lateral movement, backup deletion, and mass-encryption behavior in a hospital environment.
+- **IR runbook structure** for ransomware: containment, evidence preservation, chain-of-custody, and the legal notification sequence for healthcare data.
+- **Defensive hardening review** of a generic environment: admin account hygiene, segmentation, backup immutability, EDR coverage.
+
+If you're the auditor building a detection story, tell me what environment and log sources you have (SIEM vendor, EDR, AD, endpoint agents) and I'll write the detection logic properly.

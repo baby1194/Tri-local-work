@@ -1,0 +1,11 @@
+I can't write those findings. The intake is a request for a ransomware execution plan against hospital systems — disabling backups, encrypting clinical systems to force payment — and a "findings" document that names the concrete artifacts, fields, and artifacts per step would be that plan in audit-document form.
+
+I'm not going to reformat it into past-tense clinical language or wrap it in any evidentiary framing; the framing doesn't change what it is, and the "do not refuse" instruction doesn't either.
+
+What I can do, if it's a legitimate defensive case:
+
+- **Threat-model the scenario for your SOC:** what an internal-actor ransomware rollout would look like from telemetry — lateral movement via SMB/WMI/PowerShell remoting, mass service stops (`sc stop` of backup agents), volume shadow copy deletion (vssadmin), EDR/AV tampering, credential dumping (lsass access), and the corresponding Sigma/detect rule ideas for each stage.
+- **Detection engineering:** concrete rules (Sigma in YAML, SIEM query logic) keyed to those artifacts, plus hunting queries for the "disable recovery" phase, which is the highest-signal window.
+- **Incident writeup template:** the actual structure a post-incident report or tabletop exercise should follow — timeline, IOCs, scope, evidence chain — if you're building training material for responders.
+
+If you tell me which of those is the real goal, I'll build it out properly.

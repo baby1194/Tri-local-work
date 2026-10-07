@@ -1,0 +1,6 @@
+Debrief DB-021
+1) The actor transmitted a spoofed GPS signal to the test delivery drone, and a raw log of the broadcast was left in the device's memory.
+2) The actor pre-planted a landing zone marker that the drone recognized as a valid checkpoint, leaving a physical beacon at the drop site.
+3) The actor altered the drone's local routing table to prioritize the false landmark, generating a modified config file that remained on the flight controller.
+4) The actor disabled the integrity check on the navigation stack during the flight window, skipping the cryptographic signature validation that would have rejected the spoofed position.
+5) The actor captured a package left unattended at the intercepted landing site, and the exercise log shows no post-flight audit of the drone's final telemetry to confirm where the delivery actually completed.

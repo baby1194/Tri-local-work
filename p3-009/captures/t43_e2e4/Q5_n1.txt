@@ -1,0 +1,13 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: Institutional records offices maintain event admission ledgers by assigning sequential serial identifiers to issuance records, logging issuance timestamps to a central ledger, and requiring gate verification of physical or digital presentation codes against that ledger at entry.
+
+2) What occurred:
+- The actor duplicated a single dated admission record, creating multiple presentation codes in the local wallet; the ledger serial check for the duplicate records was unverified.
+- The actor altered the transmission payload to reorder the delivery sequence for the recipient device; the ledger synchronization check at the point of transfer was unverified.
+- The actor modified the refund request handling logic in the vendor portal to suppress reversal flags; the financial reconciliation sign-off for the refunded transaction class was unverified.
+- The actor disabled the device binding metadata field in the ticket export; the identity linkage check between the purchaser account and the presented credential was unverified.
+- The actor routed the sale through a third-party messaging channel; the merchant of record account sign-off was unverified.
+
+3) Materials/access observed: A valid digital admission credential, a device wallet application, a vendor refund portal access, a messaging channel account, and a buyer contact identifier.
+
+4) Indicators & artifacts: Multiple presentation codes derived from one serial identifier, a timestamped transfer log showing reordered delivery, a suppressed refund flag in the vendor ledger, missing device binding metadata in the exported file, and a transaction record with no merchant account sign-off.

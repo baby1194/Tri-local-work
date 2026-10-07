@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork through standardized intake forms, numbered folders, and dated access logs. Documents are routed via internal channels, validated by named signatories, and archived in dated registries with versioned retention fields.
+
+2) What occurred:
+- The actor logged a request into a dated access log under a named administrator account, bypassing the pending-approval check for elevated privileges.
+- The actor entered an encryption directive into a system-change ticket, leaving the rollback-verification sign-off blank.
+- The actor routed a mass-execution job through an internal scheduling channel, with the scope-review field unsigned.
+- The actor modified a recovery-partition flag in a configuration document, with the integrity-check field unverified.
+- The actor transmitted a demand notice through an out-of-band channel, with the origin-attestation field missing.
+- The actor altered an audit-trail retention field, with the tamper-evident seal check unperformed.
+
+3) Materials/access observed: A named administrator account with domain-wide rights; a scheduling service with batch-execution capability; a configuration repository containing recovery flags; an out-of-band messaging relay; and a dated change ticket with blank verification fields.
+
+4) Indicators & artifacts: Batch job manifests with uniform timestamping; configuration diffs flipping recovery flags to disabled state; a sequence of access-log entries from a single named account spanning multiple subsystems within a short window; an unsigned change ticket referencing encryption scope; and an outgoing message from an unregistered relay address containing payment-demand language.

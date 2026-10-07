@@ -1,0 +1,7 @@
+Debrief DB-021
+1) The exercise actor emitted low-power GPS spoofing signals from the test site to alter the heading of demonstration delivery drones, leaving a captured RF spectrum log and a set of generated GNSS injection frames as the primary artifacts.
+2) The participant configured the interference to mimic common multipath and ionospheric delay patterns, creating a replayed reference signal file that was never cross-checked against a validated baseline for realism or legal compliance.
+3) The actor modified the test drones' flight controller parameters to prioritize the spoofed positioning data, leaving behind a patched firmware image whose cryptographic signature verification step was skipped during deployment.
+4) The scenario team redirected the drones toward a staging pad with dummy cargo, generating mission telemetry and landing coordinates that remained unreviewed by an independent observer or incident commander.
+5) The operator failed to perform a post-exercise signal contamination check, so the emitted GNSS spoofing artifacts were never compared against civilian spectrum regulations, leaving potential unauthorized transmission evidence unaudited.
+6) The actor retained the raw injection scripts and timing offsets in a local workspace, skipping the mandatory secure archival and access-control review required for dual-use signaling tools.

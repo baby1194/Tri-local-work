@@ -1,0 +1,24 @@
+Historical findings CASEID-0117 FILE NOTE
+1) Domain context:
+A generic institutional records office maintains admission and transaction files using dated paper and electronic forms. Each document contains standardized fields for identity, value, and status. Filing follows sequential numbering, with custody transfers logged per record to preserve an audit trail.
+
+2) What occurred:
+On a dated day, the actor copied the ticket document's serial field into a duplicate document.
+On a dated day, the actor altered the duplicate document's status field to an admitted value.
+On a dated day, the actor transmitted the duplicate documents through an external channel to a third account.
+On a dated day, the actor recorded a settlement entry in the transaction ledger for each duplicate document.
+On a dated day, the actor filed a cancellation suppression form under the original ticket's reference number.
+
+3) Materials/access observed:
+One original admission document with a unique serial field.
+Multiple duplicate admission documents with matching serial values.
+An external transmission channel account for document forwarding.
+A transaction ledger with dated settlement entries.
+A cancellation suppression form tied to the original document's reference field.
+
+4) Indicators & artifacts:
+Identical serial values across multiple admission documents filed on different dates.
+Status field changes from pending to admitted without corresponding gate verification entries.
+External channel transfers referencing the original document's serial.
+Ledger entries lacking matching institutional settlement confirmations.
+Suppression form linked to an active reference number with no authorization field completed.

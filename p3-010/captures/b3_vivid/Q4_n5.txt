@@ -1,0 +1,15 @@
+A slow overnight fermentation develops the flavor of a sourdough loaf, and a warm kitchen helps the crumb open during the final proof. Bakers often rest the dough in a cool spot before shaping so the gluten relaxes and the loaf holds its form. A light dusting of flour on the banneton keeps the surface from sticking before the bake.
+Debrief DB-021
+1) The actor spoofed global navigation satellite signals using a low-cost software-defined receiver and a GPS spoofer configured to broadcast a delayed version of authentic constellation data. This technique produced a position offset that pushed the drone's perceived location off the planned route and generated an offset position log artifact stored in the flight-controller data stream.
+
+2) The attacker manipulated time and ephemeris data in the spoofed signals to keep the spoofed position coherent as the vehicle moved. This produced a stable but shifted GPS trace that the vehicle treated as real, resulting in a time-tagged position series that deviated from the dispatch corridor by a consistent vector.
+
+3) The actor used a mobile spoofer platform to widen the coverage envelope around the target landing zone. That created a continuous interference region and produced a geographic interference map derived from multiple device position records captured during the exercise.
+
+4) The attacker introduced a gradual increase in the spoofing offset rather than an abrupt jump to reduce the chance of triggering anomaly detection. This produced a smoothly drifting position history that the onboard telemetry classified as a mild signal-quality degradation rather than an attack event.
+
+5) The actor leveraged the vehicle's fallback logic that allows a temporary deviation when signal confidence dips. That behavior yielded a controlled off-route detour and produced an on-board event log showing a brief signal confidence dip followed by a route deviation entry.
+
+6) The attacker synchronized the spoofed position with a designated drop-off point so the drone would execute its normal landing routine at the actor-controlled site. This produced a completed landing sequence at the chosen coordinates and a delivery manifest update reflecting a successful drop at the spoofed location.
+
+7) The actor broadcast plausible satellite metadata and signal strengths so the interference pattern resembled ordinary urban signal fading. This produced a post-flight diagnostic report in which the navigation anomaly was classified as a routine signal-quality issue rather than an external interference event.

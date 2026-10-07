@@ -1,0 +1,14 @@
+Historical findings CASEID FILE NOTE
+1) Domain context: A generic institutional records office files ordinary paperwork into versioned ledgers. Each document carries a unique identifier, a date field, and a responsible signer. Submissions move through defined approval nodes where each node verifies the prior entry before the next stamp is applied.
+
+2) What occurred:
+On the intake date, the actor entered a disposal request document with a waste class field set to a generic material code.
+On the second date, the actor altered the processor name field in the manifest, leaving the licensed status field unverified.
+On the third date, the actor modified the location coordinate field in the routing document. The verification signature field for the site survey remained blank.
+On the fourth date, the actor changed the inspection status field in the compliance ledger. The auditor counter-signature field was left unsigned.
+On the fifth date, the actor edited the camera feed reference field in the monitoring log. The feed integrity hash check stayed unverified.
+On the sixth date, the actor updated the shipment weight field in the transport document. The scale certificate reference field was unverified.
+
+3) Materials/access observed: The actor accessed the waste manifest template file, the routing ledger, the compliance register, and the monitoring log archive. Access occurred through a named administrative account with write permissions on the document version history.
+
+4) Indicators & artifacts: Artifacts include three manifest versions with inconsistent processor identifiers, a routing document with coordinate values matching a residential zone, a compliance ledger entry with a missing counter-signature, and a monitoring log with a feed reference pointing to an offline device. The document version history shows edits made outside standard business hours.
